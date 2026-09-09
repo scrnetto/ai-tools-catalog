@@ -178,5 +178,55 @@
     "fonte": "marc.kaz 08/08/2026 (reel Dbl1gHDs-Iq) e themattvision (reel DbA2SpatIkd)",
     "macro": "A",
     "uso": "Quando vuoi un gestionale o un'app interna senza costruirla a mano."
+  },
+  {
+    "id": 25,
+    "sito": "North Star",
+    "url": "https://nstarlive.com",
+    "descrizione": "Browser di ricerca OSINT che unisce indagine visiva, di identita', crypto e di rete: globo con oltre 250.000 telecamere pubbliche, ricerca username multipiattaforma, tracciamento di wallet su decine di chain, geolocalizzazione di immagini e strumenti radio.",
+    "categoria": "Sicurezza/OSINT",
+    "fonte": "marc.kaz 08/09/2026 (reel DdCAgYBuBPd)",
+    "macro": "G",
+    "uso": "Quando un'indagine su fonti aperte deve incrociare piu' tipi di dato in un'unica interfaccia."
+  },
+  {
+    "id": 26,
+    "sito": "Fingerprint.to",
+    "url": "https://fingerprint.to",
+    "descrizione": "Motore di ricerca su dati pubblici che esegue controlli in parallelo e restituisce i risultati in streaming: username o email su oltre 700 piattaforme e ricerca di persone tramite fonti di pubblico registro.",
+    "categoria": "Sicurezza/OSINT",
+    "fonte": "marc.kaz 04/09/2026 (reel Dc3mbs_OTz9)",
+    "macro": "G",
+    "uso": "Quando serve una verifica rapida su fonti aperte senza aspettare la fine di tutte le query."
+  },
+  {
+    "id": 27,
+    "sito": "Drafted",
+    "url": "https://www.drafted.ai",
+    "descrizione": "Genera una planimetria da un elenco di stanze e ne ricava l'esterno 3D corrispondente: posizioni chiave scelte a mano e muri, porte e corridoi completati dall'AI, con rigenerazione selettiva ed export CAD o PDF.",
+    "categoria": "AI/3D",
+    "fonte": "marc.kaz 05/09/2026 (reel Dc6J2iHOZJn)",
+    "macro": "F",
+    "uso": "Quando vuoi passare da un elenco di ambienti a una pianta e a un volume 3D senza aprire un CAD."
+  },
+  {
+    "id": 28,
+    "sito": "Artificial Analysis",
+    "url": "https://artificialanalysis.ai",
+    "descrizione": "Indice indipendente che confronta i modelli AI su intelligenza, costo per compito e velocita' di generazione, con grafici incrociabili fra le diverse metriche.",
+    "categoria": "AI/Research",
+    "fonte": "guglielmo.builds 09/09/2026 (reel DdD_qA9NRyt)",
+    "macro": "J",
+    "uso": "Quando devi scegliere un modello bilanciando qualita', prezzo e latenza invece di guardare un solo benchmark."
+  },
+  {
+    "id": 29,
+    "sito": "Homura-30B GGUF",
+    "url": "https://huggingface.co/hyrelabs/Homura-30B-GGUF",
+    "descrizione": "Modello agentico open-weights da 30B distribuito in quantizzazioni GGUF, pensato per girare in locale su hardware consumer o server privati.",
+    "categoria": "AI/Modelli",
+    "fonte": "ai_swarm_solutions 20/08/2026 (reel DcRQKy4qzzR)",
+    "macro": "C",
+    "uso": "Quando vuoi un modello denso ma eseguibile in locale, da affiancare a un guardrail esterno."
   }
 ]

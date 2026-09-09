@@ -1738,5 +1738,415 @@
     "fonte": "ai.honeycove 11/08/2026 (reel Db7wCBxOrFh)",
     "macro": "D",
     "uso": "Quando un agente deve ricordare preferenze e storico dell'utente tra una sessione e l'altra."
+  },
+  {
+    "id": 176,
+    "progetto": "i-have-adhd",
+    "descrizione": "Skill che impone all'assistente di codice dieci regole di output: prima il comando o il file esatto, niente preamboli ne' spiegazioni chilometriche.",
+    "url": "https://github.com/ayghri/i-have-adhd",
+    "categoria": "Claude Code Skill",
+    "fonte": "devop.sbs 09/09/2026 (reel DdEsuy5uuWn)",
+    "macro": "A",
+    "uso": "Quando le risposte dell'agente sono verbose e devi arrivare subito alla riga da toccare."
+  },
+  {
+    "id": 177,
+    "progetto": "Escrcpy",
+    "descrizione": "Interfaccia grafica completa su scrcpy per controllare dispositivi Android dal computer: mirroring, ADB wireless, keyboard mapping e gestione di piu' dispositivi insieme.",
+    "url": "https://github.com/viarotel-org/escrcpy",
+    "categoria": "Dev/Tools",
+    "fonte": "devop.sbs 08/09/2026 (reel DdCSbawuWCe)",
+    "macro": "H",
+    "uso": "Quando devi pilotare o testare device Android dal desktop senza lanciare scrcpy a riga di comando."
+  },
+  {
+    "id": 178,
+    "progetto": "stremio-web",
+    "descrizione": "Front-end PWA in React di Stremio con il motore di add-on, cataloghi e sincronizzazione scritto in Rust e compilato in WebAssembly dentro un Web Worker.",
+    "url": "https://github.com/Stremio/stremio-web",
+    "categoria": "Dev/Web",
+    "fonte": "devop.sbs 07/09/2026 (reel Dc_7nDFRpkf)",
+    "macro": "H",
+    "uso": "Quando cerchi un esempio reale di architettura React + Rust/WASM con la logica pesante fuori dal thread principale."
+  },
+  {
+    "id": 179,
+    "progetto": "Magnitude",
+    "descrizione": "Inference server open source che profila l'hardware, consiglia i modelli adatti alla macchina e gestisce download, tuning ed esecuzione locale, esponendoli agli harness di coding (Claude Code, Codex, OpenCode, Cline).",
+    "url": "https://github.com/magnitudedev/magnitude",
+    "categoria": "LLM locale",
+    "fonte": "devop.sbs 06/09/2026 (reel Dc8WER6u7Y3)",
+    "macro": "C",
+    "uso": "Quando vuoi usare il computer come backend dell'agente, senza API key ne' costo per token."
+  },
+  {
+    "id": 180,
+    "progetto": "FckSignups",
+    "descrizione": "Catalogo curato dalla community di strumenti open source che girano nel browser e non richiedono registrazione ne' account.",
+    "url": "https://github.com/BraveOPotato/FckSignups",
+    "categoria": "Dev/Tools",
+    "fonte": "devop.sbs 05/09/2026 (reel Dc6CbEtuYRa)",
+    "macro": "H",
+    "uso": "Quando ti serve convertire o formattare qualcosa al volo senza creare l'ennesimo account."
+  },
+  {
+    "id": 181,
+    "progetto": "screenshot-to-code",
+    "descrizione": "Trasforma screenshot, mockup, file Figma e registrazioni dello schermo in codice frontend (HTML/Tailwind, React, Vue, Bootstrap, Ionic), provando a ricostruire anche interazioni e animazioni.",
+    "url": "https://github.com/abi/screenshot-to-code",
+    "categoria": "AI/Coding",
+    "fonte": "devop.sbs 04/09/2026 (reel Dc4AU6iOMI7)",
+    "macro": "A",
+    "uso": "Quando parti da un'immagine o da un video di un'interfaccia e vuoi il codice corrispondente."
+  },
+  {
+    "id": 182,
+    "progetto": "{fmt}",
+    "descrizione": "Libreria di formattazione per C++ con sintassi pulita, controlli di tipo a tempo di compilazione e prestazioni superiori a printf e agli stream standard; base di std::format.",
+    "url": "https://github.com/fmtlib/fmt",
+    "categoria": "Dev/Librerie",
+    "fonte": "devop.sbs 03/09/2026 (reel Dc1TXVJuWiI)",
+    "macro": "H",
+    "uso": "Quando in C++ ti serve formattare stringhe senza scegliere fra velocita' e sicurezza di memoria."
+  },
+  {
+    "id": 183,
+    "progetto": "Invidious",
+    "descrizione": "Front-end web alternativo e self-hostabile per YouTube: fa da tramite verso i server video eliminando tracker, pubblicita' e script pesanti, senza account Google.",
+    "url": "https://github.com/iv-org/invidious",
+    "categoria": "Dev/Self-hosting",
+    "fonte": "devop.sbs 01/09/2026 (reel DcwRY8DOnrf)",
+    "macro": "H",
+    "uso": "Quando vuoi consultare o integrare contenuti YouTube da un servizio che ospiti tu."
+  },
+  {
+    "id": 184,
+    "progetto": "pdf-inspector",
+    "descrizione": "Libreria Rust che classifica un PDF (testuale, scansionato, a immagini o misto) e decide quali pagine richiedono davvero OCR, estraendo localmente il testo gia' presente con le informazioni di posizione.",
+    "url": "https://github.com/firecrawl/pdf-inspector",
+    "categoria": "AI/OCR",
+    "fonte": "devop.sbs 31/08/2026 (reel DctN1bpMgmw)",
+    "macro": "E",
+    "uso": "Quando una pipeline documentale spreca tempo mandando all'OCR anche i PDF che hanno gia' il testo."
+  },
+  {
+    "id": 185,
+    "progetto": "htmx",
+    "descrizione": "Estende l'HTML perche' qualsiasi elemento possa fare chiamate HTTP e aggiornare porzioni di pagina, tenendo logica e stato sul server senza framework JavaScript sul client.",
+    "url": "https://github.com/bigskysoftware/htmx",
+    "categoria": "Dev/Web",
+    "fonte": "devop.sbs 30/08/2026 (reel DcrKIcEujMY)",
+    "macro": "H",
+    "uso": "Quando un'interfaccia dinamica non giustifica una SPA e vuoi restare lato server."
+  },
+  {
+    "id": 186,
+    "progetto": "Ghidra",
+    "descrizione": "Framework di reverse engineering della NSA: disassembly, decompilazione, analisi del control flow, grafi e scripting su binari di cui non hai il sorgente.",
+    "url": "https://github.com/NationalSecurityAgency/ghidra",
+    "categoria": "Sicurezza",
+    "fonte": "devop.sbs 29/08/2026 (reel DcoQV-Gs-Vg)",
+    "macro": "G",
+    "uso": "Quando devi analizzare un eseguibile compilato: malware, firmware o software legacy senza sorgenti."
+  },
+  {
+    "id": 187,
+    "progetto": "gods-eye-view",
+    "descrizione": "Globo 3D fotorealistico nel browser (CesiumJS) che aggrega in tempo reale voli, rotte marittime, satelliti, dati sismici, incendi e telecamere del traffico, con shader notturni/termici e agente vocale.",
+    "url": "https://github.com/bilawalsidhu/gods-eye-view",
+    "categoria": "Dev/3D",
+    "fonte": "devop.sbs 28/08/2026 (reel Dcl8Lyuu_ye)",
+    "macro": "H",
+    "uso": "Quando cerchi un riferimento di visualizzazione geospaziale in tempo reale su globo 3D nel browser."
+  },
+  {
+    "id": 188,
+    "progetto": "browser-use",
+    "descrizione": "Libreria che da' a un agente AI il controllo di un browser reale: apre pagine, clicca, compila form ed esegue task descritti in linguaggio naturale.",
+    "url": "https://github.com/browser-use/browser-use",
+    "categoria": "Agenti AI",
+    "fonte": "devop.sbs 27/08/2026 (reel DciotP4OM4Z)",
+    "macro": "B",
+    "uso": "Quando l'agente deve operare su siti che non espongono API."
+  },
+  {
+    "id": 189,
+    "progetto": "hister",
+    "descrizione": "Trasforma la cronologia del browser in un motore di ricerca personale indicizzando il testo completo delle pagine visitate; gira in locale o su server privato, con estensioni, CLI e supporto MCP.",
+    "url": "https://github.com/asciimoo/hister",
+    "categoria": "AI/Search",
+    "fonte": "devop.sbs 26/08/2026 (reel DcgpNHBMUCp)",
+    "macro": "D",
+    "uso": "Quando devi ritrovare un passaggio letto settimane fa e titolo e URL non bastano."
+  },
+  {
+    "id": 190,
+    "progetto": "Serena",
+    "descrizione": "Server MCP che fornisce all'agente gli strumenti semantici di un IDE: interrogare l'albero dei simboli, tracciare riferimenti e fare refactoring mirati invece di leggere i file riga per riga.",
+    "url": "https://github.com/oraios/serena",
+    "categoria": "AI/Claude Code",
+    "fonte": "devop.sbs 24/08/2026 (reel Dca3tSFuhdP)",
+    "macro": "A",
+    "uso": "Quando l'agente lavora su un progetto grande e la ricerca testuale spreca token e rompe il codice."
+  },
+  {
+    "id": 191,
+    "progetto": "book-to-skill",
+    "descrizione": "Trasforma libri e documenti tecnici (PDF, EPUB, DOCX, Markdown, HTML, RTF, MOBI) in una skill strutturata per l'agente, con modelli mentali, regole decisionali, pattern e anti-pattern.",
+    "url": "https://github.com/virgiliojr94/book-to-skill",
+    "categoria": "RAG/Knowledge",
+    "fonte": "devop.sbs 23/08/2026 (reel DcYxfyAML9E)",
+    "macro": "D",
+    "uso": "Quando vuoi che l'agente applichi il contenuto di un manuale mentre lavori, invece di ricordartelo tu."
+  },
+  {
+    "id": 192,
+    "progetto": "Ghost",
+    "descrizione": "CMS open source in Node.js per l'editoria digitale: editor essenziale, gestione nativa di membership e abbonamenti e invio di newsletter senza piattaforme terze.",
+    "url": "https://github.com/TryGhost/Ghost",
+    "categoria": "Dev/Self-hosting",
+    "fonte": "devop.sbs 22/08/2026 (reel DcVkbjauy4X)",
+    "macro": "H",
+    "uso": "Quando pubblichi contenuti e vuoi blog, newsletter e abbonamenti in un unico sistema che ospiti tu."
+  },
+  {
+    "id": 193,
+    "progetto": "Pascal Editor",
+    "descrizione": "Editor architettonico 3D open source nel browser (React Three Fiber, Three.js, WebGPU) per muri, piani, tetti, porte e finestre, con CLI locale e tool MCP pensati anche per gli agenti.",
+    "url": "https://github.com/pascalorg/editor",
+    "categoria": "Dev/3D",
+    "fonte": "devop.sbs 21/08/2026 (reel DcUHGisTzOp)",
+    "macro": "H",
+    "uso": "Quando serve modellare edifici in 3D via web e farci lavorare sopra anche un agente."
+  },
+  {
+    "id": 194,
+    "progetto": "Argent",
+    "descrizione": "Toolkit agentico per pilotare app iOS, Android, TV e desktop: controllo di iPhone fisici via USB, simulatori ed emulatori, tap/swipe/typing, ispezione UI, log, traffico di rete e regressione visiva.",
+    "url": "https://github.com/software-mansion/argent",
+    "categoria": "Agenti AI",
+    "fonte": "marc.kaz 08/09/2026 (reel DdCBk9ROSAU)",
+    "macro": "B",
+    "uso": "Quando vuoi che un agente testi e faccia debug sul dispositivo reale, non solo su screenshot."
+  },
+  {
+    "id": 195,
+    "progetto": "Marketing Skills",
+    "descrizione": "Raccolta di skill di marketing per agenti di codice (CRO, copywriting, SEO, analytics, growth) con slash command dedicati; licenza MIT, compatibile con Claude Code, Codex, Cursor e Windsurf.",
+    "url": "https://github.com/coreyhaines31/marketingskills",
+    "categoria": "Claude Code Skill",
+    "fonte": "marc.kaz 06/09/2026 (reel Dc81rWluDcm)",
+    "macro": "A",
+    "uso": "Quando l'agente deve produrre landing, email o audit SEO seguendo playbook gia' strutturati."
+  },
+  {
+    "id": 196,
+    "progetto": "Ravage",
+    "descrizione": "CLI di security testing per applicazioni web di cui si ha autorizzazione: recon deterministico, validazione e loop di attacco opzionale guidato da modello, con scope, autenticazione ed evidenze tracciate.",
+    "url": "https://github.com/duriantaco/ravage",
+    "categoria": "Sicurezza",
+    "fonte": "marc.kaz 04/09/2026 (reel Dc3oI7iuppW)",
+    "macro": "G",
+    "uso": "Quando devi testare un'applicazione web tua o autorizzata tenendo traccia delle evidenze."
+  },
+  {
+    "id": 197,
+    "progetto": "AgentConnect",
+    "descrizione": "Sistema multi-agente self-hostabile che porta gli agenti dentro Slack, Discord, Telegram e GitHub: ogni agente ha modello, tool, permessi e memoria propri e puo' chiamare gli altri.",
+    "url": "https://github.com/agentconnect-md/agentconnect",
+    "categoria": "Agenti AI",
+    "fonte": "marc.kaz 02/09/2026 (reel DcyjIzAu_fG)",
+    "macro": "B",
+    "uso": "Quando il team vuole invocare agenti dagli strumenti che gia' usa, senza un'altra interfaccia."
+  },
+  {
+    "id": 198,
+    "progetto": "img2threejs",
+    "descrizione": "Ricostruisce l'oggetto di un'immagine come modello Three.js procedurale in TypeScript, gia' riggato e animato, con VFX fisici e orbita a 360 gradi, senza pipeline 3D tradizionale.",
+    "url": "https://github.com/img2threejs/img2threejs",
+    "categoria": "AI/3D",
+    "fonte": "marc.kaz 31/08/2026 (reel Dctln3MO3Mg)",
+    "macro": "F",
+    "uso": "Quando da una singola immagine ti serve un asset 3D ispezionabile e animabile nel browser."
+  },
+  {
+    "id": 199,
+    "progetto": "Capacitor",
+    "descrizione": "Runtime che pubblica una sola codebase web come app iOS, Android e PWA, con API native cross-platform, plugin custom in Swift e Kotlin/Java e progetti nativi trattati come sorgente vera.",
+    "url": "https://github.com/ionic-team/capacitor",
+    "categoria": "Dev/Mobile",
+    "fonte": "marc.kaz 30/08/2026 (reel Dcq02X0ubGo)",
+    "macro": "H",
+    "uso": "Quando vuoi distribuire un'app web sugli store senza riscriverla in nativo."
+  },
+  {
+    "id": 200,
+    "progetto": "Diffusion Studio Editor",
+    "descrizione": "Editor video open source pensato per gli agenti: composizioni scritte in JSX, editing bidirezionale fra canvas e codice, CLI per ispezionare e renderizzare, generazione di immagini, video e voice-over.",
+    "url": "https://github.com/diffusionstudio/editor",
+    "categoria": "AI/Video",
+    "fonte": "marc.kaz 29/08/2026 (reel DcoIjyNOVE0)",
+    "macro": "F",
+    "uso": "Quando vuoi che un agente monti o modifichi video mantenendo il progetto come codice versionabile."
+  },
+  {
+    "id": 201,
+    "progetto": "AdGuard Home",
+    "descrizione": "Server DNS self-hostabile che blocca pubblicita' e tracker per l'intera rete domestica, senza installare nulla sui singoli dispositivi.",
+    "url": "https://github.com/AdguardTeam/AdGuardHome",
+    "categoria": "Sicurezza/Rete",
+    "fonte": "marc.kaz 28/08/2026 (reel DcltRCfuER-)",
+    "macro": "G",
+    "uso": "Quando vuoi filtrare tracker e pubblicita' a livello di rete invece che browser per browser."
+  },
+  {
+    "id": 202,
+    "progetto": "vphone-cli",
+    "descrizione": "Crea e avvia iPhone virtuali su Apple Silicon usando Virtualization.framework: creazione della VM con un comando, piu' firmware, clone/export/import, accesso SSH e VNC.",
+    "url": "https://github.com/Lakr233/vphone-cli",
+    "categoria": "Dev/Tools",
+    "fonte": "marc.kaz 27/08/2026 (reel DcjDu92um3W)",
+    "macro": "H",
+    "uso": "Quando ti serve un iPhone virtuale scriptabile da riga di comando per test e automazioni."
+  },
+  {
+    "id": 203,
+    "progetto": "OpenShorts",
+    "descrizione": "Generatore open source di clip verticali da video lunghi o da YouTube: individuazione automatica dei momenti, face tracking, sottotitoli e doppiaggio, self-hostabile con Docker (MIT) e senza watermark.",
+    "url": "https://github.com/mutonby/openshorts",
+    "categoria": "AI/Video",
+    "fonte": "marc.kaz 26/08/2026 (reel DcgcaAjuLE6)",
+    "macro": "F",
+    "uso": "Quando devi ricavare short da contenuti lunghi senza paywall ne' limiti di piattaforma."
+  },
+  {
+    "id": 204,
+    "progetto": "Godogen",
+    "descrizione": "Genera giochi completi da una descrizione: architettura, asset, codice, screenshot e QA visiva, con loop di qualita' che cattura screenshot dal motore e corregge i problemi di rendering; supporta Godot 4, Bevy e Babylon.js.",
+    "url": "https://github.com/htdt/godogen",
+    "categoria": "AI/Coding",
+    "fonte": "marc.kaz 25/08/2026 (reel Dcd84biuiDo)",
+    "macro": "A",
+    "uso": "Quando vuoi prototipare un gioco facendo lavorare Claude Code o Codex sull'intera pipeline."
+  },
+  {
+    "id": 205,
+    "progetto": "NodeGraphQt",
+    "descrizione": "Framework Python/Qt per costruire interfacce a grafo di nodi: layout verticale e a pipe, nodi e widget custom, ricerca a tab, taglio dei collegamenti e controlli di zoom/pan.",
+    "url": "https://github.com/jchanvfx/NodeGraphQt",
+    "categoria": "Dev/Librerie",
+    "fonte": "marc.kaz 24/08/2026 (reel DcbcKeGO2RF)",
+    "macro": "H",
+    "uso": "Quando devi dare un'interfaccia visuale a nodi a una pipeline o a un tool interno in Python."
+  },
+  {
+    "id": 206,
+    "progetto": "SearchPhone",
+    "descrizione": "Toolkit OSINT per numeri di telefono: validazione e operatore via Numverify, ricerca parallela su Google, DuckDuckGo, Reddit e GitHub, controllo sul database infostealer di Hudson Rock e report JSON e PDF automatici.",
+    "url": "https://github.com/HackUnderway/SearchPhone",
+    "categoria": "Sicurezza/OSINT",
+    "fonte": "marc.kaz 23/08/2026 (reel DcYklfUurI5)",
+    "macro": "G",
+    "uso": "Quando devi verificare a chi risale un numero durante un'indagine autorizzata."
+  },
+  {
+    "id": 207,
+    "progetto": "THREEUI",
+    "descrizione": "Libreria open source di sezioni hero 3D, icone e componenti di movimento gia' pronti per Three.js, con catalogo interattivo dei componenti.",
+    "url": "https://github.com/MengTo/threeui",
+    "categoria": "Dev/Design",
+    "fonte": "marc.kaz 22/08/2026 (reel DcWPxEhOepY)",
+    "macro": "H",
+    "uso": "Quando vuoi aggiungere una hero 3D a un sito senza costruirla da zero."
+  },
+  {
+    "id": 208,
+    "progetto": "OpenBot",
+    "descrizione": "Colleghi AI open source con un computer proprio (browser, file, tool): UI generativa, computer use remoto e locale, passaggi agente-umano e registrazione completa delle azioni, compatibile con qualsiasi agente AG-UI.",
+    "url": "https://github.com/CopilotKit/openbot",
+    "categoria": "Agenti AI",
+    "fonte": "marc.kaz 20/08/2026 (reel DcRdZmdMxlr)",
+    "macro": "B",
+    "uso": "Quando servono agenti operativi in azienda con tracciabilita' di ogni azione e handoff verso le persone."
+  },
+  {
+    "id": 209,
+    "progetto": "free-for-dev",
+    "descrizione": "Lista mantenuta di servizi SaaS, PaaS e IaaS con piani gratuiti reali (non prove a tempo) utilizzabili da sviluppatori e team DevOps.",
+    "url": "https://github.com/ripienaar/free-for-dev",
+    "categoria": "Dev/Tools",
+    "fonte": "marc.kaz 21/08/2026 (reel DcTnbkSuD8Y)",
+    "macro": "H",
+    "uso": "Quando cerchi hosting, CI o infrastruttura con un free tier su cui si puo' davvero costruire."
+  },
+  {
+    "id": 210,
+    "progetto": "HeyGem",
+    "descrizione": "Alternativa open source e self-hostabile a HeyGen per clonare volto e voce e generare avatar parlanti con lip-sync, con pipeline modulare che accetta qualsiasi motore TTS.",
+    "url": "https://github.com/GuijiAI/HeyGem.ai",
+    "categoria": "AI/Video",
+    "fonte": "ai_swarm_solutions 04/09/2026 (reel Dc39MtnKLsc)",
+    "macro": "F",
+    "uso": "Quando ti serve un avatar digitale parlante senza abbonamenti ne' code sui server cloud."
+  },
+  {
+    "id": 211,
+    "progetto": "Reticulum",
+    "descrizione": "Stack di rete crittografato che funziona su mezzi eterogenei, incluse radio LoRa: rete mesh end-to-end senza indirizzi IP pubblici ne' infrastruttura di provider.",
+    "url": "https://github.com/markqvist/Reticulum",
+    "categoria": "Sicurezza/Rete",
+    "fonte": "ai_swarm_solutions 22/08/2026 (reel DcWg8tOqBGa)",
+    "macro": "G",
+    "uso": "Quando serve far comunicare due nodi senza rete pubblica, per resilienza o isolamento."
+  },
+  {
+    "id": 212,
+    "progetto": "OpenMausBot",
+    "descrizione": "Alternativa open source e local-first ai bot conversazionali multi-agente: usa le CLI di Claude, Codex e Grok gia' installate, puo' pilotare desktop cloud isolati o VM locali e integra centinaia di app via Composio.",
+    "url": "https://github.com/milind-soni/OpenMausBot",
+    "categoria": "Agenti AI",
+    "fonte": "ai_swarm_solutions 25/08/2026 (reel DcdzDgkKWmW)",
+    "macro": "B",
+    "uso": "Quando vuoi un'interfaccia chat multi-agente che resta sulla tua macchina, con le tue chiavi."
+  },
+  {
+    "id": 213,
+    "progetto": "Graphify",
+    "descrizione": "Trasforma una codebase con la sua documentazione, gli schemi SQL, le configurazioni e i PDF in un knowledge graph interrogabile, cosi' che l'agente non debba rileggere i file per orientarsi.",
+    "url": "https://github.com/Graphify-Labs/graphify",
+    "categoria": "RAG/Memoria",
+    "fonte": "ai.honeycove 09/09/2026 (reel DdFJ1JkSJOb)",
+    "macro": "D",
+    "uso": "Quando l'agente brucia token a riscoprire la struttura del progetto a ogni sessione."
+  },
+  {
+    "id": 214,
+    "progetto": "prompts.chat (awesome-chatgpt-prompts)",
+    "descrizione": "Libreria open source di prompt per scrittura, coding, generazione di immagini e video e ricerca, consultabile anche dal sito prompts.chat e integrabile con gli agenti di codice.",
+    "url": "https://github.com/f/awesome-chatgpt-prompts",
+    "categoria": "AI/Prompt",
+    "fonte": "sconosciuto  (reel DdABHiqS36)",
+    "macro": "H",
+    "uso": "Quando cerchi un punto di partenza gia' collaudato invece di scrivere il prompt da zero."
+  },
+  {
+    "id": 215,
+    "progetto": "OpenExecutive",
+    "descrizione": "Team esecutivo virtuale: una persona AI coerente sostenuta da otto agenti specialisti (FastAPI) che coprono le funzioni tipiche di una direzione aziendale.",
+    "url": "https://github.com/SenteLabsAI/OpenExecutive",
+    "categoria": "Agenti AI",
+    "fonte": "gabriaprile 03/09/2026 (reel Dc0dH3SjSKO)",
+    "macro": "B",
+    "uso": "Quando vuoi un secondo parere strutturato sulle decisioni gestionali di un progetto o di un'azienda."
+  },
+  {
+    "id": 216,
+    "progetto": "NemoClaw",
+    "descrizione": "Livello NVIDIA che fa girare agenti come Hermes, LangChain Deep Agents e OpenClaw dentro OpenShell con guardrail basati su policy e inferenza gestita.",
+    "url": "https://github.com/NVIDIA/NemoClaw",
+    "categoria": "Sicurezza/Agenti",
+    "fonte": "micheleparigi.ai 23/03/2026 (reel DWPF8ZljMoN)",
+    "macro": "G",
+    "uso": "Quando un assistente sempre attivo sulla macchina ha bisogno di limiti espliciti e verificabili."
   }
 ]
