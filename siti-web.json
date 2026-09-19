@@ -228,5 +228,55 @@
     "fonte": "ai_swarm_solutions 20/08/2026 (reel DcRQKy4qzzR)",
     "macro": "C",
     "uso": "Quando vuoi un modello denso ma eseguibile in locale, da affiancare a un guardrail esterno."
+  },
+  {
+    "id": 30,
+    "sito": "Jev (TypeSafe AI)",
+    "url": "https://typesafe.ai",
+    "descrizione": "Modello commerciale in early access che non genera testo ma decisioni: gli passi uno stato e l'insieme chiuso delle risposte ammesse e restituisce un valore tipizzato con probabilita' e punteggio di confidenza, pensato per essere consumato dal codice. Accessibile via API con prezzo a richiesta.",
+    "categoria": "AI/Modelli",
+    "fonte": "simorizzo_ai, marc.kaz, didof.dev, guglielmo.builds 15-19/09/2026 (reel DdXKDOREZCr, DdZNF2hu0sG, Dda_5_oiDZ0, DdYrW1Ttpg_)",
+    "macro": "C",
+    "uso": "Quando in una pipeline serve una classificazione o una scelta fra opzioni note, non una risposta in linguaggio naturale."
+  },
+  {
+    "id": 31,
+    "sito": "Revealer",
+    "url": "https://revealer.us",
+    "descrizione": "Servizio OSINT che cerca uno username o un indirizzo email su centinaia di moduli-fonte, correla i profili trovati e consulta archivi di data breach mostrando tipo di fonte, data e categorie di campi esposti. Dichiara di non mostrare mai i valori delle password.",
+    "categoria": "Sicurezza/OSINT",
+    "fonte": "marc.kaz 14/09/2026 (reel DdRjzwdOH54)",
+    "macro": "G",
+    "uso": "Quando devi misurare l'esposizione pubblica di un identificativo, a partire dai tuoi, in un assessment."
+  },
+  {
+    "id": 32,
+    "sito": "SceneAI",
+    "url": "https://sceneai.art",
+    "descrizione": "Libreria a pagamento di prompt pronti per generare sezioni web e landing page animate, aggiornata settimanalmente; alcune anteprime sono consultabili senza account.",
+    "categoria": "AI/Prompt",
+    "fonte": "marc.kaz 13/09/2026 (reel DdO-gzeuWGW)",
+    "macro": "H",
+    "uso": "Quando cerchi un punto di partenza collaudato per far generare una pagina invece di scrivere il prompt da zero."
+  },
+  {
+    "id": 33,
+    "sito": "Aside",
+    "url": "https://aside.com",
+    "descrizione": "Browser con agente integrato che opera sui siti dove l'utente ha gia' una sessione aperta, eseguendo compiti al posto suo. Dichiara elaborazione locale dei dati e un password manager che autentica senza esporre le credenziali all'agente.",
+    "categoria": "AI/Browser agent",
+    "fonte": "themattvision 16/09/2026 (reel DdW5_36xaFL)",
+    "macro": "B",
+    "uso": "Quando l'automazione deve passare per siti autenticati che non espongono un'API."
+  },
+  {
+    "id": 34,
+    "sito": "Annota AI",
+    "url": "https://annota.ai",
+    "descrizione": "Piattaforma per preparare dati destinati all'AI: annotazione di immagini, OCR con revisione del testo dei documenti ed esportazione in COCO o Markdown, con una connessione MCP che espone i dati agli agenti.",
+    "categoria": "AI/OCR",
+    "fonte": "simorizzo_ai 11/09/2026 (reel DdJS5Qfih7F)",
+    "macro": "E",
+    "uso": "Quando devi trasformare PDF e immagini in dataset o in Markdown per una knowledge base."
   }
 ]

@@ -432,8 +432,8 @@
   {
     "id": 45,
     "progetto": "Supertonic",
-    "descrizione": "Text-to-Speech completamente locale ad alte performance",
-    "url": "https://github.com/supertone-inc/supertonic",
+    "descrizione": "Text-to-Speech completamente locale ad alte performance — repository archiviato il 09/2026, non più manutenuto",
+    "url": "https://github.com/supertone-oss-archive/supertonic",
     "categoria": "AI/TTS",
     "fonte": "devop.sbs 14/05/2026 (reel DYUnUNrMjzy)",
     "macro": "F",
@@ -2148,5 +2148,175 @@
     "fonte": "micheleparigi.ai 23/03/2026 (reel DWPF8ZljMoN)",
     "macro": "G",
     "uso": "Quando un assistente sempre attivo sulla macchina ha bisogno di limiti espliciti e verificabili."
+  },
+  {
+    "id": 217,
+    "progetto": "Cline",
+    "descrizione": "Coding agent open source che vive dentro l'IDE, nel terminale o come app desktop: analizza l'intero progetto, modifica piu' file, esegue comandi, installa dipendenze, lancia test e build e corregge gli errori da solo. Supporta OpenAI, Anthropic, Gemini, OpenRouter e modelli locali via Ollama o LM Studio, ed e' estendibile con MCP e plugin.",
+    "url": "https://github.com/cline/cline",
+    "categoria": "AI/Coding",
+    "fonte": "devop.sbs 19/09/2026 (reel Ddd26tiueky)",
+    "macro": "A",
+    "uso": "Quando vuoi un agente di codice dentro VS Code libero di scegliere il modello, compresi quelli locali."
+  },
+  {
+    "id": 218,
+    "progetto": "Anki",
+    "descrizione": "Sistema di ripetizione spaziata con richiamo attivo: mostra ogni nozione nel momento in cui la memoria sta per perderla. Nato in Python, ha spostato il core in Rust su SQLite e integra l'algoritmo FSRS per calcolare gli intervalli di ripasso.",
+    "url": "https://github.com/ankitects/anki",
+    "categoria": "Dev/Productivity",
+    "fonte": "devop.sbs 18/09/2026 (reel Ddb3g0UM3-u)",
+    "macro": "H",
+    "uso": "Quando devi memorizzare a lungo termine un corpus tecnico (API, sintassi, terminologia) invece di rileggerlo."
+  },
+  {
+    "id": 219,
+    "progetto": "worktrunk",
+    "descrizione": "CLI che rende i Git worktree semplici da creare, usare e rimuovere, assegnando a ogni attivita' una directory di lavoro indipendente legata a un branch. Pensata per far lavorare in parallelo piu' agenti (Claude Code, Codex) sullo stesso progetto senza che si pestino i piedi.",
+    "url": "https://github.com/max-sixty/worktrunk",
+    "categoria": "Dev/Workflow",
+    "fonte": "devop.sbs 16/09/2026 (reel DdW2CBwQBrR)",
+    "macro": "A",
+    "uso": "Quando fai girare piu' agenti insieme sullo stesso repo e ti serve isolare ogni task in un worktree."
+  },
+  {
+    "id": 220,
+    "progetto": "LocalSend",
+    "descrizione": "Applicazione open source che funziona da AirDrop universale fra Android, iOS, Windows, macOS e Linux: i dispositivi sulla stessa rete locale si rilevano da soli e il trasferimento e' diretto e crittografato, senza passare da cloud o app di messaggistica che ricomprimono i file.",
+    "url": "https://github.com/localsend/localsend",
+    "categoria": "Dev/Tools",
+    "fonte": "devop.sbs 15/09/2026 (reel DdUuGuMNL3X)",
+    "macro": "H",
+    "uso": "Quando devi spostare file fra macchine di sistemi operativi diversi senza cloud di mezzo."
+  },
+  {
+    "id": 221,
+    "progetto": "SmartTube",
+    "descrizione": "Client alternativo e open source per YouTube su Android TV e Fire Stick: rimuove gli annunci, integra SponsorBlock, permette di scegliere manualmente codec e risoluzione fino al 4K HDR e non richiede i Google Play Services.",
+    "url": "https://github.com/yuliskov/SmartTube",
+    "categoria": "Dev/Media",
+    "fonte": "devop.sbs 13/09/2026 (reel DdPCG_POTCS)",
+    "macro": "H",
+    "uso": "Quando su un dispositivo Android TV ti serve un client piu' leggero e configurabile di quello ufficiale."
+  },
+  {
+    "id": 222,
+    "progetto": "Fishertiger",
+    "descrizione": "Advisor open source e local-first per il Fantacalcio di Serie A: proiezioni sui giocatori, regole d'asta configurabili, supporto all'asta dal vivo e simulazioni.",
+    "url": "https://github.com/Zannael/fishertiger",
+    "categoria": "Gaming/Sport",
+    "fonte": "devop.sbs 13/09/2026 (reel DdOPQhpOmYT)",
+    "macro": "H",
+    "uso": "Quando serve un esempio compatto di advisor local-first con proiezioni e simulazioni su dati sportivi."
+  },
+  {
+    "id": 223,
+    "progetto": "iloader",
+    "descrizione": "App open source per il sideloading su iPhone e iPad da computer: installa SideStore, LiveContainer e file IPA gestendo in automatico certificati, App ID e file di pairing. Gira su Windows, macOS e Linux e permette di consultare e revocare i certificati di sviluppo.",
+    "url": "https://github.com/nab138/iloader",
+    "categoria": "Dev/Mobile",
+    "fonte": "devop.sbs 12/09/2026 (reel DdL9xo4O63q)",
+    "macro": "H",
+    "uso": "Quando devi installare build iOS fuori dall'App Store senza fare a mano la trafila dei certificati."
+  },
+  {
+    "id": 224,
+    "progetto": "NuvioMobile",
+    "descrizione": "Client mobile open source di un media center per la propria libreria multimediale, scritto in Kotlin con Compose Multiplatform: sincronizza avanzamento, sottotitoli e metadati. Fa parte di un ecosistema che copre anche Android TV e Smart TV Tizen/webOS.",
+    "url": "https://github.com/NuvioMedia/NuvioMobile",
+    "categoria": "Dev/Media",
+    "fonte": "devop.sbs 11/09/2026 (reel DdJ-Qj2Olhj)",
+    "macro": "H",
+    "uso": "Quando cerchi un esempio reale di app Compose Multiplatform, o un client per una libreria multimediale self-hosted."
+  },
+  {
+    "id": 225,
+    "progetto": "teamai-cli",
+    "descrizione": "Strumento di Tencent che centralizza in un repository Git skill, regole, documentazione, agenti, hook e configurazioni MCP, distribuendoli poi automaticamente agli strumenti del team. Compatibile con Claude Code, Codex, Cursor, OpenCode e CodeBuddy.",
+    "url": "https://github.com/Tencent/teamai-cli",
+    "categoria": "AI/Claude Code",
+    "fonte": "devop.sbs 10/09/2026 (reel DdHQDdTM1FX)",
+    "macro": "A",
+    "uso": "Quando in un team ognuno ha prompt e configurazioni diverse e vuoi versionarle in un unico posto."
+  },
+  {
+    "id": 226,
+    "progetto": "DeepSeek Harness (dsh)",
+    "descrizione": "Harness per agenti di programmazione rilasciato da DeepSeek con licenza MIT, costruito sulla filosofia 'everything is a plugin': modelli, file system, tool, storage di sessione, permessi e Web UI sono componenti sostituibili. E' agnostico rispetto al modello e funziona con Claude, GPT, Gemini o endpoint locali via Ollama e vLLM.",
+    "url": "https://github.com/deepseek-ai/deepseek-harness",
+    "categoria": "AI/Coding",
+    "fonte": "ai_swarm_solutions 13/09/2026 (reel DdPRKKwqidc)",
+    "macro": "A",
+    "uso": "Quando vuoi un runtime per agenti di codice in cui poter sostituire shell, sandbox o loop di esecuzione senza riscrivere il motore."
+  },
+  {
+    "id": 227,
+    "progetto": "Puter",
+    "descrizione": "Backend serverless open source pensato per le app generate dall'AI: una sola libreria client da' accesso a modelli AI, autenticazione utente, storage cloud, database NoSQL e hosting, senza chiavi API esposte nel frontend. Include sandboxing, rate limiting e filtri anti-abuso di default.",
+    "url": "https://github.com/HeyPuter/puter",
+    "categoria": "Dev/Self-hosting",
+    "fonte": "ai_swarm_solutions 17/09/2026 (reel DdZf7PKKBHk)",
+    "macro": "H",
+    "uso": "Quando un prototipo generato da un agente ha bisogno di auth, storage e database senza tirare su un backend."
+  },
+  {
+    "id": 228,
+    "progetto": "prod-FARM-IOS-Core",
+    "descrizione": "Sistema self-hosted per registrare iPhone reali, vederli in diretta dal browser e pilotarli da remoto, con scheduler su Postgres per la pubblicazione programmata. Licenza Apache-2.0, nessun vincolo a servizi cloud.",
+    "url": "https://github.com/Git-Agni/prod-FARM-IOS-Core",
+    "categoria": "Dev/Mobile",
+    "fonte": "marc.kaz 14/09/2026 (reel DdRcKtlO1Xo)",
+    "macro": "H",
+    "uso": "Quando devi orchestrare da una sola dashboard un parco di dispositivi iOS fisici (test o automazione)."
+  },
+  {
+    "id": 229,
+    "progetto": "davinci-resolve-mcp",
+    "descrizione": "Server MCP che collega qualsiasi client compatibile a DaVinci Resolve Studio: controllo di edit, color, Fusion e Fairlight, analisi dei media, marker e setup del render. Espone 377 tool granulari oppure una modalita' compatta da 36 tool; licenza MIT.",
+    "url": "https://github.com/samuelgursky/davinci-resolve-mcp",
+    "categoria": "AI/Video",
+    "fonte": "marc.kaz 11/09/2026 (reel DdJ0FuyuDa0)",
+    "macro": "F",
+    "uso": "Quando vuoi che un agente esegua operazioni di montaggio e color dentro DaVinci Resolve invece di descriverle."
+  },
+  {
+    "id": 230,
+    "progetto": "anything2explainer",
+    "descrizione": "Skill per Claude Code e Codex che trasforma un argomento in un video esplicativo in motion graphics: ricerca, narrazione, storyboard e codice delle inquadrature, voce TTS con sottotitoli allineati alle parole, capitoli e barra di avanzamento. Ogni fotogramma e' disegnato in Remotion, non generato come pixel.",
+    "url": "https://github.com/Vincentwei1021/anything2explainer",
+    "categoria": "Claude Code Skill",
+    "fonte": "marc.kaz 10/09/2026 (reel DdHJ9w6OiRq)",
+    "macro": "F",
+    "uso": "Quando ti serve un explainer video riproducibile e correggibile via codice invece che un video generato."
+  },
+  {
+    "id": 231,
+    "progetto": "ComfyUI-Ref2VA-VSA",
+    "descrizione": "Custom node per ComfyUI che applica sparse attention al modello MiniMax H3 per generare video di un personaggio molto piu' velocemente su una sola GPU consumer, scartando gran parte dei dati video ma mantenendo intatta l'immagine di riferimento perche' il volto resti coerente.",
+    "url": "https://github.com/Kablex/ComfyUI-Ref2VA-VSA",
+    "categoria": "AI/Video",
+    "fonte": "github_dev 09/09/2026 (reel DdEebQRtEd1, salvato in chat il 12/09/2026)",
+    "macro": "F",
+    "uso": "Quando generi clip di un personaggio su hardware locale e il collo di bottiglia e' il tempo di rendering."
+  },
+  {
+    "id": 232,
+    "progetto": "deepagents",
+    "descrizione": "Libreria di LangChain per costruire agenti 'profondi': pianificazione esplicita, file system virtuale, sub-agenti e contesto di lunga durata sopra il loop base di tool calling.",
+    "url": "https://github.com/langchain-ai/deepagents",
+    "categoria": "Agenti AI",
+    "fonte": "neuroespresso 04/09/2026 (reel Dc2zpT_MKkM, salvato in chat il 18/09/2026)",
+    "macro": "B",
+    "uso": "Quando un agente a singolo loop non regge il compito e servono pianificazione e sub-agenti gia' pronti."
+  },
+  {
+    "id": 233,
+    "progetto": "OpenWorker",
+    "descrizione": "Co-worker AI open source rilasciato da Andrew Ng che porta a termine compiti invece di limitarsi a rispondere: si collega a oltre 40 applicazioni, gira in locale su Mac e lascia scegliere il modello, tenendo i dati sulla macchina.",
+    "url": "https://github.com/andrewyng/openworker",
+    "categoria": "Agenti AI",
+    "fonte": "ai.honeycove 14/09/2026 (reel DdSoy2Wu8F_)",
+    "macro": "B",
+    "uso": "Quando vuoi un agente operativo locale collegato alle tue app, senza mandare i dati a un servizio."
   }
 ]
