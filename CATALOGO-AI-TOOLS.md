@@ -2,12 +2,12 @@
 
 > Catalogo unificato di **repository GitHub** e **siti/servizi web** raccolti dai
 > reel e link salvati in chat.
-> **232 repository** + **28 siti web**, organizzati per categoria operativa.
-> Stato attività verificato il **2026-09-19**. Legenda: 🟢 attivo (push ≤12 mesi) · 🟡 rallentato · 🔴 fermo · ⚫ archiviato · 🌐 sito web.
+> **233 repository** + **28 siti web**, organizzati per categoria operativa.
+> Stato attività verificato il **2026-09-20**. Legenda: 🟢 attivo (push ≤12 mesi) · 🟡 rallentato · 🔴 fermo · ⚫ archiviato · 🌐 sito web.
 
 ## Indice
 - **Coding Agent, Claude Code & sviluppo AI-assistito** (35)
-- **Framework Agenti AI & assistenti personali** (30)
+- **Framework Agenti AI & assistenti personali** (31)
 - **LLM, modelli & inferenza locale** (17)
 - **RAG, memoria agenti & knowledge base** (18)
 - **OCR & parsing documenti** (7)
@@ -65,6 +65,7 @@
 | [browser-use](https://github.com/browser-use/browser-use) | Libreria che da' a un agente AI il controllo di un browser reale: apre pagine, clicca, compila form ed esegue task descritti in linguaggio naturale. | Quando l'agente deve operare su siti che non espongono API. | 🟢 ⭐115.3k · 2026-09-18 · MIT |
 | [odysseus](https://github.com/pewdiepie-archdaemon/odysseus) | Workspace AI self-hosted open source creato da PewDiePie: chat+agenti, deep research, documenti, email, note/task, con modelli locali (Ollama, llama.cpp, vLLM) o API. Alternativa privata a ChatGPT/Claude. | Quando vuoi un workspace AI completo e privato, self-hosted, con modelli locali e niente dipendenza dal cloud. | 🟢 ⭐87.4k · 2026-09-17 · AGPL-3.0 |
 | [Agent-Reach](https://github.com/Panniantong/Agent-Reach) | Scaffolding/CLI open source che dà a un agente AI accesso a Twitter, Reddit, YouTube, GitHub, Bilibili in tempo reale senza API a pagamento: un install e una SKILL.md che orchestra tool upstream (yt-dlp, gh, ecc.). | Quando vuoi che il tuo agente legga social e piattaforme web in tempo reale senza pagare API ufficiali. | 🟢 ⭐83.4k · 2026-09-15 · MIT |
+| [Paperclip](https://github.com/paperclipai/paperclip) | Server Node.js con interfaccia React che orchestra una squadra di agenti AI come se fosse un'azienda: organigramma, budget per agente, governance e allineamento agli obiettivi, il tutto da una dashboard che mostra avanzamento e costi. Si definisce un obiettivo di business, si assegnano i ruoli (CEO, CTO, ingegneri, designer, marketing) e si approva la spesa. Funziona con OpenClaw, Claude Code, Codex, Cursor, Bash e HTTP. Gli autori lo riassumono così: se OpenClaw è un dipendente, Paperclip è l'azienda. | Quando fai girare più agenti di provider diversi e ti serve coordinarli verso un obiettivo con budget e supervisione, invece di lanciarli e seguirli uno per uno. | 🟢 ⭐81.1k · 2026-09-20 · MIT |
 | [MiroFish](https://github.com/666ghj/MiroFish) | Motore di intelligenza collettiva: simula migliaia di agenti AI per previsioni (studente cinese, virale) | Motore di intelligenza collettiva: simula migliaia di agenti per previsioni. | 🟢 ⭐74k · 2026-09-16 · AGPL-3.0 |
 | [NanoBot](https://github.com/HKUDS/nanobot) | Agente AI personale open-source leggero (HKUDS) | Assistente AI personale leggero gestibile da Telegram/WhatsApp, sempre attivo sul tuo PC. | 🟢 ⭐48.4k · 2026-09-19 · MIT |
 | [DSPy](https://github.com/stanfordnlp/dspy) | Framework per costruire sistemi AI modulari in Python: codice componibile al posto di prompt fragili, con ottimizzazione automatica di prompt e pesi per classificatori, RAG e loop agentici. | Quando vuoi programmare il comportamento di un LLM e farlo ottimizzare da metriche invece che a mano. | 🟢 ⭐38.1k · 2026-09-18 · MIT |

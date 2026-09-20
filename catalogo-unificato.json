@@ -3712,6 +3712,22 @@
   "fonte": "ai.honeycove 14/09/2026 (reel DdSoy2Wu8F_)"
  },
  {
+  "tipo": "repo",
+  "macro": "B",
+  "macro_nome": "Framework Agenti AI & assistenti personali",
+  "nome": "Paperclip",
+  "cosa_fa": "Server Node.js con interfaccia React che orchestra una squadra di agenti AI come se fosse un'azienda: organigramma, budget per agente, governance e allineamento agli obiettivi, il tutto da una dashboard che mostra avanzamento e costi. Si definisce un obiettivo di business, si assegnano i ruoli (CEO, CTO, ingegneri, designer, marketing) e si approva la spesa. Funziona con OpenClaw, Claude Code, Codex, Cursor, Bash e HTTP. Gli autori lo riassumono così: se OpenClaw è un dipendente, Paperclip è l'azienda.",
+  "quando_usarlo": "Quando fai girare più agenti di provider diversi e ti serve coordinarli verso un obiettivo con budget e supervisione, invece di lanciarli e seguirli uno per uno.",
+  "url": "https://github.com/paperclipai/paperclip",
+  "stelle": 81131,
+  "ultimo_push": "2026-09-20",
+  "attivita": "molto attivo",
+  "attivita_emoji": "🟢",
+  "licenza": "MIT",
+  "linguaggio": "TypeScript",
+  "fonte": "link diretto da Marco 20/09/2026"
+ },
+ {
   "tipo": "sito",
   "macro": "B",
   "macro_nome": "Framework Agenti AI & assistenti personali",
