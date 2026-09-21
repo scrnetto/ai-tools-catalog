@@ -1,7 +1,7 @@
 ---
 name: ai-tools-catalog
 description: >-
-  Catalogo curato di 233 repository GitHub e 28 siti/servizi web di strumenti AI e dev
+  Catalogo curato di 234 repository GitHub e 28 siti/servizi web di strumenti AI e dev
   (coding agent & Claude Code, LLM e inferenza locale, RAG/memoria, OCR, generazione media
   video/immagini/3D/voce, sicurezza & supply-chain, dev tools, finanza/trading AI, ricerca AI),
   ciascuno con descrizione funzionale, stato di attività verificato su GitHub (stelle, ultimo
@@ -30,11 +30,11 @@ chat WhatsApp personale, ripuliti e arricchiti con metadati GitHub reali.
 2. Cita sempre **stato di attività** (🟢/🟡/🔴, stelle, ultimo push) e **licenza** se rilevante per
    l'uso nel progetto dell'utente.
 3. Se nessuna voce calza, dillo chiaramente: il catalogo è una raccolta personale, non esaustivo.
-4. I dati di attività sono stati verificati il **2026-09-20**: se serve precisione attuale,
+4. I dati di attività sono stati verificati il **2026-09-21**: se serve precisione attuale,
    ricontrolla il repo (le stelle/push cambiano nel tempo).
 
 ## Categorie e contenuto (indice rapido)
-- **A · Coding Agent, Claude Code & sviluppo AI-assistito** (35): Everything Claude Code, DeepSeek Harness (dsh), ponytail, Spec Kit, gstack, awesome-design-md, screenshot-to-code, impeccable, Cline, BMAD-METHOD, Marketing Skills, CLI-Anything, i-have-adhd, diagram-design, herdr, Ralph Loop, ai-website-cloner-template, Serena, blender-mcp, hallmark, Vibe Kanban, knowledge-work-plugins, t3code, Dyad, Claude SEO, Pixel Agents, worktrunk, Godogen, wigolo, teamai-cli, cc-blender-skill, BMAD-Speckit-SDD-Flow, Google Stitch, GitReverse, Emergent
+- **A · Coding Agent, Claude Code & sviluppo AI-assistito** (36): Everything Claude Code, DeepSeek Harness (dsh), ponytail, Spec Kit, gstack, awesome-design-md, screenshot-to-code, impeccable, Archify, Cline, BMAD-METHOD, Marketing Skills, CLI-Anything, i-have-adhd, diagram-design, herdr, Ralph Loop, ai-website-cloner-template, Serena, blender-mcp, hallmark, Vibe Kanban, knowledge-work-plugins, t3code, Dyad, Claude SEO, Pixel Agents, worktrunk, Godogen, wigolo, teamai-cli, cc-blender-skill, BMAD-Speckit-SDD-Flow, Google Stitch, GitReverse, Emergent
 - **B · Framework Agenti AI & assistenti personali** (31): OpenClaw, browser-use, odysseus, Agent-Reach, Paperclip, MiroFish, NanoBot, DSPy, buzz, PicoClaw, deepagents, agent-lightning, Parlant, OpenWorker, OpenSandbox, QM, Cloudflare Computer, OpenBot, OpenExecutive, OpenMausBot, Argent, Atomic Agent, sia, AgentConnect, SwarmClaw, J.A.R.V.I.S, JARVIS-PA-Lovable, Proactor.ai, agentskills.io, Runable, Aside
 - **C · LLM, modelli & inferenza locale** (17): Unsloth AI, OmniRoute, NanoChat, project-nomad, colibri, AirLLM, timesfm, Heretic, DwarfStar (ds4), Qwen3-Coder, whichllm, Magnitude, Kimi K2.5, IQuest-Coder-V1, SpikingBrain-7B, Homura-30B GGUF, Jev (TypeSafe AI)
 - **D · RAG, memoria agenti & knowledge base** (18): Graphify, MinerU, Headroom, last30days-skill, codebase-memory-mcp, DeepTutor, open-notebook, book-to-skill, cognee, karakeep, TencentDB-Agent-Memory, TencentDB Agent Memory, Memvid, Easy Dataset, PixelRAG, hister, VideoRAG, OPEN-UPSILON-LOGIC

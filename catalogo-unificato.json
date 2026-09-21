@@ -3728,6 +3728,22 @@
   "fonte": "link diretto da Marco 20/09/2026"
  },
  {
+  "tipo": "repo",
+  "macro": "A",
+  "macro_nome": "Coding Agent, Claude Code & sviluppo AI-assistito",
+  "nome": "Archify",
+  "cosa_fa": "Skill per coding agent (Claude Code, Codex CLI, Cursor, OpenCode) che genera diagrammi di architettura, workflow, sequenza, flusso dati e ciclo di vita come HTML autonomo, interattivo e con animazioni, esportabile. La differenza rispetto agli altri generatori: può leggere un repository reale e produrre una mappa ancorata al sorgente a un commit preciso, con il JSON tipizzato versionabile accanto al diagramma.",
+  "quando_usarlo": "Quando devi mostrare com'è fatto davvero un sistema e vuoi che il diagramma sia verificabile contro il codice, non disegnato a mano su ciò che si ricorda.",
+  "url": "https://github.com/tt-a1i/archify",
+  "stelle": 69046,
+  "ultimo_push": "2026-09-21",
+  "attivita": "molto attivo",
+  "attivita_emoji": "🟢",
+  "licenza": "MIT",
+  "linguaggio": "JavaScript",
+  "fonte": "link diretto da Marco 21/09/2026"
+ },
+ {
   "tipo": "sito",
   "macro": "B",
   "macro_nome": "Framework Agenti AI & assistenti personali",

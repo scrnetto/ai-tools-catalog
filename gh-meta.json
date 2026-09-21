@@ -2561,5 +2561,16 @@
   "open_issues": 5562,
   "desc": "The open-source app everyone uses to manage agents at work",
   "fetched": "2026-09-20"
+ },
+ "235": {
+  "slug": "tt-a1i/archify",
+  "stars": 69046,
+  "pushed": "2026-09-21",
+  "archived": false,
+  "lang": "JavaScript",
+  "license": "MIT",
+  "open_issues": 144,
+  "desc": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+  "fetched": "2026-09-21"
  }
 }

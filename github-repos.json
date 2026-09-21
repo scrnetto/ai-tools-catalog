@@ -2328,5 +2328,15 @@
     "fonte": "link diretto da Marco 20/09/2026",
     "macro": "B",
     "uso": "Quando fai girare più agenti di provider diversi e ti serve coordinarli verso un obiettivo con budget e supervisione, invece di lanciarli e seguirli uno per uno."
+  },
+  {
+    "id": 235,
+    "progetto": "Archify",
+    "descrizione": "Skill per coding agent (Claude Code, Codex CLI, Cursor, OpenCode) che genera diagrammi di architettura, workflow, sequenza, flusso dati e ciclo di vita come HTML autonomo, interattivo e con animazioni, esportabile. La differenza rispetto agli altri generatori: può leggere un repository reale e produrre una mappa ancorata al sorgente a un commit preciso, con il JSON tipizzato versionabile accanto al diagramma.",
+    "url": "https://github.com/tt-a1i/archify",
+    "categoria": "Claude Code Skill",
+    "fonte": "link diretto da Marco 21/09/2026",
+    "macro": "A",
+    "uso": "Quando devi mostrare com'è fatto davvero un sistema e vuoi che il diagramma sia verificabile contro il codice, non disegnato a mano su ciò che si ricorda."
   }
 ]

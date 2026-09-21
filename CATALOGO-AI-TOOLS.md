@@ -2,11 +2,11 @@
 
 > Catalogo unificato di **repository GitHub** e **siti/servizi web** raccolti dai
 > reel e link salvati in chat.
-> **233 repository** + **28 siti web**, organizzati per categoria operativa.
-> Stato attività verificato il **2026-09-20**. Legenda: 🟢 attivo (push ≤12 mesi) · 🟡 rallentato · 🔴 fermo · ⚫ archiviato · 🌐 sito web.
+> **234 repository** + **28 siti web**, organizzati per categoria operativa.
+> Stato attività verificato il **2026-09-21**. Legenda: 🟢 attivo (push ≤12 mesi) · 🟡 rallentato · 🔴 fermo · ⚫ archiviato · 🌐 sito web.
 
 ## Indice
-- **Coding Agent, Claude Code & sviluppo AI-assistito** (35)
+- **Coding Agent, Claude Code & sviluppo AI-assistito** (36)
 - **Framework Agenti AI & assistenti personali** (31)
 - **LLM, modelli & inferenza locale** (17)
 - **RAG, memoria agenti & knowledge base** (18)
@@ -29,6 +29,7 @@
 | [awesome-design-md](https://github.com/VoltAgent/awesome-design-md) | Raccolta di design system di decine di aziende note (Apple, Stripe, Linear, Notion e altre) in formato markdown, installabili come riferimento di stile dentro un coding agent. | Quando vuoi che l'agente segua il linguaggio visivo di un design system riconoscibile invece di inventare. | 🟢 ⭐116.6k · 2026-07-31 · MIT |
 | [screenshot-to-code](https://github.com/abi/screenshot-to-code) | Trasforma screenshot, mockup, file Figma e registrazioni dello schermo in codice frontend (HTML/Tailwind, React, Vue, Bootstrap, Ionic), provando a ricostruire anche interazioni e animazioni. | Quando parti da un'immagine o da un video di un'interfaccia e vuoi il codice corrispondente. | 🟢 ⭐79.3k · 2026-09-09 · MIT |
 | [impeccable](https://github.com/pbakaus/impeccable) | Skill di design per coding agent: definisce contesto visivo, tono, colori e tipografia del progetto e applica regole deterministiche per evitare le UI tutte uguali generate dall'AI. | Quando l'interfaccia generata dall'agente sa di template e vuoi imporre un'identita' visiva coerente. | 🟢 ⭐69.1k · 2026-09-19 · Apache-2.0 |
+| [Archify](https://github.com/tt-a1i/archify) | Skill per coding agent (Claude Code, Codex CLI, Cursor, OpenCode) che genera diagrammi di architettura, workflow, sequenza, flusso dati e ciclo di vita come HTML autonomo, interattivo e con animazioni, esportabile. La differenza rispetto agli altri generatori: può leggere un repository reale e produrre una mappa ancorata al sorgente a un commit preciso, con il JSON tipizzato versionabile accanto al diagramma. | Quando devi mostrare com'è fatto davvero un sistema e vuoi che il diagramma sia verificabile contro il codice, non disegnato a mano su ciò che si ricorda. | 🟢 ⭐69k · 2026-09-21 · MIT |
 | [Cline](https://github.com/cline/cline) | Coding agent open source che vive dentro l'IDE, nel terminale o come app desktop: analizza l'intero progetto, modifica piu' file, esegue comandi, installa dipendenze, lancia test e build e corregge gli errori da solo. Supporta OpenAI, Anthropic, Gemini, OpenRouter e modelli locali via Ollama o LM Studio, ed e' estendibile con MCP e plugin. | Quando vuoi un agente di codice dentro VS Code libero di scegliere il modello, compresi quelli locali. | 🟢 ⭐68.8k · 2026-09-19 · Apache-2.0 |
 | [BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) | Breakthrough Method for Agile AI Driven Development | Metodo agile per guidare lo sviluppo software con AI (planning strutturato). | 🟢 ⭐53.2k · 2026-09-19 |
 | [Marketing Skills](https://github.com/coreyhaines31/marketingskills) | Raccolta di skill di marketing per agenti di codice (CRO, copywriting, SEO, analytics, growth) con slash command dedicati; licenza MIT, compatibile con Claude Code, Codex, Cursor e Windsurf. | Quando l'agente deve produrre landing, email o audit SEO seguendo playbook gia' strutturati. | 🟢 ⭐50.9k · 2026-09-05 · MIT |
