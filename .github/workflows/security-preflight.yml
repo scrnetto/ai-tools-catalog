@@ -15,7 +15,18 @@ jobs:
   preflight:
     runs-on: ubuntu-latest
     steps:
+      # fetch-depth: 0 NON è un vezzo. Il valore predefinito è 1, e
+      # gitleaks-action calcola l'intervallo da scansionare come
+      # `<commit_precedente>^..<commit_attuale>`: in un clone profondo 1 quel
+      # commit non esiste, git risponde `unknown revision`, gitleaks esce con
+      # errore e — questa è la parte pericolosa — logga
+      # «scanned ~0 bytes / no leaks found in partial scan».
+      # Verificato il 20/08/2026 sulle esecuzioni #9 e #10: fallite senza aver
+      # guardato un solo byte. Senza la storia completa questo cancello non
+      # protegge, e quando è verde non è detto che abbia scansionato qualcosa.
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       # 1) Dipendenze vulnerabili (fallisce su high/critical). Rimuovi --audit-level per essere piu' severo.
       - name: npm audit
