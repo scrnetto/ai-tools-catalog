@@ -2,7 +2,7 @@
 
 > Catalogo unificato di **repository GitHub** e **siti/servizi web** raccolti dai
 > reel e link salvati in chat.
-> **234 repository** + **28 siti web**, organizzati per categoria operativa.
+> **235 repository** + **28 siti web**, organizzati per categoria operativa.
 > Stato attività verificato il **2026-09-21**. Legenda: 🟢 attivo (push ≤12 mesi) · 🟡 rallentato · 🔴 fermo · ⚫ archiviato · 🌐 sito web.
 
 ## Indice
@@ -12,7 +12,7 @@
 - **RAG, memoria agenti & knowledge base** (18)
 - **OCR & parsing documenti** (7)
 - **Generazione media (video, immagini, 3D, voce)** (38)
-- **Sicurezza & supply-chain** (23)
+- **Sicurezza & supply-chain** (24)
 - **Dev tools, produttività & librerie** (79)
 - **Finanza & trading AI** (6)
 - **Ricerca AI, world models & dati vettoriali** (7)
@@ -218,6 +218,7 @@
 | [SearchPhone](https://github.com/HackUnderway/SearchPhone) | Toolkit OSINT per numeri di telefono: validazione e operatore via Numverify, ricerca parallela su Google, DuckDuckGo, Reddit e GitHub, controllo sul database infostealer di Hudson Rock e report JSON e PDF automatici. | Quando devi verificare a chi risale un numero durante un'indagine autorizzata. | 🟢 ⭐2k · 2026-08-24 · MIT |
 | [Mysterium Node](https://github.com/mysteriumnetwork/node) | Nodo VPN decentralizzato basato su WireGuard, distribuito via Docker: mette la propria banda a disposizione di una rete globale in cambio di un compenso. | Quando vuoi far parte di una rete VPN decentralizzata invece di usare un provider centrale. | 🟢 ⭐1.4k · 2026-09-18 · GPL-3.0 |
 | [Ravage](https://github.com/duriantaco/ravage) | CLI di security testing per applicazioni web di cui si ha autorizzazione: recon deterministico, validazione e loop di attacco opzionale guidato da modello, con scope, autenticazione ed evidenze tracciate. | Quando devi testare un'applicazione web tua o autorizzata tenendo traccia delle evidenze. | 🟢 ⭐47 · 2026-09-16 · Apache-2.0 |
+| [Archify (Salah-XD)](https://github.com/Salah-XD/archify) | Estensione Chrome MV3 local-first che analizza una web app direttamente dal browser: ricostruisce l'architettura del frontend e valuta la sicurezza lato client, senza che i dati escano dalla macchina. Copre il caso in cui il sorgente non è disponibile. Omonima ma indipendente dalla skill di diagrammi tt-a1i/archify. | Quando devi farti un'idea di architettura e sicurezza lato client di una web app di cui non hai il repository — un primo sguardo, non un referto: non vede il backend. | 🟢 ⭐42 · 2026-08-22 · Apache-2.0 |
 | [North Star](https://nstarlive.com) | Browser di ricerca OSINT che unisce indagine visiva, di identita', crypto e di rete: globo con oltre 250.000 telecamere pubbliche, ricerca username multipiattaforma, tracciamento di wallet su decine di chain, geolocalizzazione di immagini e strumenti radio. | Quando un'indagine su fonti aperte deve incrociare piu' tipi di dato in un'unica interfaccia. | 🌐 sito |
 | [Fingerprint.to](https://fingerprint.to) | Motore di ricerca su dati pubblici che esegue controlli in parallelo e restituisce i risultati in streaming: username o email su oltre 700 piattaforme e ricerca di persone tramite fonti di pubblico registro. | Quando serve una verifica rapida su fonti aperte senza aspettare la fine di tutte le query. | 🌐 sito |
 | [Revealer](https://revealer.us) | Servizio OSINT che cerca uno username o un indirizzo email su centinaia di moduli-fonte, correla i profili trovati e consulta archivi di data breach mostrando tipo di fonte, data e categorie di campi esposti. Dichiara di non mostrare mai i valori delle password. | Quando devi misurare l'esposizione pubblica di un identificativo, a partire dai tuoi, in un assessment. | 🌐 sito |

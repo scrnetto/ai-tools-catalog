@@ -2572,5 +2572,16 @@
   "open_issues": 144,
   "desc": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
   "fetched": "2026-09-21"
+ },
+ "236": {
+  "slug": "Salah-XD/archify",
+  "stars": 42,
+  "pushed": "2026-08-22",
+  "archived": false,
+  "lang": "TypeScript",
+  "license": "Apache-2.0",
+  "open_issues": 0,
+  "desc": "Understand Software. Architecture intelligence + client-side security for any web app, right in your browser. Local-first Chrome (MV3) extension.",
+  "fetched": "2026-09-21"
  }
 }

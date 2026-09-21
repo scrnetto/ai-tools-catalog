@@ -1,7 +1,7 @@
 ---
 name: ai-tools-catalog
 description: >-
-  Catalogo curato di 234 repository GitHub e 28 siti/servizi web di strumenti AI e dev
+  Catalogo curato di 235 repository GitHub e 28 siti/servizi web di strumenti AI e dev
   (coding agent & Claude Code, LLM e inferenza locale, RAG/memoria, OCR, generazione media
   video/immagini/3D/voce, sicurezza & supply-chain, dev tools, finanza/trading AI, ricerca AI),
   ciascuno con descrizione funzionale, stato di attività verificato su GitHub (stelle, ultimo
@@ -40,7 +40,7 @@ chat WhatsApp personale, ripuliti e arricchiti con metadati GitHub reali.
 - **D · RAG, memoria agenti & knowledge base** (18): Graphify, MinerU, Headroom, last30days-skill, codebase-memory-mcp, DeepTutor, open-notebook, book-to-skill, cognee, karakeep, TencentDB-Agent-Memory, TencentDB Agent Memory, Memvid, Easy Dataset, PixelRAG, hister, VideoRAG, OPEN-UPSILON-LOGIC
 - **E · OCR & parsing documenti** (7): markitdown, meetily, OfficeCLI, Unlimited-OCR, pdf-inspector, GLM-OCR, Annota AI
 - **F · Generazione media (video, immagini, 3D, voce)** (38): MoneyPrinterTurbo, Deep-Live-Cam, OpenMontage, voicebox, VibeVoice, hyperframes, upscayl, chatterbox, video-use, lingbot-map, img2threejs, text-to-cad, HeyGem, palmier-pro, Supertonic, TRELLIS, Qwen3-TTS, Z-Image, LTX-Video, video-shotcraft, OpenShorts, SAM Audio, davinci-resolve-mcp, Diffusion Studio Editor, ASCILINE, JoyAI-Video-Edit, anything2explainer, GLM-Image, Pusa V1.0 (Pusa-VidGen), ComfyUI-Ref2VA-VSA, GenieRedux, ByteDance Seedance 2.0, ByteDance Seed, Mistral AI - Voxtral, Motion, Higgsfield AI, Dreamina (CapCut), Drafted
-- **G · Sicurezza & supply-chain** (23): Ghidra, strix, Trivy, maigret, AdGuard Home, bitchat, Anthropic-Cybersecurity-Skills, authentik, NemoClaw, simplex-chat, SkillSpector, amnezia-client, holehe, CubeSandbox, flowsint, Reticulum, Bumblebee, SearchPhone, Mysterium Node, Ravage, North Star, Fingerprint.to, Revealer
+- **G · Sicurezza & supply-chain** (24): Ghidra, strix, Trivy, maigret, AdGuard Home, bitchat, Anthropic-Cybersecurity-Skills, authentik, NemoClaw, simplex-chat, SkillSpector, amnezia-client, holehe, CubeSandbox, flowsint, Reticulum, Bumblebee, SearchPhone, Mysterium Node, Ravage, Archify (Salah-XD), North Star, Fingerprint.to, Revealer
 - **H · Dev tools, produttività & librerie** (79): prompts.chat (awesome-chatgpt-prompts), free-for-dev, Stirling-PDF, LocalSend, hoppscotch, Dear ImGui, AFFiNE, protobuf, MediaCrawler, Pake, Penpot, Win11Debloat, twenty, Motrix, Ghost, cypress, supervision, ruff, htmx, Puter, appsmith, croc, posthog, gods-eye-view, open-code-review, CasaOS, SmartTube, CloakBrowser, Anki, jenkins, {fmt}, PLFM_RADAR, Invidious, turso, Pascal Editor, superfile, witr, OpenObserve, OpenLogi, Tolaria, PhotoGIMP, Capacitor, LibreTranslate, aisuite, outlines, harper, TREK, vphone-cli, stremio-web, romm, openship, CuPy, Escrcpy, Pumpkin, dicebear, cordis, GeoLibre, docker-android, THREEUI, FckSignups, Lunar, TUIOS, NuvioMobile, iloader, fli, databasement, OpenReply, LogTape, NodeGraphQt, UniFace, prod-FARM-IOS-Core, Skylos, karukan, Fishertiger, TestSprite, Google Code Wiki, Render, Codeberg, SceneAI
 - **I · Finanza & trading AI** (6): TradingAgents, ai-hedge-fund, Kronos, OpenAlice, Securo, opennews-mcp
 - **J · Ricerca AI, world models & dati vettoriali** (7): awesome-generative-ai-guide, zvec, AutoResearchClaw, SEAL (Self-Adapting LM), Jina AI, Google EmbeddingGemma, Artificial Analysis

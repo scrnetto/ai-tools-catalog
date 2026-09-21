@@ -2338,5 +2338,15 @@
     "fonte": "link diretto da Marco 21/09/2026",
     "macro": "A",
     "uso": "Quando devi mostrare com'è fatto davvero un sistema e vuoi che il diagramma sia verificabile contro il codice, non disegnato a mano su ciò che si ricorda."
+  },
+  {
+    "id": 236,
+    "progetto": "Archify (Salah-XD)",
+    "descrizione": "Estensione Chrome MV3 local-first che analizza una web app direttamente dal browser: ricostruisce l'architettura del frontend e valuta la sicurezza lato client, senza che i dati escano dalla macchina. Copre il caso in cui il sorgente non è disponibile. Omonima ma indipendente dalla skill di diagrammi tt-a1i/archify.",
+    "url": "https://github.com/Salah-XD/archify",
+    "categoria": "Sicurezza",
+    "fonte": "trovato cercando gli omonimi di tt-a1i/archify, 21/09/2026",
+    "macro": "G",
+    "uso": "Quando devi farti un'idea di architettura e sicurezza lato client di una web app di cui non hai il repository — un primo sguardo, non un referto: non vede il backend."
   }
 ]

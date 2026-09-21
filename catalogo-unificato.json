@@ -3744,6 +3744,22 @@
   "fonte": "link diretto da Marco 21/09/2026"
  },
  {
+  "tipo": "repo",
+  "macro": "G",
+  "macro_nome": "Sicurezza & supply-chain",
+  "nome": "Archify (Salah-XD)",
+  "cosa_fa": "Estensione Chrome MV3 local-first che analizza una web app direttamente dal browser: ricostruisce l'architettura del frontend e valuta la sicurezza lato client, senza che i dati escano dalla macchina. Copre il caso in cui il sorgente non è disponibile. Omonima ma indipendente dalla skill di diagrammi tt-a1i/archify.",
+  "quando_usarlo": "Quando devi farti un'idea di architettura e sicurezza lato client di una web app di cui non hai il repository — un primo sguardo, non un referto: non vede il backend.",
+  "url": "https://github.com/Salah-XD/archify",
+  "stelle": 42,
+  "ultimo_push": "2026-08-22",
+  "attivita": "molto attivo",
+  "attivita_emoji": "🟢",
+  "licenza": "Apache-2.0",
+  "linguaggio": "TypeScript",
+  "fonte": "trovato cercando gli omonimi di tt-a1i/archify, 21/09/2026"
+ },
+ {
   "tipo": "sito",
   "macro": "B",
   "macro_nome": "Framework Agenti AI & assistenti personali",
