@@ -30,7 +30,7 @@ chat WhatsApp personale, ripuliti e arricchiti con metadati GitHub reali.
 2. Cita sempre **stato di attività** (🟢/🟡/🔴, stelle, ultimo push) e **licenza** se rilevante per
    l'uso nel progetto dell'utente.
 3. Se nessuna voce calza, dillo chiaramente: il catalogo è una raccolta personale, non esaustivo.
-4. I dati di attività sono stati verificati il **2026-09-21**: se serve precisione attuale,
+4. I dati di attività sono stati verificati il **2026-09-19**: se serve precisione attuale,
    ricontrolla il repo (le stelle/push cambiano nel tempo).
 
 ## Categorie e contenuto (indice rapido)

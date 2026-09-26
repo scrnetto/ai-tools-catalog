@@ -3,7 +3,7 @@
 > Catalogo unificato di **repository GitHub** e **siti/servizi web** raccolti dai
 > reel e link salvati in chat.
 > **235 repository** + **28 siti web**, organizzati per categoria operativa.
-> Stato attività verificato il **2026-09-21**. Legenda: 🟢 attivo (push ≤12 mesi) · 🟡 rallentato · 🔴 fermo · ⚫ archiviato · 🌐 sito web.
+> Stato attività verificato il **2026-09-19**. Legenda: 🟢 attivo (push ≤12 mesi) · 🟡 rallentato · 🔴 fermo · ⚫ archiviato · 🌐 sito web.
 
 ## Indice
 - **Coding Agent, Claude Code & sviluppo AI-assistito** (36)
@@ -200,7 +200,7 @@
 |---|---|---|---|
 | [Ghidra](https://github.com/NationalSecurityAgency/ghidra) | Framework di reverse engineering della NSA: disassembly, decompilazione, analisi del control flow, grafi e scripting su binari di cui non hai il sorgente. | Quando devi analizzare un eseguibile compilato: malware, firmware o software legacy senza sorgenti. | 🟢 ⭐79k · 2026-09-18 · Apache-2.0 |
 | [strix](https://github.com/usestrix/strix) | Agenti AI per il penetration testing applicativo: non solo analisi statica, ma exploit reali eseguiti in modo autonomo. | Quando vuoi affiancare al SAST un pentest automatizzato che verifichi le vulnerabilita sfruttabili davvero. | 🟢 ⭐63.7k · 2026-09-18 · Apache-2.0 |
-| [Trivy](https://github.com/aquasecurity/trivy) | Scanner open-source per vulnerabilità, secret e misconfigurazioni | Scanner di sicurezza per vulnerabilità, secret e misconfig (standard di settore). | 🟢 ⭐38k · 2026-09-18 · Apache-2.0 |
+| [Trivy](https://github.com/aquasecurity/trivy) | Scanner open-source per vulnerabilità, secret e misconfigurazioni | Scanner di sicurezza per vulnerabilità, secret e misconfig (standard di settore). ⚠️ Usare ≥0.71.1 e mai la 0.69.4: a marzo 2026 la supply chain è stata compromessa (GHSA-69fq-xp46-6x23, binario 0.69.4 e tag di trivy-action/setup-trivy riscritti, furto di segreti); path traversal corretto in 0.71.1 (GHSA-mcj4-mphf-j9ff). In CI fissare le action per SHA. | 🟢 ⭐38k · 2026-09-18 · Apache-2.0 |
 | [maigret](https://github.com/soxoj/maigret) | Tool OSINT che, partendo da uno username, cerca su migliaia di siti, collega i profili e costruisce un dossier digitale di una persona usando solo dati pubblici. | Quando devi fare ricognizione OSINT su uno username e mappare la presenza online di una persona su molti siti. | 🟢 ⭐37.8k · 2026-09-19 · MIT |
 | [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) | Server DNS self-hostabile che blocca pubblicita' e tracker per l'intera rete domestica, senza installare nulla sui singoli dispositivi. | Quando vuoi filtrare tracker e pubblicita' a livello di rete invece che browser per browser. | 🟢 ⭐37k · 2026-09-18 · GPL-3.0 |
 | [bitchat](https://github.com/permissionlesstech/bitchat) | App di messaggistica decentralizzata che funziona anche completamente offline tramite mesh Bluetooth, senza server centrali. | Quando ti serve comunicare senza infrastruttura di rete o senza affidarti a un server centrale. | 🟢 ⭐36.3k · 2026-09-13 · Unlicense |

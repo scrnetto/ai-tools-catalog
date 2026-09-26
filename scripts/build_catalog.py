@@ -93,6 +93,14 @@ PRIVATA = 'Z'
 def today():
     return datetime.date.today()
 
+def data_verifica(meta):
+    """La data da dichiarare come «verificati il»: quella del recupero piu' vecchio in
+    gh-meta.json, cioe' il giorno a cui *tutte* le voci sono state controllate davvero.
+    Non today(): un rebuild senza --refresh dichiarava verificati oggi dei metadati vecchi
+    di giorni (accaduto il 2026-09-26, 232 voci su 235 erano del 19/09)."""
+    date = sorted((m.get('fetched') or '')[:10] for m in meta.values() if m.get('fetched'))
+    return date[0] if date else today().isoformat()
+
 def stato(m, S):
     if not m or m.get('archived'):
         return ('⚫', S['archiviato'])
@@ -150,7 +158,7 @@ def indice_categorie(unified, L):
         out.append(f"- **{c} · {MACRO[c]}** ({len(items)}): {nomi}")
     return out
 
-def sync_skill_md(unified, n_repo, n_sito, L):
+def sync_skill_md(unified, n_repo, n_sito, L, verificato):
     """Riallinea le parti dinamiche di skill/SKILL.md (conteggi nella description, data di
     verifica, indice categorie). E' la `description` a decidere quando Claude invoca la skill:
     se resta indietro il catalogo risulta sottodimensionato. Le sostituzioni che non trovano
@@ -174,7 +182,7 @@ def sync_skill_md(unified, n_repo, n_sito, L):
         lambda m: f'Catalogo curato di {n_repo} repository GitHub e {n_sito} siti/servizi web',
         'conteggi nella description')
     sub(r'verificati il \*\*\d{4}-\d{2}-\d{2}\*\*',
-        lambda m: f'verificati il **{today().isoformat()}**', 'data di verifica')
+        lambda m: f'verificati il **{verificato}**', 'data di verifica')
     blocco = '\n'.join(indice_categorie(unified, L))
     sub(r'^(## Categorie e contenuto \(indice rapido\)\n).*?(?=^## )',
         lambda m: m.group(1) + blocco + '\n\n', 'indice categorie', flags=re.M | re.S)
@@ -226,7 +234,7 @@ def main():
     OUT.append(L['intro'])
     OUT.append(f"> {cfg['fonte']}.")
     OUT.append(L['conteggi'].format(r=n_repo, s=n_sito))
-    OUT.append(L['verifica'].format(d=today().isoformat()) + L['legenda'])
+    OUT.append(L['verifica'].format(d=data_verifica(meta)) + L['legenda'])
     OUT.append('')
     OUT.append(L['indice'])
     for c in ORDER:
@@ -258,7 +266,7 @@ def main():
     open(os.path.join(ROOT, 'CATALOGO-AI-TOOLS.md'), 'w', encoding='utf-8').write(md)
 
     # --- SKILL.md: riallinea conteggi, data e indice ---
-    skill_md, warn = sync_skill_md(unified, n_repo, n_sito, L)
+    skill_md, warn = sync_skill_md(unified, n_repo, n_sito, L, data_verifica(meta))
 
     # --- copia nella skill globale ---
     if os.path.isdir(SKILL):

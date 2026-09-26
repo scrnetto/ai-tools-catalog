@@ -417,7 +417,7 @@
     "categoria": "Sicurezza",
     "fonte": "devop.sbs 06/06/2026 (reel DZP0vjFMn_q)",
     "macro": "G",
-    "uso": "Scanner di sicurezza per vulnerabilità, secret e misconfig (standard di settore)."
+    "uso": "Scanner di sicurezza per vulnerabilità, secret e misconfig (standard di settore). ⚠️ Usare ≥0.71.1 e mai la 0.69.4: a marzo 2026 la supply chain è stata compromessa (GHSA-69fq-xp46-6x23, binario 0.69.4 e tag di trivy-action/setup-trivy riscritti, furto di segreti); path traversal corretto in 0.71.1 (GHSA-mcj4-mphf-j9ff). In CI fissare le action per SHA."
   },
   {
     "id": 44,
