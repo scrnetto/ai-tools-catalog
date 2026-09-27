@@ -64,8 +64,8 @@ catalog.
 |---|---|
 | Claude Code | ✅ In `claude -p`, reading the skill's files (outside the working directory) needs `--allowedTools Read`; interactive sessions just ask |
 | OpenCode 1.18.31 | ✅ with `opencode/big-pickle`. The local `qwen3-coder` model wrote the tool call as plain text instead of executing it, then invented URLs and stars: pick a model with working tool calling |
-| Codex CLI 0.136.0 (`gpt-5.5`) | ✅ Codex's Linux sandbox (bubblewrap) needs unprivileged user namespaces: where the OS forbids them, Codex sees the skill but cannot read its files, and falls back to web search |
-| Antigravity CLI 1.0.1 | ✅ once linked into `~/.gemini/config/skills/` — it does not read `~/.agents/skills/` globally |
+| Codex CLI 0.157.1 (`gpt-5.6-terra`) | ✅ only with the sandbox off (`-s danger-full-access`). Codex's Linux sandbox (bubblewrap) needs unprivileged user namespaces; Ubuntu ≥ 23.10 blocks them through AppArmor (`kernel.apparmor_restrict_unprivileged_userns = 1`), and then Codex sees the skill but cannot read its files — it falls back to web search, or to what it already knows |
+| Antigravity CLI 1.2.12 | ✅ once linked into `~/.gemini/config/skills/` — it does not read `~/.agents/skills/` globally |
 
 Cursor, GitHub Copilot and Gemini CLI were not tested: they read `~/.agents/skills/` according to
 their documentation. `install-skill.ps1` was not run on Windows.
