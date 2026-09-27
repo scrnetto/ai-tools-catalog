@@ -207,6 +207,25 @@ def sync_skill_md(unified, n_repo, n_sito, L, verificato):
     open(SKILL_SRC, 'w', encoding='utf-8').write(txt)
     return txt, warn
 
+def sync_readme_badges(n_repo, n_sito, verificato):
+    """Riallinea nel README i badge del numero di voci e della data di verifica: sono gli unici
+    badge che invecchiano. Come per SKILL.md, un pattern che non trova esattamente un match
+    viene segnalato invece di passare in silenzio."""
+    path = os.path.join(ROOT, 'README.md')
+    if not os.path.isfile(path):
+        return []
+    txt, warn = open(path, encoding='utf-8').read(), []
+    for pattern, repl, cosa in (
+        (r'badge/catalog-\d+%20repos%20%2B%20\d+%20sites-',
+         f'badge/catalog-{n_repo}%20repos%20%2B%20{n_sito}%20sites-', 'badge conteggi'),
+        (r'badge/activity%20checked-\d{4}--\d{2}--\d{2}-',
+         f"badge/activity%20checked-{verificato.replace('-', '--')}-", 'badge data di verifica')):
+        txt, n = re.subn(pattern, repl, txt)
+        if n != 1:
+            warn.append(f"⚠️ README.md: {cosa} non aggiornato ({n} match, atteso 1)")
+    open(path, 'w', encoding='utf-8').write(txt)
+    return warn
+
 def main():
     cfg   = config()
     L     = LOCALI[cfg['lingua']]
@@ -284,6 +303,9 @@ def main():
 
     # --- SKILL.md: riallinea conteggi, data e indice ---
     skill_md, warn = sync_skill_md(unified, n_repo, n_sito, L, data_verifica(meta))
+
+    # --- README: i due badge dinamici (conteggi e data di verifica) ---
+    warn += sync_readme_badges(n_repo, n_sito, data_verifica(meta))
 
     # --- copia nella skill globale ---
     aggiornate, visti = [], set()

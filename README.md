@@ -1,5 +1,12 @@
 # WhatsApp → AI/Dev tools catalog + agent skill
 
+[![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
+[![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
+[![Python 3, stdlib only](https://img.shields.io/badge/python-3%20%C2%B7%20stdlib%20only-3776AB.svg?logo=python&logoColor=white)](scripts/)
+[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-compatible-8A2BE2.svg)](https://agentskills.io)
+[![Catalog](https://img.shields.io/badge/catalog-315%20repos%20%2B%2029%20sites-success.svg)](CATALOGO-AI-TOOLS.md)
+[![Activity checked](https://img.shields.io/badge/activity%20checked-2026--09--27-informational.svg)](gh-meta.json)
+
 Reads the reels and links you save in a WhatsApp chat (typically the "message yourself" chat),
 extracts **GitHub repositories** and **websites/services** for AI and dev tooling, checks how alive
 each project is on GitHub, and keeps a **catalog that your coding agent can query from any
@@ -173,6 +180,7 @@ The token is read in this order — first match wins:
 | `skill/SKILL.md` | Skill definition, in the open Agent Skills format (redistributable) |
 | `.claude/agents/` · `.claude/commands/` | Update agent and slash command |
 | `install-skill.sh` · `install-skill.ps1` | Install the skill on a new machine, for every agent |
+| `LICENSE` · `LICENSE-DATA` | MIT for the code, CC BY 4.0 for the catalog data — see [License](#license) |
 
 ## Privacy
 Files holding **personal WhatsApp content** (raw message dump, summaries, login screenshots, page
@@ -182,3 +190,13 @@ snapshots), `config.json`, and non-dev entries (`siti-personali.json`) are kept 
 Entries tagged `macro: "Z"` (personal content) are additionally dropped by `build_catalog.py` before
 the outputs are generated — a second line of defence, so a personal entry that slips into a tracked
 file still never reaches the published catalog.
+
+## License
+- **Code** — scripts, installers, `skill/SKILL.md`, the agent and command in `.claude/`: [MIT](LICENSE).
+- **Catalog data** — the descriptions and "when to use it" notes in `github-repos.json`,
+  `siti-web.json`, `catalogo-unificato.json` and `CATALOGO-AI-TOOLS.md`:
+  [CC BY 4.0](LICENSE-DATA). Reuse them freely, crediting this repository.
+
+Stars, last-push dates and licenses of the catalogued projects are facts taken from GitHub, not
+authored here. **This catalog's licenses do not apply to the projects it lists**: each keeps its own
+license, shown in the catalog where GitHub declares one.
