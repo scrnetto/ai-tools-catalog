@@ -2,7 +2,8 @@
 
 Automates what used to be done by hand: read the **WhatsApp chat configured in `config.json`**,
 catalog the GitHub repos and websites shared there (mostly Instagram reels about AI/coding), and
-keep the **global Claude Code skill** — queryable from any project — up to date.
+keep the **global agent skill** — queryable from any project, by any agent that supports
+the Agent Skills format — up to date.
 
 ## How to run it
 - **Slash command:** `/sync-ai-catalog` (needs WhatsApp Web logged in, unless Phase A is disabled)

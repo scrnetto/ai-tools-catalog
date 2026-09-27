@@ -1,6 +1,13 @@
 #
-# Installa la skill Claude Code "ai-tools-catalog" su questo computer.
-# Funziona su qualsiasi PC Windows dove è presente Claude Code (richiede python3).
+# Installa la skill "ai-tools-catalog" su questo computer Windows, per tutti i coding agent.
+#
+# La skill segue lo standard aperto Agent Skills (https://agentskills.io): una cartella con un
+# SKILL.md. La si installa in %USERPROFILE%\.agents\skills\, la cartella comune letta da
+# OpenCode, Codex, Gemini CLI, Cursor, GitHub Copilot e dagli altri agent che adottano lo
+# standard. Due agent non la leggono a livello globale e ricevono una junction alla stessa
+# cartella (non richiede privilegi di amministratore, a differenza dei symlink): Claude Code
+# (.claude\skills\) e Antigravity (.gemini\config\skills\, solo se .gemini esiste).
+# Richiede python3 per rigenerare il catalogo (senza, copia i file gia' generati).
 #
 # Uso:
 #   git clone <questo-repo>; cd <repo>; .\install-skill.ps1
@@ -9,10 +16,38 @@
 $ErrorActionPreference = "Stop"
 
 $SRC = Split-Path -Parent $MyInvocation.MyCommand.Definition
-$DEST = Join-Path $env:USERPROFILE ".claude\skills\ai-tools-catalog"
+$DEST = Join-Path $env:USERPROFILE ".agents\skills\ai-tools-catalog"
+$LINKS = @(Join-Path $env:USERPROFILE ".claude\skills\ai-tools-catalog")
+if (Test-Path (Join-Path $env:USERPROFILE ".gemini")) {
+    $LINKS += Join-Path $env:USERPROFILE ".gemini\config\skills\ai-tools-catalog"
+}
 
 Write-Host "-> Installo la skill in: $DEST"
 New-Item -ItemType Directory -Force -Path $DEST | Out-Null
+
+foreach ($LINK in $LINKS) {
+    # Un'installazione precedente stava direttamente in .claude\skills: se e' una cartella vera
+    # con soli file generati, la si sostituisce con la junction. Qualunque altro contenuto non
+    # si tocca.
+    $item = Get-Item $LINK -ErrorAction SilentlyContinue
+    if ($item -and -not $item.LinkType) {
+        $generati = @("SKILL.md", "CATALOGO-AI-TOOLS.md", "catalogo.json")
+        $extra = Get-ChildItem $LINK -Force | Where-Object { $generati -notcontains $_.Name }
+        if ($extra) {
+            Write-Host "ATTENZIONE: $LINK contiene file non generati da questo script:"
+            $extra | ForEach-Object { Write-Host "  $($_.Name)" }
+            Write-Host "  Spostali o cancellali a mano, poi rilancia."
+            exit 1
+        }
+        Write-Host "-> Sostituisco la vecchia installazione in $LINK con una junction"
+        Remove-Item $LINK -Recurse -Force
+        $item = $null
+    }
+    if (-not $item) {
+        New-Item -ItemType Directory -Force -Path (Split-Path -Parent $LINK) | Out-Null
+        New-Item -ItemType Junction -Path $LINK -Target $DEST | Out-Null
+    }
+}
 
 # 1) definizione della skill (statica)
 Copy-Item "$SRC\skill\SKILL.md" "$DEST\SKILL.md" -Force
@@ -41,4 +76,6 @@ if ($pythonExe) {
 }
 
 Write-Host "Skill 'ai-tools-catalog' installata."
-Write-Host "  Da qualsiasi progetto Claude Code chiedi p.es.: `"che tool open-source esiste per fare OCR?`""
+Write-Host "  $DEST  (standard Agent Skills)"
+foreach ($LINK in $LINKS) { Write-Host "  $LINK -> junction" }
+Write-Host "  Da qualsiasi progetto chiedi all'agente p.es.: `"che tool open-source esiste per fare OCR?`""

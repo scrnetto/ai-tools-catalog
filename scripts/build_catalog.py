@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Genera il catalogo unificato (repo GitHub + siti web) e aggiorna la skill globale
-Claude Code 'ai-tools-catalog'.
+'ai-tools-catalog' (formato Agent Skills, letto da Claude Code, OpenCode, Codex, Gemini CLI...).
 
 Input  (nella root del progetto):
     config.json                -> opzionale (vedi config.example.json): titolo e fonte del catalogo
@@ -15,7 +15,7 @@ Output:
     CATALOGO-AI-TOOLS.md       (root progetto)
     skill/SKILL.md             (root progetto: conteggi, data di verifica e indice categorie
                                 rigenerati dai dati reali; il resto della prosa resta invariato)
-    e copia dei tre (json -> catalogo.json) in ~/.claude/skills/ai-tools-catalog/
+    e copia dei tre (json -> catalogo.json) in ogni cartella di SKILL_DIRS che esiste
 
 Uso:
     python3 scripts/build_catalog.py
@@ -23,7 +23,11 @@ Uso:
 import json, os, re, datetime
 
 ROOT  = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SKILL = os.path.expanduser('~/.claude/skills/ai-tools-catalog')
+# ~/.agents/skills e' la cartella comune agli agent che adottano lo standard Agent Skills;
+# Claude Code legge solo ~/.claude/skills. install-skill.sh ne fa un symlink, quindi di norma
+# le due voci sono la stessa cartella: si scrive una volta per percorso reale.
+SKILL_DIRS = [os.path.expanduser(p) for p in ('~/.agents/skills/ai-tools-catalog',
+                                              '~/.claude/skills/ai-tools-catalog')]
 SKILL_SRC = os.path.join(ROOT, 'skill', 'SKILL.md')
 
 # I nomi delle macro-categorie e la prosa generata dipendono da catalogo.lingua in config.json.
@@ -160,7 +164,7 @@ def indice_categorie(unified, L):
 
 def sync_skill_md(unified, n_repo, n_sito, L, verificato):
     """Riallinea le parti dinamiche di skill/SKILL.md (conteggi nella description, data di
-    verifica, indice categorie). E' la `description` a decidere quando Claude invoca la skill:
+    verifica, indice categorie). E' la `description` a decidere quando l'agente invoca la skill:
     se resta indietro il catalogo risulta sottodimensionato. Le sostituzioni che non trovano
     esattamente un match vengono segnalate invece di fallire in silenzio."""
     if not os.path.isfile(SKILL_SRC):
@@ -186,6 +190,19 @@ def sync_skill_md(unified, n_repo, n_sito, L, verificato):
     blocco = '\n'.join(indice_categorie(unified, L))
     sub(r'^(## Categorie e contenuto \(indice rapido\)\n).*?(?=^## )',
         lambda m: m.group(1) + blocco + '\n\n', 'indice categorie', flags=re.M | re.S)
+
+    # Limiti dello standard Agent Skills (agentskills.io/specification): oltre questi alcuni
+    # agent scartano la skill, e lo fanno senza dirlo.
+    fm = re.match(r'---\n(.*?)\n---\n', txt, re.S)
+    nome = re.search(r'^name:\s*(\S+)', fm.group(1), re.M) if fm else None
+    desc = re.search(r'^description:\s*>-\n((?:  .*\n?)+)', fm.group(1) + '\n', re.M) if fm else None
+    if not nome or not re.fullmatch(r'[a-z0-9]+(-[a-z0-9]+)*', nome.group(1)) or len(nome.group(1)) > 64:
+        warn.append("⚠️ SKILL.md: `name` assente o non conforme allo standard Agent Skills")
+    if not desc:
+        warn.append("⚠️ SKILL.md: `description` non trovata (atteso un blocco `>-`)")
+    elif len(' '.join(desc.group(1).split())) > 1024:
+        warn.append(f"⚠️ SKILL.md: `description` di {len(' '.join(desc.group(1).split()))} "
+                    "caratteri, lo standard Agent Skills ne ammette 1024")
 
     open(SKILL_SRC, 'w', encoding='utf-8').write(txt)
     return txt, warn
@@ -269,14 +286,21 @@ def main():
     skill_md, warn = sync_skill_md(unified, n_repo, n_sito, L, data_verifica(meta))
 
     # --- copia nella skill globale ---
-    if os.path.isdir(SKILL):
-        open(os.path.join(SKILL, 'CATALOGO-AI-TOOLS.md'), 'w', encoding='utf-8').write(md)
-        json.dump(unified, open(os.path.join(SKILL, 'catalogo.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    aggiornate, visti = [], set()
+    for d in SKILL_DIRS:
+        if not os.path.isdir(d) or os.path.realpath(d) in visti:
+            continue
+        visti.add(os.path.realpath(d))
+        open(os.path.join(d, 'CATALOGO-AI-TOOLS.md'), 'w', encoding='utf-8').write(md)
+        json.dump(unified, open(os.path.join(d, 'catalogo.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
         if skill_md is not None:
-            open(os.path.join(SKILL, 'SKILL.md'), 'w', encoding='utf-8').write(skill_md)
-        skill_msg = f"skill aggiornata: {SKILL}"
+            open(os.path.join(d, 'SKILL.md'), 'w', encoding='utf-8').write(skill_md)
+        aggiornate.append(d)
+    if aggiornate:
+        skill_msg = f"skill aggiornata: {', '.join(aggiornate)}"
     else:
-        skill_msg = f"⚠️ skill non trovata in {SKILL} (catalogo generato solo nel progetto)"
+        skill_msg = (f"⚠️ skill non trovata in {' né in '.join(SKILL_DIRS)} "
+                     "(catalogo generato solo nel progetto: esegui install-skill.sh)")
 
     by_cat = {c: sum(1 for u in unified if u['macro'] == c) for c in ORDER}
     print(f"Catalogo generato: {len(unified)} voci ({n_repo} repo + {n_sito} siti)")

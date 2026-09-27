@@ -1,16 +1,18 @@
-# WhatsApp → AI/Dev tools catalog + Claude Code skill
+# WhatsApp → AI/Dev tools catalog + agent skill
 
 Reads the reels and links you save in a WhatsApp chat (typically the "message yourself" chat),
 extracts **GitHub repositories** and **websites/services** for AI and dev tooling, checks how alive
-each project is on GitHub, and keeps a **catalog that Claude Code can query from any project**
-through a global skill.
+each project is on GitHub, and keeps a **catalog that your coding agent can query from any
+project** through a global skill — Claude Code, OpenCode, Codex, Gemini CLI, Antigravity, Cursor,
+GitHub Copilot and any other agent that supports the open [Agent Skills](https://agentskills.io)
+format.
 
 > The tooling and docs are in English; the catalog *entries* are in Italian, because that is the
 > language of the reels they come from. Section headings and status labels follow
 > `catalogo.lingua` in your config — see [Configuration](#configuration).
 
 ## What the catalog holds
-- **132 GitHub repositories** + **15 websites**, in 10 practical categories (coding agents/Claude
+- **235 GitHub repositories** + **28 websites**, in 10 practical categories (coding agents/Claude
   Code, local LLMs, RAG/memory, OCR, media generation, security, dev tools, finance/trading, AI
   research). Counts are regenerated on every build.
 - Per entry: what it does, *when to use it*, and activity status (⭐ stars, last push, license).
@@ -24,12 +26,49 @@ cd ai-tools-catalog
 ./install-skill.sh          # Linux/macOS
 .\install-skill.ps1         # Windows (PowerShell)
 ```
-The script copies the skill into `~/.claude/skills/ai-tools-catalog/` and rebuilds the catalog from
-the data in the repo. From then on, in **any** Claude Code project, you can ask things like *"which
-open-source library should I use for OCR on PDFs?"* and the skill surfaces the relevant entries with
-their activity status.
+The script installs the skill once, in `~/.agents/skills/ai-tools-catalog/`, and rebuilds the
+catalog from the data in the repo. From then on, in **any** project and with any supported agent,
+you can ask things like *"which open-source library should I use for OCR on PDFs?"* and the skill
+surfaces the relevant entries with their activity status and license.
 
 > Needs only `python3` (standard library). No tokens or credentials required.
+
+### Which agents, and where they look
+
+The skill is a plain [Agent Skills](https://agentskills.io/specification) folder: a `SKILL.md` with
+`name` and `description`, plus the two catalog files it points to. Nothing in it is specific to one
+agent. What differs between agents is only *where* they look for global skills, so the installer
+keeps **one real copy** in the shared `~/.agents/skills/` folder and links the agents that don't
+read it:
+
+| Agent | Global skills folder | How the installer covers it |
+|---|---|---|
+| OpenCode, Codex, Gemini CLI, Cursor, GitHub Copilot, and most other Agent Skills clients | `~/.agents/skills/` | the real copy |
+| Claude Code | `~/.claude/skills/` | symlink (junction on Windows) |
+| Antigravity (Google) | `~/.gemini/config/skills/` | symlink/junction, only if `~/.gemini` exists |
+
+One copy means `build_catalog.py` updates every agent at once, and agents that scan more than one
+folder (OpenCode and Cursor also read `~/.claude/skills/`) see a single skill. OpenCode logs a
+harmless `duplicate skill name` warning for the linked path and keeps one entry. An agent not listed
+here almost certainly reads `~/.agents/skills/`; if it doesn't, link its skills folder the same way.
+
+An older install that lived directly in `~/.claude/skills/ai-tools-catalog/` is replaced by the
+link automatically — but only if it holds nothing except the generated files; otherwise the
+installer stops and tells you what it found.
+
+**Tested on 2026-09-27** with the question *"which open-source tool does OCR on PDFs?"*: each agent
+loaded the skill, read the catalog files and answered with stars, last push and license matching the
+catalog.
+
+| Agent | Result |
+|---|---|
+| Claude Code | ✅ In `claude -p`, reading the skill's files (outside the working directory) needs `--allowedTools Read`; interactive sessions just ask |
+| OpenCode 1.18.31 | ✅ with `opencode/big-pickle`. The local `qwen3-coder` model wrote the tool call as plain text instead of executing it, then invented URLs and stars: pick a model with working tool calling |
+| Codex CLI 0.136.0 (`gpt-5.5`) | ✅ Codex's Linux sandbox (bubblewrap) needs unprivileged user namespaces: where the OS forbids them, Codex sees the skill but cannot read its files, and falls back to web search |
+| Antigravity CLI 1.0.1 | ✅ once linked into `~/.gemini/config/skills/` — it does not read `~/.agents/skills/` globally |
+
+Cursor, GitHub Copilot and Gemini CLI were not tested: they read `~/.agents/skills/` according to
+their documentation. `install-skill.ps1` was not run on Windows.
 
 ## Configuration
 The chat to read is not hardcoded — it lives in `config.json`, which is **gitignored**:
@@ -60,7 +99,9 @@ and the prose of `skill/SKILL.md` is not generated, so it keeps its own language
 
 ## Updating the catalog
 Requires a browser with WhatsApp Web logged in (and Instagram logged in for profile monitoring).
-- From Claude Code: **`/sync-ai-catalog`** (runs the `catalog-updater` agent).
+- From Claude Code: **`/sync-ai-catalog`** (runs the `catalog-updater` agent). The update agent
+  and the slash command are Claude Code files; with another agent, ask it to follow
+  `.claude/agents/catalog-updater.md` — it needs a browser tool (Playwright MCP or equivalent).
 - The agent reads the chat, checks known creators' Instagram profiles for new reels, extracts and
   verifies the repos, then rebuilds the catalog and the skill. See [`PIPELINE.md`](PIPELINE.md).
 
@@ -77,7 +118,7 @@ Two things make it safe to run on a large catalog:
 
 - **It never loses data.** If a repo 404s (deleted or renamed) the existing entry is kept and
   flagged with `last_error` instead of being overwritten with an error.
-- **It resumes.** Unauthenticated GitHub allows 60 requests/hour, so a catalog of 132 repos cannot
+- **It resumes.** Unauthenticated GitHub allows 60 requests/hour, so a catalog of 235 repos cannot
   refresh in one pass. The queue is ordered — missing entries first, then the stalest — and the run
   stops cleanly when the quota runs out, telling you when it resets. Re-run later and it picks up
   where it left off. A token raises the quota to 5000/hour and finishes it in one go.
@@ -113,9 +154,9 @@ The token is read in this order — first match wins:
 | `gh-meta.json` | GitHub activity metadata, keyed by repo id |
 | `instagram-profili.json` | Profile-monitoring state (reels already seen, per handle) |
 | `scripts/` | `fetch_gh_meta.py`, `build_catalog.py` |
-| `skill/SKILL.md` | Skill definition (redistributable) |
+| `skill/SKILL.md` | Skill definition, in the open Agent Skills format (redistributable) |
 | `.claude/agents/` · `.claude/commands/` | Update agent and slash command |
-| `install-skill.sh` · `install-skill.ps1` | Install the skill on a new machine |
+| `install-skill.sh` · `install-skill.ps1` | Install the skill on a new machine, for every agent |
 
 ## Privacy
 Files holding **personal WhatsApp content** (raw message dump, summaries, login screenshots, page

@@ -46,13 +46,14 @@ chat WhatsApp personale, ripuliti e arricchiti con metadati GitHub reali.
 - **J · Ricerca AI, world models & dati vettoriali** (7): awesome-generative-ai-guide, zvec, AutoResearchClaw, SEAL (Self-Adapting LM), Jina AI, Google EmbeddingGemma, Artificial Analysis
 
 ## Aggiornare il catalogo
-La sorgente è configurata in `config.json` del progetto (chat WhatsApp e/o profili Instagram
-monitorati). File di lavoro in `C:\progetti\whatsapp-ai-catalog\`: `github-repos.json`,
-`siti-web.json`, `instagram-profili.json` (stato monitoraggio profili),
+Questa cartella è **generata**: non modificarne i file. La sorgente è il repository
+`ai-tools-catalog` (https://github.com/scrnetto/ai-tools-catalog), che contiene la configurazione
+(`config.json`: chat WhatsApp e/o profili Instagram monitorati) e i file di lavoro:
+`github-repos.json`, `siti-web.json`, `instagram-profili.json` (stato monitoraggio profili),
 `gh-meta.json` (metadati attività).
-Quando arrivano nuovi reel/link: aggiorna i JSON, poi esegui `python scripts/fetch_gh_meta.py` e
-`python scripts/build_catalog.py`. Quest'ultimo rigenera `CATALOGO-AI-TOOLS.md` + `catalogo.json`
+Quando arrivano nuovi reel/link: aggiorna i JSON, poi esegui `python3 scripts/fetch_gh_meta.py` e
+`python3 scripts/build_catalog.py`. Quest'ultimo rigenera `CATALOGO-AI-TOOLS.md` + `catalogo.json`
 e riallinea da solo, in questo file, i **conteggi nella description**, la **data di verifica** e
 l'**indice categorie** qui sopra: non modificarli a mano, verrebbero sovrascritti. Il resto della
-prosa è libero. La sorgente versionata è `skill/SKILL.md` nel progetto, copiata poi in questa
-cartella.
+prosa è libero. La sorgente versionata è `skill/SKILL.md` nel progetto, copiata poi nelle cartelle
+in cui la skill è installata.
