@@ -278,5 +278,15 @@
     "fonte": "simorizzo_ai 11/09/2026 (reel DdJS5Qfih7F)",
     "macro": "E",
     "uso": "Quando devi trasformare PDF e immagini in dataset o in Markdown per una knowledge base."
+  },
+  {
+    "id": 35,
+    "sito": "Sakana AI Fugu",
+    "url": "https://sakana.ai/fugu/",
+    "descrizione": "Famiglia di modelli di Sakana AI in due varianti: Fugu Max, orientato a orchestrare e instradare i compiti a basso costo di inferenza, e Fugu Ultra per i compiti più pesanti.",
+    "categoria": "AI/Modelli",
+    "fonte": "ai_swarm_solutions 21/09/2026 (reel DdjvhJrqePD)",
+    "macro": "C",
+    "uso": "Quando valuti alternative ai modelli di frontiera statunitensi con un'attenzione al costo per compito."
   }
 ]

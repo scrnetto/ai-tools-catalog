@@ -2348,5 +2348,805 @@
     "fonte": "trovato cercando gli omonimi di tt-a1i/archify, 21/09/2026",
     "macro": "G",
     "uso": "Quando devi farti un'idea di architettura e sicurezza lato client di una web app di cui non hai il repository — un primo sguardo, non un referto: non vede il backend."
+  },
+  {
+    "id": 237,
+    "progetto": "Recordly",
+    "descrizione": "Registratore di schermo gratuito e open source per Mac, Windows e Linux pensato per video dimostrativi: segue il cursore e decide da solo dove zoomare, ammorbidisce il movimento del mouse, evidenzia i click e offre una timeline per tagliare e accelerare. Esporta in MP4 e GIF. Richiede due permessi (registrazione schermo e accessibilità) perché lo zoom automatico funzioni; su Linux attenzione a Wayland vs X11.",
+    "url": "https://github.com/webadderallorg/Recordly",
+    "categoria": "Dev/Media",
+    "fonte": "link diretto da Marco 22/09/2026; anche gabriaprile 21/09/2026 (reel DdjBFNoFHmB)",
+    "macro": "H",
+    "uso": "Quando devi produrre una demo o un tutorial di software già 'montato', senza passare da un editor video."
+  },
+  {
+    "id": 238,
+    "progetto": "Docling",
+    "descrizione": "Libreria open source (nata in IBM Research) che converte documenti complessi — PDF, DOCX, PPTX, XLSX, HTML, EPUB, immagini, audio, LaTeX — in Markdown, HTML o JSON strutturato per LLM e pipeline RAG. Ricostruisce layout, ordine di lettura, tabelle, formule e codice, fa OCR sugli scansionati e può descrivere i grafici. Gira in locale, ha server API e MCP e si integra con LangChain, LlamaIndex, CrewAI e Haystack.",
+    "url": "https://github.com/docling-project/docling",
+    "categoria": "AI/Documents",
+    "fonte": "devop.sbs 20/09/2026 (reel Ddga4nEu9a3, salvato in chat il 20/09/2026)",
+    "macro": "E",
+    "uso": "Quando devi ingerire documenti eterogenei in una pipeline RAG o di agenti e l'estrazione di testo semplice perde tabelle e struttura."
+  },
+  {
+    "id": 239,
+    "progetto": "paperless-ngx",
+    "descrizione": "Sistema self-hosted di gestione documentale mantenuto dalla community: acquisisce scansioni e PDF, esegue l'OCR, li indicizza per la ricerca full-text e li archivia con tag, corrispondenti e tipi di documento assegnabili anche automaticamente.",
+    "url": "https://github.com/paperless-ngx/paperless-ngx",
+    "categoria": "Documenti",
+    "fonte": "git.radar 20/09/2026 (reel DdgfJ_mEvPl, salvato in chat il 23/09/2026)",
+    "macro": "E",
+    "uso": "Quando vuoi eliminare la carta e avere un archivio documentale ricercabile sul tuo server, non su un cloud di terzi."
+  },
+  {
+    "id": 240,
+    "progetto": "Shrimply",
+    "descrizione": "Editor video non lineare open source scritto in Rust, con timeline multitraccia audio/video e strumenti AI integrati che girano in locale: trascrizione automatica, sintesi vocale e generazione video.",
+    "url": "https://github.com/soirihiroka/shrimply",
+    "categoria": "AI/Video",
+    "fonte": "github_dev 08/09/2026 (reel DdH6e9Ayj2V, salvato in chat il 23/09/2026)",
+    "macro": "F",
+    "uso": "Quando vuoi un editor desktop che unisca montaggio tradizionale e funzioni AI senza mandare il materiale su un cloud."
+  },
+  {
+    "id": 241,
+    "progetto": "Fleetbase",
+    "descrizione": "Sistema operativo modulare e open source per logistica e supply chain: tracciamento ordini e autisti su mappa in tempo reale, gestione degli ordini su bacheca visuale, API ed estensioni per aggiungere funzionalità. Self-hostabile.",
+    "url": "https://github.com/fleetbase/fleetbase",
+    "categoria": "Dev/Self-hosting",
+    "fonte": "githubprojects 14/09/2026 (reel DdQuHf5Poko, salvato in chat il 23/09/2026)",
+    "macro": "H",
+    "uso": "Quando devi costruire un gestionale di consegne o flotte e preferisci partire da una piattaforma estendibile invece che da zero."
+  },
+  {
+    "id": 242,
+    "progetto": "Crucix",
+    "descrizione": "Terminale di intelligence OSINT locale: raccoglie ogni pochi minuti decine di feed pubblici (incendi da satellite, traffico aereo e navale, radiazioni, zone di conflitto, indicatori economici e di mercato), li mostra su una mappa 3D e correla segnali tra domini diversi. Collegato a un LLM invia allerte a livelli su Telegram o Discord e risponde a comandi. Nessun cloud né telemetria.",
+    "url": "https://github.com/calesthio/Crucix",
+    "categoria": "Sicurezza/OSINT",
+    "fonte": "koshurai.official 26/07/2026 (reel DbQyH2NBc7C, salvato in chat il 23/09/2026)",
+    "macro": "G",
+    "uso": "Quando vuoi un cruscotto di situational awareness su fonti aperte, con allerte automatiche, da far girare sulla tua macchina."
+  },
+  {
+    "id": 243,
+    "progetto": "SystemOneHarness",
+    "descrizione": "Harness per i modelli 'System One' (Jev e simili): costringe il modello a scegliere un'azione da un elenco chiuso di opzioni tipizzate, traccia la confidenza e si ferma quando è sotto soglia invece di inventare. Registra ogni decisione. Esegue i modelli in locale o tramite HarnessRouter.",
+    "url": "https://github.com/HarnessRouter/SystemOneHarness",
+    "categoria": "LLM/Tooling",
+    "fonte": "githubsignals 22/09/2026 (reel Ddnh350ijC7, salvato in chat il 23/09/2026)",
+    "macro": "C",
+    "uso": "Quando automatizzi decisioni ad alto rischio e vuoi scelte vincolate, verificabili e con un rifiuto esplicito sotto una soglia di confidenza."
+  },
+  {
+    "id": 244,
+    "progetto": "mobile-mcp",
+    "descrizione": "Server MCP che permette ad agenti come Claude Code, Codex, Cursor o Gemini di controllare app iOS e Android su emulatori, simulatori e dispositivi reali: leggere lo schermo, tap, swipe, scrivere, installare app, deep link, log e registrazione. Usa soprattutto l'albero di accessibilità e ricorre agli screenshot solo quando serve.",
+    "url": "https://github.com/mobile-next/mobile-mcp",
+    "categoria": "Dev/Mobile",
+    "fonte": "getshorttech 29/08/2026 (reel DcooKzbueLC, salvato in chat il 23/09/2026) e devop.sbs 26/09/2026 (reel DdwEkYNOzch)",
+    "macro": "A",
+    "uso": "Quando vuoi far testare o pilotare un'app mobile al tuo coding agent con un'unica interfaccia per Android e iOS."
+  },
+  {
+    "id": 245,
+    "progetto": "EvoOntology",
+    "descrizione": "Progetto di ricerca (RUC Data Lab) che costruisce e fa evolvere automaticamente uno strato ontologico/semantico per agenti che lavorano sui dati, così da non doverlo mantenere a mano. Disponibile anche come plugin per Claude Code e Codex; accompagnato da un paper su arXiv.",
+    "url": "https://github.com/ruc-datalab/EvoOntology",
+    "categoria": "RAG/Knowledge",
+    "fonte": "techketan.ai 19/09/2026 (reel DdeWOTlJSh7, salvato in chat il 23/09/2026)",
+    "macro": "D",
+    "uso": "Quando un agente interroga dati aziendali e il semantic layer scritto a mano diventa il collo di bottiglia."
+  },
+  {
+    "id": 246,
+    "progetto": "ARTEMIS (Google)",
+    "descrizione": "Framework di Google che trasforma istruzioni in linguaggio naturale in automazioni Android affidabili, eseguendo flussi end-to-end sulle app.",
+    "url": "https://github.com/google/artemis",
+    "categoria": "AI/Agents",
+    "fonte": "howtowebdev_ 18/09/2026 (reel DdbabeXiDxi, salvato in chat il 23/09/2026)",
+    "macro": "B",
+    "uso": "Quando vuoi automatizzare o testare percorsi completi in app Android descrivendoli a parole invece di scrivere script UI."
+  },
+  {
+    "id": 247,
+    "progetto": "PDFcn",
+    "descrizione": "Registry di componenti in stile shadcn per generare PDF in React: si copiano i componenti nel progetto e si compongono tabelle, form, grafici, fatture e report, con renderer Takumi o Forme. La documentazione mostra anteprime live. Non è un editor ospitato: la logica resta nell'applicazione.",
+    "url": "https://github.com/shadcn-labs/pdfcn",
+    "categoria": "Dev/PDF",
+    "fonte": "githubawesome6 14/08/2026 (reel DcCwyw3M12z, salvato in chat il 23/09/2026)",
+    "macro": "H",
+    "uso": "Quando un'app React deve produrre PDF curati (fatture, report) e non vuoi costruirli da primitive di layout."
+  },
+  {
+    "id": 248,
+    "progetto": "Laya",
+    "descrizione": "Modello decisionale 'System 1' open source da circa 421M parametri: in un solo passaggio restituisce decisioni tipizzate (scelta, punteggio, sì/no) su qualsiasi testo, in millisecondi e in locale (~1 GB di memoria). Alternativa self-hosted a Jev; Apache-2.0.",
+    "url": "https://github.com/NandhaKishorM/laya",
+    "categoria": "LLM locale",
+    "fonte": "gittrend.io 21/09/2026 (reel DdizurTDS9P, salvato in chat il 22/09/2026) e marc.kaz 20/09/2026 (reel Ddh509zOSrT)",
+    "macro": "C",
+    "uso": "Quando devi classificare o instradare testi (ticket, email) ad alta frequenza e un LLM generativo è troppo lento o costoso."
+  },
+  {
+    "id": 249,
+    "progetto": "Spark-X2.5",
+    "descrizione": "Famiglia di modelli linguistici compatti (4B e 1,7B) pensati per l'uso on-device e per flussi agentici, con architettura ad attenzione ibrida e contesto nativo fino a 1M di token; oltre 200 lingue. Pesi su Hugging Face, ModelScope e Ollama, anche in FP8/INT8.",
+    "url": "https://github.com/XHToken/Spark-X2.5",
+    "categoria": "LLM locale",
+    "fonte": "simorizzo_ai 22/09/2026 (reel Ddl9vZqjVng, salvato in chat il 22/09/2026)",
+    "macro": "C",
+    "uso": "Quando ti serve un modello piccolo da far girare in locale ma con contesto molto lungo."
+  },
+  {
+    "id": 250,
+    "progetto": "OpenBao",
+    "descrizione": "Fork comunitario (Linux Foundation, licenza MPL-2.0) di HashiCorp Vault nato dopo il passaggio di Vault alla BSL: stessa architettura e API per gestire segreti, certificati, credenziali dinamiche e crittografia as-a-service.",
+    "url": "https://github.com/openbao/openbao",
+    "categoria": "Sicurezza",
+    "fonte": "devop.sbs 25/09/2026 (reel DduRHI9xjDe)",
+    "macro": "G",
+    "uso": "Quando ti serve un secrets manager compatibile con Vault ma con licenza davvero open source."
+  },
+  {
+    "id": 251,
+    "progetto": "Lap",
+    "descrizione": "Photo manager local-first per grandi librerie di foto e video: lavora sulle cartelle esistenti e aggiunge ricerca con AI locale, similarità visiva, clustering dei volti, album intelligenti, mappa e ricerca duplicati. Oltre 60 formati inclusi RAW; Windows, macOS e Linux (Tauri/Rust).",
+    "url": "https://github.com/julyx10/lap",
+    "categoria": "AI/Immagini",
+    "fonte": "devop.sbs 24/09/2026 (reel DdrNFVpMzS9)",
+    "macro": "H",
+    "uso": "Quando vuoi ricerca semantica e riconoscimento sulle tue foto senza caricarle su un cloud."
+  },
+  {
+    "id": 252,
+    "progetto": "OpenStock",
+    "descrizione": "Alternativa open source alle piattaforme di mercato a pagamento: quotazioni in tempo reale, grafici tecnici, watchlist e aggregazione del sentiment da social e notizie. Next.js e TypeScript, eseguibile in locale o self-hosted.",
+    "url": "https://github.com/Open-Dev-Society/OpenStock",
+    "categoria": "Finanza/Dati",
+    "fonte": "devop.sbs 23/09/2026 (reel Ddo2okjO1_1)",
+    "macro": "I",
+    "uso": "Quando vuoi un cruscotto di mercato personale e personalizzabile senza abbonamenti."
+  },
+  {
+    "id": 253,
+    "progetto": "MVT (Mobile Verification Toolkit)",
+    "descrizione": "Toolkit forense del Security Lab di Amnesty International per cercare tracce di spyware (es. Pegasus) su dispositivi Android e iOS confrontandole con indicatori di compromissione pubblici. È per analisti, non un antivirus: l'assenza di indicatori non prova che il dispositivo sia pulito.",
+    "url": "https://github.com/mvt-project/mvt",
+    "categoria": "Sicurezza",
+    "fonte": "devop.sbs 22/09/2026 (reel DdmcRIqREQg)",
+    "macro": "G",
+    "uso": "Quando devi fare un'analisi forense su un telefono sospetto di compromissione da spyware mirato."
+  },
+  {
+    "id": 254,
+    "progetto": "Cua",
+    "descrizione": "Infrastruttura open source per agenti 'computer use': driver cross-platform in Rust per pilotare app desktop e browser (anche via MCP e in background), sandbox cloud e VM locali su Apple Silicon, modelli leggeri per micro-decisioni di interfaccia e benchmark per addestramento e valutazione.",
+    "url": "https://github.com/trycua/cua",
+    "categoria": "AI/Agents",
+    "fonte": "devop.sbs 21/09/2026 (reel Ddj4mT6xt4L)",
+    "macro": "B",
+    "uso": "Quando costruisci agenti che devono usare interfacce grafiche in modo isolato e ripetibile."
+  },
+  {
+    "id": 255,
+    "progetto": "Needle (Cactus)",
+    "descrizione": "Modelli di automazione minuscoli (2 bit, 8-29 MB) per dispositivi piccoli: non conversano, scelgono quale funzione chiamare e con quali argomenti, ed estraggono dati strutturati. Needle 3 ha circa 121M parametri; benchmark dichiarati dai autori. Telemetria anonima attiva di default (NEEDLE_TELEMETRY=0 per spegnerla). Apache-2.0.",
+    "url": "https://github.com/cactus-compute/needle",
+    "categoria": "LLM locale",
+    "fonte": "gabriaprile 26/09/2026 (reel DdvrGTTiCht)",
+    "macro": "C",
+    "uso": "Quando serve tool calling offline su telefono, domotica o dispositivi senza schermo, per comandi brevi e chiari."
+  },
+  {
+    "id": 256,
+    "progetto": "Cap",
+    "descrizione": "Alternativa open source a Loom per registrare lo schermo e condividere i video con un link; disponibile anche self-hosted.",
+    "url": "https://github.com/CapSoftware/Cap",
+    "categoria": "Dev/Media",
+    "fonte": "dariofontanel.ai 13/09/2026 (reel DdO8qAyIbf2)",
+    "macro": "H",
+    "uso": "Quando devi mandare spiegazioni video asincrone senza dipendere da Loom."
+  },
+  {
+    "id": 257,
+    "progetto": "Open-Generative-AI (ex Open-Higgsfield-AI)",
+    "descrizione": "Studio open source di generazione immagini e video che aggrega centinaia di modelli (Flux, Kling, Veo, ecc.) usando direttamente le chiavi API dei provider, senza il ricarico e i crediti a scadenza delle piattaforme 'wrapper'. Prima si chiamava Open-Higgsfield-AI.",
+    "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+    "categoria": "AI/Video",
+    "fonte": "ai_swarm_solutions 23/09/2026 (reel Ddo4d9bK-zo)",
+    "macro": "F",
+    "uso": "Quando generi molti contenuti video/immagine e vuoi pagare i provider a listino invece che tramite un rivenditore."
+  },
+  {
+    "id": 258,
+    "progetto": "rizzo-flow",
+    "descrizione": "Ricostruzione open e locale dell'idea di Jev: decisioni tipizzate da un LLM (scelta, sì/no) senza generare token, leggendo direttamente le probabilità.",
+    "url": "https://github.com/Rizzo-AI-Academy/rizzo-flow",
+    "categoria": "LLM locale",
+    "fonte": "simorizzo_ai 21/09/2026 (reel DdjHcvTDJ5T)",
+    "macro": "C",
+    "uso": "Quando vuoi sperimentare decisioni in stile Jev in locale partendo da un LLM che hai già."
+  },
+  {
+    "id": 259,
+    "progetto": "Agent Room",
+    "descrizione": "Stanze di riunione locali in cui Codex, Claude Code e altri agenti discutono in diretta, condividono contesto e si rivedono il lavoro; l'utente osserva o interviene dal browser. Nessun cloud né account.",
+    "url": "https://github.com/steviebuilds/agent-room",
+    "categoria": "AI/Coding",
+    "fonte": "github_dev 23/09/2026 (reel DdyZi6BSySJ)",
+    "macro": "A",
+    "uso": "Quando vuoi che più coding agent si confrontino su una revisione o un bug invece di lavorare isolati."
+  },
+  {
+    "id": 260,
+    "progetto": "India Trade CLI",
+    "descrizione": "Piattaforma di trading agentico per il mercato indiano: sette analisti LLM esaminano in parallelo lo stesso titolo (tecnica, notizie, sentiment), discutono tra fautori dell'acquisto e della vendita e un agente 'manager' sintetizza un piano. Gira in locale da terminale.",
+    "url": "https://github.com/hopit-ai/india-trade-cli",
+    "categoria": "Finanza/Trading",
+    "fonte": "github_dev 23/09/2026 (reel Ddx-Ei2S7a3)",
+    "macro": "I",
+    "uso": "Quando studi architetture multi-agente con dibattito per l'analisi finanziaria; non come consiglio di investimento."
+  },
+  {
+    "id": 261,
+    "progetto": "LinCa",
+    "descrizione": "Metodo di cache addestrabile per accelerare i modelli di diffusione (es. FLUX, Qwen-Image): predice i dati intermedi dagli step precedenti invece di ricalcolarli, con accelerazioni dichiarate fino a 7x.",
+    "url": "https://github.com/QHR69/LinCa",
+    "categoria": "AI/Immagini",
+    "fonte": "github_dev 23/09/2026 (reel DdxHK7dSuQj)",
+    "macro": "F",
+    "uso": "Quando la generazione di immagini con diffusione è troppo lenta e vuoi provare un'accelerazione senza cambiare modello."
+  },
+  {
+    "id": 262,
+    "progetto": "LiveStream-Agent-Studio",
+    "descrizione": "Studio desktop Windows con quattro agenti AI locali per l'e-commerce in diretta (pensato per Douyin): scoperta dei creator, trascrizione con timestamp delle dirette, analisi di cosa genera traffico e scrittura di script per video brevi.",
+    "url": "https://github.com/HanyuanWang/LiveStream-Agent-Studio",
+    "categoria": "AI/Agents",
+    "fonte": "github_dev 23/09/2026 (reel DdwrshByAqM)",
+    "macro": "B",
+    "uso": "Quando gestisci live commerce e vuoi analizzare le dirette in locale; utile anche come esempio di workflow multi-agente verticale."
+  },
+  {
+    "id": 263,
+    "progetto": "UniPhysGen",
+    "descrizione": "Ricerca che rende 'pronti per la simulazione' gli asset 3D: assegna alle parti segmentate proprietà fisiche (massa, attrito, materiale) e articolazioni, verificandole con test in simulazione.",
+    "url": "https://github.com/breezexian/UniPhysGen",
+    "categoria": "Robotica/3D",
+    "fonte": "github_dev 23/09/2026 (reel DdwQOQJSO_y)",
+    "macro": "J",
+    "uso": "Quando prepari asset 3D per simulatori robotici o embodied AI e le mesh grezze non hanno fisica."
+  },
+  {
+    "id": 264,
+    "progetto": "PowerAtlas",
+    "descrizione": "Agente LLM di ricerca per la co-pianificazione di calcolo nei data center e rete elettrica, addestrato verificando la fattibilità fisica delle risposte; include il benchmark ECBench.",
+    "url": "https://github.com/JAVA-Jiang/PowerAtlas",
+    "categoria": "AI Research",
+    "fonte": "github_dev 23/09/2026 (reel Ddv0vYkScgG)",
+    "macro": "J",
+    "uso": "Quando ti interessa l'ottimizzazione energetica dei data center con LLM, a livello di ricerca."
+  },
+  {
+    "id": 265,
+    "progetto": "Blink",
+    "descrizione": "App per la barra dei menu di macOS che rileva i dev server e i simulatori iOS in esecuzione, ne riconosce il framework e li riavvia con un click. Swift, tutto in locale.",
+    "url": "https://github.com/megootronic/Blink",
+    "categoria": "Dev/Tools",
+    "fonte": "github_dev 23/09/2026 (reel DdvZRFNSGmC)",
+    "macro": "H",
+    "uso": "Quando lavori con molti dev server locali e perdi tempo a capire quale è caduto."
+  },
+  {
+    "id": 266,
+    "progetto": "X-MinimaxH3",
+    "descrizione": "Servizio locale per eseguire il modello video MiniMax H3 su una sola GPU (dichiarato fino a 8 GB di VRAM), con upscaling senza seconda copia del modello, interfaccia web e monitoraggio dell'hardware.",
+    "url": "https://github.com/PullMyBoots/X-MinimaxH3",
+    "categoria": "AI/Video",
+    "fonte": "github_dev 23/09/2026 (reel Ddu9zInSAO1)",
+    "macro": "F",
+    "uso": "Quando vuoi generare video con MiniMax H3 sulla tua GPU consumer invece che via API."
+  },
+  {
+    "id": 267,
+    "progetto": "MarkuprPlus",
+    "descrizione": "Registra schermo e voce mentre segnali i bug disegnando cerchi sulla schermata; poi con AI locale abbina le frasi ai segni e produce un report Markdown strutturato per ogni problema, da passare al coding agent.",
+    "url": "https://github.com/hashfunction/MarkuprPlus",
+    "categoria": "AI/Coding",
+    "fonte": "github_dev 23/09/2026 (reel DduiU7OyrCy)",
+    "macro": "A",
+    "uso": "Quando devi spiegare bug visivi a Claude Code o Codex con prove precise invece di descrizioni vaghe."
+  },
+  {
+    "id": 268,
+    "progetto": "Pocket-SLAM",
+    "descrizione": "Codice del paper ICRA'26 sullo SLAM con 3D Gaussian Splatting a basso consumo di memoria: pota i punti non necessari al rendering, con mappe dichiarate fino al 99% più piccole e oltre 5x più veloci.",
+    "url": "https://github.com/UMN-ZhaoLab/Pocket-SLAM",
+    "categoria": "Robotica/3D",
+    "fonte": "github_dev 23/09/2026 (reel DduG2keS3yB)",
+    "macro": "J",
+    "uso": "Quando fai ricostruzione 3D in tempo reale con 3DGS su hardware limitato."
+  },
+  {
+    "id": 269,
+    "progetto": "herdr-nvim",
+    "descrizione": "Plugin che integra Neovim come barra laterale persistente nel workspace herdr, con un selettore che elenca i file appena toccati dall'agente incrociando output, storia git e modifiche non committate.",
+    "url": "https://github.com/ChmaraX/herdr-nvim",
+    "categoria": "AI/Coding",
+    "fonte": "github_dev 23/09/2026 (reel DdtrfL3yidz)",
+    "macro": "A",
+    "uso": "Quando usi herdr con agenti di coding e vuoi aprire subito in Neovim i file che hanno modificato."
+  },
+  {
+    "id": 270,
+    "progetto": "ComfyUI-outputlists-combiner",
+    "descrizione": "Nodi ComfyUI per eseguire molti prompt e varianti in un solo run: liste da fogli di calcolo, JSON o testo, combinazioni di parametri (LoRA, sampler) e griglie di confronto.",
+    "url": "https://github.com/geroldmeisinger/ComfyUI-outputlists-combiner",
+    "categoria": "AI/Immagini",
+    "fonte": "github_dev 23/09/2026 (reel Dds0ifVS5V4)",
+    "macro": "F",
+    "uso": "Quando devi fare sweep di prompt o parametri in ComfyUI senza lanciare un'immagine alla volta."
+  },
+  {
+    "id": 271,
+    "progetto": "cve-mcp-server",
+    "descrizione": "Server MCP che dà a Claude una ventina di strumenti di threat intelligence su decine di API: ricerca CVE, punteggi EPSS, catalogo KEV di CISA, exploit noti, con una valutazione di rischio per decidere cosa correggere prima.",
+    "url": "https://github.com/mukul975/cve-mcp-server",
+    "categoria": "Sicurezza",
+    "fonte": "github_dev 23/09/2026 (reel DdsZEHWSZlU)",
+    "macro": "G",
+    "uso": "Quando devi prioritizzare vulnerabilità e vuoi che l'assistente incroci da solo NVD, CISA ed exploit pubblici."
+  },
+  {
+    "id": 272,
+    "progetto": "AlphaMemo",
+    "descrizione": "Framework di ricerca in cui un LLM cerca formule/alpha finanziari mantenendo una memoria strutturata dei tentativi riusciti e falliti. Repository piccolo, senza licenza dichiarata.",
+    "url": "https://github.com/jarrettyu/alphamemo",
+    "categoria": "Finanza/Trading",
+    "fonte": "github_dev 23/09/2026 (reel DdrGpAXSdwN)",
+    "macro": "I",
+    "uso": "Quando studi approcci 'self-evolving' con memoria per la ricerca quantitativa; non come strumento pronto."
+  },
+  {
+    "id": 273,
+    "progetto": "comfyui-node-organizer",
+    "descrizione": "Estensione ComfyUI che allinea e ordina automaticamente i nodi del workflow in righe e colonne, con etichette per forzare la disposizione dei gruppi; annullabile con undo.",
+    "url": "https://github.com/PBandDev/comfyui-node-organizer",
+    "categoria": "AI/Immagini",
+    "fonte": "github_dev 23/09/2026 (reel DdqrKmWy7Fs)",
+    "macro": "F",
+    "uso": "Quando un workflow ComfyUI è diventato un groviglio illeggibile."
+  },
+  {
+    "id": 274,
+    "progetto": "FutureOS",
+    "descrizione": "Un unico agente AI con core in Rust accessibile da terminale, desktop, mobile e app di chat, con memoria e sessioni condivise e ogni azione soggetta ad approvazione esplicita dell'utente.",
+    "url": "https://github.com/futuregene/future-os",
+    "categoria": "AI/Agents",
+    "fonte": "github_dev 23/09/2026 (reel DdqPsO7yl0e)",
+    "macro": "B",
+    "uso": "Quando vuoi un assistente personale che segua lo stesso compito tra computer e telefono senza agire di nascosto."
+  },
+  {
+    "id": 275,
+    "progetto": "wade-skills",
+    "descrizione": "Le skill per agenti più usate da Wade Foster (CEO di Zapier): un 'consiglio di guerra' di esperti critici che mette alla prova le idee, estrazione delle azioni dai verbali e agenda settimanale ordinata per priorità.",
+    "url": "https://github.com/zapier/wade-skills",
+    "categoria": "Claude Code Skill",
+    "fonte": "github_dev 23/09/2026 (reel DdqPw2XS8i2)",
+    "macro": "B",
+    "uso": "Quando vuoi esempi concreti di skill manageriali da adattare al tuo assistente."
+  },
+  {
+    "id": 276,
+    "progetto": "qwen38-mtp",
+    "descrizione": "Ricetta e benchmark della community: un flag di llama.cpp attiva la testa MTP già presente in Qwen3.8-27B e aumenta la velocità di decodifica del 30-40% circa su GPU consumer.",
+    "url": "https://github.com/sudoingX/qwen38-mtp",
+    "categoria": "LLM locale",
+    "fonte": "github_dev 23/09/2026 (reel Ddp0NsmSF35)",
+    "macro": "C",
+    "uso": "Quando fai girare Qwen3.8 in locale con llama.cpp e vuoi velocità in più senza cambiare hardware."
+  },
+  {
+    "id": 277,
+    "progetto": "qwen3.8-Flash-DGX",
+    "descrizione": "Ricetta per eseguire Qwen3.8-Flash (circa 176B parametri) su un singolo DGX Spark, trasferendo una grossa tabella dal disco su richiesta per liberare memoria unificata, con le patch necessarie alla stabilità.",
+    "url": "https://github.com/blazux/qwen3.8-Flash-DGX",
+    "categoria": "LLM locale",
+    "fonte": "github_dev 23/09/2026 (reel DdpYvNzS2W6)",
+    "macro": "C",
+    "uso": "Quando hai un DGX Spark e vuoi farci girare un modello più grande della sua memoria."
+  },
+  {
+    "id": 278,
+    "progetto": "KanVibe",
+    "descrizione": "Workspace Kanban desktop, da tastiera, per coding agent: terminali integrati, git worktree e hook che spostano le card da TODO a DONE seguendo le sessioni di Claude Code, Codex o Gemini, ripulendo i branch a fine lavoro.",
+    "url": "https://github.com/rookedsysc/kanvibe",
+    "categoria": "AI/Coding",
+    "fonte": "github_dev 23/09/2026 (reel Ddo9RCoSt9n)",
+    "macro": "A",
+    "uso": "Quando fai lavorare più agenti in parallelo e vuoi vedere a colpo d'occhio a che punto è ciascun compito."
+  },
+  {
+    "id": 279,
+    "progetto": "stolen-thoughts",
+    "descrizione": "Ricerca con demo e suite di validazione che mostra come le tracce di ragionamento cifrate delle API LLM proprietarie possano essere ricostruite usando un modello più debole come oracolo.",
+    "url": "https://github.com/mitkox/stolen-thoughts",
+    "categoria": "Sicurezza/AI Agent",
+    "fonte": "github_dev 23/09/2026 (reel DdohyyLSwUO)",
+    "macro": "G",
+    "uso": "Quando valuti i rischi di esposizione del ragionamento nelle API che usi o progetti."
+  },
+  {
+    "id": 280,
+    "progetto": "token-optimizer-mcp",
+    "descrizione": "Server MCP che misura e riduce i token dei coding agent con caching e compressione del contesto, e condivide un knowledge graph locale tra una quindicina di client.",
+    "url": "https://github.com/ooples/token-optimizer-mcp",
+    "categoria": "AI/Coding",
+    "fonte": "github_dev 16/09/2026 (reel DdmYkXnypr-)",
+    "macro": "A",
+    "uso": "Quando usi più assistenti di coding e vuoi misurare e tagliare il contesto ridondante."
+  },
+  {
+    "id": 281,
+    "progetto": "token-optimizer",
+    "descrizione": "Strumento per Claude Code che trova i 'token fantasma' e le configurazioni gonfie, fa checkpoint per sopravvivere alla compattazione del contesto e mostra una dashboard dei consumi.",
+    "url": "https://github.com/alexgreensh/token-optimizer",
+    "categoria": "AI/Coding",
+    "fonte": "github_dev 16/09/2026 (reel Ddlhn0cSUtZ)",
+    "macro": "A",
+    "uso": "Quando le sessioni lunghe perdono qualità dopo la compattazione o il consumo di token è inspiegabile."
+  },
+  {
+    "id": 282,
+    "progetto": "claude-token-optimizer",
+    "descrizione": "Riorganizza la documentazione del progetto perché all'avvio Claude carichi solo pochi file essenziali e il resto stia in un archivio consultato su richiesta; rileva lo stack e si configura in pochi secondi.",
+    "url": "https://github.com/nadimtuhin/claude-token-optimizer",
+    "categoria": "AI/Coding",
+    "fonte": "github_dev 16/09/2026 (reel DdlGJ2ryVaK)",
+    "macro": "A",
+    "uso": "Quando il contesto iniziale di Claude Code è saturato da documentazione che serve di rado."
+  },
+  {
+    "id": 283,
+    "progetto": "ArchUnitPython",
+    "descrizione": "Libreria di test architetturali per Python: esprime le regole di dipendenza tra moduli e layer come test automatici, rileva import circolari e fa fallire la build quando i confini vengono violati.",
+    "url": "https://github.com/LukasNiessen/ArchUnitPython",
+    "categoria": "Dev/Librerie",
+    "fonte": "github_dev 16/09/2026 (reel DdkPNaKS1Yy)",
+    "macro": "H",
+    "uso": "Quando un progetto Python cresce (anche con codice scritto da agenti) e vuoi che l'architettura sia verificata in CI."
+  },
+  {
+    "id": 284,
+    "progetto": "drawtonomy",
+    "descrizione": "Lavagna nel browser per disegnare scenari di guida (corsie, veicoli) ed eseguirli subito con un motore di simulazione integrato che dice se il test passa. Tutto in locale.",
+    "url": "https://github.com/kosuke55/drawtonomy",
+    "categoria": "Robotica/3D",
+    "fonte": "github_dev 16/09/2026 (reel DdjYQ3Iy6uH)",
+    "macro": "J",
+    "uso": "Quando devi abbozzare e verificare rapidamente scenari di test per la guida autonoma."
+  },
+  {
+    "id": 285,
+    "progetto": "llama.cpp-adaptive-kv-streaming",
+    "descrizione": "Fork di llama.cpp che sposta dinamicamente la KV cache tra VRAM e memoria di sistema per gestire contesti lunghi su GPU piccole (dichiarato: un 27B su 16 GB di VRAM).",
+    "url": "https://github.com/RaymondHuang210129/llama.cpp-adaptive-kv-streaming",
+    "categoria": "LLM locale",
+    "fonte": "github_dev 16/09/2026 (reel Ddi8yTbyxP2)",
+    "macro": "C",
+    "uso": "Quando la KV cache di conversazioni lunghe non entra nella tua GPU; è un fork, quindi verifica quanto è allineato a upstream."
+  },
+  {
+    "id": 286,
+    "progetto": "xAI plugin-marketplace",
+    "descrizione": "Marketplace ufficiale dei plugin di xAI per Grok Build: indice curato che punta a sorgenti fissate a commit specifici, per evitare aggiornamenti silenziosi.",
+    "url": "https://github.com/xai-org/plugin-marketplace",
+    "categoria": "Claude Code Plugin",
+    "fonte": "github_dev 16/09/2026 (reel DdihTkDy3Ex)",
+    "macro": "A",
+    "uso": "Quando usi Grok Build e vuoi estenderlo con plugin a versione bloccata."
+  },
+  {
+    "id": 287,
+    "progetto": "dspark-vllm-gx10",
+    "descrizione": "Port per vLLM che esegue DeepSeek V4 Flash (NVFP4) su due nodi DGX Spark / ASUS GX10 collegati, con dashboard live e procedura di deploy riproducibile.",
+    "url": "https://github.com/Anemll/dspark-vllm-gx10",
+    "categoria": "LLM locale",
+    "fonte": "github_dev 16/09/2026 (reel DdhqWmZSZYX)",
+    "macro": "C",
+    "uso": "Quando hai due DGX Spark e vuoi farci girare un modello troppo grande per uno solo."
+  },
+  {
+    "id": 288,
+    "progetto": "AIF",
+    "descrizione": "Firewall locale per agenti di coding e personali (Claude Code, Cursor): intercetta le azioni prima dell'esecuzione, blocca comandi che sembrano esfiltrare dati o danneggiare la macchina e mostra cosa ha bloccato.",
+    "url": "https://github.com/hardenrun/aif",
+    "categoria": "Sicurezza/Agenti",
+    "fonte": "github_dev 16/09/2026 (reel DdhO4NWSkWO)",
+    "macro": "G",
+    "uso": "Quando fai girare agenti con accesso alla shell e vuoi un muro tecnico, non solo regole scritte nel prompt."
+  },
+  {
+    "id": 289,
+    "progetto": "robot_keyframe_kit",
+    "descrizione": "Strumento di Stanford per creare movimenti di qualsiasi robot modificando keyframe in MuJoCo da interfaccia visuale, con modalità specchio che gestisce automaticamente le direzioni dei giunti.",
+    "url": "https://github.com/Stanford-TML/robot_keyframe_kit",
+    "categoria": "Robotica/3D",
+    "fonte": "github_dev 16/09/2026 (reel DdgYC6rSj17)",
+    "macro": "J",
+    "uso": "Quando devi animare un robot in simulazione senza scrivere traiettorie a mano."
+  },
+  {
+    "id": 290,
+    "progetto": "CrispASR",
+    "descrizione": "Runtime C++ basato su ggml che riunisce molti modelli di riconoscimento vocale e sintesi (Whisper, Parakeet, Voxtral, Canary e altri) in un'unica interfaccia, offline e in locale.",
+    "url": "https://github.com/CrispStrobe/CrispASR",
+    "categoria": "AI/Voce",
+    "fonte": "github_dev 16/09/2026 (reel Ddf8kecSjXQ)",
+    "macro": "F",
+    "uso": "Quando ti serve ASR/TTS on-device multilingue senza gestire un runtime diverso per ogni modello."
+  },
+  {
+    "id": 291,
+    "progetto": "machine-vision",
+    "descrizione": "Grafica procedurale in stile 'visione artificiale' nel browser su video locali: analizza movimento, bordi e luce e sovrappone punti, linee ed etichette; esporta brevi clip. Nessun upload.",
+    "url": "https://github.com/amirmushichge/machine-vision",
+    "categoria": "AI/Video",
+    "fonte": "github_dev 16/09/2026 (reel DdfhFteyr1L)",
+    "macro": "F",
+    "uso": "Quando vuoi effetti generativi di creative coding su un tuo video senza software pesante."
+  },
+  {
+    "id": 292,
+    "progetto": "SeedVR2 TensorRT Studio",
+    "descrizione": "Studio locale (JavaScript + FastAPI) per restauro e upscaling video con SeedVR2 accelerato da TensorRT, con anteprima prima/dopo e ripresa dei render interrotti.",
+    "url": "https://github.com/vrgamegirl19/VRGDG-SeedVR2-TensorRT-Studio",
+    "categoria": "AI/Video",
+    "fonte": "github_dev 16/09/2026 (reel DdfFnPoypLd)",
+    "macro": "F",
+    "uso": "Quando devi restaurare o ingrandire video vecchi sulla tua GPU NVIDIA."
+  },
+  {
+    "id": 293,
+    "progetto": "ComfyUI-Continuity",
+    "descrizione": "Pacchetto ComfyUI che con un solo nodo genera video completi con audio da prompt e immagini di riferimento, pilotando in locale diverse famiglie di modelli senza chiavi API.",
+    "url": "https://github.com/roadmaus/ComfyUI-Continuity",
+    "categoria": "AI/Video",
+    "fonte": "github_dev 16/09/2026 (reel DdeqJOuSHfX)",
+    "macro": "F",
+    "uso": "Quando vuoi provare più modelli video in ComfyUI senza costruire un workflow per ciascuno."
+  },
+  {
+    "id": 294,
+    "progetto": "49-IDE",
+    "descrizione": "IDE 2D open source: una tela zoomabile dove terminali, CLI di agenti, git, issue e file stanno affiancati, anche su più macchine senza SSH, accessibile da laptop o telefono.",
+    "url": "https://github.com/alpbahadur/49-IDE",
+    "categoria": "AI/Coding",
+    "fonte": "github_dev 16/09/2026 (reel DdeOrHEyOKJ)",
+    "macro": "A",
+    "uso": "Quando gestisci molti agenti in terminali diversi e le schede non bastano più a seguirli."
+  },
+  {
+    "id": 295,
+    "progetto": "HashCortX",
+    "descrizione": "Workspace AI local-first: chat multi-provider, agente di coding autonomo con sandbox Python e permessi controllati da un guardiano in Rust, modelli 3D, ERP e flussi multi-agente, anche con modelli offline.",
+    "url": "https://github.com/Hash-7777/HashCortX",
+    "categoria": "AI/Agents",
+    "fonte": "github_dev 16/09/2026 (reel DddzMvoyeMT)",
+    "macro": "B",
+    "uso": "Quando vuoi un'unica app desktop che riunisca chat e agente di coding con permessi stretti, in locale."
+  },
+  {
+    "id": 296,
+    "progetto": "restoredrill",
+    "descrizione": "Verifica che i backup PostgreSQL e MySQL si ripristinino davvero: avvia un container usa-e-getta, ripristina l'ultimo backup, esegue controlli e produce un report JSON con data e durata.",
+    "url": "https://github.com/ahmadpiran/restoredrill",
+    "categoria": "DevOps/Backup",
+    "fonte": "github_dev 16/09/2026 (reel DddXuqryceu)",
+    "macro": "H",
+    "uso": "Quando devi dimostrare (anche per audit) che i backup funzionano, non solo che esistono."
+  },
+  {
+    "id": 297,
+    "progetto": "wacrawl",
+    "descrizione": "CLI che trasforma i file locali di WhatsApp su Mac in un archivio ricercabile offline e ne fa backup cifrati su un repository Git.",
+    "url": "https://github.com/openclaw/wacrawl",
+    "categoria": "Messaggistica",
+    "fonte": "github_dev 16/09/2026 (reel Ddc8PmbS9x3)",
+    "macro": "H",
+    "uso": "Quando vuoi cercare nella storia delle chat WhatsApp o archiviarla in modo cifrato senza servizi di terzi."
+  },
+  {
+    "id": 298,
+    "progetto": "infinite-livestream",
+    "descrizione": "Diretta video generata dall'AI senza fine: i messaggi della chat diventano script e poi video con audio, e lo stream riempie le attese con contenuti di raccordo.",
+    "url": "https://github.com/reactor-team/infinite-livestream",
+    "categoria": "AI/Video",
+    "fonte": "github_dev 16/09/2026 (reel DdcgxfvyU-a)",
+    "macro": "F",
+    "uso": "Quando vuoi sperimentare con video generativo interattivo guidato dal pubblico."
+  },
+  {
+    "id": 299,
+    "progetto": "Murmur",
+    "descrizione": "Pacchetto SwiftUI di 'orb' animati con shader Metal in stile vetro che reagiscono a voce e digitazione, per dare presenza agli stati di un assistente AI.",
+    "url": "https://github.com/krispuckett/murmur",
+    "categoria": "Dev/Librerie",
+    "fonte": "github_dev 16/09/2026 (reel DdcFT2WSZhA)",
+    "macro": "H",
+    "uso": "Quando progetti l'interfaccia di un assistente su piattaforme Apple e vuoi indicatori di stato vivi invece di spinner."
+  },
+  {
+    "id": 300,
+    "progetto": "open-compute",
+    "descrizione": "Piattaforma self-hosted compatibile con Cloudflare Workers, con KV, D1, R2, Durable Objects, Queues e Workflows in un solo binario Rust installabile con una riga.",
+    "url": "https://github.com/elliothux/open-compute",
+    "categoria": "Dev/Self-hosting",
+    "fonte": "gittrend.io 27/09/2026 (reel DdyFk8aiMS2)",
+    "macro": "H",
+    "uso": "Quando vuoi eseguire app scritte per Workers sul tuo server, senza dipendere da Cloudflare."
+  },
+  {
+    "id": 301,
+    "progetto": "yovoice",
+    "descrizione": "App desktop open source per macOS e Windows: sintesi vocale locale, clonazione della voce e controllo dell'emozione, senza API cloud né costi a carattere.",
+    "url": "https://github.com/leemysw/yovoice",
+    "categoria": "Voce/TTS",
+    "fonte": "gittrend.io 26/09/2026 (reel Ddxocx8CgM2)",
+    "macro": "F",
+    "uso": "Quando ti serve una voce sintetica o clonata per contenuti e non vuoi pagare servizi TTS a consumo."
+  },
+  {
+    "id": 302,
+    "progetto": "TypeLLM",
+    "descrizione": "Generazione type-safe con LLM: vincola l'output alla struttura richiesta così da evitare risposte malformate.",
+    "url": "https://github.com/TypeLLM/TypeLLM",
+    "categoria": "LLM/Tooling",
+    "fonte": "gittrend.io 26/09/2026 (reel DdxEoJlF82H)",
+    "macro": "C",
+    "uso": "Quando il tuo codice consuma output strutturato di un LLM e non vuoi gestire parsing fragili e retry."
+  },
+  {
+    "id": 303,
+    "progetto": "text-humanizer",
+    "descrizione": "Strumento open source che riscrive testo generato dall'AI perché suoni più naturale mantenendone il significato, tramite riscrittura LLM multilingue.",
+    "url": "https://github.com/asokurasu/text-humanizer",
+    "categoria": "AI/Tooling",
+    "fonte": "gittrend.io 26/09/2026 (reel DdwgdqzCDYm)",
+    "macro": "H",
+    "uso": "Quando una bozza scritta con l'AI ha il tipico tono artificiale e vuoi un primo passaggio di rilettura automatica."
+  },
+  {
+    "id": 304,
+    "progetto": "agy-staff",
+    "descrizione": "Fa usare a Claude Code e Codex la CLI Antigravity di Google (agy) come assistente Gemini veloce a cui delegare i compiti piccoli.",
+    "url": "https://github.com/keli-wen/agy-staff",
+    "categoria": "AI/Coding",
+    "fonte": "gittrend.io 25/09/2026 (reel DduRdE5Etdm)",
+    "macro": "A",
+    "uso": "Quando il tuo coding agent principale è lento o caro sui lavori semplici e vuoi delegarli a un modello più rapido."
+  },
+  {
+    "id": 305,
+    "progetto": "HotClip",
+    "descrizione": "Strumento open source che taglia video lunghi, repliche di dirette e podcast in clip verticali con sottotitoli, trovando i momenti salienti con l'AI. Locale, senza watermark.",
+    "url": "https://github.com/xixihhhh/hotclip",
+    "categoria": "AI/Video",
+    "fonte": "gittrend.io 25/09/2026 (reel DdtthjJkT_1)",
+    "macro": "F",
+    "uso": "Quando devi ricavare short da contenuti lunghi senza servizi a crediti."
+  },
+  {
+    "id": 306,
+    "progetto": "Kev",
+    "descrizione": "Famiglia di modelli decisionali in stile Jev basati su Qwen3.5/3.8, addestrabili ed eseguibili in proprio: restituiscono sì/no, scelte e valutazioni come probabilità.",
+    "url": "https://github.com/jaredpalmer/kev",
+    "categoria": "LLM locale",
+    "fonte": "gittrend.io 24/09/2026 (reel DdsCgnIgtJK)",
+    "macro": "C",
+    "uso": "Quando vuoi un'alternativa self-hosted a Jev da poter anche riaddestrare sul tuo dominio."
+  },
+  {
+    "id": 307,
+    "progetto": "AutoShorts",
+    "descrizione": "App desktop local-first che trasforma registrazioni lunghe audio/video in più clip verticali, classificando i momenti con più potenziale. Senza licenza dichiarata.",
+    "url": "https://github.com/JayWebtech/autoshorts",
+    "categoria": "AI/Video",
+    "fonte": "gittrend.io 24/09/2026 (reel DdrgWghFLHg)",
+    "macro": "F",
+    "uso": "Quando vuoi estrarre short da un video lungo lavorando sulla tua macchina."
+  },
+  {
+    "id": 308,
+    "progetto": "motion-web",
+    "descrizione": "Skill per agenti che insegna a costruire siti animati 'motion-first' con Three.js, Canvas 2D, WebGL o CSS e fisica realistica, con sette esempi pronti.",
+    "url": "https://github.com/feitangyuan/motion-web",
+    "categoria": "Claude Code Skill",
+    "fonte": "gittrend.io 24/09/2026 (reel Ddq_RtLEU7c)",
+    "macro": "A",
+    "uso": "Quando chiedi a un agente un sito con animazioni ricche e vuoi che segua pattern collaudati."
+  },
+  {
+    "id": 309,
+    "progetto": "DaC (Dashboard as Code)",
+    "descrizione": "Dashboard definite come codice in YAML e JSX, con semantic layer integrato: versionabili e revisionabili come il resto del codice, e modificabili da un agente.",
+    "url": "https://github.com/bruin-data/dac",
+    "categoria": "Analytics",
+    "fonte": "gittrend.io 24/09/2026 (reel DdqXGkTlQS1)",
+    "macro": "H",
+    "uso": "Quando vuoi dashboard sotto controllo di versione invece che configurate a mano in un tool BI."
+  },
+  {
+    "id": 310,
+    "progetto": "awesome-jev-by-typesafe",
+    "descrizione": "Raccolta di casi d'uso, pattern, prompt e codice di partenza per Jev di TypeSafe (smistamento, routing, screening sì/no).",
+    "url": "https://github.com/Anil-matcha/awesome-jev-by-typesafe",
+    "categoria": "LLM/Tooling",
+    "fonte": "gittrend.io 23/09/2026 (reel DdpVpgBAn9A)",
+    "macro": "C",
+    "uso": "Quando inizi a usare Jev o un clone e cerchi esempi concreti da cui partire."
+  },
+  {
+    "id": 311,
+    "progetto": "Bruin",
+    "descrizione": "Strumento open source per pipeline di dati end-to-end in SQL e Python: ingestion da più sorgenti, trasformazioni e controlli di qualità in un solo progetto, self-hosted.",
+    "url": "https://github.com/bruin-data/bruin",
+    "categoria": "Database",
+    "fonte": "gittrend.io 23/09/2026 (reel DdoQsK0DsiF)",
+    "macro": "H",
+    "uso": "Quando vuoi ingestion, trasformazione e data quality in un unico strumento invece di comporre più servizi."
+  },
+  {
+    "id": 312,
+    "progetto": "AutoClip",
+    "descrizione": "Estrazione con l'AI dei momenti migliori da video lunghi e montaggio in clip brevi per piattaforme di short video; l'AI può girare anche in locale.",
+    "url": "https://github.com/zhouxiaoka/autoclip",
+    "categoria": "AI/Video",
+    "fonte": "gittrend.io 23/09/2026 (reel DdnydDEo2y9)",
+    "macro": "F",
+    "uso": "Quando devi produrre clip da podcast o video lunghi in modo semi-automatico."
+  },
+  {
+    "id": 313,
+    "progetto": "StemKit",
+    "descrizione": "Separa una canzone (anche da YouTube) in tracce di voce, batteria, basso, chitarra e piano, in locale e senza upload.",
+    "url": "https://github.com/danielravina/stemkit",
+    "categoria": "AI/Audio",
+    "fonte": "gittrend.io 22/09/2026 (reel DdnQtgBCUZu)",
+    "macro": "F",
+    "uso": "Quando ti servono le tracce separate di un brano per studio, remix o karaoke."
+  },
+  {
+    "id": 314,
+    "progetto": "Qwen-Image-2.1",
+    "descrizione": "Modello open source di Alibaba/Qwen per generare e modificare immagini da testo, eseguibile in locale.",
+    "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+    "categoria": "AI/Immagini",
+    "fonte": "gittrend.io 22/09/2026 (reel DdmQR7MgQtG)",
+    "macro": "F",
+    "uso": "Quando ti serve generazione ed editing di immagini con un modello aperto da far girare sulla tua GPU."
+  },
+  {
+    "id": 315,
+    "progetto": "OmniChar",
+    "descrizione": "Studio open source per personaggi AI coerenti tra immagini e video: costruisce identità portabili tra modelli diversi, addestra LoRA e genera sulla propria GPU.",
+    "url": "https://github.com/omnichar/OmniChar",
+    "categoria": "AI/Immagini",
+    "fonte": "gittrend.io 21/09/2026 (reel DdkJj5uj4ib)",
+    "macro": "F",
+    "uso": "Quando devi mantenere lo stesso personaggio riconoscibile in più immagini e video generati."
+  },
+  {
+    "id": 316,
+    "progetto": "AnythingMCP",
+    "descrizione": "Trasforma API REST, SOAP, GraphQL o SQL in strumenti MCP per Claude e ChatGPT, con oltre 200 connettori pronti (ERP, e-commerce, SAP). Self-hosted.",
+    "url": "https://github.com/HelpCode-ai/anythingmcp",
+    "categoria": "AI/Agents",
+    "fonte": "gittrend.io 21/09/2026 (reel DdjzQBdjf9R)",
+    "macro": "B",
+    "uso": "Quando vuoi che un assistente AI usi i sistemi aziendali esistenti senza scrivere un server MCP per ciascuno."
   }
 ]

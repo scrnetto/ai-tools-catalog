@@ -12,7 +12,7 @@ format.
 > `catalogo.lingua` in your config — see [Configuration](#configuration).
 
 ## What the catalog holds
-- **235 GitHub repositories** + **28 websites**, in 10 practical categories (coding agents/Claude
+- **315 GitHub repositories** + **29 websites**, in 10 practical categories (coding agents/Claude
   Code, local LLMs, RAG/memory, OCR, media generation, security, dev tools, finance/trading, AI
   research). Counts are regenerated on every build.
 - Per entry: what it does, *when to use it*, and activity status (⭐ stars, last push, license).
@@ -134,7 +134,7 @@ Two things make it safe to run on a large catalog:
 
 - **It never loses data.** If a repo 404s (deleted or renamed) the existing entry is kept and
   flagged with `last_error` instead of being overwritten with an error.
-- **It resumes.** Unauthenticated GitHub allows 60 requests/hour, so a catalog of 235 repos cannot
+- **It resumes.** Unauthenticated GitHub allows 60 requests/hour, so a catalog of 315 repos cannot
   refresh in one pass. The queue is ordered — missing entries first, then the stalest — and the run
   stops cleanly when the quota runs out, telling you when it resets. Re-run later and it picks up
   where it left off. A token raises the quota to 5000/hour and finishes it in one go.
