@@ -24,7 +24,9 @@ format.
   research). Counts are regenerated on every build.
 - Per entry: what it does, *when to use it*, and activity status (⭐ stars, last push, license).
 - Human-readable output: [`CATALOGO-AI-TOOLS.md`](CATALOGO-AI-TOOLS.md). Structured data:
-  `catalogo-unificato.json`.
+  `catalogo-unificato.json`. Searchable web page with filters: `docs/index.html`, a single HTML
+  file that makes no network requests (the installed skill gets its own copy, `catalogo.html`,
+  which also shows your local entries).
 
 ## Install the skill on another machine
 ```bash
@@ -250,7 +252,7 @@ file still never reaches the published catalog.
 ## License
 - **Code** — scripts, installers, `skill/SKILL.md`, the agent and command in `.claude/`: [MIT](LICENSE).
 - **Catalog data** — the descriptions and "when to use it" notes in `github-repos.json`,
-  `siti-web.json`, `catalogo-unificato.json` and `CATALOGO-AI-TOOLS.md`:
+  `siti-web.json`, `catalogo-unificato.json`, `CATALOGO-AI-TOOLS.md` and `docs/index.html`:
   [CC BY 4.0](LICENSE-DATA). Reuse them freely, crediting this repository.
 
 Stars, last-push dates and licenses of the catalogued projects are facts taken from GitHub, not

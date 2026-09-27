@@ -22,7 +22,12 @@ chat WhatsApp personale, ripuliti e arricchiti con metadati GitHub reali.
 - **`catalogo.json`** — stessi dati in forma strutturata (1 oggetto per voce). Usalo quando devi
   **filtrare/cercare programmaticamente** (per categoria `macro`, per `tipo` repo/sito, per stato,
   per stelle). Campi: `tipo, macro, macro_nome, nome, cosa_fa, quando_usarlo, url, stelle,
-  ultimo_push, attivita, licenza, linguaggio, fonte`.
+  ultimo_push, attivita, licenza, linguaggio, fonte`; `origine` (`locale`/`modificata`) solo sulle
+  voci aggiunte o corrette dall'utente.
+- **`catalogo.html`** — lo stesso catalogo come pagina web con ricerca e filtri, che funziona
+  offline. Se l'utente vuole **sfogliare o consultare il catalogo da sé**, indicagli il percorso
+  di questo file (o aprilo nel browser, se te lo chiede); per rispondere a una domanda usa gli
+  altri due file.
 
 ## Come usarla
 1. Quando l'utente cerca uno strumento o chiede "cosa esiste per fare X", **apri

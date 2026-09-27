@@ -19,6 +19,9 @@ Regole dell'unione (`unisci`):
     chiave;
   - per i metadati vince il recupero piu' recente (`fetched`), da qualunque dei due file venga.
 
+Le voci che vengono dai file locali portano `origine`: 'locale' se nuove, 'modificata' se
+completano una pubblicata. La pagina web installata nella skill le segnala come tali.
+
 Il manutentore del catalogo (`"catalogo": {"manutentore": true}` in config.json) scrive invece
 nei file tracciati: sono loro il catalogo pubblicato.
 """
@@ -91,11 +94,11 @@ def unisci(pubblicate, locali, chiave):
             res['nascoste'] += 1
         else:
             # l'URL resta quello pubblicato: la chiave e' la stessa, la grafia puo' non esserlo
-            out.append({**v, **l, 'url': v.get('url')})
+            out.append({**v, **l, 'url': v.get('url'), 'origine': 'modificata'})
             res['completate'] += 1
     for k, l in loc.items():
         if k not in viste and not l.get('nascondi'):
-            out.append(l)
+            out.append({**l, 'origine': 'locale'})
             res['locali_nuove'] += 1
     return out, res
 

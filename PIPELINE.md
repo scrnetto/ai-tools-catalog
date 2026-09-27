@@ -56,7 +56,7 @@ falls back to neutral defaults.
 | `gh-meta.json` | GitHub metadata (stars, last push, license) by `owner/name` (plus `gh-meta.local.json` for your own entries) |
 | `instagram-profili.json` | Profile-monitoring state (handle → reels seen/catalogued, last check) |
 | `chat-messaggi.csv` | Raw message dump (gitignored) |
-| `catalogo-unificato.json` / `CATALOGO-AI-TOOLS.md` | Generated outputs |
+| `catalogo-unificato.json` / `CATALOGO-AI-TOOLS.md` / `docs/index.html` | Generated outputs (the last one is the web page, from the template `scripts/pagina-catalogo.html`) |
 | `siti-personali.json` | Non-dev entries, kept out of the repo (gitignored) |
 | `scripts/fetch_gh_meta.py` | Fetches activity metadata (incremental merge, `--refresh` to re-check) |
 | `scripts/build_catalog.py` | Builds the catalog and updates the installed skill (`~/.agents/skills/ai-tools-catalog/`), merging your `.local.json` entries |

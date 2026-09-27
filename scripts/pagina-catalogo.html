@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>__TITOLO__</title>
+<style>
+/* Grafica: design system «Safe Console» disegnato con Google Stitch (2026-09-27), riportata a
+   font di sistema e CSS scritto qui: la pagina non fa nessuna richiesta di rete. */
+:root{
+  --canvas:#f6f8fa; --panel:#ffffff; --subtle:#eff2f5; --line:#d0d7de; --line-strong:#afb8c1;
+  --ink:#1f2328; --text:#1f2328; --muted:#59636e; --accent:#1a7f37;
+  --ok:#1a7f37; --ok-bg:#dafbe1; --ok-line:#aceebb;
+  --warn:#9a6700; --warn-bg:#fff8c5; --warn-line:#eac54f;
+  --bad:#d1242f; --bad-bg:#ffebe9; --bad-line:#ffcecb;
+  --star:#9a6700; --focus:#0969da;
+  --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --canvas:#0d1117; --panel:#161b22; --subtle:#21262d; --line:#30363d; --line-strong:#484f58;
+    --ink:#f0f6fc; --text:#c9d1d9; --muted:#8b949e; --accent:#3fb950;
+    --ok:#3fb950; --ok-bg:rgba(46,160,67,.15); --ok-line:rgba(63,185,80,.4);
+    --warn:#d29922; --warn-bg:rgba(187,128,9,.15); --warn-line:rgba(210,153,34,.4);
+    --bad:#f85149; --bad-bg:rgba(248,81,73,.12); --bad-line:rgba(248,81,73,.4);
+    --star:#e3b341; --focus:#58a6ff;
+    color-scheme: dark;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--canvas);color:var(--text);font:14px/1.5 var(--sans);-webkit-text-size-adjust:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.mono{font-family:var(--mono)}
+.wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+
+/* intestazione */
+.bar{background:var(--panel);border-bottom:1px solid var(--line)}
+.bar .wrap{display:grid;gap:6px;padding-block:16px 14px}
+.brand{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.tag{font:500 12px/1 var(--mono);padding:4px 6px;border-radius:4px;background:var(--subtle);border:1px solid var(--line);color:var(--muted)}
+.tag.ver{background:var(--ok-bg);border-color:var(--ok-line);color:var(--ok)}
+h1{margin:0;font-size:18px;line-height:1.3;font-weight:600;color:var(--ink);letter-spacing:-.01em}
+.facts{display:flex;flex-wrap:wrap;gap:4px 14px;font:12px/1.5 var(--mono);color:var(--muted)}
+.facts b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
+.facts b.acc{color:var(--accent)}
+
+/* ricerca */
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding-block:18px 14px}
+.field{position:relative;flex:1 1 320px;min-width:0}
+.field svg{position:absolute;left:11px;top:50%;translate:0 -50%;width:16px;height:16px;color:var(--muted);pointer-events:none}
+.field input{width:100%;height:40px;padding:0 44px 0 36px;font:15px var(--sans);color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:6px}
+.field input::placeholder{color:var(--muted)}
+.field input:focus{border-color:var(--accent);outline:none}
+.field input:focus-visible{outline:2px solid var(--focus);outline-offset:1px}
+kbd{font:500 11px/1 var(--mono);padding:3px 6px;border:1px solid var(--line);border-radius:3px;background:var(--subtle);color:var(--muted)}
+.field kbd{position:absolute;right:10px;top:50%;translate:0 -50%}
+.sort{display:flex;align-items:center;gap:8px;font:12px var(--mono);color:var(--muted)}
+.sort select{height:40px;padding:0 10px;font:13px var(--sans);color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:6px}
+
+/* colonne */
+.layout{display:grid;grid-template-columns:272px minmax(0,1fr);gap:20px;align-items:start;padding-bottom:40px}
+aside{position:sticky;top:12px;display:grid;gap:12px;max-height:calc(100vh - 24px);overflow:auto}
+fieldset{margin:0;padding:10px 8px 8px;border:1px solid var(--line);border-radius:6px;background:var(--panel);display:grid;gap:1px;min-width:0}
+legend{float:left;width:100%;padding:0 6px 8px;font:600 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.opt{display:flex;align-items:center;gap:8px;width:100%;padding:5px 6px;border:1px solid transparent;border-radius:4px;background:none;color:var(--text);font:13px/1.35 var(--sans);text-align:left;cursor:pointer}
+.opt:hover:not(:disabled){background:var(--subtle);color:var(--ink)}
+.opt[aria-pressed="true"]{background:var(--subtle);border-color:var(--line-strong);color:var(--ink);font-weight:600}
+.opt:disabled{opacity:.45;cursor:default}
+.opt .l{font:600 11px var(--mono);color:var(--accent);flex:none}
+.opt .n{margin-left:auto;font:12px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums;flex:none}
+.opt .dot{flex:none}
+
+/* risultati */
+.results{display:grid;gap:8px;min-width:0}
+.status{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;padding:8px 12px;border:1px solid var(--line);border-radius:6px;background:var(--panel);font:12px var(--mono);color:var(--muted)}
+.status b{color:var(--ink);font-weight:600}
+.reset{font:12px var(--mono);color:var(--accent);background:none;border:1px solid var(--line);border-radius:4px;padding:3px 8px;cursor:pointer}
+.reset:hover{background:var(--subtle)}
+.list{display:grid;grid-template-columns:minmax(0,1fr);gap:6px}
+.card{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;padding:12px 14px;border:1px solid var(--line);border-radius:6px;background:var(--panel)}
+.card:hover{border-color:var(--line-strong)}
+.top{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px}
+.name{font-size:15px;font-weight:600;color:var(--ink);text-decoration:none}
+a.name:hover{color:var(--accent);text-decoration:underline}
+.host{font:12px var(--mono);color:var(--muted);overflow-wrap:anywhere}
+.cat{margin-left:auto;font:11px/1 var(--mono);padding:4px 6px;border-radius:4px;background:var(--subtle);color:var(--muted);white-space:nowrap}
+.desc{margin:0;color:var(--ink);text-wrap:pretty}
+.when{margin:0;padding:6px 10px;border-left:2px solid var(--line-strong);background:var(--canvas);border-radius:0 4px 4px 0;color:var(--text);font-size:13px}
+.when b{color:var(--ink);font-weight:600}
+.meta{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:6px;height:22px;padding:0 7px;border:1px solid var(--line);border-radius:4px;background:var(--subtle);color:var(--text);font:500 11.5px/1 var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.chip.ok{background:var(--ok-bg);border-color:var(--ok-line);color:var(--ok)}
+.chip.warn{background:var(--warn-bg);border-color:var(--warn-line);color:var(--warn)}
+.chip.bad{background:var(--bad-bg);border-color:var(--bad-line);color:var(--bad)}
+.chip.mine{background:none;border-style:dashed;color:var(--accent);border-color:var(--accent)}
+.chip.lic{height:auto;min-height:22px;padding-block:4px;white-space:normal;line-height:1.3;max-width:100%}
+.chip svg{width:12px;height:12px;color:var(--star)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--muted)}
+.dot.ok{background:var(--ok)} .dot.warn{background:var(--warn)} .dot.bad{background:var(--bad)}
+.empty{padding:32px 16px;text-align:center;color:var(--muted);border:1px dashed var(--line-strong);border-radius:6px;font:13px var(--mono)}
+
+footer{border-top:1px solid var(--line);background:var(--panel)}
+footer .wrap{display:grid;gap:4px;padding-block:16px;font:12px/1.6 var(--mono);color:var(--muted)}
+
+@media (max-width:860px){
+  .wrap{padding:0 16px}
+  .layout{grid-template-columns:minmax(0,1fr)}
+  aside{position:static;max-height:none;overflow:visible}
+  fieldset{display:flex;flex-wrap:wrap;gap:6px;padding:10px}
+  legend{padding:0 0 6px}
+  .opt{width:auto;padding:5px 9px;border-color:var(--line);border-radius:999px}
+  .cat{margin-left:0}
+  .field kbd{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <div class="brand">
+      <span class="tag">ai-tools-catalog</span>
+      <span class="tag ver" id="ver"></span>
+      <h1 id="titolo"></h1>
+    </div>
+    <div class="facts" id="facts"></div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="tools">
+    <label class="field">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="7" r="4.8"/><path d="m10.6 10.6 3.4 3.4" stroke-linecap="round"/></svg>
+      <input id="q" type="search" placeholder="Cerca per nome, cosa fa, quando usarlo…" autocomplete="off" spellcheck="false" aria-label="Cerca nel catalogo" aria-keyshortcuts="/">
+      <kbd aria-hidden="true">/</kbd>
+    </label>
+    <label class="sort">Ordina
+      <select id="sort">
+        <option value="stelle">Più stelle</option>
+        <option value="push">Aggiornati di recente</option>
+        <option value="nome">Nome A–Z</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="layout">
+    <aside aria-label="Filtri">
+      <fieldset id="f-macro"><legend>Categoria</legend></fieldset>
+      <fieldset id="f-stato"><legend>Attività</legend></fieldset>
+      <fieldset id="f-lic"><legend>Licenza</legend></fieldset>
+    </aside>
+    <main class="results">
+      <div class="status">
+        <span id="count" aria-live="polite"></span>
+        <button type="button" class="reset" id="reset" hidden>Azzera filtri</button>
+      </div>
+      <div class="list" id="list"></div>
+    </main>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div id="foot"></div>
+    <div>Le licenze dei progetti elencati sono quelle dei rispettivi autori. Stelle e date vengono da GitHub.</div>
+  </div>
+</footer>
+
+<script type="application/json" id="dati">__DATI__</script>
+<script>
+(() => {
+  // I testi del catalogo vengono da reel e pagine di terzi: si inseriscono sempre come testo
+  // (textContent), mai come HTML, e i link sono ammessi solo in https.
+  const META = JSON.parse(document.getElementById('dati').textContent);
+  const VOCI = META.voci;
+
+  const LIC = [
+    ['libera', 'Libera', 'ok'], ['copyleft', 'Copyleft (GPL/AGPL)', 'warn'],
+    ['limitata', 'Non commerciale / limitata', 'warn'], ['chiusa', 'Non riusabile', 'bad'],
+    ['ignota', 'Da verificare', ''], ['sito', 'Siti web', '']];
+  function classeLicenza(v) {
+    if (v.tipo === 'sito') return 'sito';
+    const l = (v.licenza || '').toLowerCase();
+    if (!l || l === 'noassertion') return 'ignota';
+    if (/nessuna licenza|diritti riservati|proprietaria/.test(l)) return 'chiusa';
+    if (/noncommercial|non commerciale|nc |-nc|research|busl|mvt license/.test(l)) return 'limitata';
+    if (/gpl/.test(l)) return 'copyleft';
+    return 'libera';
+  }
+  const STATI = [
+    ['molto attivo', 'Molto attivo', 'ok'], ['attivo', 'Attivo', 'ok'],
+    ['rallentato', 'Rallentato', 'warn'], ['fermo', 'Fermo', 'bad'],
+    ['archiviato', 'Archiviato', 'bad'], ['sito web', 'Sito web', '']];
+  const ORIGINE = {locale: 'voce tua', modificata: 'modificata da te'};
+  VOCI.forEach(v => { v._lic = classeLicenza(v);
+    v._testo = [v.nome, v.cosa_fa, v.quando_usarlo, v.url, v.linguaggio].join(' ').toLowerCase(); });
+
+  const stato = {q: '', macro: null, att: null, lic: null, sort: 'stelle'};
+  const $ = id => document.getElementById(id);
+  const el = (tag, cls, testo) => { const e = document.createElement(tag);
+    if (cls) e.className = cls; if (testo != null) e.textContent = testo; return e; };
+  const k = n => n == null ? 'n/d' : n >= 1000 ? (n / 1000).toFixed(1).replace('.0', '') + 'k' : String(n);
+  const NS = 'http://www.w3.org/2000/svg';
+  function stella() {
+    const s = document.createElementNS(NS, 'svg'); s.setAttribute('viewBox', '0 0 16 16');
+    s.setAttribute('aria-hidden', 'true'); s.setAttribute('fill', 'currentColor');
+    const p = document.createElementNS(NS, 'path');
+    p.setAttribute('d', 'M8 .8l2.2 4.6 5 .7-3.6 3.5.9 5L8 12.2l-4.5 2.4.9-5L.8 6.1l5-.7z');
+    s.append(p); return s;
+  }
+
+  function passa(v, salta) {
+    if (salta !== 'macro' && stato.macro && v.macro !== stato.macro) return false;
+    if (salta !== 'att' && stato.att && v.attivita !== stato.att) return false;
+    if (salta !== 'lic' && stato.lic && v._lic !== stato.lic) return false;
+    if (stato.q) for (const p of stato.q.split(/\s+/)) if (!v._testo.includes(p)) return false;
+    return true;
+  }
+
+  function opzioni(id, voci, chiave, campo, lettera) {
+    const fs = $(id); [...fs.querySelectorAll('button')].forEach(b => b.remove());
+    for (const [val, etichetta, colore] of voci) {
+      const n = VOCI.filter(v => passa(v, chiave) && v[campo] === val).length;
+      const b = el('button', 'opt'); b.type = 'button';
+      b.setAttribute('aria-pressed', String(stato[chiave] === val));
+      if (lettera) b.append(el('span', 'l', val));
+      else if (chiave === 'att') b.append(el('span', 'dot ' + colore));
+      b.append(el('span', null, etichetta), el('span', 'n', String(n)));
+      b.disabled = n === 0 && stato[chiave] !== val;
+      b.onclick = () => { stato[chiave] = stato[chiave] === val ? null : val; render(); };
+      fs.append(b);
+    }
+  }
+
+  function card(v) {
+    const c = el('article', 'card');
+    const top = el('div', 'top');
+    let url = null; try { url = new URL(v.url); } catch (e) {}
+    const https = url && url.protocol === 'https:';
+    const nome = el(https ? 'a' : 'span', 'name', v.nome);
+    if (https) { nome.href = url.href; nome.target = '_blank'; nome.rel = 'noopener noreferrer'; }
+    top.append(nome);
+    if (url) top.append(el('span', 'host', url.host === 'github.com' ? url.pathname.slice(1).replace(/\/$/, '') : url.host));
+    top.append(el('span', 'cat', '[' + v.macro + '] ' + (META.macro_breve[v.macro] || v.macro_nome)));
+    c.append(top, el('p', 'desc', v.cosa_fa));
+    if (v.quando_usarlo) {
+      const w = el('p', 'when'); w.append(el('b', null, 'Quando usarlo — '), document.createTextNode(v.quando_usarlo));
+      c.append(w);
+    }
+    const m = el('div', 'meta');
+    const st = STATI.find(s => s[0] === v.attivita) || [v.attivita, v.attivita, ''];
+    const p1 = el('span', 'chip ' + st[2]); p1.append(el('span', 'dot ' + st[2]), document.createTextNode(st[1])); m.append(p1);
+    if (v.tipo === 'repo') {
+      const s = el('span', 'chip'); s.append(stella(), document.createTextNode(k(v.stelle))); m.append(s);
+      if (v.ultimo_push) m.append(el('span', 'chip', 'push ' + v.ultimo_push));
+      if (v.linguaggio) m.append(el('span', 'chip', v.linguaggio));
+      const lc = LIC.find(x => x[0] === v._lic);
+      m.append(el('span', 'chip lic ' + lc[2], v._lic === 'ignota' ? 'licenza da verificare' : v.licenza));
+    }
+    if (ORIGINE[v.origine]) m.append(el('span', 'chip mine', ORIGINE[v.origine]));
+    c.append(m);
+    return c;
+  }
+
+  function render() {
+    opzioni('f-macro', META.macro.map(c => [c, META.macro_breve[c], '']), 'macro', 'macro', true);
+    opzioni('f-stato', STATI, 'att', 'attivita');
+    opzioni('f-lic', LIC, 'lic', '_lic');
+    const out = VOCI.filter(v => passa(v));
+    const s = stato.sort;
+    out.sort((a, b) => s === 'nome' ? a.nome.localeCompare(b.nome, 'it')
+      : s === 'push' ? (b.ultimo_push || '').localeCompare(a.ultimo_push || '')
+      : (b.stelle ?? -1) - (a.stelle ?? -1));
+    const cnt = $('count'); cnt.textContent = '';
+    cnt.append(el('b', null, String(out.length)), document.createTextNode(' voci su ' + VOCI.length));
+    $('reset').hidden = !(stato.q || stato.macro || stato.att || stato.lic);
+    const list = $('list'); list.textContent = '';
+    if (!out.length) list.append(el('div', 'empty', 'Nessuna voce corrisponde. Prova a togliere un filtro.'));
+    const frag = document.createDocumentFragment(); out.forEach(v => frag.append(card(v))); list.append(frag);
+  }
+
+  $('titolo').textContent = META.titolo;
+  $('ver').textContent = 'v' + META.verificato.replaceAll('-', '.');
+  const facts = $('facts');
+  [[META.repo, 'repository'], [META.siti, 'siti web'], [META.macro.length, 'categorie']].forEach(([n, t]) => {
+    const s = el('span'); s.append(el('b', 'acc', String(n)), document.createTextNode(' ' + t)); facts.append(s); });
+  const d = el('span'); d.append(document.createTextNode('attività verificata il '), el('b', null, META.verificato)); facts.append(d);
+  $('foot').textContent = META.piede;
+
+  const q = $('q');
+  let t; q.oninput = () => { clearTimeout(t); t = setTimeout(() => { stato.q = q.value.trim().toLowerCase(); render(); }, 120); };
+  $('sort').onchange = e => { stato.sort = e.target.value; render(); };
+  $('reset').onclick = () => { Object.assign(stato, {q: '', macro: null, att: null, lic: null}); q.value = ''; render(); q.focus(); };
+  document.addEventListener('keydown', e => {
+    const campo = /^(INPUT|SELECT|TEXTAREA)$/.test(document.activeElement.tagName);
+    if (e.key === '/' && !campo) { e.preventDefault(); q.focus(); q.select(); }
+    else if (e.key === 'Escape' && document.activeElement === q && q.value) { q.value = ''; stato.q = ''; render(); }
+  });
+  render();
+})();
+</script>
+</body>
+</html>

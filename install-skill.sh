@@ -29,7 +29,9 @@ for LINK in "${LINKS[@]}"; do
   # qualcun altro, e non si tocca.
   if [ -d "${LINK}" ] && [ ! -L "${LINK}" ]; then
     extra="$(find "${LINK}" -mindepth 1 -maxdepth 1 \
-      ! -name SKILL.md ! -name CATALOGO-AI-TOOLS.md ! -name catalogo.json)"
+      ! -name SKILL.md ! -name CATALOGO-AI-TOOLS.md ! -name catalogo.json ! -name catalogo.html \
+      ! -name check_update.py ! -name installazione.json ! -name .ultimo-controllo \
+      ! -name __pycache__)"
     if [ -n "${extra}" ]; then
       echo "⚠️  ${LINK} contiene file non generati da questo script:"
       echo "${extra}"
@@ -46,13 +48,15 @@ done
 # 1) definizione della skill (statica)
 cp "${SRC}/skill/SKILL.md" "${DEST}/SKILL.md"
 
-# 2) rigenera catalogo dai dati del repo e popola la skill (CATALOGO-AI-TOOLS.md + catalogo.json)
+# 2) rigenera catalogo dai dati del repo e popola la skill (CATALOGO-AI-TOOLS.md, catalogo.json,
+#    catalogo.html)
 if command -v python3 >/dev/null 2>&1; then
   python3 "${SRC}/scripts/build_catalog.py"
 else
   echo "⚠️  python3 non trovato: copio i file già generati senza rigenerarli."
   cp "${SRC}/CATALOGO-AI-TOOLS.md" "${DEST}/CATALOGO-AI-TOOLS.md"
   cp "${SRC}/catalogo-unificato.json" "${DEST}/catalogo.json"
+  cp "${SRC}/docs/index.html" "${DEST}/catalogo.html"
 fi
 
 echo "✅ Skill 'ai-tools-catalog' installata."

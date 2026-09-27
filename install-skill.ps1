@@ -31,7 +31,8 @@ foreach ($LINK in $LINKS) {
     # si tocca.
     $item = Get-Item $LINK -ErrorAction SilentlyContinue
     if ($item -and -not $item.LinkType) {
-        $generati = @("SKILL.md", "CATALOGO-AI-TOOLS.md", "catalogo.json")
+        $generati = @("SKILL.md", "CATALOGO-AI-TOOLS.md", "catalogo.json", "catalogo.html",
+                      "check_update.py", "installazione.json", ".ultimo-controllo", "__pycache__")
         $extra = Get-ChildItem $LINK -Force | Where-Object { $generati -notcontains $_.Name }
         if ($extra) {
             Write-Host "ATTENZIONE: $LINK contiene file non generati da questo script:"
@@ -73,6 +74,7 @@ if ($pythonExe) {
     Write-Host "ATTENZIONE: python non trovato: copio i file gia' generati senza rigenerarli."
     Copy-Item "$SRC\CATALOGO-AI-TOOLS.md" "$DEST\CATALOGO-AI-TOOLS.md" -Force
     Copy-Item "$SRC\catalogo-unificato.json" "$DEST\catalogo.json" -Force
+    Copy-Item "$SRC\docs\index.html" "$DEST\catalogo.html" -Force
 }
 
 Write-Host "Skill 'ai-tools-catalog' installata."

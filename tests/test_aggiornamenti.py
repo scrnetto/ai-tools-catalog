@@ -7,11 +7,13 @@ con update-catalog.sh. Si controlla che:
   - il build dell'utente non modifichi mai un file tracciato (altrimenti git pull confligge);
   - dopo l'aggiornamento la skill contenga le voci nuove pubblicate E quelle dell'utente;
   - una voce locale completi quella pubblicata con lo stesso indirizzo, e `nascondi` la tolga;
-  - check_update.py riconosca la novita' e scarti una risposta malformata.
+  - check_update.py riconosca la novita' e scarti una risposta malformata;
+  - la pagina web tenga i testi dei terzi come dati (una descrizione con `</script>` non esce dal
+    blocco JSON) e segnali le voci locali solo nella copia della skill.
 
 Esecuzione:  python3 -m unittest discover -s tests
 """
-import json, os, shutil, subprocess, sys, tempfile, unittest
+import json, os, re, shutil, subprocess, sys, tempfile, unittest
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'scripts'))
@@ -50,7 +52,8 @@ class Aggiornamenti(unittest.TestCase):
         git(self.tmp, 'clone', '-q', self.origin, self.man)
         os.makedirs(os.path.join(self.man, 'scripts'))
         os.makedirs(os.path.join(self.man, 'skill'))
-        for f in ('catalogo_dati.py', 'build_catalog.py', 'check_update.py', 'fetch_gh_meta.py'):
+        for f in ('catalogo_dati.py', 'build_catalog.py', 'check_update.py', 'fetch_gh_meta.py',
+                  'pagina-catalogo.html'):
             shutil.copy(os.path.join(ROOT, 'scripts', f), os.path.join(self.man, 'scripts', f))
         for f in ('update-catalog.sh', '.gitignore', 'README.md'):
             shutil.copy(os.path.join(ROOT, f), os.path.join(self.man, f))
@@ -140,6 +143,33 @@ class Aggiornamenti(unittest.TestCase):
         self.assertIn('99 repo', msg)
         for cattiva in ([], {'impronta': 'rm -rf /'}, {'impronta': 'A' * 16}, {'repo': 3}):
             self.assertIsNone(check_update.valida(cattiva), cattiva)
+
+    def test_pagina_web(self):
+        ostile = '</script><script>alert(1)</script><!-- & fine'
+        cd.salva(self.ute, 'github-repos.local.json', [
+            {'progetto': 'Mia', 'descrizione': ostile, 'url': 'https://github.com/io/mia',
+             'macro': 'A', 'uso': 'test'},
+            {'url': 'https://github.com/owner1/progetto1', 'descrizione': 'descrizione mia'}])
+        self.build(self.ute, self.home_ute)
+
+        with open(os.path.join(self.home_ute, '.agents', 'skills', 'ai-tools-catalog',
+                               'catalogo.html'), encoding='utf-8') as f:
+            html = f.read()
+        # come il parser HTML: il blocco dei dati finisce al primo `</script>`
+        blocco = re.search(r'<script type="application/json" id="dati">(.*?)</script>', html, re.S)
+        dati = json.loads(blocco.group(1))
+        voci = {v['url']: v for v in dati['voci']}
+        self.assertEqual(voci['https://github.com/io/mia']['cosa_fa'], ostile)
+        self.assertEqual(voci['https://github.com/io/mia']['origine'], 'locale')
+        self.assertEqual(voci['https://github.com/owner1/progetto1']['origine'], 'modificata')
+        self.assertNotIn('origine', voci['https://github.com/owner3/progetto3'])
+        self.assertNotIn('__DATI__', html)
+        self.assertNotIn('innerHTML', html, 'la pagina deve inserire i testi solo come testo')
+        self.assertIn("default-src 'none'", html)
+
+        with open(os.path.join(self.ute, 'docs', 'index.html'), encoding='utf-8') as f:
+            pub = f.read()
+        self.assertNotIn('io/mia', pub, 'una voce locale e\' finita nella pagina pubblicata')
 
 class Unione(unittest.TestCase):
 

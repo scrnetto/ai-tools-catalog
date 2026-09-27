@@ -18,8 +18,10 @@ dai file tracciati (le voci locali non ci finiscono mai):
     catalogo-unificato.json, CATALOGO-AI-TOOLS.md, catalog-version.json (impronta dei dati),
     skill/SKILL.md (conteggi, data di verifica e indice categorie rigenerati; il resto invariato),
     i due badge dinamici del README.
+    docs/index.html (la pagina web consultabile, servita da GitHub Pages).
 Output per chiunque, dall'unione pubblicati + locali, in ogni cartella di SKILL_DIRS che esiste:
-    SKILL.md, CATALOGO-AI-TOOLS.md, catalogo.json, check_update.py, installazione.json.
+    SKILL.md, CATALOGO-AI-TOOLS.md, catalogo.json, catalogo.html (la stessa pagina web, con le
+    voci locali segnalate), check_update.py, installazione.json.
 Chi non e' il manutentore non modifica file tracciati: cosi' `git pull` non va in conflitto.
 
 Uso:
@@ -36,6 +38,8 @@ SKILL_DIRS = [os.path.expanduser(p) for p in ('~/.agents/skills/ai-tools-catalog
                                               '~/.claude/skills/ai-tools-catalog')]
 SKILL_SRC = os.path.join(ROOT, 'skill', 'SKILL.md')
 CHECK_SRC = os.path.join(ROOT, 'scripts', 'check_update.py')
+PAGINA_SRC = os.path.join(ROOT, 'scripts', 'pagina-catalogo.html')
+PAGINA_PUB = os.path.join('docs', 'index.html')
 # confrontato da check_update.py con quello pubblicato: lo scrive solo il manutentore
 VERSIONE = 'catalog-version.json'
 
@@ -57,6 +61,15 @@ LOCALI = {
    'J': 'Ricerca AI, world models & dati vettoriali',
    'Z': 'Contenuti personali / non-dev',
   },
+  # nella barra dei filtri della pagina web i nomi interi andrebbero a capo
+  'macro_breve': {
+   'A': 'Coding agent & Claude Code', 'B': 'Framework agenti AI', 'C': 'LLM & inferenza locale',
+   'D': 'RAG & memoria', 'E': 'OCR & documenti', 'F': 'Generazione media', 'G': 'Sicurezza',
+   'H': 'Dev tools', 'I': 'Finanza & trading', 'J': 'Ricerca AI',
+  },
+  'piede_pub': 'Catalogo pubblicato: raccolta personale, non esaustiva.',
+  'piede_skill': 'Copia installata con la skill: comprende anche le voci aggiunte da te, '
+                 'segnalate come tali.',
   'stato': {'archiviato': 'archiviato', 'nd': 'n/d', 'molto_attivo': 'molto attivo',
             'attivo': 'attivo', 'rallentato': 'rallentato', 'fermo': 'fermo',
             'sito': 'sito web'},
@@ -83,6 +96,14 @@ LOCALI = {
    'J': 'AI research, world models & vector data',
    'Z': 'Personal / non-dev content',
   },
+  'macro_breve': {
+   'A': 'Coding agents & Claude Code', 'B': 'AI agent frameworks', 'C': 'LLMs & local inference',
+   'D': 'RAG & memory', 'E': 'OCR & documents', 'F': 'Media generation', 'G': 'Security',
+   'H': 'Dev tools', 'I': 'Finance & trading', 'J': 'AI research',
+  },
+  'piede_pub': 'Published catalog: a personal collection, not an exhaustive one.',
+  'piede_skill': 'Copy installed with the skill: it also includes the entries you added, '
+                 'marked as such.',
   'stato': {'archiviato': 'archived', 'nd': 'n/a', 'molto_attivo': 'very active',
             'attivo': 'active', 'rallentato': 'slowing down', 'fermo': 'stalled',
             'sito': 'website'},
@@ -249,6 +270,7 @@ def catalogo(repos, siti, meta, cfg, L):
             'url': r['url'], 'stelle': m.get('stars'), 'ultimo_push': (m.get('pushed') or '')[:10],
             'attivita': lab, 'attivita_emoji': em, 'licenza': r.get('licenza') or m.get('license'),
             'linguaggio': m.get('lang'), 'fonte': r.get('fonte', '')})
+        if r.get('origine'): unified[-1]['origine'] = r['origine']
     for s in siti:
         c = s.get('macro', 'Z')
         unified.append({
@@ -256,6 +278,7 @@ def catalogo(repos, siti, meta, cfg, L):
             'nome': s['sito'], 'cosa_fa': s['descrizione'], 'quando_usarlo': s.get('uso', ''),
             'url': s['url'], 'stelle': None, 'ultimo_push': None, 'attivita': S['sito'],
             'attivita_emoji': '🌐', 'licenza': None, 'linguaggio': None, 'fonte': s.get('fonte', '')})
+        if s.get('origine'): unified[-1]['origine'] = s['origine']
 
     scartate = [u for u in unified if u['macro'] == PRIVATA]
     if scartate:
@@ -302,6 +325,26 @@ def catalogo(repos, siti, meta, cfg, L):
         OUT.append('')
     return unified, '\n'.join(OUT) + '\n', n_repo, n_sito, verificato
 
+# i campi che la pagina web usa: gli altri (fonte, emoji) la appesantirebbero e basta
+CAMPI_PAGINA = ('tipo', 'macro', 'macro_nome', 'nome', 'cosa_fa', 'quando_usarlo', 'url', 'stelle',
+                'ultimo_push', 'attivita', 'licenza', 'linguaggio', 'origine')
+
+def pagina(unified, n_repo, n_sito, verificato, cfg, L, piede):
+    """La pagina web del catalogo: un solo file HTML con i dati dentro, che non fa richieste di
+    rete. I testi vengono da reel e pagine di terzi, quindi nel JSON incorporato `<`, `>` e `&`
+    diventano escape \\u: una descrizione con `</script>` non puo' chiudere il blocco dei dati.
+    Lo script della pagina poi li inserisce solo come testo."""
+    macro = [c for c in ORDER if any(u['macro'] == c for u in unified)]
+    dati = {'titolo': cfg['titolo'], 'repo': n_repo, 'siti': n_sito, 'verificato': verificato,
+            'macro': macro, 'macro_breve': {c: L['macro_breve'][c] for c in macro},
+            'piede': piede,
+            'voci': [{k: u[k] for k in CAMPI_PAGINA if k in u} for u in unified]}
+    js = json.dumps(dati, ensure_ascii=False, separators=(',', ':'))
+    js = js.replace('<', '\\u003c').replace('>', '\\u003e').replace('&', '\\u0026')
+    tpl = open(PAGINA_SRC, encoding='utf-8').read()
+    titolo = cfg['titolo'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+    return tpl.replace('__TITOLO__', titolo).replace('__DATI__', js)
+
 def impronta(repos, siti, meta):
     """Impronta dei dati pubblicati: cambia se e solo se cambia il catalogo pubblicato, e non
     dipende dalla data del build (i campi calcolati come 'attivita' restano fuori)."""
@@ -322,6 +365,9 @@ def main():
         u_pub, md_pub, nr, ns, ver = catalogo(*pub, cfg, L)
         json.dump(u_pub, open(os.path.join(ROOT, 'catalogo-unificato.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
         open(os.path.join(ROOT, 'CATALOGO-AI-TOOLS.md'), 'w', encoding='utf-8').write(md_pub)
+        os.makedirs(os.path.join(ROOT, 'docs'), exist_ok=True)
+        open(os.path.join(ROOT, PAGINA_PUB), 'w', encoding='utf-8').write(
+            pagina(u_pub, nr, ns, ver, cfg, L, L['piede_pub']))
         _, w = sync_skill_md(u_pub, nr, ns, L, ver)
         warn += w + sync_readme_badges(nr, ns, ver)
         versione.update({'repo': nr, 'siti': ns, 'verificato': ver})
@@ -342,6 +388,8 @@ def main():
         visti.add(os.path.realpath(d))
         open(os.path.join(d, 'CATALOGO-AI-TOOLS.md'), 'w', encoding='utf-8').write(md)
         json.dump(unified, open(os.path.join(d, 'catalogo.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+        open(os.path.join(d, 'catalogo.html'), 'w', encoding='utf-8').write(
+            pagina(unified, n_repo, n_sito, verificato, cfg, L, L['piede_skill']))
         if skill_md is not None:
             open(os.path.join(d, 'SKILL.md'), 'w', encoding='utf-8').write(skill_md)
         shutil.copyfile(CHECK_SRC, os.path.join(d, 'check_update.py'))
