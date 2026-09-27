@@ -50,7 +50,8 @@ read it:
 
 | Agent | Global skills folder | How the installer covers it |
 |---|---|---|
-| OpenCode, Codex, Gemini CLI, Cursor, GitHub Copilot, and most other Agent Skills clients | `~/.agents/skills/` | the real copy |
+| OpenCode, Codex, Gemini CLI, Cursor, GitHub Copilot, Goose, Crush, and most other Agent Skills clients | `~/.agents/skills/` | the real copy |
+| Hermes Agent | `~/.hermes/skills/` | not covered: add `~/.agents/skills` to `skills.external_dirs` in `~/.hermes/config.yaml` |
 | Claude Code | `~/.claude/skills/` | symlink (junction on Windows) |
 | Antigravity (Google) | `~/.gemini/config/skills/` | symlink/junction, only if `~/.gemini` exists |
 
@@ -63,7 +64,7 @@ An older install that lived directly in `~/.claude/skills/ai-tools-catalog/` is 
 link automatically — but only if it holds nothing except the generated files; otherwise the
 installer stops and tells you what it found.
 
-**Tested on 2026-09-27** with the question *"which open-source tool does OCR on PDFs?"*: each agent
+**Tested on 2026-09-27**, on nine agents, with the question *"which open-source tool does OCR on PDFs?"*: each agent
 loaded the skill, read the catalog files and answered with stars, last push and license matching the
 catalog.
 
@@ -73,6 +74,11 @@ catalog.
 | OpenCode 1.18.31 | ✅ with `opencode/big-pickle`. The local `qwen3-coder` model wrote the tool call as plain text instead of executing it, then invented URLs and stars: pick a model with working tool calling |
 | Codex CLI 0.157.1 (`gpt-5.6-terra`) | ✅ with the default `workspace-write` sandbox. Codex's Linux sandbox (bubblewrap) needs unprivileged user namespaces, which Ubuntu ≥ 23.10 blocks through AppArmor (`kernel.apparmor_restrict_unprivileged_userns = 1`): there Codex sees the skill but cannot read its files, and answers from web search or memory. Fix: an AppArmor profile granting `userns` to `/usr/bin/bwrap` only — see below |
 | Antigravity CLI 1.2.12 | ✅ once linked into `~/.gemini/config/skills/` — it does not read `~/.agents/skills/` globally |
+| Hermes Agent 0.16.0 | ✅ after adding `~/.agents/skills` to `skills.external_dirs` in `~/.hermes/config.yaml` — by default it reads only `~/.hermes/skills/` |
+| Gemini CLI 0.61.0 | ✅ reads `~/.agents/skills/` |
+| GitHub Copilot CLI 1.0.88 | ✅ reads `~/.agents/skills/` |
+| Goose 1.52.0 | ✅ reads `~/.agents/skills/` through its `skills` extension, but may skip it unless told to use `load_skill`: in the first run it answered from memory |
+| Crush 0.96.1 | ✅ reads `~/.agents/skills/` |
 
 **Codex on Ubuntu ≥ 23.10.** Check with `bwrap --ro-bind / / true`: if it fails with
 `setting up uid map: Permission denied`, save this as `/etc/apparmor.d/bwrap` and load it with
@@ -90,8 +96,10 @@ profile bwrap /usr/bin/bwrap flags=(unconfined) {
 }
 ```
 
-Cursor, GitHub Copilot and Gemini CLI were not tested: they read `~/.agents/skills/` according to
-their documentation. `install-skill.ps1` was not run on Windows.
+Hermes, Gemini CLI, Copilot CLI, Goose and Crush were tested through a local
+[OmniRoute](https://github.com/diegosouzapw/OmniRoute) gateway, with free-tier models
+(GitHub Models `gpt-4.1`/`gpt-5-mini`). Cursor was not tested: it reads `~/.agents/skills/` according to
+its documentation. `install-skill.ps1` was not run on Windows.
 
 ## Configuration
 The chat to read is not hardcoded — it lives in `config.json`, which is **gitignored**:
