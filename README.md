@@ -15,11 +15,15 @@ GitHub Copilot and any other agent that supports the open [Agent Skills](https:/
 format.
 
 **Browse the catalog online: <https://scrnetto.github.io/ai-tools-catalog/>** — search and filter by
-category, activity and license.
+category, activity and license. Also in [English](https://scrnetto.github.io/ai-tools-catalog/en/),
+[Español](https://scrnetto.github.io/ai-tools-catalog/es/),
+[Deutsch](https://scrnetto.github.io/ai-tools-catalog/de/) and
+[Français](https://scrnetto.github.io/ai-tools-catalog/fr/).
 
-> The tooling and docs are in English; the catalog *entries* are in Italian, because that is the
-> language of the reels they come from. Section headings and status labels follow
-> `catalogo.lingua` in your config — see [Configuration](#configuration).
+> The tooling and docs are in English; the catalog *entries* are written in Italian, because that is
+> the language of the reels they come from, and translated into English, Spanish, German and French
+> (`traduzioni/<lang>.json`). The skill you install follows `catalogo.lingua` in your config — see
+> [Configuration](#configuration) and [Translations](#translations).
 
 ## What the catalog holds
 - **315 GitHub repositories** + **29 websites**, in 10 practical categories (coding agents/Claude
@@ -121,7 +125,7 @@ cp config.example.json config.json     # then set your own chat
 | `whatsapp.self_chat` | `true` if it is the "message yourself" chat |
 | `instagram.enabled` | `false` → skip profile monitoring |
 | `catalogo.titolo` / `catalogo.fonte` | Heading and source line of the generated catalog |
-| `catalogo.lingua` | `it` (default) or `en` — language of category names, status labels and generated prose |
+| `catalogo.lingua` | `it` (default), `en`, `es`, `de` or `fr` — language of the installed catalog: entries, category names, status labels, the web page |
 | `catalogo.manutentore` | `true` only for whoever publishes the catalog — see [Your own entries and updates](#your-own-entries-and-updates) |
 | `github.token` | Optional GitHub token — see [below](#github-token-optional) |
 
@@ -177,6 +181,25 @@ a publish → local edits → publish → update cycle.
 **Publishing a catalog of your own (fork).** Set `"manutentore": true` under `catalogo` in your
 `config.json`: the scripts then write to the tracked files and regenerate `catalog-version.json`.
 Point `URL` in `scripts/check_update.py` to your fork.
+
+## Translations
+Entries are written once, in Italian, in `github-repos.json` and `siti-web.json`. Their
+translations live in `traduzioni/en.json`, `es.json`, `de.json` and `fr.json`, one object per entry
+keyed by address (`owner/name` or the normalized URL), and `scripts/build_catalog.py` builds one
+web page per language (`docs/<lang>/index.html`) plus the installed skill in your `catalogo.lingua`.
+
+Each translation records a fingerprint of the Italian text it was made from. If the Italian changes
+later, the translation counts as **stale**: the build shows the Italian text instead, marks it
+"original text in Italian" on the page, and says how many entries are affected. An outdated
+translation never passes for a current one.
+
+```bash
+python3 scripts/traduzioni.py stato                           # how many are missing, per language
+python3 scripts/traduzioni.py mancanti de > todo.json          # entries to translate (or re-translate)
+python3 scripts/traduzioni.py applica de todo-translated.json  # merge them, fingerprint computed for you
+```
+
+Your own `.local.json` entries are never translated: they stay as you wrote them.
 
 ## Updating the catalog
 Requires a browser with WhatsApp Web logged in (and Instagram logged in for profile monitoring).
@@ -235,8 +258,10 @@ The token is read in this order — first match wins:
 | `gh-meta.json` | GitHub activity metadata, keyed by `owner/name` |
 | `instagram-profili.json` | Profile-monitoring state (reels already seen, per handle) |
 | `*.local.json` | Your own entries and state, gitignored, merged at build time |
-| `catalog-version.json` | Fingerprint of the published catalog, read by `check_update.py` |
-| `scripts/` | `fetch_gh_meta.py`, `build_catalog.py`, `catalogo_dati.py` (the merge), `check_update.py` |
+| `traduzioni/` | Translations of the entries into en, es, de, fr — see [Translations](#translations) |
+| `docs/` | The generated web page, one per language, served by GitHub Pages |
+| `catalog-version.json` | Fingerprint of the published catalog (translations included), read by `check_update.py` |
+| `scripts/` | `fetch_gh_meta.py`, `build_catalog.py`, `catalogo_dati.py` (the merge), `traduzioni.py`, `lingue.py` (UI strings), `pagina-catalogo.html` (page template), `check_update.py` |
 | `skill/SKILL.md` | Skill definition, in the open Agent Skills format (redistributable) |
 | `.claude/agents/` · `.claude/commands/` | Update agent and slash command |
 | `install-skill.sh` · `install-skill.ps1` | Install the skill on a new machine, for every agent |
@@ -256,7 +281,7 @@ file still never reaches the published catalog.
 ## License
 - **Code** — scripts, installers, `skill/SKILL.md`, the agent and command in `.claude/`: [MIT](LICENSE).
 - **Catalog data** — the descriptions and "when to use it" notes in `github-repos.json`,
-  `siti-web.json`, `catalogo-unificato.json`, `CATALOGO-AI-TOOLS.md` and `docs/index.html`:
+  `siti-web.json`, `traduzioni/`, `catalogo-unificato.json`, `CATALOGO-AI-TOOLS.md` and `docs/`:
   [CC BY 4.0](LICENSE-DATA). Reuse them freely, crediting this repository.
 
 Stars, last-push dates and licenses of the catalogued projects are facts taken from GitHub, not

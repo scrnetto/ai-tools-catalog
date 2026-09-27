@@ -40,7 +40,7 @@ The file is **gitignored** because it holds the name of your chat; the tracked s
 | `whatsapp.self_chat` | `true` = the "message yourself" chat; `false` = look it up by name in the list |
 | `instagram.enabled` | `false` → Phase B (profile monitoring) skipped |
 | `catalogo.titolo` / `catalogo.fonte` | Heading and source line of `CATALOGO-AI-TOOLS.md` |
-| `catalogo.lingua` | `it` (default) or `en` — language of category names, status labels and generated prose |
+| `catalogo.lingua` | `it` (default), `en`, `es`, `de` or `fr` — language of the installed catalog (entries included, from `traduzioni/`) |
 | `github.token` | Optional GitHub token (60 → 5000 API requests/hour). Create it with **no permissions**: public repo metadata needs none. Read only if `config.json` is gitignored; `GITHUB_TOKEN` in the environment takes precedence. |
 
 One-off overrides from the command: `/sync-ai-catalog "Chat Name"`, `--only-instagram`,
@@ -56,7 +56,10 @@ falls back to neutral defaults.
 | `gh-meta.json` | GitHub metadata (stars, last push, license) by `owner/name` (plus `gh-meta.local.json` for your own entries) |
 | `instagram-profili.json` | Profile-monitoring state (handle → reels seen/catalogued, last check) |
 | `chat-messaggi.csv` | Raw message dump (gitignored) |
-| `catalogo-unificato.json` / `CATALOGO-AI-TOOLS.md` / `docs/index.html` | Generated outputs (the last one is the web page, from the template `scripts/pagina-catalogo.html`) |
+| `catalogo-unificato.json` / `CATALOGO-AI-TOOLS.md` / `docs/` | Generated outputs (`docs/` holds the web page, one per language, from the template `scripts/pagina-catalogo.html`) |
+| `traduzioni/<lang>.json` | Translations of the entries (en, es, de, fr), each with a fingerprint of its Italian source |
+| `scripts/traduzioni.py` | Lists missing or stale translations and merges new ones |
+| `scripts/lingue.py` | UI and prose strings for every language |
 | `siti-personali.json` | Non-dev entries, kept out of the repo (gitignored) |
 | `scripts/fetch_gh_meta.py` | Fetches activity metadata (incremental merge, `--refresh` to re-check) |
 | `scripts/build_catalog.py` | Builds the catalog and updates the installed skill (`~/.agents/skills/ai-tools-catalog/`), merging your `.local.json` entries |

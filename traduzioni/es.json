@@ -1,0 +1,1736 @@
+{
+  "6551team/opennews-mcp": {
+    "cosa_fa": "Servidor MCP que expone a los agentes más de 85 fuentes de noticias en tiempo real, con puntuación de impacto y señales long/short en cada artículo.",
+    "quando_usarlo": "Cuando el agente debe razonar sobre noticias de mercado actualizadas en lugar de sobre su entrenamiento.",
+    "sorgente": "e7e7503fa840"
+  },
+  "666ghj/mirofish": {
+    "cosa_fa": "Motor de inteligencia colectiva: simula miles de agentes de IA para hacer predicciones (estudiante chino, viral)",
+    "quando_usarlo": "Motor de inteligencia colectiva: simula miles de agentes para hacer predicciones.",
+    "sorgente": "dd40f6498b09"
+  },
+  "abi/screenshot-to-code": {
+    "cosa_fa": "Convierte capturas de pantalla, mockups, archivos de Figma y grabaciones de pantalla en código frontend (HTML/Tailwind, React, Vue, Bootstrap, Ionic), intentando reconstruir también interacciones y animaciones.",
+    "quando_usarlo": "Cuando partes de una imagen o de un vídeo de una interfaz y quieres el código correspondiente.",
+    "sorgente": "c79c589cea0c"
+  },
+  "adguardteam/adguardhome": {
+    "cosa_fa": "Servidor DNS self-hostable que bloquea publicidad y rastreadores para toda la red doméstica, sin instalar nada en cada dispositivo.",
+    "quando_usarlo": "Cuando quieres filtrar rastreadores y publicidad a nivel de red en lugar de navegador por navegador.",
+    "sorgente": "47fc9cec4a76"
+  },
+  "affaan-m/everything-claude-code": {
+    "cosa_fa": "Guía definitiva de setup de Claude Code (marcobuilds7)",
+    "quando_usarlo": "Guía/setup completo para configurar Claude Code de la mejor manera.",
+    "sorgente": "bd017c044bf1"
+  },
+  "agalwood/motrix": {
+    "cosa_fa": "Gestor de descargas multiplataforma construido sobre el motor aria2, con interfaz moderna: enlaces directos, FTP, torrent y magnet en multi-thread, además de un modo headless para servidores y NAS.",
+    "quando_usarlo": "Cuando necesitas descargar archivos grandes o torrents sin depender del gestor de descargas del navegador.",
+    "sorgente": "e043e2d85a2a"
+  },
+  "agentconnect-md/agentconnect": {
+    "cosa_fa": "Sistema multiagente self-hostable que lleva los agentes a Slack, Discord, Telegram y GitHub: cada agente tiene su propio modelo, herramientas, permisos y memoria y puede llamar a los demás.",
+    "quando_usarlo": "Cuando el equipo quiere invocar agentes desde las herramientas que ya usa, sin otra interfaz.",
+    "sorgente": "213a9ac44df3"
+  },
+  "agentskills.io": {
+    "cosa_fa": "Estándar para las skills de los agentes de IA (citado por Anthropic-Cybersecurity-Skills)",
+    "quando_usarlo": "Estándar para las skills de los agentes de IA.",
+    "sorgente": "01e74a64e470"
+  },
+  "agricidaniel/claude-seo": {
+    "cosa_fa": "Skill de análisis SEO para Claude Code (25 sub-skills)",
+    "quando_usarlo": "Skill de Claude Code para tareas de SEO.",
+    "sorgente": "7aab6fc5a9b7"
+  },
+  "ahmadpiran/restoredrill": {
+    "cosa_fa": "Verifica que los backups de PostgreSQL y MySQL se restauran de verdad: arranca un contenedor desechable, restaura el último backup, ejecuta comprobaciones y produce un informe JSON con fecha y duración.",
+    "quando_usarlo": "Cuando debes demostrar (también para auditorías) que los backups funcionan, no solo que existen.",
+    "sorgente": "63ed117b34c1"
+  },
+  "ahujasid/blender-mcp": {
+    "cosa_fa": "MCP para controlar Blender con LLM",
+    "quando_usarlo": "Servidor MCP para controlar Blender desde un agente.",
+    "sorgente": "a2ed1ffedf84"
+  },
+  "ai.google.dev/gemma": {
+    "cosa_fa": "Modelo de embedding de Google para RAG local on-device",
+    "quando_usarlo": "Modelo de embedding de Google para RAG local on-device.",
+    "sorgente": "3a0f0ec03d5d"
+  },
+  "aiming-lab/autoresearchclaw": {
+    "cosa_fa": "Investigación científica autónoma con IA (pipeline de 23 etapas)",
+    "quando_usarlo": "Investigación científica autónoma con IA (pipeline por etapas).",
+    "sorgente": "9a68751f3d13"
+  },
+  "aishwaryanr/awesome-generative-ai-guide": {
+    "cosa_fa": "Repositorio 'one-stop' de Aishwarya Naresh Reganti sobre GenAI: roadmaps de RAG/agentes/fundamentos de LLM, cursos gratuitos, notebooks, novedades de investigación y 60 preguntas típicas de entrevista de GenAI con respuestas.",
+    "quando_usarlo": "Cuando quieres un punto único para estudiar GenAI, prepararte para entrevistas o seguir roadmaps de RAG y agentes.",
+    "sorgente": "5bd53ba79184"
+  },
+  "alexgreensh/token-optimizer": {
+    "cosa_fa": "Herramienta para Claude Code que encuentra los 'tokens fantasma' y las configuraciones infladas, hace checkpoints para sobrevivir a la compactación del contexto y muestra un dashboard de consumo.",
+    "quando_usarlo": "Cuando las sesiones largas pierden calidad tras la compactación o el consumo de tokens es inexplicable.",
+    "licenza": "PolyForm Noncommercial 1.0.0 (+ permiso para pequeñas empresas)",
+    "sorgente": "bba6b1db3b92"
+  },
+  "alibaba/open-code-review": {
+    "cosa_fa": "Sistema de revisión automática de pull requests publicado por Alibaba, self-hostable e integrable en pipelines de CI/CD, para que el código no salga hacia APIs de terceros.",
+    "quando_usarlo": "Cuando quieres revisiones automáticas de las PR sin enviar el código de la empresa a un SaaS externo.",
+    "sorgente": "255a41e0158f"
+  },
+  "alibaba/zvec": {
+    "cosa_fa": "Base de datos vectorial open-source in-process (embedded)",
+    "quando_usarlo": "Base de datos vectorial embebida (in-process) para RAG sin servidor separado.",
+    "sorgente": "97efba769937"
+  },
+  "alpbahadur/49-ide": {
+    "cosa_fa": "IDE 2D open source: un lienzo con zoom donde terminales, CLI de agentes, git, issues y archivos están uno al lado del otro, también en varias máquinas sin SSH, accesible desde el portátil o el teléfono.",
+    "quando_usarlo": "Cuando gestionas muchos agentes en terminales distintas y las pestañas ya no bastan para seguirlos.",
+    "licenza": "BUSL-1.1 (pasa a MIT el 2030-02-26)",
+    "sorgente": "1c4340c00ba5"
+  },
+  "amirmushichge/machine-vision": {
+    "cosa_fa": "Gráficos procedurales al estilo 'visión artificial' en el navegador sobre vídeos locales: analiza movimiento, bordes y luz y superpone puntos, líneas y etiquetas; exporta clips breves. Sin subidas.",
+    "quando_usarlo": "Cuando quieres efectos generativos de creative coding sobre un vídeo tuyo sin software pesado.",
+    "sorgente": "9e1969098a63"
+  },
+  "amnezia-vpn/amnezia-client": {
+    "cosa_fa": "Cliente VPN que te permite crear una VPN personal en tu propio servidor, con protocolos ofuscados resistentes a la censura.",
+    "quando_usarlo": "Cuando no quieres confiar en un proveedor de VPN comercial y prefieres alojar tu propio endpoint.",
+    "sorgente": "f613f161bbea"
+  },
+  "andrewyng/aisuite": {
+    "cosa_fa": "Librería de Andrew Ng que ofrece una interfaz unificada estilo OpenAI para llamar a LLM de distintos proveedores (OpenAI, Anthropic, Google, Mistral...) cambiando de modelo con una sola cadena.",
+    "quando_usarlo": "Cuando quieres probar/intercambiar varios LLM en el código sin reescribir la integración para cada proveedor.",
+    "sorgente": "96817c64f642"
+  },
+  "andrewyng/openworker": {
+    "cosa_fa": "Co-worker de IA open source publicado por Andrew Ng que completa tareas en lugar de limitarse a responder: se conecta a más de 40 aplicaciones, funciona en local en Mac y deja elegir el modelo, manteniendo los datos en la máquina.",
+    "quando_usarlo": "Cuando quieres un agente operativo local conectado a tus apps, sin enviar los datos a un servicio.",
+    "sorgente": "bd3aca61ac91"
+  },
+  "andyyyy64/whichllm": {
+    "cosa_fa": "Herramienta para elegir el mejor LLM local para tu VRAM",
+    "quando_usarlo": "Elegir el mejor LLM local según tu VRAM.",
+    "sorgente": "482958b3011d"
+  },
+  "anemll/dspark-vllm-gx10": {
+    "cosa_fa": "Port para vLLM que ejecuta DeepSeek V4 Flash (NVFP4) en dos nodos DGX Spark / ASUS GX10 conectados, con dashboard en vivo y procedimiento de despliegue reproducible.",
+    "quando_usarlo": "Cuando tienes dos DGX Spark y quieres ejecutar en ellos un modelo demasiado grande para uno solo.",
+    "sorgente": "6c378e8fe005"
+  },
+  "anil-matcha/awesome-jev-by-typesafe": {
+    "cosa_fa": "Colección de casos de uso, patrones, prompts y código de partida para Jev de TypeSafe (clasificación, routing, screening sí/no).",
+    "quando_usarlo": "Cuando empiezas a usar Jev o un clon y buscas ejemplos concretos de los que partir.",
+    "sorgente": "ad197707af66"
+  },
+  "anil-matcha/open-generative-ai": {
+    "cosa_fa": "Estudio open source de generación de imágenes y vídeo que agrega cientos de modelos (Flux, Kling, Veo, etc.) usando directamente las claves de API de los proveedores, sin el recargo ni los créditos con caducidad de las plataformas 'wrapper'. Antes se llamaba Open-Higgsfield-AI.",
+    "quando_usarlo": "Cuando generas muchos contenidos de vídeo/imagen y quieres pagar a los proveedores a precio de tarifa en lugar de a través de un revendedor.",
+    "sorgente": "655d4fef3c6c"
+  },
+  "ankitects/anki": {
+    "cosa_fa": "Sistema de repetición espaciada con recuerdo activo: muestra cada concepto en el momento en que la memoria está a punto de perderlo. Nacido en Python, ha trasladado el núcleo a Rust sobre SQLite e integra el algoritmo FSRS para calcular los intervalos de repaso.",
+    "quando_usarlo": "Cuando debes memorizar a largo plazo un corpus técnico (API, sintaxis, terminología) en lugar de releerlo.",
+    "sorgente": "f46fab3bcda7"
+  },
+  "annota.ai": {
+    "cosa_fa": "Plataforma para preparar datos destinados a la IA: anotación de imágenes, OCR con revisión del texto de los documentos y exportación a COCO o Markdown, con una conexión MCP que expone los datos a los agentes.",
+    "quando_usarlo": "Cuando debes convertir PDF e imágenes en datasets o en Markdown para una base de conocimiento.",
+    "sorgente": "8bd97c2474e3"
+  },
+  "anthropics/claude-plugins-official": {
+    "cosa_fa": "Plugin de Claude Code para iterative development loops",
+    "quando_usarlo": "Plugin de Claude Code para bucles iterativos de desarrollo autónomo.",
+    "sorgente": "0113084f2beb"
+  },
+  "anthropics/knowledge-work-plugins": {
+    "cosa_fa": "Repositorio oficial de Anthropic con 11 plugins para knowledge workers (ventas, marketing, finanzas, soporte, legal, etc.) que convierten a Claude en un especialista por rol: skills en markdown, slash commands, subagents, conectores MCP y hooks, sin código.",
+    "quando_usarlo": "Cuando quieres dar a Claude Code/Cowork competencias listas para un rol empresarial (sales, finance, legal...) instalando plugins basados en archivos y personalizables.",
+    "sorgente": "9370d3bc7581"
+  },
+  "antirez/ds4": {
+    "cosa_fa": "Motor de inferencia local para DeepSeek V4 Flash en hardware de consumo (antirez)",
+    "quando_usarlo": "Ejecutar modelos de frontera (DeepSeek V4) en local en Mac/hardware de consumo (antirez).",
+    "sorgente": "6c86a3f9fe3e"
+  },
+  "appsmithorg/appsmith": {
+    "cosa_fa": "Plataforma low-code open source para construir herramientas internas y dashboards empresariales sin escribir montañas de código repetitivo.",
+    "quando_usarlo": "Cuando necesitas crear rápidamente paneles de administración internos conectados a tus bases de datos y APIs.",
+    "sorgente": "e333571f29b8"
+  },
+  "aprilnea/openlogi": {
+    "cosa_fa": "Alternativa open source en Rust a Logitech Options+: se comunica directamente con el hardware de Logitech vía HID++, sin cuenta ni telemetría, con la configuración en un archivo de texto.",
+    "quando_usarlo": "Cuando quieres reasignar teclas, DPI y gestos de ratones/teclados Logitech en local, también en Linux.",
+    "sorgente": "86f2ebd591c3"
+  },
+  "aquasecurity/trivy": {
+    "cosa_fa": "Scanner open-source de vulnerabilidades, secrets y configuraciones erróneas",
+    "quando_usarlo": "Scanner de seguridad para vulnerabilidades, secrets y misconfigs (estándar del sector). ⚠️ Usar ≥0.71.1 y nunca la 0.69.4: en marzo de 2026 la supply chain fue comprometida (GHSA-69fq-xp46-6x23, binario 0.69.4 y tags de trivy-action/setup-trivy reescritos, robo de secretos); path traversal corregido en 0.71.1 (GHSA-mcj4-mphf-j9ff). En CI, fijar las actions por SHA.",
+    "sorgente": "5832ecf51ebe"
+  },
+  "artificialanalysis.ai": {
+    "cosa_fa": "Índice independiente que compara los modelos de IA en inteligencia, coste por tarea y velocidad de generación, con gráficos que permiten cruzar las distintas métricas.",
+    "quando_usarlo": "Cuando debes elegir un modelo equilibrando calidad, precio y latencia en lugar de mirar un solo benchmark.",
+    "sorgente": "3ab20b359fca"
+  },
+  "asciimoo/hister": {
+    "cosa_fa": "Convierte el historial del navegador en un motor de búsqueda personal indexando el texto completo de las páginas visitadas; funciona en local o en un servidor privado, con extensiones, CLI y soporte MCP.",
+    "quando_usarlo": "Cuando debes volver a encontrar un pasaje leído hace semanas y el título y la URL no bastan.",
+    "sorgente": "17096323a499"
+  },
+  "aside.com": {
+    "cosa_fa": "Navegador con agente integrado que opera en los sitios donde el usuario ya tiene una sesión abierta, ejecutando tareas en su lugar. Declara procesamiento local de los datos y un gestor de contraseñas que autentica sin exponer las credenciales al agente.",
+    "quando_usarlo": "Cuando la automatización debe pasar por sitios autenticados que no exponen una API.",
+    "sorgente": "f01e7bde7199"
+  },
+  "asokurasu/text-humanizer": {
+    "cosa_fa": "Herramienta open source que reescribe texto generado por IA para que suene más natural manteniendo su significado, mediante reescritura LLM multilingüe.",
+    "quando_usarlo": "Cuando un borrador escrito con IA tiene el típico tono artificial y quieres una primera pasada de revisión automática.",
+    "sorgente": "54dd6b92b9a5"
+  },
+  "astral-sh/ruff": {
+    "cosa_fa": "Linter y formatter de Python escrito en Rust, órdenes de magnitud más rápido que Flake8 y Black, que unifica en una sola herramienta lo que antes requería varios paquetes y configuraciones.",
+    "quando_usarlo": "Cuando el lint del proyecto Python es lento o está fragmentado en demasiadas herramientas.",
+    "sorgente": "461ee3f012ac"
+  },
+  "atomicbot-ai/atomic-agent": {
+    "cosa_fa": "Agente open source que planifica, navega, modifica archivios y mantiene memoria ejecutándose íntegramente en local sobre un modelo pequeño, con resultados declarados competitivos en el benchmark GAIA.",
+    "quando_usarlo": "Cuando quieres un agente generalista que no salga de tu máquina.",
+    "sorgente": "9096538262d9"
+  },
+  "automattic/harper": {
+    "cosa_fa": "Corrector gramatical open source rapidísimo y privacy-first: se ejecuta en local sin enviar el texto a servidores externos.",
+    "quando_usarlo": "Cuando quieres una alternativa a Grammarly que no envíe tus textos a la nube.",
+    "sorgente": "1950b176b19b"
+  },
+  "ayghri/i-have-adhd": {
+    "cosa_fa": "Skill que impone al asistente de código diez reglas de salida: primero el comando o el archivo exacto, sin preámbulos ni explicaciones kilométricas.",
+    "quando_usarlo": "Cuando las respuestas del agente son verbosas y necesitas llegar de inmediato a la línea que hay que tocar.",
+    "sorgente": "89be15879765"
+  },
+  "baidu/unlimited-ocr": {
+    "cosa_fa": "Modelo OCR open-source de Baidu para parsing de documentos (evolución de DeepSeek-OCR)",
+    "quando_usarlo": "Modelo OCR open-source para parsing de documentos empresariales en local (Baidu).",
+    "sorgente": "0f7de3f9ec36"
+  },
+  "biclab/spikingbrain-7b": {
+    "cosa_fa": "LLM brain-inspired (CAS): hybrid attention + spike encoding, 100x TTFT",
+    "quando_usarlo": "LLM brain-inspired eficiente (spiking) con contexto muy largo.",
+    "sorgente": "ace4941851fa"
+  },
+  "bigskysoftware/htmx": {
+    "cosa_fa": "Extiende el HTML para que cualquier elemento pueda hacer llamadas HTTP y actualizar partes de la página, manteniendo lógica y estado en el servidor sin frameworks JavaScript en el cliente.",
+    "quando_usarlo": "Cuando una interfaz dinámica no justifica una SPA y quieres quedarte del lado del servidor.",
+    "sorgente": "1c06ae0575bd"
+  },
+  "bilawalsidhu/gods-eye-view": {
+    "cosa_fa": "Globo 3D fotorrealista en el navegador (CesiumJS) que agrega en tiempo real vuelos, rutas marítimas, satélites, datos sísmicos, incendios y cámaras de tráfico, con shaders nocturnos/térmicos y agente de voz.",
+    "quando_usarlo": "Cuando buscas una referencia de visualización geoespacial en tiempo real sobre un globo 3D en el navegador.",
+    "sorgente": "4dd541098216"
+  },
+  "blazux/qwen3.8-flash-dgx": {
+    "cosa_fa": "Receta para ejecutar Qwen3.8-Flash (unos 176B de parámetros) en un solo DGX Spark, transfiriendo una tabla grande desde el disco bajo demanda para liberar memoria unificada, con los parches necesarios para la estabilidad.",
+    "quando_usarlo": "Cuando tienes un DGX Spark y quieres ejecutar en él un modelo más grande que su memoria.",
+    "licenza": "Apache-2.0",
+    "sorgente": "f9878780d42c"
+  },
+  "block/buzz": {
+    "cosa_fa": "Workspace donde desarrolladores humanos y agentes de IA colaboran al mismo nivel, creado por Block para reducir la dependencia de Slack y GitHub.",
+    "quando_usarlo": "Cuando quieres un entorno compartido en el que el equipo humano y los agentes trabajen en las mismas tareas.",
+    "sorgente": "7b42949e22cb"
+  },
+  "bloopai/vibe-kanban": {
+    "cosa_fa": "Potenciar coding agents con kanban (BloopAI)",
+    "quando_usarlo": "Gestionar las tareas de un coding agent con un tablero kanban.",
+    "sorgente": "9e0ecb7695f5"
+  },
+  "bmad-code-org/bmad-method": {
+    "cosa_fa": "Breakthrough Method for Agile AI Driven Development",
+    "quando_usarlo": "Método ágil para guiar el desarrollo de software con IA (planificación estructurada).",
+    "sorgente": "0f1529d8c25d"
+  },
+  "braveopotato/fcksignups": {
+    "cosa_fa": "Catálogo curado por la comunidad de herramientas open source que funcionan en el navegador y no requieren registro ni cuenta.",
+    "quando_usarlo": "Cuando necesitas convertir o formatear algo al vuelo sin crear otra cuenta más.",
+    "sorgente": "8730f917ac91"
+  },
+  "breezexian/uniphysgen": {
+    "cosa_fa": "Investigación que deja los assets 3D 'listos para la simulación': asigna a las partes segmentadas propiedades físicas (masa, fricción, material) y articulaciones, verificándolas con pruebas en simulación.",
+    "quando_usarlo": "Cuando preparas assets 3D para simuladores robóticos o embodied AI y las mallas en bruto no tienen física.",
+    "sorgente": "28fc97813b9c"
+  },
+  "browser-use/browser-use": {
+    "cosa_fa": "Biblioteca que da a un agente de IA el control de un navegador real: abre páginas, hace clic, rellena formularios y ejecuta tareas descritas en lenguaje natural.",
+    "quando_usarlo": "Cuando el agente debe operar en sitios que no exponen API.",
+    "sorgente": "de42efd08b96"
+  },
+  "browser-use/video-use": {
+    "cosa_fa": "Skill open source (de browser-use) que convierte un coding agent como Claude Code en un editor de video agéntico: pones los clips en bruto en una carpeta, describes el video que quieres y el agente trabaja con transcripciones, timestamps, waveforms y ffmpeg hasta el final.mp4.",
+    "quando_usarlo": "Cuando quieres editar video a partir de material en bruto guiando a Claude Code/Codex para cortar y componer la línea de tiempo mediante texto.",
+    "sorgente": "74c7d914698c"
+  },
+  "bruin-data/bruin": {
+    "cosa_fa": "Herramienta open source para pipelines de datos end-to-end en SQL y Python: ingesta desde varias fuentes, transformaciones y controles de calidad en un solo proyecto, self-hosted.",
+    "quando_usarlo": "Cuando quieres ingesta, transformación y data quality en una única herramienta en lugar de combinar varios servicios.",
+    "sorgente": "062911876f6b"
+  },
+  "bruin-data/dac": {
+    "cosa_fa": "Dashboards definidos como código en YAML y JSX, con semantic layer integrada: versionables y revisables como el resto del código, y modificables por un agente.",
+    "quando_usarlo": "Cuando quieres dashboards bajo control de versiones en lugar de configurados a mano en una herramienta de BI.",
+    "sorgente": "a822ae3e7859"
+  },
+  "cactus-compute/needle": {
+    "cosa_fa": "Modelos de automatización minúsculos (2 bits, 8-29 MB) para dispositivos pequeños: no conversan, eligen qué función llamar y con qué argumentos, y extraen datos estructurados. Needle 3 tiene unos 121M de parámetros; benchmarks declarados por los autores. Telemetría anónima activa por defecto (NEEDLE_TELEMETRY=0 para desactivarla). Apache-2.0.",
+    "quando_usarlo": "Cuando hace falta tool calling offline en el teléfono, en domótica o en dispositivos sin pantalla, para comandos breves y claros.",
+    "sorgente": "004cbb9bd22b"
+  },
+  "calesthio/crucix": {
+    "cosa_fa": "Terminal de inteligencia OSINT local: recopila cada pocos minutos decenas de feeds públicos (incendios por satélite, tráfico aéreo y naval, radiación, zonas de conflicto, indicadores económicos y de mercado), los muestra en un mapa 3D y correlaciona señales entre dominios distintos. Conectado a un LLM envía alertas por niveles a Telegram o Discord y responde a comandos. Sin nube ni telemetría.",
+    "quando_usarlo": "Cuando quieres un panel de situational awareness sobre fuentes abiertas, con alertas automáticas, para ejecutar en tu máquina.",
+    "sorgente": "11a41f439fbf"
+  },
+  "calesthio/openmontage": {
+    "cosa_fa": "Agente open source que a partir de un único prompt produce un video terminado: investigación, guion, generación de imágenes y video, búsqueda de clips reales, voz, música, subtítulos y render final.",
+    "quando_usarlo": "Cuando quieres delegar en un agente toda la producción de un video, no solo la generación de los clips.",
+    "sorgente": "dc3252a5f734"
+  },
+  "capsoftware/cap": {
+    "cosa_fa": "Alternativa open source a Loom para grabar la pantalla y compartir los vídeos con un enlace; disponible también self-hosted.",
+    "quando_usarlo": "Cuando debes enviar explicaciones en vídeo asíncronas sin depender de Loom.",
+    "licenza": "AGPL-3.0 (crates cap-camera*/scap-* MIT)",
+    "sorgente": "02c91e6c7450"
+  },
+  "cathrynlavery/diagram-design": {
+    "cosa_fa": "Skill open source que hace que el agente genere diagramas editoriales en HTML/SVG nativo sobre una cuadrícula rigurosa, con extracción automática de la paleta del sitio que indiques y decenas de plantillas listas.",
+    "quando_usarlo": "Cuando necesitas un esquema de arquitectura presentable en lugar del típico diagrama anónimo generado por la IA.",
+    "sorgente": "90b71227284e"
+  },
+  "chmarax/herdr-nvim": {
+    "cosa_fa": "Plugin que integra Neovim como barra lateral persistente en el workspace de herdr, con un selector que lista los archivos recién tocados por el agente cruzando la salida, el historial de git y los cambios sin commitear.",
+    "quando_usarlo": "Cuando usas herdr con agentes de coding y quieres abrir de inmediato en Neovim los archivos que han modificado.",
+    "sorgente": "8ed9b4317190"
+  },
+  "chopratejas/headroom": {
+    "cosa_fa": "Capa local de compresión de contexto: -60/95% de tokens hacia los LLM (ing. de Netflix T. Chopra)",
+    "quando_usarlo": "Comprimir el contexto enviado a los LLM y reducir los costos de tokens un 60-95%.",
+    "sorgente": "65d8ee6251d8"
+  },
+  "cline/cline": {
+    "cosa_fa": "Coding agent open source que vive dentro del IDE, en la terminal o como app de escritorio: analiza todo el proyecto, modifica varios archivos, ejecuta comandos, instala dependencias, lanza tests y builds y corrige los errores por sí solo. Soporta OpenAI, Anthropic, Gemini, OpenRouter y modelos locales vía Ollama o LM Studio, y es extensible con MCP y plugins.",
+    "quando_usarlo": "Cuando quieres un agente de código dentro de VS Code con libertad para elegir el modelo, incluidos los locales.",
+    "sorgente": "f33977241f05"
+  },
+  "cloakhq/cloakbrowser": {
+    "cosa_fa": "Navegador para automatización y scraping diseñado para no ser bloqueado por Cloudflare y sistemas anti-bot.",
+    "quando_usarlo": "Cuando tus scripts de scraping son bloqueados por los sistemas de detección automática.",
+    "sorgente": "ef39028e090a"
+  },
+  "cloudflare/computer": {
+    "cosa_fa": "Runtime para agentes que separa el estado persistente del sistema de archivos (Durable Objects + SQLite) de los entornos de ejecución modulares, desde contenedores shell hasta la evaluación rápida de JavaScript en Workers.",
+    "quando_usarlo": "Cuando necesitas dar a un agente un entorno operativo real sin exponer tu infraestructura.",
+    "sorgente": "e956133049c0"
+  },
+  "codeberg.org": {
+    "cosa_fa": "Plataforma de hosting Git gestionada por una organización sin ánimo de lucro alemana y completamente open source (basada en Forgejo): alternativa ética a GitHub para alojar repositorios.",
+    "quando_usarlo": "Cuando buscas una alternativa open source y sin ánimo de lucro a GitHub para alojar tus repositorios.",
+    "sorgente": "0609dcede077"
+  },
+  "conardli/easy-dataset": {
+    "cosa_fa": "Crear datasets a partir de PDF para entrenar LLM",
+    "quando_usarlo": "Crear datasets de entrenamiento para LLM a partir de PDF/documentos.",
+    "sorgente": "36dc1c8bae8b"
+  },
+  "continual-intelligence/seal": {
+    "cosa_fa": "Framework del MIT: LLM que generan sus propios datos de entrenamiento adaptándose (self-edits)",
+    "quando_usarlo": "LLM que se autoadapta generando sus propios datos de entrenamiento (investigación del MIT).",
+    "sorgente": "5405f0a353de"
+  },
+  "copilotkit/openbot": {
+    "cosa_fa": "Compañeros de trabajo de IA open source con su propio ordenador (navegador, archivos, herramientas): UI generativa, computer use remoto y local, traspasos agente-humano y registro completo de las acciones, compatible con cualquier agente AG-UI.",
+    "quando_usarlo": "Cuando se necesitan agentes operativos en la empresa con trazabilidad de cada acción y handoff hacia las personas.",
+    "sorgente": "cfba6f766a61"
+  },
+  "cordiverse/cordis": {
+    "cosa_fa": "Meta-framework TypeScript para plugins cargables y descargables en caliente: aísla cada plugin en una jerarquía de contextos y hace rollback determinista de los efectos secundarios, sin memory leaks ni reinicios.",
+    "quando_usarlo": "Cuando construyes un runtime de plugins (también para agentes de IA) y necesitas hot-reload sin recursos huérfanos.",
+    "sorgente": "db2bde9d5a1c"
+  },
+  "coreyhaines31/marketingskills": {
+    "cosa_fa": "Colección de skills de marketing para agentes de código (CRO, copywriting, SEO, analytics, growth) con slash commands dedicados; licencia MIT, compatible con Claude Code, Codex, Cursor y Windsurf.",
+    "quando_usarlo": "Cuando el agente debe producir landings, emails o auditorías SEO siguiendo playbooks ya estructurados.",
+    "sorgente": "6a68a94a0d70"
+  },
+  "crispstrobe/crispasr": {
+    "cosa_fa": "Runtime C++ basado en ggml que reúne muchos modelos de reconocimiento de voz y síntesis (Whisper, Parakeet, Voxtral, Canary y otros) en una única interfaz, offline y en local.",
+    "quando_usarlo": "Cuando necesitas ASR/TTS on-device multilingüe sin gestionar un runtime distinto para cada modelo.",
+    "sorgente": "259edab17633"
+  },
+  "crosstalk-solutions/project-nomad": {
+    "cosa_fa": "Stack de IA completamente offline: Wikipedia local, mapas mundiales y asistente LLM que funcionan sin conexión a Internet.",
+    "quando_usarlo": "Cuando necesitas conocimiento e IA en entornos sin red o en escenarios de emergencia/off-grid.",
+    "sorgente": "1869e189332d"
+  },
+  "cupy/cupy": {
+    "cosa_fa": "Array library acelerada por GPU compatible con NumPy",
+    "quando_usarlo": "Array library para GPU (compatible con NumPy) para acelerar cálculo/data science.",
+    "sorgente": "ae6ae235f0be"
+  },
+  "cypress-io/cypress": {
+    "cosa_fa": "Framework de testing end-to-end para aplicaciones web: ejecuta los tests directamente en el navegador, con time-travel, depuración visual y esperas automáticas para detectar los bugs antes del lanzamiento.",
+    "quando_usarlo": "Cuando quieres tests E2E fiables en el frontend que se ejecuten en el navegador con cada cambio de código.",
+    "sorgente": "58538d920a53"
+  },
+  "dahlia/logtape": {
+    "cosa_fa": "Librería de logging con cero dependencias: las librerías pueden registrar logs sin configuración mientras la aplicación mantiene el control; funciona en Deno, Node, Bun, navegadores y edge, con redacción de datos integrada.",
+    "quando_usarlo": "Cuando necesitas añadir logging a una librería publicada sin imponer decisiones a quien la usa.",
+    "sorgente": "8879cfb4d3eb"
+  },
+  "danielravina/stemkit": {
+    "cosa_fa": "Separa una canción (también de YouTube) en pistas de voz, batería, bajo, guitarra y piano, en local y sin subidas.",
+    "quando_usarlo": "Cuando necesitas las pistas separadas de un tema para estudio, remix o karaoke.",
+    "sorgente": "092f53747a36"
+  },
+  "david-crty/databasement": {
+    "cosa_fa": "Gestor self-hosted de backups de bases de datos con web UI: programa y restaura MySQL, PostgreSQL, MongoDB, Redis y otros hacia S3, SFTP o almacenamiento local.",
+    "quando_usarlo": "Cuando necesitas automatizar y monitorizar los backups de varias bases de datos desde una única interfaz.",
+    "sorgente": "a72e8f7d129c"
+  },
+  "davidealbertazzi97-jpg/open-upsilon-logic": {
+    "cosa_fa": "Proyecto que añade a los coding agents una memoria lógica determinista estilo Prolog, para reducir el context drift y las alucinaciones en lugar de dejarlos recorrer el sistema de archivos a ciegas.",
+    "quando_usarlo": "Cuando quieres experimentar con guardrails lógicos sobre un enjambre de agentes; proyecto muy joven, evalúa su actividad antes de adoptarlo.",
+    "sorgente": "b9be5ff12725"
+  },
+  "deepseek-ai/deepseek-harness": {
+    "cosa_fa": "Harness para agentes de programación publicado por DeepSeek con licencia MIT, construido sobre la filosofía 'everything is a plugin': modelos, sistema de archivos, herramientas, almacenamiento de sesión, permisos y Web UI son componentes sustituibles. Es agnóstico respecto al modelo y funciona con Claude, GPT, Gemini o endpoints locales vía Ollama y vLLM.",
+    "quando_usarlo": "Cuando quieres un runtime para agentes de código en el que poder sustituir shell, sandbox o bucle de ejecución sin reescribir el motor.",
+    "sorgente": "082aad30e30e"
+  },
+  "deusdata/codebase-memory-mcp": {
+    "cosa_fa": "Servidor MCP que convierte el codebase en un grafo de conocimiento persistente (funciones, clases, llamadas, rutas, dependencias) consultable por los coding agents; 158 lenguajes, todo en local, un solo binario.",
+    "quando_usarlo": "Cuando el agente quema tokens reexplorando el proyecto y quieres darle un mapa estable de la arquitectura.",
+    "sorgente": "86c57acaeb98"
+  },
+  "dicebear/dicebear": {
+    "cosa_fa": "Librería open source para generar avatares únicos y deterministas a partir de un seed/ID de usuario, con decenas de estilos y API HTTP: útil para poblar perfiles sin pedir que se suba una foto.",
+    "quando_usarlo": "Cuando necesitas un avatar por defecto único para cada usuario de tu app sin subida de imágenes.",
+    "sorgente": "c2855dff8087"
+  },
+  "diegosouzapw/omniroute": {
+    "cosa_fa": "AI gateway MIT que unifica cientos de proveedores de LLM detrás de un único endpoint, con fallback automático y compresión de tokens.",
+    "quando_usarlo": "Cuando se te acaban los tokens de un proveedor y quieres routing y fallback automático entre muchos modelos.",
+    "sorgente": "5986518aeb4c"
+  },
+  "dietrichgebert/ponytail": {
+    "cosa_fa": "Skill open source para coding agents (Claude Code, Cursor, Codex y otros) que hace que el agente 'piense' como el dev más perezoso: antes de escribir código verifica si de verdad hace falta, si ya lo hace la stdlib/una dependencia, reduciendo el código generado (~54% menos), costos y tiempos.",
+    "quando_usarlo": "Cuando quieres que el coding agent evite el over-engineering y el código redundante, reutilizando estándares y librerías existentes.",
+    "sorgente": "08d430070100"
+  },
+  "diffusionstudio/editor": {
+    "cosa_fa": "Editor de vídeo open source pensado para agentes: composiciones escritas en JSX, edición bidireccional entre canvas y código, CLI para inspeccionar y renderizar, generación de imágenes, vídeo y voice-over.",
+    "quando_usarlo": "Cuando quieres que un agente monte o modifique vídeos manteniendo el proyecto como código versionable.",
+    "sorgente": "731df03b0049"
+  },
+  "diolinux/photogimp": {
+    "cosa_fa": "Parche que reorganiza GIMP con layout, atajos e iconos estilo Photoshop para reducir la fricción en la migración.",
+    "quando_usarlo": "Cuando pasas de Photoshop a GIMP y no quieres perder productividad por culpa de la interfaz.",
+    "sorgente": "679c495a61a1"
+  },
+  "diwenne/openreply": {
+    "cosa_fa": "Alternativa open source a los bots de comentario-a-DM: automatiza las respuestas por DM a los comentarios usando las APIs oficiales de Meta, sin contraseñas ni riesgo de ban.",
+    "quando_usarlo": "Cuando gestionas un perfil y quieres automatizar las respuestas a los comentarios sin salir de las APIs oficiales.",
+    "sorgente": "93ed480c087b"
+  },
+  "docling-project/docling": {
+    "cosa_fa": "Biblioteca open source (nacida en IBM Research) que convierte documentos complejos — PDF, DOCX, PPTX, XLSX, HTML, EPUB, imágenes, audio, LaTeX — en Markdown, HTML o JSON estructurado para LLM y pipelines RAG. Reconstruye layout, orden de lectura, tablas, fórmulas y código, hace OCR de los escaneados y puede describir los gráficos. Funciona en local, tiene servidor API y MCP y se integra con LangChain, LlamaIndex, CrewAI y Haystack.",
+    "quando_usarlo": "Cuando debes ingerir documentos heterogéneos en un pipeline RAG o de agentes y la extracción de texto plano pierde tablas y estructura.",
+    "sorgente": "31f740024859"
+  },
+  "dottxt-ai/outlines": {
+    "cosa_fa": "Librería para forzar salidas estructuradas y válidas de los LLM (JSON, regex, gramáticas) eliminando el parsing frágil.",
+    "quando_usarlo": "Cuando el LLM debe devolver JSON o formatos rígidos que tu aplicación consume directamente.",
+    "sorgente": "c128ea1d495d"
+  },
+  "drafted.ai": {
+    "cosa_fa": "Genera un plano a partir de una lista de estancias y obtiene el exterior 3D correspondiente: posiciones clave elegidas a mano y muros, puertas y pasillos completados por la IA, con regeneración selectiva y exportación a CAD o PDF.",
+    "quando_usarlo": "Cuando quieres pasar de una lista de estancias a un plano y a un volumen 3D sin abrir un CAD.",
+    "sorgente": "7e052fa563fb"
+  },
+  "dreamina.capcut.com": {
+    "cosa_fa": "Generador de vídeo e imágenes con IA de CapCut: modo long video con clips de hasta unos minutos en una sola generación y hasta 50 referencias para mantener la coherencia de los sujetos.",
+    "quando_usarlo": "Cuando necesitas un vídeo largo y coherente sin coser clips separados.",
+    "sorgente": "c9735438f0d3"
+  },
+  "duriantaco/ravage": {
+    "cosa_fa": "CLI de security testing para aplicaciones web para las que se tiene autorización: recon determinista, validación y bucle de ataque opcional guiado por modelo, con alcance, autenticación y evidencias trazadas.",
+    "quando_usarlo": "Cuando debes probar una aplicación web tuya o autorizada dejando constancia de las evidencias.",
+    "sorgente": "f0a710fc88ae"
+  },
+  "duriantaco/skylos": {
+    "cosa_fa": "CLI y gate para pull requests que verifica el código generado por IA contra el repo real: detecta helpers, APIs y dependencias inventados con 215 reglas; funciona en local, en CI, en VS Code y vía MCP.",
+    "quando_usarlo": "Cuando necesitas interceptar alucinaciones y código muerto antes de que entren en un merge.",
+    "sorgente": "41395dd09c87"
+  },
+  "dyad-sh/dyad": {
+    "cosa_fa": "AI app builder local y open-source (alternativa a Lovable/Bolt/v0)",
+    "quando_usarlo": "Construir apps con IA en local (alternativa abierta a Lovable/Bolt/v0).",
+    "sorgente": "0d6876edd256"
+  },
+  "earthtojake/text-to-cad": {
+    "cosa_fa": "Librería de skills que permite a los agentes de IA trabajar en CAD, robótica y fabricación digital: genera modelos STEP/STL/3MF/GLB a partir de texto o imágenes, planos DXF, G-code y archivos URDF/SRDF/SDF.",
+    "quando_usarlo": "Cuando quieres que un agente pase de generar código a diseñar piezas mecánicas imprimibles.",
+    "sorgente": "b2a4b78589ed"
+  },
+  "elliothux/open-compute": {
+    "cosa_fa": "Plataforma self-hosted compatible con Cloudflare Workers, con KV, D1, R2, Durable Objects, Queues y Workflows en un solo binario Rust instalable con una línea.",
+    "quando_usarlo": "Cuando quieres ejecutar apps escritas para Workers en tu servidor, sin depender de Cloudflare.",
+    "sorgente": "d8123602ce54"
+  },
+  "emcie-co/parlant": {
+    "cosa_fa": "Framework para AI agents customer-facing (Python)",
+    "quando_usarlo": "Framework para construir agentes conversacionales con reglas/comportamientos controlados.",
+    "sorgente": "2253c1e86ed1"
+  },
+  "emergent.sh": {
+    "cosa_fa": "App builder que, a partir de la descripción en palabras de un flujo de trabajo, genera el sistema full-stack completo, con URL en vivo e interfaz responsive.",
+    "quando_usarlo": "Cuando quieres un sistema de gestión o una app interna sin construirla a mano.",
+    "sorgente": "0428dfd6c154"
+  },
+  "f/awesome-chatgpt-prompts": {
+    "cosa_fa": "Biblioteca open source de prompts para escritura, coding, generación de imágenes y vídeo e investigación, consultable también desde el sitio prompts.chat e integrable con los agentes de código.",
+    "quando_usarlo": "Cuando buscas un punto de partida ya probado en lugar de escribir el prompt desde cero.",
+    "sorgente": "f29307c533cc"
+  },
+  "facebookresearch/sam-audio": {
+    "cosa_fa": "Segment Anything Model para audio (Meta)",
+    "quando_usarlo": "Aislar/separar pistas de audio con IA (Meta).",
+    "sorgente": "c0a95214e1c2"
+  },
+  "feitangyuan/motion-web": {
+    "cosa_fa": "Skill para agentes que enseña a construir sitios animados 'motion-first' con Three.js, Canvas 2D, WebGL o CSS y física realista, con siete ejemplos listos.",
+    "quando_usarlo": "Cuando pides a un agente un sitio con animaciones ricas y quieres que siga patrones probados.",
+    "licenza": "CC BY-NC 4.0",
+    "sorgente": "952bacf159b8"
+  },
+  "fingerprint.to": {
+    "cosa_fa": "Motor de búsqueda sobre datos públicos que ejecuta comprobaciones en paralelo y devuelve los resultados en streaming: nombre de usuario o email en más de 700 plataformas y búsqueda de personas mediante fuentes de registro público.",
+    "quando_usarlo": "Cuando hace falta una verificación rápida sobre fuentes abiertas sin esperar a que terminen todas las consultas.",
+    "sorgente": "515c48155afe"
+  },
+  "firecrawl/pdf-inspector": {
+    "cosa_fa": "Biblioteca Rust que clasifica un PDF (textual, escaneado, de imágenes o mixto) y decide qué páginas requieren realmente OCR, extrayendo en local el texto ya presente con la información de posición.",
+    "quando_usarlo": "Cuando un pipeline documental pierde tiempo enviando al OCR también los PDF que ya tienen texto.",
+    "sorgente": "46cb97b0560d"
+  },
+  "fleetbase/fleetbase": {
+    "cosa_fa": "Sistema operativo modular y open source para logística y supply chain: seguimiento de pedidos y conductores en un mapa en tiempo real, gestión de pedidos en un tablero visual, API y extensiones para añadir funcionalidades. Self-hostable.",
+    "quando_usarlo": "Cuando debes construir un sistema de gestión de entregas o flotas y prefieres partir de una plataforma extensible en lugar de desde cero.",
+    "sorgente": "b494d4f3e561"
+  },
+  "fmtlib/fmt": {
+    "cosa_fa": "Biblioteca de formateo para C++ con sintaxis limpia, comprobaciones de tipo en tiempo de compilación y rendimiento superior a printf y a los streams estándar; base de std::format.",
+    "quando_usarlo": "Cuando en C++ necesitas formatear cadenas sin elegir entre velocidad y seguridad de memoria.",
+    "sorgente": "4e50925ca202"
+  },
+  "futuregene/future-os": {
+    "cosa_fa": "Un único agente de IA con núcleo en Rust accesible desde terminal, escritorio, móvil y apps de chat, con memoria y sesiones compartidas y cada acción sujeta a la aprobación explícita del usuario.",
+    "quando_usarlo": "Cuando quieres un asistente personal que siga la misma tarea entre ordenador y teléfono sin actuar a escondidas.",
+    "sorgente": "7fa7540116cc"
+  },
+  "garrytan/gstack": {
+    "cosa_fa": "Setup open source de Claude Code de Garry Tan (CEO de Y Combinator): 23 skills con opinión propia que actúan como CEO, Designer, Eng Manager, Release Manager, Doc Engineer y QA, convirtiendo al agente en un equipo operativo. Compatible con 8 hosts (Claude Code, Codex, Cursor, etc.).",
+    "quando_usarlo": "Cuando quieres adoptar un workflow estructurado multirrol para Claude Code con handoffs entre diseño, ingeniería y QA ya listos.",
+    "sorgente": "16f5c5816dea"
+  },
+  "gaurav-gosain/tuios": {
+    "cosa_fa": "Multiplexor de terminal escrito en Go con controles modales estilo Vim y tiling BSP: nueve workspaces, paleta fuzzy, protocolo gráfico de Kitty, modo daemon y sesiones multicliente.",
+    "quando_usarlo": "Cuando quieres una alternativa moderna a tmux con un uso de CPU en reposo prácticamente nulo.",
+    "sorgente": "b30d86243adc"
+  },
+  "geroldmeisinger/comfyui-outputlists-combiner": {
+    "cosa_fa": "Nodos de ComfyUI para ejecutar muchos prompts y variantes en una sola ejecución: listas desde hojas de cálculo, JSON o texto, combinaciones de parámetros (LoRA, sampler) y cuadrículas de comparación.",
+    "quando_usarlo": "Cuando debes hacer barridos de prompts o parámetros en ComfyUI sin lanzar una imagen cada vez.",
+    "sorgente": "f2d3101497b1"
+  },
+  "git-agni/prod-farm-ios-core": {
+    "cosa_fa": "Sistema self-hosted para registrar iPhones reales, verlos en directo desde el navegador y manejarlos en remoto, con un scheduler sobre Postgres para la publicación programada. Licencia Apache-2.0, sin dependencia de servicios cloud.",
+    "quando_usarlo": "Cuando debes orquestar desde un solo dashboard un parque de dispositivos iOS físicos (pruebas o automatización).",
+    "sorgente": "a3e4e3ce505d"
+  },
+  "github/spec-kit": {
+    "cosa_fa": "Toolkit de desarrollo spec-driven (GitHub)",
+    "quando_usarlo": "Para plantear un desarrollo spec-driven (de la especificación al código) con agentes.",
+    "sorgente": "e8072c0cccc4"
+  },
+  "gitreverse.com": {
+    "cosa_fa": "Servicio web (y extensión) que, sustituyendo 'github' por 'gitreverse' en la URL de un repo público, genera un prompt en lenguaje natural para recrear el proyecto con un coding agent. Usas tu propia clave de LLM.",
+    "quando_usarlo": "Cuando quieres entender o recrear un repo de GitHub convirtiéndolo en un prompt listo para un AI coding agent.",
+    "sorgente": "cb8c43e90714"
+  },
+  "goauthentik/authentik": {
+    "cosa_fa": "Identity Provider open source y self-hosted: centraliza los accesos con OAuth2, OpenID Connect, SAML y LDAP, flujos de login personalizables y MFA con passkeys o llaves físicas.",
+    "quando_usarlo": "Cuando quieres un SSO único para tu homelab o empresa sin pagar Okta o Auth0.",
+    "sorgente": "d4c4e4aa45bc"
+  },
+  "google-research/timesfm": {
+    "cosa_fa": "Modelo fundacional para forecasting de series temporales publicado por Google Research: predice ventas, consumos o stock en zero-shot sin entrenar un modelo dedicado para cada dataset.",
+    "quando_usarlo": "Cuando necesitas hacer predicciones sobre series temporales (ventas, demanda, métricas) sin entrenar un modelo desde cero.",
+    "sorgente": "35a0332343e1"
+  },
+  "google/artemis": {
+    "cosa_fa": "Framework de Google que convierte instrucciones en lenguaje natural en automatizaciones Android fiables, ejecutando flujos end-to-end en las apps.",
+    "quando_usarlo": "Cuando quieres automatizar o probar recorridos completos en apps Android describiéndolos con palabras en lugar de escribir scripts de UI.",
+    "sorgente": "68de26541e93"
+  },
+  "graphify-labs/graphify": {
+    "cosa_fa": "Convierte una codebase con su documentación, los esquemas SQL, las configuraciones y los PDF en un knowledge graph consultable, para que el agente no tenga que releer los archivos para orientarse.",
+    "quando_usarlo": "Cuando el agente quema tokens redescubriendo la estructura del proyecto en cada sesión.",
+    "sorgente": "6196675f9b5e"
+  },
+  "guijiai/heygem.ai": {
+    "cosa_fa": "Alternativa open source y self-hostable a HeyGen para clonar rostro y voz y generar avatares parlantes con lip-sync, con un pipeline modular que acepta cualquier motor TTS.",
+    "quando_usarlo": "Cuando necesitas un avatar digital parlante sin suscripciones ni colas en servidores cloud.",
+    "sorgente": "49fa7714995d"
+  },
+  "hacksider/deep-live-cam": {
+    "cosa_fa": "Face swap en vivo en la webcam a partir de una sola foto, 93k estrellas",
+    "quando_usarlo": "Face swap en vivo en la webcam a partir de una sola foto (se requiere uso ético).",
+    "sorgente": "69b2252ca22c"
+  },
+  "hackunderway/searchphone": {
+    "cosa_fa": "Toolkit OSINT para números de teléfono: validación y operador vía Numverify, búsqueda en paralelo en Google, DuckDuckGo, Reddit y GitHub, comprobación en la base de datos de infostealers de Hudson Rock e informes JSON y PDF automáticos.",
+    "quando_usarlo": "Cuando debes verificar a quién corresponde un número durante una investigación autorizada.",
+    "sorgente": "5bb6e74997aa"
+  },
+  "hanyuanwang/livestream-agent-studio": {
+    "cosa_fa": "Estudio de escritorio para Windows con cuatro agentes de IA locales para el comercio electrónico en directo (pensado para Douyin): descubrimiento de creadores, transcripción con marcas de tiempo de los directos, análisis de lo que genera tráfico y escritura de guiones para vídeos cortos.",
+    "quando_usarlo": "Cuando gestionas live commerce y quieres analizar los directos en local; útil también como ejemplo de workflow multiagente vertical.",
+    "sorgente": "8811db85cb2c"
+  },
+  "hardenrun/aif": {
+    "cosa_fa": "Firewall local para agentes de coding y personales (Claude Code, Cursor): intercepta las acciones antes de su ejecución, bloquea comandos que parecen exfiltrar datos o dañar la máquina y muestra lo que ha bloqueado.",
+    "quando_usarlo": "Cuando ejecutas agentes con acceso a la shell y quieres una barrera técnica, no solo reglas escritas en el prompt.",
+    "licenza": "propietaria (AIF Beta License)",
+    "sorgente": "13baa3e30867"
+  },
+  "harnessrouter/systemoneharness": {
+    "cosa_fa": "Harness para los modelos 'System One' (Jev y similares): obliga al modelo a elegir una acción de una lista cerrada de opciones tipadas, registra la confianza y se detiene cuando está por debajo del umbral en lugar de inventar. Registra cada decisión. Ejecuta los modelos en local o a través de HarnessRouter.",
+    "quando_usarlo": "Cuando automatizas decisiones de alto riesgo y quieres elecciones restringidas, verificables y con un rechazo explícito por debajo de un umbral de confianza.",
+    "sorgente": "5eb8623c8bf1"
+  },
+  "harry0703/moneyprinterturbo": {
+    "cosa_fa": "Pipeline que, a partir de un tema o una palabra clave, genera videos verticales completos: guion, voz en off, subtítulos, búsqueda de clips y edición final.",
+    "quando_usarlo": "Cuando necesitas producir shorts o reels en serie partiendo solo de un tema.",
+    "sorgente": "2887df88db24"
+  },
+  "hash-7777/hashcortx": {
+    "cosa_fa": "Workspace de IA local-first: chat multiproveedor, agente de coding autónomo con sandbox Python y permisos controlados por un guardián en Rust, modelos 3D, ERP y flujos multiagente, también con modelos offline.",
+    "quando_usarlo": "Cuando quieres una única app de escritorio que reúna chat y agente de coding con permisos estrictos, en local.",
+    "sorgente": "8e44c1199c9f"
+  },
+  "hashfunction/markuprplus": {
+    "cosa_fa": "Graba pantalla y voz mientras señalas los bugs dibujando círculos sobre la pantalla; después, con IA local, empareja las frases con las marcas y produce un informe Markdown estructurado por cada problema, para pasárselo al coding agent.",
+    "quando_usarlo": "Cuando debes explicar bugs visuales a Claude Code o Codex con pruebas precisas en lugar de descripciones vagas.",
+    "sorgente": "4c6925970b10"
+  },
+  "helpcode-ai/anythingmcp": {
+    "cosa_fa": "Convierte API REST, SOAP, GraphQL o SQL en herramientas MCP para Claude y ChatGPT, con más de 200 conectores listos (ERP, e-commerce, SAP). Self-hosted.",
+    "quando_usarlo": "Cuando quieres que un asistente de IA use los sistemas empresariales existentes sin escribir un servidor MCP para cada uno.",
+    "sorgente": "b5d1465c5db1"
+  },
+  "herdrdev/herdr": {
+    "cosa_fa": "Multiplexor para agentes de IA que vive en la terminal: varios agentes en paneles separados, sesiones que sobreviven al detach y una socket API con la que los propios agentes crean paneles y se coordinan.",
+    "quando_usarlo": "Cuando ejecutas varios coding agents en paralelo y ya no sabes quién está trabajando y quién está bloqueado.",
+    "sorgente": "f1eed09c2148"
+  },
+  "hexo-ai/sia": {
+    "cosa_fa": "Framework Self Improving AI: un meta-agente genera un agente específico para la tarea y lo mejora iterativamente actualizando harness y pesos (LoRA).",
+    "quando_usarlo": "Cuando quieres que un agente se autooptimice en un benchmark sin tuning manual.",
+    "sorgente": "c6defbe1a1e2"
+  },
+  "heygen-com/hyperframes": {
+    "cosa_fa": "Framework open source de HeyGen para generar videos MP4 describiendo una escena como una página web (HTML, CSS, media, animaciones); agent-native, con skills instalables para Claude Code, Cursor, Codex y otros.",
+    "quando_usarlo": "Cuando quieres producir videos 'as code' (HTML/CSS) automatizables por un coding agent, similar a Remotion pero en HTML puro.",
+    "sorgente": "0a0b126a1804"
+  },
+  "heyputer/puter": {
+    "cosa_fa": "Backend serverless open source pensado para las apps generadas por IA: una sola biblioteca cliente da acceso a modelos de IA, autenticación de usuarios, almacenamiento en la nube, base de datos NoSQL y hosting, sin claves de API expuestas en el frontend. Incluye sandboxing, rate limiting y filtros antiabuso por defecto.",
+    "quando_usarlo": "Cuando un prototipo generado por un agente necesita auth, almacenamiento y base de datos sin montar un backend.",
+    "sorgente": "c23e0fc29bf0"
+  },
+  "higgsfield.ai": {
+    "cosa_fa": "Suite creativa AI-native para generación de imágenes y vídeo, con app builder y un servidor MCP invocable desde Claude o Cursor para producir contenidos en serie.",
+    "quando_usarlo": "Cuando quieres generar vídeos o creatividades en volumen y manejarlos desde un agente vía MCP.",
+    "sorgente": "b3ed9a7c831a"
+  },
+  "hkuds/cli-anything": {
+    "cosa_fa": "Making ALL Software Agent-Native (HKUDS)",
+    "quando_usarlo": "Para hacer que cualquier software pueda ser controlado por un agente de IA vía CLI.",
+    "sorgente": "a565e8451bf3"
+  },
+  "hkuds/deeptutor": {
+    "cosa_fa": "Sistema de estudio y coding asistido con memoria a largo plazo persistente entre sesiones, para no empezar de cero cada vez.",
+    "quando_usarlo": "Cuando quieres un tutor de IA que recuerde tus lagunas y tus progresos de una sesión a otra.",
+    "sorgente": "886ea42b4269"
+  },
+  "hkuds/nanobot": {
+    "cosa_fa": "Agente de IA personal open-source ligero (HKUDS)",
+    "quando_usarlo": "Asistente de IA personal ligero manejable desde Telegram/WhatsApp, siempre activo en tu PC.",
+    "sorgente": "ec8643e4d1d2"
+  },
+  "hkuds/videorag": {
+    "cosa_fa": "Chatea con tus videos (HKUDS, KDD'2026)",
+    "quando_usarlo": "Chatear/consultar tus propios videos con un sistema RAG.",
+    "sorgente": "8653df0a41f3"
+  },
+  "hopit-ai/india-trade-cli": {
+    "cosa_fa": "Plataforma de trading agéntico para el mercado indio: siete analistas LLM examinan en paralelo el mismo valor (técnico, noticias, sentimiento), debaten entre partidarios de la compra y de la venta y un agente 'manager' sintetiza un plan. Funciona en local desde la terminal.",
+    "quando_usarlo": "Cuando estudias arquitecturas multiagente con debate para el análisis financiero; no como consejo de inversión.",
+    "sorgente": "f6277a051cc9"
+  },
+  "hoppscotch/hoppscotch": {
+    "cosa_fa": "Alternativa open source a Postman para probar APIs, utilizable en self-hosting sin subir las colecciones a nubes externas.",
+    "quando_usarlo": "Cuando pruebas APIs y no quieres que endpoints y credenciales acaben en servidores de terceros.",
+    "sorgente": "1a1a8f5816b0"
+  },
+  "hqarroum/docker-android": {
+    "cosa_fa": "Dispositivo Android completo que se inicia con un solo comando de Docker: port-forwarding de ADB, aceleración KVM y GPU, funcionamiento headless listo para CI.",
+    "quando_usarlo": "Cuando necesitas probar una app Android en un pipeline sin emuladores instalados a mano.",
+    "sorgente": "3048c0ff5902"
+  },
+  "htdt/godogen": {
+    "cosa_fa": "Genera juegos completos a partir de una descripción: arquitectura, assets, código, capturas y QA visual, con un bucle de calidad que captura pantallas del motor y corrige los problemas de renderizado; soporta Godot 4, Bevy y Babylon.js.",
+    "quando_usarlo": "Cuando quieres prototipar un juego haciendo que Claude Code o Codex trabajen sobre todo el pipeline.",
+    "sorgente": "789cfa92df69"
+  },
+  "huggingface.co/hyrelabs/Homura-30B-GGUF": {
+    "cosa_fa": "Modelo agéntico open-weights de 30B distribuido en cuantizaciones GGUF, pensado para ejecutarse en local en hardware de consumo o servidores privados.",
+    "quando_usarlo": "Cuando quieres un modelo denso pero ejecutable en local, para acompañar de un guardrail externo.",
+    "sorgente": "56e9f5e93430"
+  },
+  "icewhaletech/casaos": {
+    "cosa_fa": "Sistema operativo open source que convierte un PC viejo, una Raspberry Pi o un mini PC en una nube personal doméstica para archivos, datos y servicios self-hosted.",
+    "quando_usarlo": "Cuando quieres montar una nube doméstica self-hosted en hardware reciclado con una UI sencilla para apps y servicios.",
+    "sorgente": "3cbbd349dd97"
+  },
+  "img2threejs/img2threejs": {
+    "cosa_fa": "Reconstruye el objeto de una imagen como modelo Three.js procedural en TypeScript, ya riggeado y animado, con VFX físicos y órbita de 360 grados, sin pipeline 3D tradicional.",
+    "quando_usarlo": "Cuando a partir de una sola imagen necesitas un asset 3D inspeccionable y animable en el navegador.",
+    "sorgente": "84eb1dbf7cc7"
+  },
+  "insait-institute/genieredux": {
+    "cosa_fa": "World models con entornos virtuales (Google Genie)",
+    "quando_usarlo": "World model: entornos virtuales generativos (réplica de Google Genie).",
+    "sorgente": "43104ae57616"
+  },
+  "iofficeai/officecli": {
+    "cosa_fa": "Permite a los agentes de IA crear, leer y modificar archivos de Word, Excel y PowerPoint directamente desde la terminal.",
+    "quando_usarlo": "Cuando tu agente debe producir o actualizar documentos de Office de forma programática.",
+    "sorgente": "6848af0387aa"
+  },
+  "ionic-team/capacitor": {
+    "cosa_fa": "Runtime que publica una sola codebase web como app iOS, Android y PWA, con API nativas multiplataforma, plugins personalizados en Swift y Kotlin/Java y proyectos nativos tratados como código fuente real.",
+    "quando_usarlo": "Cuando quieres distribuir una app web en las tiendas sin reescribirla en nativo.",
+    "sorgente": "7bd44fc53d84"
+  },
+  "iquestlab/iquest-coder-v1": {
+    "cosa_fa": "Modelo de programación chino open-source",
+    "quando_usarlo": "Modelo de programación open-source alternativo.",
+    "sorgente": "10f8b32f279a"
+  },
+  "iv-org/invidious": {
+    "cosa_fa": "Front-end web alternativo y self-hostable para YouTube: hace de intermediario con los servidores de vídeo eliminando rastreadores, publicidad y scripts pesados, sin cuenta de Google.",
+    "quando_usarlo": "Cuando quieres consultar o integrar contenidos de YouTube desde un servicio que alojas tú.",
+    "sorgente": "fc4b6c7940e4"
+  },
+  "jamiepine/voicebox": {
+    "cosa_fa": "Suite de voz local: clonación de voz a partir de unos segundos de audio, dictado con hotkey en cualquier campo de texto y TTS para Claude Code o Cursor vía MCP.",
+    "quando_usarlo": "Cuando quieres TTS y dictado de calidad sin costos de nube y sin enviar tu voz a internet.",
+    "sorgente": "d0b8a2811e98"
+  },
+  "jaredpalmer/kev": {
+    "cosa_fa": "Familia de modelos de decisión al estilo Jev basados en Qwen3.5/3.8, entrenables y ejecutables por cuenta propia: devuelven sí/no, elecciones y valoraciones como probabilidades.",
+    "quando_usarlo": "Cuando quieres una alternativa self-hosted a Jev que además puedas reentrenar en tu dominio.",
+    "sorgente": "2ec5c7e93cf0"
+  },
+  "jarrettyu/alphamemo": {
+    "cosa_fa": "Framework de investigación en el que un LLM busca fórmulas/alphas financieros manteniendo una memoria estructurada de los intentos exitosos y fallidos. Repositorio pequeño, sin licencia declarada.",
+    "quando_usarlo": "Cuando estudias enfoques 'self-evolving' con memoria para la investigación cuantitativa; no como herramienta lista para usar.",
+    "licenza": "sin licencia (todos los derechos reservados)",
+    "sorgente": "5a9a2c85f567"
+  },
+  "java-jiang/poweratlas": {
+    "cosa_fa": "Agente LLM de investigación para la coplanificación del cómputo en los centros de datos y la red eléctrica, entrenado verificando la viabilidad física de las respuestas; incluye el benchmark ECBench.",
+    "quando_usarlo": "Cuando te interesa la optimización energética de los centros de datos con LLM, a nivel de investigación.",
+    "licenza": "Apache-2.0",
+    "sorgente": "b83ac1b0e917"
+  },
+  "jaywebtech/autoshorts": {
+    "cosa_fa": "App de escritorio local-first que convierte grabaciones largas de audio/vídeo en varios clips verticales, clasificando los momentos con más potencial. Sin licencia declarada.",
+    "quando_usarlo": "Cuando quieres extraer shorts de un vídeo largo trabajando en tu máquina.",
+    "licenza": "sin licencia (todos los derechos reservados)",
+    "sorgente": "1834abede008"
+  },
+  "jchanvfx/nodegraphqt": {
+    "cosa_fa": "Framework Python/Qt para construir interfaces de grafo de nodos: layout vertical y de tuberías, nodos y widgets personalizados, búsqueda con tab, corte de conexiones y controles de zoom/pan.",
+    "quando_usarlo": "Cuando debes dar una interfaz visual de nodos a un pipeline o a una herramienta interna en Python.",
+    "sorgente": "aee365dcad2d"
+  },
+  "jcodesmore/ai-website-cloner-template": {
+    "cosa_fa": "Plantilla para reconstruir un sitio existente en un codebase moderno con agentes de IA",
+    "quando_usarlo": "Plantilla para clonar un sitio existente en un codebase moderno con agentes.",
+    "sorgente": "3c89b2cae31c"
+  },
+  "jd-opensource/joyai-video-edit": {
+    "cosa_fa": "Editor de video en tiempo real guiado por instrucciones en lenguaje natural: modifica sujeto, fondo, estilo y movimiento fotograma a fotograma en streams o archivos, a unos 30 FPS en 720p.",
+    "quando_usarlo": "Cuando quieres editar un video (también en streaming) describiendo con palabras la modificación.",
+    "sorgente": "653fc7ada12b"
+  },
+  "jenkinsci/jenkins": {
+    "cosa_fa": "Servidor de automatización open source histórico para CI/CD: pipeline as code, miles de plugins, build/test/deploy distribuidos en varios nodos.",
+    "quando_usarlo": "Cuando necesitas un motor de CI/CD self-hosted, extensible e independiente del proveedor git.",
+    "sorgente": "21582b514776"
+  },
+  "jina.ai": {
+    "cosa_fa": "Jina Embedding V4, modelo de embedding para RAG",
+    "quando_usarlo": "Modelos de embedding para RAG (Jina).",
+    "sorgente": "ffae5c44fd49"
+  },
+  "julyx10/lap": {
+    "cosa_fa": "Photo manager local-first para grandes bibliotecas de fotos y vídeos: trabaja sobre las carpetas existentes y añade búsqueda con IA local, similitud visual, clustering de rostros, álbumes inteligentes, mapa y búsqueda de duplicados. Más de 60 formatos, incluidos RAW; Windows, macOS y Linux (Tauri/Rust).",
+    "quando_usarlo": "Cuando quieres búsqueda semántica y reconocimiento sobre tus fotos sin subirlas a una nube.",
+    "sorgente": "aee4a20c97c0"
+  },
+  "justvugg/colibri": {
+    "cosa_fa": "Motor de inferencia en C puro, cero dependencias, que ejecuta modelos MoE enormes (GLM-5.2 744B, Kimi K3) en hardware de consumo haciendo streaming de los expertos desde disco.",
+    "quando_usarlo": "Cuando quieres ejecutar modelos frontier en local en una máquina con poca RAM y sin GPU dedicadas.",
+    "sorgente": "de981366f07b"
+  },
+  "kablex/comfyui-ref2va-vsa": {
+    "cosa_fa": "Custom node para ComfyUI que aplica sparse attention al modelo MiniMax H3 para generar vídeos de un personaje mucho más rápido en una sola GPU de consumo, descartando gran parte de los datos de vídeo pero manteniendo intacta la imagen de referencia para que el rostro siga siendo coherente.",
+    "quando_usarlo": "Cuando generas clips de un personaje en hardware local y el cuello de botella es el tiempo de renderizado.",
+    "sorgente": "3c9fa6a5d834"
+  },
+  "karakeep-app/karakeep": {
+    "cosa_fa": "Gestor de marcadores open source con IA: guarda enlaces, artículos, imágenes, PDF y notas y los hace buscables con etiquetas automáticas.",
+    "quando_usarlo": "Cuando acumulas enlaces y material por todas partes y nunca encuentras nada.",
+    "sorgente": "56e8933b223c"
+  },
+  "karpathy/nanochat": {
+    "cosa_fa": "Minimal ChatGPT clone (Andrej Karpathy)",
+    "quando_usarlo": "Estudiar/replicar un ChatGPT mínimo desde cero (Karpathy), didáctico.",
+    "sorgente": "beba37819001"
+  },
+  "keli-wen/agy-staff": {
+    "cosa_fa": "Hace que Claude Code y Codex usen la CLI Antigravity de Google (agy) como asistente Gemini rápido al que delegar las tareas pequeñas.",
+    "quando_usarlo": "Cuando tu coding agent principal es lento o caro en los trabajos sencillos y quieres delegarlos a un modelo más rápido.",
+    "sorgente": "23863c3299d7"
+  },
+  "knockoutez/wigolo": {
+    "cosa_fa": "Proporciona a los coding agents documentación actualizada de las librerías, superando la limitación de los datos de entrenamiento obsoletos.",
+    "quando_usarlo": "Cuando el agente usa APIs obsoletas porque su entrenamiento se quedó en hace meses.",
+    "sorgente": "ad143f1618c0"
+  },
+  "kosuke55/drawtonomy": {
+    "cosa_fa": "Pizarra en el navegador para dibujar escenarios de conducción (carriles, vehículos) y ejecutarlos al instante con un motor de simulación integrado que indica si la prueba pasa. Todo en local.",
+    "quando_usarlo": "Cuando debes esbozar y verificar rápidamente escenarios de prueba para la conducción autónoma.",
+    "sorgente": "fb3cd987a82d"
+  },
+  "krispuckett/murmur": {
+    "cosa_fa": "Paquete SwiftUI de 'orbs' animados con shaders Metal de estilo cristal que reaccionan a la voz y a la escritura, para dar presencia a los estados de un asistente de IA.",
+    "quando_usarlo": "Cuando diseñas la interfaz de un asistente en plataformas Apple y quieres indicadores de estado vivos en lugar de spinners.",
+    "sorgente": "41f28cb084f3"
+  },
+  "labs.google/code-wiki": {
+    "cosa_fa": "Generación automática de documentación del código (Google)",
+    "quando_usarlo": "Generación automática de documentación del código (Google).",
+    "sorgente": "508647e64089"
+  },
+  "lakr233/vphone-cli": {
+    "cosa_fa": "Crea e inicia iPhones virtuales en Apple Silicon usando Virtualization.framework: creación de la VM con un comando, varios firmwares, clone/export/import, acceso SSH y VNC.",
+    "quando_usarlo": "Cuando necesitas un iPhone virtual scriptable desde la línea de comandos para pruebas y automatizaciones.",
+    "sorgente": "1ccda9268d49"
+  },
+  "langchain-ai/deepagents": {
+    "cosa_fa": "Biblioteca de LangChain para construir agentes 'profundos': planificación explícita, sistema de archivos virtual, subagentes y contexto de larga duración sobre el bucle básico de tool calling.",
+    "quando_usarlo": "Cuando un agente de un solo bucle no aguanta la tarea y se necesitan planificación y subagentes ya listos.",
+    "sorgente": "bef5abdba7ae"
+  },
+  "leemysw/yovoice": {
+    "cosa_fa": "App de escritorio open source para macOS y Windows: síntesis de voz local, clonación de voz y control de la emoción, sin API cloud ni costes por carácter.",
+    "quando_usarlo": "Cuando necesitas una voz sintética o clonada para contenidos y no quieres pagar servicios TTS por consumo.",
+    "sorgente": "4482a57f4679"
+  },
+  "lfnovo/open-notebook": {
+    "cosa_fa": "Implementación open source y self-hosted de NotebookLM: cargas documentos y obtienes resúmenes, respuestas y conexiones entre conceptos, con la posibilidad de ejecutarse totalmente en local (Ollama, SurrealDB) para la soberanía de los datos.",
+    "quando_usarlo": "Cuando quieres un NotebookLM self-hosted/local para consultar tus documentos manteniendo el control total de los datos.",
+    "sorgente": "a3122ad5eab9"
+  },
+  "libretranslate/libretranslate": {
+    "cosa_fa": "API de traducción automática self-hosted open-source",
+    "quando_usarlo": "API de traducción automática self-hosted (privacidad, sin costo por llamada).",
+    "sorgente": "d99bc317913d"
+  },
+  "lightricks/ltx-video": {
+    "cosa_fa": "Modelo open source de generación de video a partir de texto e imágenes de Lightricks, optimizado para inferencia rápida.",
+    "quando_usarlo": "Cuando quieres generar video a partir de prompts en local con un modelo open source.",
+    "sorgente": "17d1c5a1c5ef"
+  },
+  "localsend/localsend": {
+    "cosa_fa": "Aplicación open source que funciona como un AirDrop universal entre Android, iOS, Windows, macOS y Linux: los dispositivos de la misma red local se detectan solos y la transferencia es directa y cifrada, sin pasar por la nube ni por apps de mensajería que recomprimen los archivos.",
+    "quando_usarlo": "Cuando debes mover archivos entre máquinas con sistemas operativos distintos sin una nube de por medio.",
+    "sorgente": "7d9a7b5788ab"
+  },
+  "lukasniessen/archunitpython": {
+    "cosa_fa": "Biblioteca de tests arquitectónicos para Python: expresa las reglas de dependencia entre módulos y capas como tests automáticos, detecta imports circulares y hace fallar el build cuando se violan los límites.",
+    "quando_usarlo": "Cuando un proyecto Python crece (también con código escrito por agentes) y quieres que la arquitectura se verifique en CI.",
+    "sorgente": "2d8593c14514"
+  },
+  "lunarphp/lunar": {
+    "cosa_fa": "Backend de e-commerce para Laravel: productos, pedidos y gestión de personal con panel de administración Filament extensible, dejando el storefront completamente bajo tu control.",
+    "quando_usarlo": "Cuando construyes un e-commerce a medida en Laravel y no quieres reescribir el backend.",
+    "sorgente": "0c4fb2022f27"
+  },
+  "lyogavin/airllm": {
+    "cosa_fa": "Ejecutar modelos 70B en hardware de consumo cargando layer-by-layer",
+    "quando_usarlo": "Ejecutar modelos de 70B en hardware de consumo (carga layer-by-layer).",
+    "sorgente": "97edc3800952"
+  },
+  "magnitudedev/magnitude": {
+    "cosa_fa": "Inference server open source que perfila el hardware, recomienda los modelos adecuados para la máquina y gestiona descarga, ajuste y ejecución local, exponiéndolos a los harness de coding (Claude Code, Codex, OpenCode, Cline).",
+    "quando_usarlo": "Cuando quieres usar el ordenador como backend del agente, sin API key ni coste por token.",
+    "sorgente": "6124002fbf0e"
+  },
+  "markqvist/reticulum": {
+    "cosa_fa": "Stack de red cifrado que funciona sobre medios heterogéneos, incluidas radios LoRa: red mesh end-to-end sin direcciones IP públicas ni infraestructura de proveedores.",
+    "quando_usarlo": "Cuando hace falta comunicar dos nodos sin red pública, por resiliencia o aislamiento.",
+    "sorgente": "2d02322f282a"
+  },
+  "mauriceboe/trek": {
+    "cosa_fa": "Planificador de viajes self-hosted con colaboración en tiempo real, mapas interactivos, soporte PWA, SSO, presupuesto y lista de equipaje; también expone un servidor MCP para asistentes de IA.",
+    "quando_usarlo": "Cuando organizas viajes en grupo y quieres un planificador colaborativo self-hosted en lugar de hojas de cálculo y chats dispersos.",
+    "sorgente": "722795213402"
+  },
+  "max-sixty/worktrunk": {
+    "cosa_fa": "CLI que hace que los Git worktree sean sencillos de crear, usar y eliminar, asignando a cada tarea un directorio de trabajo independiente ligado a una rama. Pensada para que varios agentes (Claude Code, Codex) trabajen en paralelo sobre el mismo proyecto sin pisarse.",
+    "quando_usarlo": "Cuando ejecutas varios agentes a la vez sobre el mismo repo y necesitas aislar cada tarea en un worktree.",
+    "sorgente": "458f7c553e06"
+  },
+  "megadose/holehe": {
+    "cosa_fa": "Herramienta OSINT que verifica en más de 120 plataformas si una dirección de email está registrada, aprovechando las respuestas de los formularios de recuperación de contraseña sin enviar notificaciones al titular.",
+    "quando_usarlo": "Cuando haces digital footprint analysis de un email en un assessment o quieres saber cuán expuesto estás.",
+    "sorgente": "fed56a8b1dcd"
+  },
+  "megootronic/blink": {
+    "cosa_fa": "App para la barra de menús de macOS que detecta los dev servers y los simuladores iOS en ejecución, reconoce su framework y los reinicia con un clic. Swift, todo en local.",
+    "quando_usarlo": "Cuando trabajas con muchos dev servers locales y pierdes tiempo averiguando cuál se ha caído.",
+    "sorgente": "af21fcca2be2"
+  },
+  "mengto/threeui": {
+    "cosa_fa": "Biblioteca open source de secciones hero 3D, iconos y componentes de movimiento listos para Three.js, con catálogo interactivo de componentes.",
+    "quando_usarlo": "Cuando quieres añadir una hero 3D a un sitio sin construirla desde cero.",
+    "sorgente": "876ecedafa04"
+  },
+  "microsoft/agent-lightning": {
+    "cosa_fa": "Framework de Microsoft Research para entrenar con reinforcement learning cualquier agente de IA sin reescribir su código: desacopla ejecución y entrenamiento (LightningRL, credit assignment) y soporta múltiples backends.",
+    "quando_usarlo": "Cuando quieres mejorar con RL un agente de IA existente sin rehacer la arquitectura de tu workflow.",
+    "sorgente": "043992ca8115"
+  },
+  "microsoft/markitdown": {
+    "cosa_fa": "Herramienta de Microsoft, token-efficient, que convierte PDF y otros documentos a Markdown que los LLM entienden de forma nativa, reduciendo el consumo de tokens y mejorando la calidad de las respuestas.",
+    "quando_usarlo": "Cuando necesitas pasarle documentos (PDF, Office, etc.) a un LLM convirtiéndolos a Markdown limpio y ligero.",
+    "sorgente": "f0a162672fc1"
+  },
+  "microsoft/trellis": {
+    "cosa_fa": "Structured 3D Latents para generación 3D (Microsoft)",
+    "quando_usarlo": "Generar modelos 3D estructurados a partir de texto o imágenes (Microsoft).",
+    "sorgente": "c70b4e5c1cd3"
+  },
+  "microsoft/vibevoice": {
+    "cosa_fa": "Text-to-Speech open-source frontier (Microsoft)",
+    "quando_usarlo": "Text-to-speech open-source de calidad (Microsoft).",
+    "sorgente": "029b5e36139e"
+  },
+  "milind-soni/openmausbot": {
+    "cosa_fa": "Alternativa open source y local-first a los bots conversacionales multiagente: usa las CLI de Claude, Codex y Grok ya instaladas, puede manejar escritorios cloud aislados o VM locales e integra cientos de apps vía Composio.",
+    "quando_usarlo": "Cuando quieres una interfaz de chat multiagente que se quede en tu máquina, con tus claves.",
+    "sorgente": "cca78c769ad8"
+  },
+  "milome/bmad-speckit-sdd-flow": {
+    "cosa_fa": "Workflow end-to-end con integración BMAD + Speckit",
+    "quando_usarlo": "Flujo que une BMAD + Spec Kit para spec-driven development.",
+    "sorgente": "ae60a282a62e"
+  },
+  "mistral.ai/news/voxtral-tts": {
+    "cosa_fa": "Voxtral 4B, modelo TTS open-weight (alternativa a ElevenLabs) - solo modelo/sitio, sin repo",
+    "quando_usarlo": "Voz/TTS open-weight de Mistral, alternativa a ElevenLabs (modelo, sin repo).",
+    "sorgente": "ad95b702f80a"
+  },
+  "mitkox/stolen-thoughts": {
+    "cosa_fa": "Investigación con demo y suite de validación que muestra cómo las trazas de razonamiento cifradas de las API de LLM propietarias pueden reconstruirse usando un modelo más débil como oráculo.",
+    "quando_usarlo": "Cuando evalúas los riesgos de exposición del razonamiento en las API que usas o diseñas.",
+    "sorgente": "5c5fd29d6f75"
+  },
+  "mobile-next/mobile-mcp": {
+    "cosa_fa": "Servidor MCP que permite a agentes como Claude Code, Codex, Cursor o Gemini controlar apps iOS y Android en emuladores, simuladores y dispositivos reales: leer la pantalla, tap, swipe, escribir, instalar apps, deep links, logs y grabación. Usa sobre todo el árbol de accesibilidad y recurre a las capturas de pantalla solo cuando hace falta.",
+    "quando_usarlo": "Cuando quieres que tu coding agent pruebe o maneje una app móvil con una única interfaz para Android e iOS.",
+    "sorgente": "a2469bcd11b7"
+  },
+  "moonshotai/kimi-k2.5": {
+    "cosa_fa": "Modelo de IA multimodal open-source (Moonshot AI)",
+    "quando_usarlo": "LLM open-source potente para orquestar muchos agentes en paralelo y visual coding.",
+    "sorgente": "9bcf7cd61d1c"
+  },
+  "motion.so": {
+    "cosa_fa": "Agente de IA para generar vídeos de motion graphics a partir de prompts: se encarga de investigación, diseño, animación, voiceover y montaje, invocable desde Claude o Cursor vía MCP.",
+    "quando_usarlo": "Cuando necesitas un vídeo animado profesional sin abrir After Effects, también manejado por Claude vía MCP.",
+    "sorgente": "330fae78a33e"
+  },
+  "mukul975/anthropic-cybersecurity-skills": {
+    "cosa_fa": "817 skills de ciberseguridad estructuradas para agentes de IA, mapeadas a 6 frameworks (MITRE ATT&CK, NIST CSF 2.0, ATLAS, D3FEND, NIST AI RMF, F3); estándar agentskills.io",
+    "quando_usarlo": "Dar a un agente de IA ~800 skills de ciberseguridad mapeadas a los frameworks estándar.",
+    "sorgente": "2ca3cc766318"
+  },
+  "mukul975/cve-mcp-server": {
+    "cosa_fa": "Servidor MCP que da a Claude una veintena de herramientas de threat intelligence sobre decenas de API: búsqueda de CVE, puntuaciones EPSS, catálogo KEV de CISA, exploits conocidos, con una valoración de riesgo para decidir qué corregir primero.",
+    "quando_usarlo": "Cuando debes priorizar vulnerabilidades y quieres que el asistente cruce por sí solo NVD, CISA y exploits públicos.",
+    "sorgente": "1dc98be84a5d"
+  },
+  "mutonby/openshorts": {
+    "cosa_fa": "Generador open source de clips verticales a partir de vídeos largos o de YouTube: detección automática de momentos, face tracking, subtítulos y doblaje, self-hostable con Docker (MIT) y sin marca de agua.",
+    "quando_usarlo": "Cuando debes sacar shorts de contenidos largos sin paywalls ni límites de plataforma.",
+    "sorgente": "177885ad1cf6"
+  },
+  "mvanhorn/last30days-skill": {
+    "cosa_fa": "Skill que convierte un agente de IA en un motor de búsqueda sobre los últimos 30 días",
+    "quando_usarlo": "Skill que da a un agente un motor de búsqueda sobre los últimos 30 días.",
+    "sorgente": "7f756a20381c"
+  },
+  "mvt-project/mvt": {
+    "cosa_fa": "Toolkit forense del Security Lab de Amnesty International para buscar rastros de spyware (p. ej. Pegasus) en dispositivos Android e iOS comparándolos con indicadores de compromiso públicos. Es para analistas, no un antivirus: la ausencia de indicadores no prueba que el dispositivo esté limpio.",
+    "quando_usarlo": "Cuando debes hacer un análisis forense de un teléfono sospechoso de estar comprometido por spyware dirigido.",
+    "licenza": "MVT License 1.1 (no OSI: solo análisis forenses consentidos)",
+    "sorgente": "0b4a87ce1f51"
+  },
+  "mysteriumnetwork/node": {
+    "cosa_fa": "Nodo VPN descentralizado basado en WireGuard, distribuido vía Docker: pone tu ancho de banda a disposición de una red global a cambio de una compensación.",
+    "quando_usarlo": "Cuando quieres formar parte de una red VPN descentralizada en lugar de usar un proveedor central.",
+    "sorgente": "f57a276b430b"
+  },
+  "nab138/iloader": {
+    "cosa_fa": "App open source para el sideloading en iPhone y iPad desde el ordenador: instala SideStore, LiveContainer y archivos IPA gestionando automáticamente certificados, App ID y archivos de pairing. Funciona en Windows, macOS y Linux y permite consultar y revocar los certificados de desarrollo.",
+    "quando_usarlo": "Cuando debes instalar builds de iOS fuera de la App Store sin hacer a mano todo el trámite de los certificados.",
+    "sorgente": "a57879330342"
+  },
+  "nadimtuhin/claude-token-optimizer": {
+    "cosa_fa": "Reorganiza la documentación del proyecto para que al arrancar Claude cargue solo unos pocos archivos esenciales y el resto quede en un archivo consultado bajo demanda; detecta el stack y se configura en pocos segundos.",
+    "quando_usarlo": "Cuando el contexto inicial de Claude Code está saturado de documentación que se necesita rara vez.",
+    "sorgente": "44eede4e82a1"
+  },
+  "nandhakishorm/laya": {
+    "cosa_fa": "Modelo de decisión 'System 1' open source de unos 421M de parámetros: en una sola pasada devuelve decisiones tipadas (elección, puntuación, sí/no) sobre cualquier texto, en milisegundos y en local (~1 GB de memoria). Alternativa self-hosted a Jev; Apache-2.0.",
+    "quando_usarlo": "Cuando debes clasificar o enrutar textos (tickets, emails) con alta frecuencia y un LLM generativo es demasiado lento o caro.",
+    "sorgente": "f06b74ea3cc1"
+  },
+  "nanmicoder/mediacrawler": {
+    "cosa_fa": "Crawler open source que recopila contenido público de las principales redes sociales chinas (Xiaohongshu, Douyin, Bilibili, Weibo, Zhihu) controlando un navegador real con Playwright; exporta a CSV/JSON/Excel, SQLite y MySQL, con WebUI.",
+    "quando_usarlo": "Cuando necesitas recopilar datos públicos de las redes sociales chinas sin reimplementar sus algoritmos de firma.",
+    "sorgente": "ed1172530077"
+  },
+  "nationalsecurityagency/ghidra": {
+    "cosa_fa": "Framework de ingeniería inversa de la NSA: desensamblado, descompilación, análisis del control flow, grafos y scripting sobre binarios de los que no tienes el código fuente.",
+    "quando_usarlo": "Cuando debes analizar un ejecutable compilado: malware, firmware o software legacy sin fuentes.",
+    "sorgente": "b14e8756b933"
+  },
+  "nawfalmotii79/plfm_radar": {
+    "cosa_fa": "Proyecto open hardware de un radar con seguimiento multiobjetivo: PCB, código FPGA, esquemas completos y GUI en Python, licencia MIT.",
+    "quando_usarlo": "Cuando necesitas una referencia completa y libre para construir o estudiar un radar.",
+    "sorgente": "63f67004f3d9"
+  },
+  "nstarlive.com": {
+    "cosa_fa": "Navegador de investigación OSINT que combina investigación visual, de identidad, cripto y de red: globo con más de 250.000 cámaras públicas, búsqueda de nombres de usuario multiplataforma, seguimiento de wallets en decenas de chains, geolocalización de imágenes y herramientas de radio.",
+    "quando_usarlo": "Cuando una investigación sobre fuentes abiertas debe cruzar varios tipos de datos en una única interfaz.",
+    "sorgente": "07c512a3db3b"
+  },
+  "nutlope/hallmark": {
+    "cosa_fa": "Skill/reglas para que los coding agents generen interfaces front-end que no parezcan 'AI slop', con criterios de diseño coherentes.",
+    "quando_usarlo": "Cuando las UI generadas por Cursor o Claude Code salen todas iguales y quieres elevar su calidad visual.",
+    "sorgente": "3ea54e85076e"
+  },
+  "nuviomedia/nuviomobile": {
+    "cosa_fa": "Cliente móvil open source de un media center para la biblioteca multimedia propia, escrito en Kotlin con Compose Multiplatform: sincroniza progreso, subtítulos y metadatos. Forma parte de un ecosistema que cubre también Android TV y Smart TV Tizen/webOS.",
+    "quando_usarlo": "Cuando buscas un ejemplo real de app Compose Multiplatform, o un cliente para una biblioteca multimedia self-hosted.",
+    "sorgente": "10dea8b11d57"
+  },
+  "nvidia/nemoclaw": {
+    "cosa_fa": "Capa de NVIDIA que ejecuta agentes como Hermes, LangChain Deep Agents y OpenClaw dentro de OpenShell con guardrails basados en políticas e inferencia gestionada.",
+    "quando_usarlo": "Cuando un asistente siempre activo en la máquina necesita límites explícitos y verificables.",
+    "sorgente": "8e2bc4e572d8"
+  },
+  "nvidia/skillspector": {
+    "cosa_fa": "Security scanner de NVIDIA para las skills de agentes de IA (detecta patrones maliciosos)",
+    "quando_usarlo": "Scanner de NVIDIA que verifica la seguridad de las skills de los agentes antes de instalarlas.",
+    "sorgente": "dacd1871dd22"
+  },
+  "oblien/openship": {
+    "cosa_fa": "Plataforma open source self-hostable para el deploy de aplicaciones: detecta el stack y los comandos de build a partir de un repo o carpeta y gestiona build, routing, HTTPS con Let's Encrypt y deploys automáticos en cada push.",
+    "quando_usarlo": "Cuando quieres tu propio PaaS en un VPS u homelab en lugar de pagar un servicio gestionado.",
+    "sorgente": "00b81cb13406"
+  },
+  "ocornut/imgui": {
+    "cosa_fa": "Librería C++ immediate-mode para construir rápidamente GUI técnicas (debuggers, profilers, editores, paneles para game engines) sin dependencias externas; genera vertex buffers para integrar en tu propio renderer.",
+    "quando_usarlo": "Cuando necesitas un panel de control o una herramienta de debug en una app C++/3D sin cargar con un framework de UI.",
+    "sorgente": "95e541643201"
+  },
+  "olow304/memvid": {
+    "cosa_fa": "Memoria de IA basada en video: millones de chunks en archivos MP4, búsqueda semántica sin DB",
+    "quando_usarlo": "Memoria para agentes de IA que guarda millones de chunks en archivos MP4, búsqueda semántica sin DB.",
+    "sorgente": "b66079e51fa6"
+  },
+  "omnichar/omnichar": {
+    "cosa_fa": "Estudio open source para personajes de IA coherentes entre imágenes y vídeos: construye identidades portables entre modelos distintos, entrena LoRA y genera en la GPU propia.",
+    "quando_usarlo": "Cuando debes mantener el mismo personaje reconocible en varias imágenes y vídeos generados.",
+    "sorgente": "e0520efe5061"
+  },
+  "ooples/token-optimizer-mcp": {
+    "cosa_fa": "Servidor MCP que mide y reduce los tokens de los coding agents con caching y compresión del contexto, y comparte un knowledge graph local entre una quincena de clientes.",
+    "quando_usarlo": "Cuando usas varios asistentes de coding y quieres medir y recortar el contexto redundante.",
+    "sorgente": "0d88a560a4bf"
+  },
+  "open-dev-society/openstock": {
+    "cosa_fa": "Alternativa open source a las plataformas de mercado de pago: cotizaciones en tiempo real, gráficos técnicos, watchlists y agregación del sentimiento de redes sociales y noticias. Next.js y TypeScript, ejecutable en local o self-hosted.",
+    "quando_usarlo": "Cuando quieres un panel de mercado personal y personalizable sin suscripciones.",
+    "sorgente": "faa94afdd7ea"
+  },
+  "openbao/openbao": {
+    "cosa_fa": "Fork comunitario (Linux Foundation, licencia MPL-2.0) de HashiCorp Vault nacido tras el paso de Vault a la BSL: misma arquitectura y API para gestionar secretos, certificados, credenciales dinámicas y cifrado as-a-service.",
+    "quando_usarlo": "Cuando necesitas un secrets manager compatible con Vault pero con una licencia realmente open source.",
+    "sorgente": "85da21123aec"
+  },
+  "openclaw/openclaw": {
+    "cosa_fa": "Personal AI assistant - Any OS, Any Platform",
+    "quando_usarlo": "Asistente/agente de IA generalista open-source para self-hosting.",
+    "sorgente": "4ea12d18bb82"
+  },
+  "openclaw/wacrawl": {
+    "cosa_fa": "CLI que convierte los archivos locales de WhatsApp en Mac en un archivo consultable offline y hace copias de seguridad cifradas en un repositorio Git.",
+    "quando_usarlo": "Cuando quieres buscar en el historial de chats de WhatsApp o archivarlo de forma cifrada sin servicios de terceros.",
+    "sorgente": "55d88d8606ab"
+  },
+  "opendatalab/mineru": {
+    "cosa_fa": "Convierte documentos complejos en datos estructurados para LLM/RAG/agentes",
+    "quando_usarlo": "Convertir documentos complejos en datos estructurados para LLM/RAG/agentes.",
+    "sorgente": "bac23f8876e0"
+  },
+  "opengeos/geolibre": {
+    "cosa_fa": "Plataforma GIS open source y cloud-native para explorar y analizar datos geoespaciales desde el navegador, el escritorio o Jupyter: mapas interactivos, 3D, SQL espacial y procesamiento local con DuckDB-WASM Spatial.",
+    "quando_usarlo": "Cuando necesitas visualizar o consultar datos geoespaciales sin enviarlos a un servicio externo.",
+    "sorgente": "70f08f464b45"
+  },
+  "openobserve/openobserve": {
+    "cosa_fa": "Plataforma de observability cloud-native en Rust que unifica logs, métricas, trazas, RUM y observabilidad de IA/LLM: almacenamiento Parquet en S3, deploy en un solo binario, OpenTelemetry nativo, consultas en SQL y PromQL.",
+    "quando_usarlo": "Cuando los costos de Elasticsearch o Datadog no se sostienen y quieres una alternativa self-hosted.",
+    "sorgente": "010b27d306e2"
+  },
+  "opensandbox-group/opensandbox": {
+    "cosa_fa": "Infraestructura de sandboxes aisladas para agentes autónomos: entornos para código, navegación y escritorios completos, SDK en cinco lenguajes, Docker/Kubernetes con gVisor, Kata o Firecracker, vault de credenciales y servidor MCP.",
+    "quando_usarlo": "Cuando necesitas que un agente ejecute código sin darle acceso a tu máquina.",
+    "sorgente": "f8c46d99f454"
+  },
+  "oraios/serena": {
+    "cosa_fa": "Servidor MCP que proporciona al agente las herramientas semánticas de un IDE: consultar el árbol de símbolos, rastrear referencias y hacer refactorings precisos en lugar de leer los archivos línea por línea.",
+    "quando_usarlo": "Cuando el agente trabaja en un proyecto grande y la búsqueda textual desperdicia tokens y rompe el código.",
+    "sorgente": "b7bd5c9d0b11"
+  },
+  "p-e-w/heretic": {
+    "cosa_fa": "Eliminar filtros de seguridad de LLM (censorship removal)",
+    "quando_usarlo": "Para eliminar los filtros de censura de un LLM open-source ejecutado en local (uso consciente).",
+    "sorgente": "1590d8acc263"
+  },
+  "palmier-io/palmier-pro": {
+    "cosa_fa": "Editor de video open source para macOS (respaldado por YC) que integra un servidor MCP en la línea de tiempo: Claude Code, Codex o Cursor pueden generar clips, cortar y organizar la edición mediante texto. El editor, el servidor MCP y el chat agent son GPLv3.",
+    "quando_usarlo": "Cuando quieres un editor de video nativo de macOS controlable por un coding agent vía MCP para la edición agéntica.",
+    "sorgente": "040c54e39198"
+  },
+  "panniantong/agent-reach": {
+    "cosa_fa": "Scaffolding/CLI open source que da a un agente de IA acceso a Twitter, Reddit, YouTube, GitHub y Bilibili en tiempo real sin APIs de pago: una instalación y un SKILL.md que orquesta herramientas upstream (yt-dlp, gh, etc.).",
+    "quando_usarlo": "Cuando quieres que tu agente lea redes sociales y plataformas web en tiempo real sin pagar APIs oficiales.",
+    "sorgente": "c38fa7a35732"
+  },
+  "paperclipai/paperclip": {
+    "cosa_fa": "Servidor Node.js con interfaz React que orquesta un equipo de agentes de IA como si fuera una empresa: organigrama, presupuesto por agente, gobernanza y alineación con los objetivos, todo desde un dashboard que muestra progreso y costes. Se define un objetivo de negocio, se asignan los roles (CEO, CTO, ingenieros, diseñadores, marketing) y se aprueba el gasto. Funciona con OpenClaw, Claude Code, Codex, Cursor, Bash y HTTP. Los autores lo resumen así: si OpenClaw es un empleado, Paperclip es la empresa.",
+    "quando_usarlo": "Cuando ejecutas varios agentes de proveedores distintos y necesitas coordinarlos hacia un objetivo con presupuesto y supervisión, en lugar de lanzarlos y seguirlos uno por uno.",
+    "sorgente": "c8c80e35cfaa"
+  },
+  "paperless-ngx/paperless-ngx": {
+    "cosa_fa": "Sistema self-hosted de gestión documental mantenido por la comunidad: adquiere escaneos y PDF, ejecuta el OCR, los indexa para la búsqueda full-text y los archiva con etiquetas, correspondientes y tipos de documento asignables también automáticamente.",
+    "quando_usarlo": "Cuando quieres eliminar el papel y tener un archivo documental consultable en tu servidor, no en una nube de terceros.",
+    "sorgente": "01883137575a"
+  },
+  "pascalorg/editor": {
+    "cosa_fa": "Editor arquitectónico 3D open source en el navegador (React Three Fiber, Three.js, WebGPU) para muros, plantas, tejados, puertas y ventanas, con CLI local y herramientas MCP pensadas también para los agentes.",
+    "quando_usarlo": "Cuando hace falta modelar edificios en 3D vía web y que también trabaje sobre ellos un agente.",
+    "sorgente": "6d7102b1f726"
+  },
+  "pbakaus/impeccable": {
+    "cosa_fa": "Skill de diseño para coding agents: define el contexto visual, el tono, los colores y la tipografía del proyecto y aplica reglas deterministas para evitar las UI todas iguales generadas por la IA.",
+    "quando_usarlo": "Cuando la interfaz generada por el agente huele a plantilla y quieres imponer una identidad visual coherente.",
+    "sorgente": "9934eefee7bc"
+  },
+  "pbanddev/comfyui-node-organizer": {
+    "cosa_fa": "Extensión de ComfyUI que alinea y ordena automáticamente los nodos del workflow en filas y columnas, con etiquetas para forzar la disposición de los grupos; se puede deshacer con undo.",
+    "quando_usarlo": "Cuando un workflow de ComfyUI se ha convertido en una maraña ilegible.",
+    "sorgente": "9a0100850d37"
+  },
+  "penpot/penpot": {
+    "cosa_fa": "Plataforma open source de diseño y prototipado colaborativo que trabaja con estándares web nativos (SVG, HTML, CSS, JSON), un puente real entre el diseño y el desarrollo frontend.",
+    "quando_usarlo": "Cuando buscas una alternativa open source a Figma con handoff diseño-desarrollo basado en estándares web abiertos.",
+    "sorgente": "e607d89fadd7"
+  },
+  "permissionlesstech/bitchat": {
+    "cosa_fa": "App de mensajería descentralizada que funciona incluso completamente offline mediante una red mesh Bluetooth, sin servidores centrales.",
+    "quando_usarlo": "Cuando necesitas comunicarte sin infraestructura de red o sin depender de un servidor central.",
+    "sorgente": "6e8c1a7d3c90"
+  },
+  "perplexityai/bumblebee": {
+    "cosa_fa": "Scanner read-only de supply chain para endpoints de desarrolladores (Perplexity)",
+    "quando_usarlo": "Scanner read-only de supply chain para las máquinas de los desarrolladores (Perplexity).",
+    "sorgente": "b1a873e3460c"
+  },
+  "pewdiepie-archdaemon/odysseus": {
+    "cosa_fa": "Workspace de IA self-hosted open source creado por PewDiePie: chat+agentes, deep research, documentos, email, notas/tareas, con modelos locales (Ollama, llama.cpp, vLLM) o APIs. Alternativa privada a ChatGPT/Claude.",
+    "quando_usarlo": "Cuando quieres un workspace de IA completo y privado, self-hosted, con modelos locales y sin depender de la nube.",
+    "sorgente": "ee7220bcc8ed"
+  },
+  "pingdotgg/t3code": {
+    "cosa_fa": "GUI web minimalista para controlar varios coding agents desde una única interfaz: soporta Codex, Claude Code, Cursor y otros.",
+    "quando_usarlo": "Cuando usas varios coding agents en paralelo y quieres gestionarlos desde un solo dashboard.",
+    "sorgente": "67920a29f868"
+  },
+  "pixel-agents-hq/pixel-agents": {
+    "cosa_fa": "Extensión de VS Code para Claude Code (agentes virtuales)",
+    "quando_usarlo": "Extensión de VS Code que muestra los agentes de Claude Code como una 'oficina' de personajes.",
+    "sorgente": "75679d2d32b2"
+  },
+  "posthog/posthog": {
+    "cosa_fa": "Plataforma open source all-in-one de product analytics: eventos, session replay, feature flags, tests A/B y encuestas self-hosted.",
+    "quando_usarlo": "Cuando quieres entender cómo se usa tu producto sin ceder los datos a servicios de analytics externos.",
+    "sorgente": "f6b67bd95b28"
+  },
+  "prabhanshukamal2121/j.a.r.v.i.s": {
+    "cosa_fa": "Asistente personal de IA con n8n + Telegram",
+    "quando_usarlo": "Asistente personal estilo JARVIS construido en n8n.",
+    "sorgente": "f20e71a48efb"
+  },
+  "pranshuparmar/witr": {
+    "cosa_fa": "CLI en Go que reconstruye la cadena de causalidad de un PID: desde init hasta el proceso final, cruzando servicios, supervisores, contenedores y file locks; salida JSON y TUI interactiva.",
+    "quando_usarlo": "Cuando un puerto está ocupado o un archivo está bloqueado y quieres saber al instante quién lanzó el proceso.",
+    "sorgente": "648797064ce0"
+  },
+  "proactor.ai": {
+    "cosa_fa": "Página de precios de Proactor.ai (asistente de IA)",
+    "quando_usarlo": "Herramienta/asistente de IA (evaluar precios).",
+    "sorgente": "f69d63c5dde3"
+  },
+  "protocolbuffers/protobuf": {
+    "cosa_fa": "Protocol Buffers: formato de serialización binario de Google para intercambiar datos estructurados de forma compacta y multilenguaje.",
+    "quando_usarlo": "Cuando necesitas un esquema de datos eficiente y tipado para RPC o comunicación entre servicios.",
+    "sorgente": "afe116e6fe0b"
+  },
+  "pullmyboots/x-minimaxh3": {
+    "cosa_fa": "Servicio local para ejecutar el modelo de vídeo MiniMax H3 en una sola GPU (declarado hasta 8 GB de VRAM), con upscaling sin segunda copia del modelo, interfaz web y monitorización del hardware.",
+    "quando_usarlo": "Cuando quieres generar vídeo con MiniMax H3 en tu GPU de consumo en lugar de vía API.",
+    "licenza": "código fuente visible, todos los derechos reservados (no open source)",
+    "sorgente": "85f3d6f553ad"
+  },
+  "pumpkin-mc/pumpkin": {
+    "cosa_fa": "Servidor de Minecraft reescrito desde cero en Rust: elimina la JVM, arranca en pocos segundos y reduce drásticamente el consumo de recursos.",
+    "quando_usarlo": "Cuando alojas un servidor de Minecraft y quieres un rendimiento y un arranque mucho más rápidos que la implementación en Java.",
+    "sorgente": "c7fcbd30bf66"
+  },
+  "punitarani/fli": {
+    "cosa_fa": "Librería Python, CLI y servidor MCP open source para Google Flights: búsqueda de vuelos con filtros avanzados y fechas flexibles, integrable con Claude para encontrar el vuelo más barato hablando en lenguaje natural. También existe el port a TypeScript fli-js.",
+    "quando_usarlo": "Cuando quieres buscar vuelos (también vía Claude/MCP) de forma programática sin abrir decenas de pestañas de comparadores.",
+    "sorgente": "c1531ef99579"
+  },
+  "qhr69/linca": {
+    "cosa_fa": "Método de caché entrenable para acelerar los modelos de difusión (p. ej. FLUX, Qwen-Image): predice los datos intermedios a partir de los pasos anteriores en lugar de recalcularlos, con aceleraciones declaradas de hasta 7x.",
+    "quando_usarlo": "Cuando la generación de imágenes con difusión es demasiado lenta y quieres probar una aceleración sin cambiar de modelo.",
+    "sorgente": "1ff65547fb94"
+  },
+  "qwenlm/qwen-image-2.1": {
+    "cosa_fa": "Modelo open source de Alibaba/Qwen para generar y modificar imágenes a partir de texto, ejecutable en local.",
+    "quando_usarlo": "Cuando necesitas generación y edición de imágenes con un modelo abierto para ejecutar en tu GPU.",
+    "licenza": "Qwen Research License (no comercial)",
+    "sorgente": "9185e68f2f83"
+  },
+  "qwenlm/qwen3-coder": {
+    "cosa_fa": "Modelo de IA para programación open-source (Qwen Team)",
+    "quando_usarlo": "Coding agent open-source eficiente (pocos parámetros activos) para generar código.",
+    "sorgente": "bf403dd658f8"
+  },
+  "qwenlm/qwen3-tts": {
+    "cosa_fa": "Text-to-Speech open-source (Alibaba Qwen)",
+    "quando_usarlo": "Clonación de voz y text-to-speech open-source (Alibaba Qwen).",
+    "sorgente": "51dd93e7e6b0"
+  },
+  "raphire/win11debloat": {
+    "cosa_fa": "Script de PowerShell sencillo y ligero para limpiar Windows 10/11 de bloatware, telemetría, publicidad y apps preinstaladas, con opciones interactivas o silenciosas.",
+    "quando_usarlo": "Cuando configuras un PC con Windows nuevo y quieres quitar rápidamente bloatware, telemetría y apps inútiles.",
+    "sorgente": "f787de465dfc"
+  },
+  "raymondhuang210129/llama.cpp-adaptive-kv-streaming": {
+    "cosa_fa": "Fork de llama.cpp que mueve dinámicamente la KV cache entre la VRAM y la memoria del sistema para gestionar contextos largos en GPU pequeñas (declarado: un 27B en 16 GB de VRAM).",
+    "quando_usarlo": "Cuando la KV cache de conversaciones largas no cabe en tu GPU; es un fork, así que comprueba lo alineado que está con upstream.",
+    "sorgente": "05ad13bf510a"
+  },
+  "reactor-team/infinite-livestream": {
+    "cosa_fa": "Transmisión en directo de vídeo generada por IA sin fin: los mensajes del chat se convierten en guiones y luego en vídeos con audio, y el stream rellena las esperas con contenido de transición.",
+    "quando_usarlo": "Cuando quieres experimentar con vídeo generativo interactivo guiado por el público.",
+    "sorgente": "9effab965f4a"
+  },
+  "reconurge/flowsint": {
+    "cosa_fa": "OSINT con grafos interactivos de las relaciones entre datos",
+    "quando_usarlo": "Investigaciones OSINT con grafos interactivos de las relaciones entre datos.",
+    "sorgente": "db4c2a3e0a03"
+  },
+  "refactoringhq/tolaria": {
+    "cosa_fa": "App de escritorio open-source para notas resilientes",
+    "quando_usarlo": "App de escritorio open-source para notas resilientes a los cambios de formato.",
+    "sorgente": "d723056fba5b"
+  },
+  "render.com": {
+    "cosa_fa": "Hosting para self-host gratuito de n8n (tutorial)",
+    "quando_usarlo": "Hosting para self-host gratuito (p. ej. n8n).",
+    "sorgente": "91b6a475aae0"
+  },
+  "resemble-ai/chatterbox": {
+    "cosa_fa": "Modelo TTS open source (MIT) de Resemble AI con voice cloning, soporte multilingüe y watermarking integrado: alternativa local y gratuita a ElevenLabs, instalable vía pip.",
+    "quando_usarlo": "Cuando quieres síntesis de voz o clonación de voz de calidad en local, sin pagar servicios en la nube.",
+    "sorgente": "c553398a7f93"
+  },
+  "revealer.us": {
+    "cosa_fa": "Servicio OSINT que busca un nombre de usuario o una dirección de email en cientos de módulos-fuente, correlaciona los perfiles encontrados y consulta archivos de filtraciones de datos mostrando tipo de fuente, fecha y categorías de campos expuestos. Declara que nunca muestra los valores de las contraseñas.",
+    "quando_usarlo": "Cuando debes medir la exposición pública de un identificador, empezando por los tuyos, en un assessment.",
+    "sorgente": "7180e684f972"
+  },
+  "ripienaar/free-for-dev": {
+    "cosa_fa": "Lista mantenida de servicios SaaS, PaaS e IaaS con planes gratuitos reales (no pruebas temporales) utilizables por desarrolladores y equipos DevOps.",
+    "quando_usarlo": "Cuando buscas hosting, CI o infraestructura con un free tier sobre el que se pueda construir de verdad.",
+    "sorgente": "bb8b9c7b611d"
+  },
+  "rizzo-ai-academy/rizzo-flow": {
+    "cosa_fa": "Reconstrucción abierta y local de la idea de Jev: decisiones tipadas a partir de un LLM (elección, sí/no) sin generar tokens, leyendo directamente las probabilidades.",
+    "quando_usarlo": "Cuando quieres experimentar con decisiones al estilo Jev en local partiendo de un LLM que ya tienes.",
+    "sorgente": "d7fe0a5a95c0"
+  },
+  "roadmaus/comfyui-continuity": {
+    "cosa_fa": "Paquete de ComfyUI que con un solo nodo genera vídeos completos con audio a partir de prompts e imágenes de referencia, manejando en local distintas familias de modelos sin claves de API.",
+    "quando_usarlo": "Cuando quieres probar varios modelos de vídeo en ComfyUI sin construir un workflow para cada uno.",
+    "sorgente": "8e95368cd75c"
+  },
+  "robbyant/lingbot-map": {
+    "cosa_fa": "Reconstrucción 3D en tiempo real para robótica y realidad aumentada, sin tener que elegir entre velocidad y calidad del mapa.",
+    "quando_usarlo": "Cuando necesitas mapeo y reconstrucción 3D en vivo en robots o dispositivos AR.",
+    "sorgente": "498af83c67f5"
+  },
+  "roble3/cc-blender-skill": {
+    "cosa_fa": "Skill de Claude Code para Blender 3D",
+    "quando_usarlo": "Skill de Claude Code para controlar Blender (3D).",
+    "sorgente": "5fccb0e64057"
+  },
+  "roboflow/supervision": {
+    "cosa_fa": "Librería de computer vision (Roboflow), más de 40k estrellas",
+    "quando_usarlo": "Librería Python para computer vision (anotaciones, tracking) de Roboflow.",
+    "sorgente": "28edd687a77f"
+  },
+  "rommapp/romm": {
+    "cosa_fa": "Plataforma self-hosted que convierte una colección de ROMs en una biblioteca ordenada vía navegador, con metadatos y carátulas para más de 400 plataformas.",
+    "quando_usarlo": "Cuando quieres catalogar y jugar tu colección de ROMs desde una interfaz web ordenada.",
+    "sorgente": "181234791ea5"
+  },
+  "rookedsysc/kanvibe": {
+    "cosa_fa": "Workspace Kanban de escritorio, manejado con teclado, para coding agents: terminales integradas, git worktree y hooks que mueven las tarjetas de TODO a DONE siguiendo las sesiones de Claude Code, Codex o Gemini, limpiando las ramas al terminar el trabajo.",
+    "quando_usarlo": "Cuando haces trabajar a varios agentes en paralelo y quieres ver de un vistazo en qué punto está cada tarea.",
+    "sorgente": "8c285abc7e0e"
+  },
+  "ruc-datalab/evoontology": {
+    "cosa_fa": "Proyecto de investigación (RUC Data Lab) que construye y hace evolucionar automáticamente una capa ontológica/semántica para agentes que trabajan con datos, para no tener que mantenerla a mano. Disponible también como plugin para Claude Code y Codex; acompañado de un paper en arXiv.",
+    "quando_usarlo": "Cuando un agente consulta datos empresariales y la semantic layer escrita a mano se convierte en el cuello de botella.",
+    "sorgente": "d19880c94901"
+  },
+  "runable.com": {
+    "cosa_fa": "Plataforma de agente de IA generalista que planifica y ejecuta tareas end-to-end: genera sitios, vídeos, diapositivas, imágenes, apps y workflows con una única suscripción.",
+    "quando_usarlo": "Cuando quieres un agente todoterreno que produzca entregables completos sin montar tú la toolchain.",
+    "sorgente": "bd941ce265e4"
+  },
+  "sachinsavkare/jarvis-pa-lovable-11-labs-n8n": {
+    "cosa_fa": "Asistente de IA por voz con n8n + Lovable + ElevenLabs",
+    "quando_usarlo": "Variante de JARVIS con n8n + ElevenLabs + Lovable.",
+    "sorgente": "f4107d9042f5"
+  },
+  "sakana.ai/fugu": {
+    "cosa_fa": "Familia de modelos de Sakana AI en dos variantes: Fugu Max, orientado a orquestar y enrutar las tareas con bajo coste de inferencia, y Fugu Ultra para las tareas más pesadas.",
+    "quando_usarlo": "Cuando evalúas alternativas a los modelos de frontera estadounidenses prestando atención al coste por tarea.",
+    "sorgente": "18b4a36b4f80"
+  },
+  "salah-xd/archify": {
+    "cosa_fa": "Extensión de Chrome MV3 local-first que analiza una web app directamente desde el navegador: reconstruye la arquitectura del frontend y evalúa la seguridad del lado del cliente, sin que los datos salgan de la máquina. Cubre el caso en que el código fuente no está disponible. Homónima pero independiente de la skill de diagramas tt-a1i/archify.",
+    "quando_usarlo": "Cuando necesitas hacerte una idea de la arquitectura y la seguridad del lado del cliente de una web app de la que no tienes el repositorio — un primer vistazo, no un dictamen: no ve el backend.",
+    "sorgente": "ad19560af7a6"
+  },
+  "samuelgursky/davinci-resolve-mcp": {
+    "cosa_fa": "Servidor MCP que conecta cualquier cliente compatible con DaVinci Resolve Studio: control de edit, color, Fusion y Fairlight, análisis de medios, marcadores y configuración del render. Expone 377 herramientas granulares o bien un modo compacto de 36 herramientas; licencia MIT.",
+    "quando_usarlo": "Cuando quieres que un agente ejecute operaciones de montaje y color dentro de DaVinci Resolve en lugar de describirlas.",
+    "sorgente": "88c64d5198fd"
+  },
+  "sceneai.art": {
+    "cosa_fa": "Biblioteca de pago de prompts listos para generar secciones web y landing pages animadas, actualizada semanalmente; algunas vistas previas se pueden consultar sin cuenta.",
+    "quando_usarlo": "Cuando buscas un punto de partida probado para generar una página en lugar de escribir el prompt desde cero.",
+    "sorgente": "c1b516a8a24b"
+  },
+  "schollz/croc": {
+    "cosa_fa": "Transferencia de archivos peer-to-peer desde la terminal con una frase secreta: funciona entre redes distintas mediante relay, sin abrir puertos, con cifrado end-to-end, reanudación de transferencias y relay self-hosted.",
+    "quando_usarlo": "Cuando necesitas pasar archivos entre dos máquinas sin nube, cuentas ni configuraciones de red.",
+    "sorgente": "03f41758c728"
+  },
+  "securo-finance/securo": {
+    "cosa_fa": "Gestor de finanzas personales self-hosted: visión completa de cuentas y gastos sin salir de tu propia infraestructura, sin ceder los datos a terceros.",
+    "quando_usarlo": "Cuando quieres hacer seguimiento de cuentas y gastos sin vincular tus datos a un servicio en la nube.",
+    "sorgente": "5090a5ab852d"
+  },
+  "seed.bytedance.com/en": {
+    "cosa_fa": "Equipo/organización ByteDance Seed (investigación en IA)",
+    "quando_usarlo": "Equipo de investigación en IA de ByteDance (hub de modelos).",
+    "sorgente": "4c11da0390bf"
+  },
+  "seed.bytedance.com/en/seedance2_0": {
+    "cosa_fa": "Página oficial del modelo de vídeo Seedance 2.0 (ByteDance Seed)",
+    "quando_usarlo": "Página oficial del modelo de vídeo Seedance (ver repos relacionados).",
+    "sorgente": "7ac028bb62a8"
+  },
+  "sentelabsai/openexecutive": {
+    "cosa_fa": "Equipo ejecutivo virtual: una persona de IA coherente respaldada por ocho agentes especialistas (FastAPI) que cubren las funciones típicas de una dirección empresarial.",
+    "quando_usarlo": "Cuando quieres una segunda opinión estructurada sobre las decisiones de gestión de un proyecto o de una empresa.",
+    "sorgente": "9a69ff8e0a2d"
+  },
+  "shadcn-labs/pdfcn": {
+    "cosa_fa": "Registry de componentes al estilo shadcn para generar PDF en React: se copian los componentes en el proyecto y se componen tablas, formularios, gráficos, facturas e informes, con renderer Takumi o Forme. La documentación muestra vistas previas en vivo. No es un editor alojado: la lógica se queda en la aplicación.",
+    "quando_usarlo": "Cuando una app React debe producir PDF cuidados (facturas, informes) y no quieres construirlos a partir de primitivas de layout.",
+    "sorgente": "150e6b95912c"
+  },
+  "shiyu-coder/kronos": {
+    "cosa_fa": "Foundation model open-source para datos bursátiles/gráficos financieros",
+    "quando_usarlo": "Modelo fundacional para analizar datos bursátiles/series temporales financieras.",
+    "sorgente": "c5fc1221b8bc"
+  },
+  "simplex-chat/simplex-chat": {
+    "cosa_fa": "Plataforma de mensajería privada que no requiere ningún identificador persistente (ni número de teléfono, email o ID de cuenta), eliminando los metadatos de red típicos de apps como Signal.",
+    "quando_usarlo": "Cuando necesitas un chat realmente anónimo sin identificadores persistentes y con minimización de metadatos.",
+    "sorgente": "ae8d807b0e42"
+  },
+  "sipeed/picoclaw": {
+    "cosa_fa": "Ultra-lightweight AI assistant en Go (Sipeed)",
+    "quando_usarlo": "Asistente de IA ultraligero en Go, para hardware mínimo (Sipeed).",
+    "sorgente": "44b2477f4433"
+  },
+  "software-mansion/argent": {
+    "cosa_fa": "Toolkit agéntico para manejar apps iOS, Android, TV y de escritorio: control de iPhone físicos por USB, simuladores y emuladores, tap/swipe/typing, inspección de UI, logs, tráfico de red y regresión visual.",
+    "quando_usarlo": "Cuando quieres que un agente pruebe y depure en el dispositivo real, no solo sobre capturas de pantalla.",
+    "sorgente": "c4c3ee113438"
+  },
+  "soirihiroka/shrimply": {
+    "cosa_fa": "Editor de vídeo no lineal open source escrito en Rust, con línea de tiempo multipista de audio/vídeo y herramientas de IA integradas que funcionan en local: transcripción automática, síntesis de voz y generación de vídeo.",
+    "quando_usarlo": "Cuando quieres un editor de escritorio que combine montaje tradicional y funciones de IA sin enviar el material a una nube.",
+    "sorgente": "a5cd5c7a6c39"
+  },
+  "soxoj/maigret": {
+    "cosa_fa": "Herramienta OSINT que, a partir de un nombre de usuario, busca en miles de sitios, vincula los perfiles y construye un dossier digital de una persona usando solo datos públicos.",
+    "quando_usarlo": "Cuando necesitas hacer reconocimiento OSINT sobre un nombre de usuario y mapear la presencia online de una persona en muchos sitios.",
+    "sorgente": "ca712bece841"
+  },
+  "stanford-tml/robot_keyframe_kit": {
+    "cosa_fa": "Herramienta de Stanford para crear movimientos de cualquier robot editando keyframes en MuJoCo desde una interfaz visual, con modo espejo que gestiona automáticamente las direcciones de las articulaciones.",
+    "quando_usarlo": "Cuando debes animar un robot en simulación sin escribir trayectorias a mano.",
+    "sorgente": "371a7da42cf0"
+  },
+  "stanfordnlp/dspy": {
+    "cosa_fa": "Framework para construir sistemas de IA modulares en Python: código componible en lugar de prompts frágiles, con optimización automática de prompts y pesos para clasificadores, RAG y bucles agénticos.",
+    "quando_usarlo": "Cuando quieres programar el comportamiento de un LLM y hacer que lo optimicen métricas en lugar de hacerlo a mano.",
+    "sorgente": "498bed696f73"
+  },
+  "startrail-org/pixelrag": {
+    "cosa_fa": "Sistema RAG 'pixel-native': en lugar de extraer texto, toma capturas de pantalla de las páginas y recupera por imagen con un modelo vision-language (Qwen3-VL + FAISS), robusto ante tablas y layouts complejos. Incluye el plugin pixelbrowse para Claude Code.",
+    "quando_usarlo": "Cuando el RAG textual falla con PDF/páginas de layout complejo y quieres recuperar basándote en la imagen.",
+    "sorgente": "e6062135c2fe"
+  },
+  "steviebuilds/agent-room": {
+    "cosa_fa": "Salas de reunión locales en las que Codex, Claude Code y otros agentes discuten en directo, comparten contexto y revisan el trabajo mutuamente; el usuario observa o interviene desde el navegador. Sin nube ni cuentas.",
+    "quando_usarlo": "Cuando quieres que varios coding agents se confronten sobre una revisión o un bug en lugar de trabajar aislados.",
+    "sorgente": "112a7b6367fc"
+  },
+  "stirling-tools/stirling-pdf": {
+    "cosa_fa": "Gestión/edición de PDF self-hosted",
+    "quando_usarlo": "Gestionar/editar PDF en self-hosting (sin suscripciones, sin subida a la nube).",
+    "sorgente": "c63dbaec8fc9"
+  },
+  "stitch.withgoogle.com": {
+    "cosa_fa": "Diseño de interfaces gráficas a partir de lenguaje natural",
+    "quando_usarlo": "Generar UI a partir de lenguaje natural y luego pasar a Claude Code (Google).",
+    "sorgente": "51b3833cd14d"
+  },
+  "stremio/stremio-web": {
+    "cosa_fa": "Front-end PWA en React de Stremio con el motor de add-ons, catálogos y sincronización escrito en Rust y compilado a WebAssembly dentro de un Web Worker.",
+    "quando_usarlo": "Cuando buscas un ejemplo real de arquitectura React + Rust/WASM con la lógica pesada fuera del hilo principal.",
+    "sorgente": "d557993c0907"
+  },
+  "sudoingx/qwen38-mtp": {
+    "cosa_fa": "Receta y benchmark de la comunidad: un flag de llama.cpp activa la cabeza MTP ya presente en Qwen3.8-27B y aumenta la velocidad de decodificación en torno a un 30-40% en GPU de consumo.",
+    "quando_usarlo": "Cuando ejecutas Qwen3.8 en local con llama.cpp y quieres más velocidad sin cambiar de hardware.",
+    "sorgente": "0045f3034dd4"
+  },
+  "supertone-oss-archive/supertonic": {
+    "cosa_fa": "Text-to-Speech completamente local de alto rendimiento — repositorio archivado en 09/2026, ya sin mantenimiento",
+    "quando_usarlo": "Text-to-speech completamente local de alto rendimiento.",
+    "sorgente": "6097671fc9bd"
+  },
+  "swarmclawai/swarmclaw": {
+    "cosa_fa": "Runtime/framework multiagente self-hosted: delega en Claude Code, Codex, OpenClaw, Hermes, etc.",
+    "quando_usarlo": "Runtime multiagente que orquesta Claude Code, Codex, OpenClaw, Hermes, etc.",
+    "sorgente": "65805fa615c5"
+  },
+  "tauricresearch/tradingagents": {
+    "cosa_fa": "Framework multiagente para trading (gemelo estructural de ai-hedge-fund)",
+    "quando_usarlo": "Framework multiagente LLM para el trading financiero.",
+    "sorgente": "c4bc9bf9200a"
+  },
+  "tencent/teamai-cli": {
+    "cosa_fa": "Herramienta de Tencent que centraliza en un repositorio Git skills, reglas, documentación, agentes, hooks y configuraciones MCP, y luego los distribuye automáticamente a las herramientas del equipo. Compatible con Claude Code, Codex, Cursor, OpenCode y CodeBuddy.",
+    "quando_usarlo": "Cuando en un equipo cada uno tiene prompts y configuraciones distintas y quieres versionarlos en un único lugar.",
+    "sorgente": "b25f687bc6d2"
+  },
+  "tencent/tencentdb-agent-memory": {
+    "cosa_fa": "Memoria persistente local para agentes de IA, pipeline de 4 niveles, cero APIs externas (Tencent)",
+    "quando_usarlo": "Memoria persistente local para agentes de IA de 4 niveles, cero APIs externas (Tencent).",
+    "sorgente": "63b9b27104d6"
+  },
+  "tencentcloud/cubesandbox": {
+    "cosa_fa": "Sandbox de ejecución segura para agentes de IA: aísla comandos, instalaciones de paquetes y código generado en un entorno controlado.",
+    "quando_usarlo": "Cuando haces que un agente de IA ejecute código arbitrario y quieres aislarlo del sistema host.",
+    "sorgente": "bc67e2919fc8"
+  },
+  "tencentcloud/tencentdb-agent-memory": {
+    "cosa_fa": "Sistema de memoria para agentes de IA publicado por Tencent Cloud: conserva preferencias y conversaciones como memoria a largo plazo para mantener el contexto entre sesiones.",
+    "quando_usarlo": "Cuando un agente debe recordar las preferencias y el historial del usuario de una sesión a otra.",
+    "sorgente": "b1bcf68ca5df"
+  },
+  "testsprite.com": {
+    "cosa_fa": "Agente de IA que resuelve problemas en el código generado por los coding agents",
+    "quando_usarlo": "Agente de IA que prueba/repara el código generado.",
+    "sorgente": "c900f034aa56"
+  },
+  "toeverything/affine": {
+    "cosa_fa": "Workspace local-first que une documentos, pizarra y base de datos en un único canvas edgeless, con IA multimodal para escritura, presentaciones y mapas mentales; self-hostable y sincronizado en tiempo real.",
+    "quando_usarlo": "Cuando buscas una alternativa self-hosted a Notion y Miro sin lock-in en la nube.",
+    "sorgente": "0f7bf488d475"
+  },
+  "togatoga/karukan": {
+    "cosa_fa": "Motor de entrada japonés (IME) que aprovecha modelos de lenguaje para desambiguar homófonos y mejorar la conversión kana-kanji.",
+    "quando_usarlo": "Cuando escribes en japonés y quieres una conversión de homófonos más precisa que con los IME clásicos.",
+    "sorgente": "794ef96905a8"
+  },
+  "tongyi-mai/z-image": {
+    "cosa_fa": "Generación de imágenes eficiente 6B (Alibaba Tongyi)",
+    "quando_usarlo": "Generación de imágenes gratuita y abierta (Alibaba).",
+    "sorgente": "54b88d88876c"
+  },
+  "topoteretes/cognee": {
+    "cosa_fa": "Capa de memoria para agentes de IA: construye knowledge graphs a partir de las interacciones para no perder el contexto entre sesiones.",
+    "quando_usarlo": "Cuando tu agente lo olvida todo al final de la sesión y necesitas memoria estructurada persistente.",
+    "sorgente": "5f031fb8b8d5"
+  },
+  "traderalice/openalice": {
+    "cosa_fa": "Agente de IA de trading que cubre acciones, cripto, forex y materias primas: desde el análisis hasta la entrada, la gestión y la salida, con guardrails de riesgo configurables.",
+    "quando_usarlo": "Cuando quieres experimentar con una mesa de trading automatizada con límites de riesgo que la IA no puede eludir.",
+    "sorgente": "0a66278c5b8f"
+  },
+  "trycua/cua": {
+    "cosa_fa": "Infraestructura open source para agentes de 'computer use': drivers multiplataforma en Rust para manejar apps de escritorio y navegadores (también vía MCP y en segundo plano), sandboxes cloud y VM locales en Apple Silicon, modelos ligeros para microdecisiones de interfaz y benchmarks para entrenamiento y evaluación.",
+    "quando_usarlo": "Cuando construyes agentes que deben usar interfaces gráficas de forma aislada y repetible.",
+    "sorgente": "9139230decb7"
+  },
+  "tryghost/ghost": {
+    "cosa_fa": "CMS open source en Node.js para la edición digital: editor esencial, gestión nativa de membresías y suscripciones y envío de newsletters sin plataformas de terceros.",
+    "quando_usarlo": "Cuando publicas contenidos y quieres blog, newsletter y suscripciones en un único sistema que alojas tú.",
+    "sorgente": "621a18e0ff93"
+  },
+  "tt-a1i/archify": {
+    "cosa_fa": "Skill para coding agents (Claude Code, Codex CLI, Cursor, OpenCode) que genera diagramas de arquitectura, workflow, secuencia, flujo de datos y ciclo de vida como HTML autónomo, interactivo y con animaciones, exportable. La diferencia respecto a otros generadores: puede leer un repositorio real y producir un mapa anclado al código fuente en un commit concreto, con el JSON tipado versionable junto al diagrama.",
+    "quando_usarlo": "Cuando debes mostrar cómo está hecho realmente un sistema y quieres que el diagrama sea verificable contra el código, no dibujado a mano a partir de lo que se recuerda.",
+    "sorgente": "ced7b694f090"
+  },
+  "tursodatabase/turso": {
+    "cosa_fa": "Reescritura moderna de SQLite en Rust: elimina limitaciones históricas del motor original manteniendo la compatibilidad, con concurrencia y replicación mejoradas.",
+    "quando_usarlo": "Cuando quieres SQLite pero con escritura concurrente y funcionalidades modernas sin cambiar de dialecto SQL.",
+    "sorgente": "fcbcd2c64676"
+  },
+  "tw93/pake": {
+    "cosa_fa": "Convierte cualquier sitio web en app de escritorio con un comando",
+    "quando_usarlo": "Convertir cualquier sitio web en app de escritorio con un comando.",
+    "sorgente": "6d4934a8beab"
+  },
+  "twentyhq/twenty": {
+    "cosa_fa": "CRM open source moderno, alternativa self-hostable a Salesforce/HubSpot: sin costos de licencia crecientes y con los datos de la empresa bajo tu control. UI estilo Notion, GraphQL, personalizable.",
+    "quando_usarlo": "Cuando necesitas un CRM open source y self-hosted sin vendor lock-in ni licencias por consumo.",
+    "sorgente": "9f0a3a5d69f3"
+  },
+  "typellm/typellm": {
+    "cosa_fa": "Generación type-safe con LLM: restringe la salida a la estructura solicitada para evitar respuestas malformadas.",
+    "quando_usarlo": "Cuando tu código consume salida estructurada de un LLM y no quieres gestionar parsing frágil y reintentos.",
+    "sorgente": "52b56cf727cb"
+  },
+  "typesafe.ai": {
+    "cosa_fa": "Modelo comercial en early access que no genera texto sino decisiones: le pasas un estado y el conjunto cerrado de respuestas admitidas y devuelve un valor tipado con probabilidad y puntuación de confianza, pensado para ser consumido por el código. Accesible vía API con precio bajo solicitud.",
+    "quando_usarlo": "Cuando en un pipeline se necesita una clasificación o una elección entre opciones conocidas, no una respuesta en lenguaje natural.",
+    "sorgente": "07b96e6f459f"
+  },
+  "umn-zhaolab/pocket-slam": {
+    "cosa_fa": "Código del paper ICRA'26 sobre SLAM con 3D Gaussian Splatting de bajo consumo de memoria: poda los puntos innecesarios para el renderizado, con mapas declarados hasta un 99% más pequeños y más de 5x más rápidos.",
+    "quando_usarlo": "Cuando haces reconstrucción 3D en tiempo real con 3DGS en hardware limitado.",
+    "sorgente": "064c13a6a3ed"
+  },
+  "unslothai/unsloth": {
+    "cosa_fa": "Entrenar LLM en VS Code + Colab",
+    "quando_usarlo": "Cuando quieres hacer fine-tuning de LLM (Llama, Mistral, etc.) rápido y con poca VRAM.",
+    "sorgente": "e3d85cf948a9"
+  },
+  "upscayl/upscayl": {
+    "cosa_fa": "Upscaler de imágenes open source basado en IA: amplía fotos de baja resolución en local sin suscripciones.",
+    "quando_usarlo": "Cuando necesitas ampliar imágenes pixeladas sin pagar servicios de upscaling en la nube.",
+    "sorgente": "4ed8ed7d81f1"
+  },
+  "usestrix/strix": {
+    "cosa_fa": "Agentes de IA para penetration testing de aplicaciones: no solo análisis estático, sino exploits reales ejecutados de forma autónoma.",
+    "quando_usarlo": "Cuando quieres complementar el SAST con un pentest automatizado que verifique las vulnerabilidades realmente explotables.",
+    "sorgente": "a7377440aee0"
+  },
+  "viarotel-org/escrcpy": {
+    "cosa_fa": "Interfaz gráfica completa sobre scrcpy para controlar dispositivos Android desde el ordenador: mirroring, ADB inalámbrico, keyboard mapping y gestión de varios dispositivos a la vez.",
+    "quando_usarlo": "Cuando necesitas manejar o probar dispositivos Android desde el escritorio sin lanzar scrcpy por línea de comandos.",
+    "sorgente": "316ce401acf8"
+  },
+  "vincentwei1021/anything2explainer": {
+    "cosa_fa": "Skill para Claude Code y Codex que convierte un tema en un vídeo explicativo en motion graphics: investigación, narración, storyboard y código de los planos, voz TTS con subtítulos alineados a las palabras, capítulos y barra de progreso. Cada fotograma se dibuja en Remotion, no se genera como píxeles.",
+    "quando_usarlo": "Cuando necesitas un vídeo explicativo reproducible y corregible mediante código en lugar de un vídeo generado.",
+    "sorgente": "641a0e1ede73"
+  },
+  "vincentwei1021/video-shotcraft": {
+    "cosa_fa": "Skill open source para coding agents que construye anuncios promocionales a partir de los assets del producto: storyboard, planos, edición y diseño de sonido, renderizados con Remotion.",
+    "quando_usarlo": "Cuando necesitas un anuncio de un producto digital sin editarlo a mano.",
+    "sorgente": "097dcdc50eed"
+  },
+  "virattt/ai-hedge-fund": {
+    "cosa_fa": "Hedge fund simulado con agentes de IA (Buffett, Cathie Wood, analista técnico, risk manager); paper trading, sin beneficio garantizado",
+    "quando_usarlo": "Hedge fund simulado con agentes de IA (paper trading, didáctico, sin beneficio garantizado).",
+    "sorgente": "eacd675e6d0d"
+  },
+  "virgiliojr94/book-to-skill": {
+    "cosa_fa": "Convierte libros y documentos técnicos (PDF, EPUB, DOCX, Markdown, HTML, RTF, MOBI) en una skill estructurada para el agente, con modelos mentales, reglas de decisión, patrones y antipatrones.",
+    "quando_usarlo": "Cuando quieres que el agente aplique el contenido de un manual mientras trabajas, en lugar de recordarlo tú.",
+    "sorgente": "8c40af97f047"
+  },
+  "voltagent/awesome-design-md": {
+    "cosa_fa": "Colección de design systems de decenas de empresas conocidas (Apple, Stripe, Linear, Notion y otras) en formato markdown, instalables como referencia de estilo dentro de un coding agent.",
+    "quando_usarlo": "Cuando quieres que el agente siga el lenguaje visual de un design system reconocible en lugar de inventar.",
+    "sorgente": "9df55fc7d130"
+  },
+  "vrgamegirl19/vrgdg-seedvr2-tensorrt-studio": {
+    "cosa_fa": "Estudio local (JavaScript + FastAPI) para restauración y upscaling de vídeo con SeedVR2 acelerado por TensorRT, con vista previa antes/después y reanudación de los renders interrumpidos.",
+    "quando_usarlo": "Cuando debes restaurar o ampliar vídeos antiguos en tu GPU NVIDIA.",
+    "sorgente": "1cf539040324"
+  },
+  "webadderallorg/recordly": {
+    "cosa_fa": "Grabador de pantalla gratuito y open source para Mac, Windows y Linux pensado para vídeos de demostración: sigue el cursor y decide por sí solo dónde hacer zoom, suaviza el movimiento del ratón, resalta los clics y ofrece una línea de tiempo para recortar y acelerar. Exporta a MP4 y GIF. Requiere dos permisos (grabación de pantalla y accesibilidad) para que funcione el zoom automático; en Linux, atención a Wayland vs X11.",
+    "quando_usarlo": "Cuando debes producir una demo o un tutorial de software ya 'montado', sin pasar por un editor de vídeo.",
+    "licenza": "AGPL-3.0",
+    "sorgente": "f78e38ef9838"
+  },
+  "xai-org/plugin-marketplace": {
+    "cosa_fa": "Marketplace oficial de plugins de xAI para Grok Build: índice curado que apunta a fuentes fijadas a commits concretos, para evitar actualizaciones silenciosas.",
+    "quando_usarlo": "Cuando usas Grok Build y quieres ampliarlo con plugins de versión bloqueada.",
+    "licenza": "sin licencia (plugins de terceros con licencias propias)",
+    "sorgente": "c7504339427b"
+  },
+  "xhtoken/spark-x2.5": {
+    "cosa_fa": "Familia de modelos de lenguaje compactos (4B y 1,7B) pensados para el uso on-device y para flujos agénticos, con arquitectura de atención híbrida y contexto nativo de hasta 1M de tokens; más de 200 idiomas. Pesos en Hugging Face, ModelScope y Ollama, también en FP8/INT8.",
+    "quando_usarlo": "Cuando necesitas un modelo pequeño para ejecutar en local pero con un contexto muy largo.",
+    "sorgente": "26efcffd4b6c"
+  },
+  "xixihhhh/hotclip": {
+    "cosa_fa": "Herramienta open source que corta vídeos largos, repeticiones de directos y podcasts en clips verticales con subtítulos, encontrando los momentos destacados con IA. Local, sin marca de agua.",
+    "quando_usarlo": "Cuando debes sacar shorts de contenidos largos sin servicios de créditos.",
+    "sorgente": "b8db6727d6fb"
+  },
+  "yakhyo/uniface": {
+    "cosa_fa": "Librería Python que unifica en una sola API detección, reconocimiento, tracking, keypoints y segmentación facial, eliminación de fondo, estimación de mirada y pose, edad/género y liveness detection.",
+    "quando_usarlo": "Cuando necesitas construir una aplicación de face AI sin pegar entre sí cuatro frameworks distintos.",
+    "sorgente": "06d4182352cb"
+  },
+  "yaofang-liu/pusa-vidgen": {
+    "cosa_fa": "Video diffusion model con vectorized timestep adaptation (VTA); fine-tuning de Wan2.1-T2V-14B a ~1/200 del costo",
+    "quando_usarlo": "Generación de video con IA a bajo costo (fine-tuning de Wan2.1).",
+    "sorgente": "0dba5c29be59"
+  },
+  "yc-software/qm": {
+    "cosa_fa": "Sistema de agentes de IA con el que Y Combinator lleva sus operaciones internas (contabilidad, legal, eventos, ingeniería), publicado como open source como infraestructura empresarial.",
+    "quando_usarlo": "Cuando buscas una referencia real de cómo se estructura un stack de agentes para las operaciones de una empresa.",
+    "sorgente": "65740b65a62b"
+  },
+  "yorukot/superfile": {
+    "cosa_fa": "Gestor de archivos open source con interfaz moderna dentro de la terminal: navegación visual, vistas previas y operaciones rápidas.",
+    "quando_usarlo": "Cuando vives en la terminal y quieres gestionar archivos sin renunciar a una UI legible.",
+    "sorgente": "5849660735bc"
+  },
+  "yuliskov/smarttube": {
+    "cosa_fa": "Cliente alternativo y open source para YouTube en Android TV y Fire Stick: elimina los anuncios, integra SponsorBlock, permite elegir manualmente códec y resolución hasta 4K HDR y no requiere los Google Play Services.",
+    "quando_usarlo": "Cuando en un dispositivo Android TV necesitas un cliente más ligero y configurable que el oficial.",
+    "sorgente": "82b8f9b25bb3"
+  },
+  "yusufb5/asciline": {
+    "cosa_fa": "Motor de renderizado de video ASCII en tiempo real de alto rendimiento: convierte los fotogramas en texto y bloques de color y los transmite vía WebSocket (binario) a 30 FPS sobre HTML5 Canvas. Demo en asciline.dev.",
+    "quando_usarlo": "Cuando quieres experimentar con streaming de video renderizado íntegramente como texto/ASCII en el navegador.",
+    "sorgente": "72fe75c1f05d"
+  },
+  "zackriya-solutions/meetily": {
+    "cosa_fa": "Transcripción y resumen de reuniones completamente en local, para que las conversaciones confidenciales no salgan de tu computadora.",
+    "quando_usarlo": "Cuando necesitas levantar actas de llamadas confidenciales sin enviar el audio a servicios en la nube.",
+    "sorgente": "1405a458b938"
+  },
+  "zai-org/glm-image": {
+    "cosa_fa": "Generación de imágenes autorregresiva (Zhipu AI)",
+    "quando_usarlo": "Generación de imágenes autorregresiva (Zhipu AI).",
+    "sorgente": "a7d6d21a449b"
+  },
+  "zai-org/glm-ocr": {
+    "cosa_fa": "Modelo OCR multimodal (zai-org) PDF complejos -> Markdown, 0.9B",
+    "quando_usarlo": "OCR multimodal: PDF complejos → Markdown limpio para agentes (Zhipu).",
+    "sorgente": "031dfc406dc9"
+  },
+  "zannael/fishertiger": {
+    "cosa_fa": "Advisor open source y local-first para el Fantacalcio de la Serie A: proyecciones sobre los jugadores, reglas de subasta configurables, soporte a la subasta en directo y simulaciones.",
+    "quando_usarlo": "Cuando hace falta un ejemplo compacto de advisor local-first con proyecciones y simulaciones sobre datos deportivos.",
+    "sorgente": "27dd713e1ca7"
+  },
+  "zapier/wade-skills": {
+    "cosa_fa": "Las skills para agentes más usadas por Wade Foster (CEO de Zapier): un 'consejo de guerra' de expertos críticos que pone a prueba las ideas, extracción de acciones de las actas y agenda semanal ordenada por prioridad.",
+    "quando_usarlo": "Cuando quieres ejemplos concretos de skills de gestión para adaptar a tu asistente.",
+    "sorgente": "8a9e059223c6"
+  },
+  "zhouxiaoka/autoclip": {
+    "cosa_fa": "Extracción con IA de los mejores momentos de vídeos largos y montaje en clips breves para plataformas de vídeo corto; la IA puede funcionar también en local.",
+    "quando_usarlo": "Cuando debes producir clips a partir de podcasts o vídeos largos de forma semiautomática.",
+    "sorgente": "4c6ce582ca7f"
+  }
+}

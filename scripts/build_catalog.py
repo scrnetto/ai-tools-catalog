@@ -18,10 +18,12 @@ dai file tracciati (le voci locali non ci finiscono mai):
     catalogo-unificato.json, CATALOGO-AI-TOOLS.md, catalog-version.json (impronta dei dati),
     skill/SKILL.md (conteggi, data di verifica e indice categorie rigenerati; il resto invariato),
     i due badge dinamici del README.
-    docs/index.html (la pagina web consultabile, servita da GitHub Pages).
+    docs/index.html e docs/<lingua>/index.html (la pagina web consultabile, servita da GitHub
+    Pages, una per lingua: le voci tradotte vengono da traduzioni/<lingua>.json).
 Output per chiunque, dall'unione pubblicati + locali, in ogni cartella di SKILL_DIRS che esiste:
     SKILL.md, CATALOGO-AI-TOOLS.md, catalogo.json, catalogo.html (la stessa pagina web, con le
-    voci locali segnalate), check_update.py, installazione.json.
+    voci locali segnalate), check_update.py, installazione.json. Tutti nella lingua di
+    catalogo.lingua, con le traduzioni dove ci sono e l'italiano dove mancano.
 Chi non e' il manutentore non modifica file tracciati: cosi' `git pull` non va in conflitto.
 
 Uso:
@@ -29,6 +31,8 @@ Uso:
 """
 import json, os, re, datetime, hashlib, shutil
 import catalogo_dati as cd
+import traduzioni as tr
+from lingue import LOCALI
 
 ROOT  = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # ~/.agents/skills e' la cartella comune agli agent che adottano lo standard Agent Skills;
@@ -39,84 +43,16 @@ SKILL_DIRS = [os.path.expanduser(p) for p in ('~/.agents/skills/ai-tools-catalog
 SKILL_SRC = os.path.join(ROOT, 'skill', 'SKILL.md')
 CHECK_SRC = os.path.join(ROOT, 'scripts', 'check_update.py')
 PAGINA_SRC = os.path.join(ROOT, 'scripts', 'pagina-catalogo.html')
-PAGINA_PUB = os.path.join('docs', 'index.html')
+# l'italiano, lingua in cui il catalogo e' scritto, sta nella radice del sito; le altre sotto
+LINGUE_PAGINE = ('it',) + tr.LINGUE
+def pagina_pub(lingua):
+    return os.path.join('docs', 'index.html') if lingua == 'it' else os.path.join('docs', lingua, 'index.html')
 # confrontato da check_update.py con quello pubblicato: lo scrive solo il manutentore
 VERSIONE = 'catalog-version.json'
 
-# I nomi delle macro-categorie e la prosa generata dipendono da catalogo.lingua in config.json.
-# I *dati* (descrizione/uso delle voci) restano nella lingua in cui sono stati scritti: qui si
-# traduce solo l'impalcatura. Per aggiungere una lingua basta una nuova voce in LOCALI.
-LOCALI = {
- 'it': {
-  'macro': {
-   'A': 'Coding Agent, Claude Code & sviluppo AI-assistito',
-   'B': 'Framework Agenti AI & assistenti personali',
-   'C': 'LLM, modelli & inferenza locale',
-   'D': 'RAG, memoria agenti & knowledge base',
-   'E': 'OCR & parsing documenti',
-   'F': 'Generazione media (video, immagini, 3D, voce)',
-   'G': 'Sicurezza & supply-chain',
-   'H': 'Dev tools, produttività & librerie',
-   'I': 'Finanza & trading AI',
-   'J': 'Ricerca AI, world models & dati vettoriali',
-   'Z': 'Contenuti personali / non-dev',
-  },
-  # nella barra dei filtri della pagina web i nomi interi andrebbero a capo
-  'macro_breve': {
-   'A': 'Coding agent & Claude Code', 'B': 'Framework agenti AI', 'C': 'LLM & inferenza locale',
-   'D': 'RAG & memoria', 'E': 'OCR & documenti', 'F': 'Generazione media', 'G': 'Sicurezza',
-   'H': 'Dev tools', 'I': 'Finanza & trading', 'J': 'Ricerca AI',
-  },
-  'piede_pub': 'Catalogo pubblicato: raccolta personale, non esaustiva.',
-  'piede_skill': 'Copia installata con la skill: comprende anche le voci aggiunte da te, '
-                 'segnalate come tali.',
-  'stato': {'archiviato': 'archiviato', 'nd': 'n/d', 'molto_attivo': 'molto attivo',
-            'attivo': 'attivo', 'rallentato': 'rallentato', 'fermo': 'fermo',
-            'sito': 'sito web'},
-  'intro':   '> Catalogo unificato di **repository GitHub** e **siti/servizi web** raccolti dai',
-  'conteggi': '> **{r} repository** + **{s} siti web**, organizzati per categoria operativa.',
-  'verifica': '> Stato attività verificato il **{d}**. ',
-  'legenda': 'Legenda: 🟢 attivo (push ≤12 mesi) · 🟡 rallentato · 🔴 fermo · ⚫ archiviato · 🌐 sito web.',
-  'indice':  '## Indice',
-  'header':  '| Progetto | Cosa fa | Quando usarlo | Stato |',
-  'cella_sito': '🌐 sito',
-  'z_nota': 'voci non rilevanti per i progetti (salute, ricette, social) — ignorabili.',
- },
- 'en': {
-  'macro': {
-   'A': 'Coding agents, Claude Code & AI-assisted development',
-   'B': 'AI agent frameworks & personal assistants',
-   'C': 'LLMs, models & local inference',
-   'D': 'RAG, agent memory & knowledge bases',
-   'E': 'OCR & document parsing',
-   'F': 'Media generation (video, images, 3D, voice)',
-   'G': 'Security & supply chain',
-   'H': 'Dev tools, productivity & libraries',
-   'I': 'AI finance & trading',
-   'J': 'AI research, world models & vector data',
-   'Z': 'Personal / non-dev content',
-  },
-  'macro_breve': {
-   'A': 'Coding agents & Claude Code', 'B': 'AI agent frameworks', 'C': 'LLMs & local inference',
-   'D': 'RAG & memory', 'E': 'OCR & documents', 'F': 'Media generation', 'G': 'Security',
-   'H': 'Dev tools', 'I': 'Finance & trading', 'J': 'AI research',
-  },
-  'piede_pub': 'Published catalog: a personal collection, not an exhaustive one.',
-  'piede_skill': 'Copy installed with the skill: it also includes the entries you added, '
-                 'marked as such.',
-  'stato': {'archiviato': 'archived', 'nd': 'n/a', 'molto_attivo': 'very active',
-            'attivo': 'active', 'rallentato': 'slowing down', 'fermo': 'stalled',
-            'sito': 'website'},
-  'intro':   '> A unified catalog of **GitHub repositories** and **websites/services** collected from',
-  'conteggi': '> **{r} repositories** + **{s} websites**, grouped by practical category.',
-  'verifica': '> Activity status checked on **{d}**. ',
-  'legenda': 'Legend: 🟢 active (pushed ≤12 months ago) · 🟡 slowing down · 🔴 stalled · ⚫ archived · 🌐 website.',
-  'indice':  '## Index',
-  'header':  '| Project | What it does | When to use it | Status |',
-  'cella_sito': '🌐 site',
-  'z_nota': 'entries not relevant to dev work (health, recipes, social) — safe to ignore.',
- },
-}
+# I nomi delle macro-categorie e la prosa generata dipendono da catalogo.lingua in config.json
+# (testi in lingue.py). I *dati* (descrizione/uso delle voci) si scrivono in italiano; le loro
+# traduzioni stanno in traduzioni/<lingua>.json e le gestisce traduzioni.py.
 ORDER = list("ABCDEFGHIJ")
 
 # La macro Z marca contenuti personali (salute, social, gaming, codici): non deve mai
@@ -135,21 +71,38 @@ def data_verifica(meta):
     date = sorted((m.get('fetched') or '')[:10] for m in meta.values() if m.get('fetched'))
     return date[0] if date else today().isoformat()
 
-def stato(m, S):
+def stato(m):
+    """(emoji, codice): il codice non dipende dalla lingua, l'etichetta e' L['stato'][codice]."""
     if not m or m.get('archived'):
-        return ('⚫', S['archiviato'])
+        return ('⚫', 'archiviato')
     p = (m.get('pushed') or '')[:10]
     if not p:
-        return ('⚪', S['nd'])
+        return ('⚪', 'nd')
     try:
         dt = datetime.date.fromisoformat(p)
     except Exception:
-        return ('⚪', S['nd'])
+        return ('⚪', 'nd')
     mo = (today() - dt).days / 30
-    if mo <= 3:  return ('🟢', S['molto_attivo'])
-    if mo <= 12: return ('🟢', S['attivo'])
-    if mo <= 24: return ('🟡', S['rallentato'])
-    return ('🔴', S['fermo'])
+    if mo <= 3:  return ('🟢', 'molto_attivo')
+    if mo <= 12: return ('🟢', 'attivo')
+    if mo <= 24: return ('🟡', 'rallentato')
+    return ('🔴', 'fermo')
+
+def classe_licenza(tipo, lic):
+    """Che cosa permette la licenza, per il filtro della pagina web. Si calcola sul testo
+    originale, prima della traduzione: le licenze verificate a mano sono frasi in italiano."""
+    if tipo == 'sito':
+        return 'sito'
+    l = (lic or '').lower()
+    if not l or l == 'noassertion':
+        return 'ignota'
+    if re.search(r'nessuna licenza|diritti riservati|proprietaria', l):
+        return 'chiusa'
+    if re.search(r'noncommercial|non commerciale|nc |-nc|research|busl|mvt license', l):
+        return 'limitata'
+    if 'gpl' in l:
+        return 'copyleft'
+    return 'libera'
 
 def kfmt(n, nd='n/d'):
     if n is None: return nd
@@ -158,9 +111,6 @@ def kfmt(n, nd='n/d'):
 def load(name):
     return json.load(open(os.path.join(ROOT, name), encoding='utf-8'))
 
-DEFAULT_CFG = {'titolo': 'Catalogo strumenti AI & Dev',
-               'fonte': 'reel e link salvati in chat',
-               'lingua': 'it'}
 
 def config():
     """config.json e' gitignorato (contiene il nome della chat personale): se manca,
@@ -169,11 +119,14 @@ def config():
         cfg = load('config.json').get('catalogo', {})
     except FileNotFoundError:
         cfg = {}
-    out = {k: cfg.get(k) or v for k, v in DEFAULT_CFG.items()}
+    out = {'lingua': cfg.get('lingua') or 'it'}
     if out['lingua'] not in LOCALI:
         print(f"  ⚠️ lingua '{out['lingua']}' non supportata (disponibili: "
               f"{', '.join(LOCALI)}): uso 'it'")
         out['lingua'] = 'it'
+    # titolo e fonte hanno un default per lingua; se l'utente li ha scritti, restano i suoi
+    for k in ('titolo', 'fonte'):
+        out[k] = cfg.get(k) or LOCALI[out['lingua']][k]
     return out
 
 def indice_categorie(unified, L):
@@ -257,28 +210,49 @@ def sync_readme_badges(n_repo, n_sito, verificato):
     open(path, 'w', encoding='utf-8').write(txt)
     return warn
 
-def catalogo(repos, siti, meta, cfg, L):
-    """Voci unificate e markdown del catalogo, dai dati passati (pubblicati o uniti)."""
+def traduci(u, chiave, trad):
+    """Sostituisce cosa_fa/quando_usarlo/licenza con la traduzione, se ce n'e' una valida.
+    `trad` e' None per l'italiano. Le voci locali dell'utente restano come le ha scritte."""
+    if trad is None or u.get('origine'):
+        return
+    t = trad.get(chiave)
+    if not t:
+        u['_originale'] = True
+        return
+    for c in tr.CAMPI:
+        if t.get(c):
+            u[c] = t[c]
+
+def catalogo(repos, siti, meta, cfg, L, trad=None):
+    """Voci unificate e markdown del catalogo, dai dati passati (pubblicati o uniti).
+    `trad`: le traduzioni valide per la lingua di L ({chiave: testi}), None per l'italiano.
+    Le chiavi che iniziano per `_` servono alla pagina web e non finiscono nei file JSON."""
     MACRO, S = L['macro'], L['stato']
     unified = []
     for r in repos:
-        m = meta.get(cd.chiave_repo(r['url'])) or {}
-        em, lab = stato(m, S)
+        k = cd.chiave_repo(r['url'])
+        m = meta.get(k) or {}
+        em, cod = stato(m)
+        lic = r.get('licenza') or m.get('license')
         unified.append({
             'tipo': 'repo', 'macro': r.get('macro', 'H'), 'macro_nome': MACRO.get(r.get('macro', 'H')),
             'nome': r['progetto'], 'cosa_fa': r['descrizione'], 'quando_usarlo': r.get('uso', ''),
             'url': r['url'], 'stelle': m.get('stars'), 'ultimo_push': (m.get('pushed') or '')[:10],
-            'attivita': lab, 'attivita_emoji': em, 'licenza': r.get('licenza') or m.get('license'),
-            'linguaggio': m.get('lang'), 'fonte': r.get('fonte', '')})
+            'attivita': S[cod], 'attivita_emoji': em, 'licenza': lic,
+            'linguaggio': m.get('lang'), 'fonte': r.get('fonte', ''),
+            '_stato': cod, '_lic': classe_licenza('repo', lic)})
         if r.get('origine'): unified[-1]['origine'] = r['origine']
+        traduci(unified[-1], k, trad)
     for s in siti:
         c = s.get('macro', 'Z')
         unified.append({
             'tipo': 'sito', 'macro': c, 'macro_nome': MACRO.get(c),
             'nome': s['sito'], 'cosa_fa': s['descrizione'], 'quando_usarlo': s.get('uso', ''),
             'url': s['url'], 'stelle': None, 'ultimo_push': None, 'attivita': S['sito'],
-            'attivita_emoji': '🌐', 'licenza': None, 'linguaggio': None, 'fonte': s.get('fonte', '')})
+            'attivita_emoji': '🌐', 'licenza': None, 'linguaggio': None, 'fonte': s.get('fonte', ''),
+            '_stato': 'sito', '_lic': 'sito'})
         if s.get('origine'): unified[-1]['origine'] = s['origine']
+        traduci(unified[-1], cd.chiave_sito(s['url']), trad)
 
     scartate = [u for u in unified if u['macro'] == PRIVATA]
     if scartate:
@@ -325,57 +299,103 @@ def catalogo(repos, siti, meta, cfg, L):
         OUT.append('')
     return unified, '\n'.join(OUT) + '\n', n_repo, n_sito, verificato
 
-# i campi che la pagina web usa: gli altri (fonte, emoji) la appesantirebbero e basta
-CAMPI_PAGINA = ('tipo', 'macro', 'macro_nome', 'nome', 'cosa_fa', 'quando_usarlo', 'url', 'stelle',
-                'ultimo_push', 'attivita', 'licenza', 'linguaggio', 'origine')
+# i campi che la pagina web usa: gli altri (fonte, emoji) la appesantirebbero e basta.
+# stato/lic/originale sono codici calcolati qui, che non dipendono dalla lingua della pagina.
+CAMPI_PAGINA = ('tipo', 'macro', 'nome', 'cosa_fa', 'quando_usarlo', 'url', 'stelle',
+                'ultimo_push', 'licenza', 'linguaggio', 'origine')
 
-def pagina(unified, n_repo, n_sito, verificato, cfg, L, piede):
+def senza_interni(unified):
+    """Le voci come finiscono nei file JSON: senza le chiavi `_` che servono solo alla pagina."""
+    return [{k: v for k, v in u.items() if not k.startswith('_')} for u in unified]
+
+def pagina(unified, n_repo, n_sito, verificato, titolo, lingua, piede, lingue=None):
     """La pagina web del catalogo: un solo file HTML con i dati dentro, che non fa richieste di
     rete. I testi vengono da reel e pagine di terzi, quindi nel JSON incorporato `<`, `>` e `&`
     diventano escape \\u: una descrizione con `</script>` non puo' chiudere il blocco dei dati.
-    Lo script della pagina poi li inserisce solo come testo."""
+    Lo script della pagina poi li inserisce solo come testo.
+    `lingue`: [(codice, nome, href)] per il selettore della lingua; None se la pagina e' una sola."""
+    L = LOCALI[lingua]
     macro = [c for c in ORDER if any(u['macro'] == c for u in unified)]
-    dati = {'titolo': cfg['titolo'], 'repo': n_repo, 'siti': n_sito, 'verificato': verificato,
-            'macro': macro, 'macro_breve': {c: L['macro_breve'][c] for c in macro},
-            'piede': piede,
-            'voci': [{k: u[k] for k in CAMPI_PAGINA if k in u} for u in unified]}
+    stati = [c for c in ('molto_attivo', 'attivo', 'rallentato', 'fermo', 'archiviato', 'nd', 'sito')
+             if any(u['_stato'] == c for u in unified)]
+    voci = []
+    for u in unified:
+        v = {k: u[k] for k in CAMPI_PAGINA if u.get(k) not in (None, '')}
+        v.update({'stato': u['_stato'], 'lic': u['_lic']})
+        if u.get('_originale'):
+            v['originale'] = True
+        voci.append(v)
+    dati = {'lingua': lingua, 'titolo': titolo, 'repo': n_repo, 'siti': n_sito,
+            'verificato': verificato, 'macro': macro,
+            'macro_breve': {c: L['macro_breve'][c] for c in macro},
+            'stati': [[c, L['stato'][c]] for c in stati], 'ui': L['ui'], 'piede': piede,
+            'lingue': lingue or [], 'voci': voci}
     js = json.dumps(dati, ensure_ascii=False, separators=(',', ':'))
     js = js.replace('<', '\\u003c').replace('>', '\\u003e').replace('&', '\\u0026')
     tpl = open(PAGINA_SRC, encoding='utf-8').read()
-    titolo = cfg['titolo'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-    return tpl.replace('__TITOLO__', titolo).replace('__DATI__', js)
+    esc = lambda s: s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;')
+    return (tpl.replace('__LINGUA__', esc(lingua)).replace('__TITOLO__', esc(titolo))
+               .replace('__DATI__', js))
 
-def impronta(repos, siti, meta):
+def selettore(lingua):
+    """[(codice, nome, href)] dalla pagina in `lingua` a tutte le altre, con link relativi: il
+    sito funziona uguale su GitHub Pages e aperto dal disco."""
+    su = '' if lingua == 'it' else '../'
+    return [(l, LOCALI[l]['nome'], su + ('index.html' if l == 'it' else f'{l}/index.html'))
+            for l in LINGUE_PAGINE]
+
+def impronta(repos, siti, meta, traduzioni=None):
     """Impronta dei dati pubblicati: cambia se e solo se cambia il catalogo pubblicato, e non
-    dipende dalla data del build (i campi calcolati come 'attivita' restano fuori)."""
-    dati = json.dumps([repos, siti, meta], ensure_ascii=False, sort_keys=True)
+    dipende dalla data del build (i campi calcolati come 'attivita' restano fuori). Comprende le
+    traduzioni: chi usa la skill in un'altra lingua deve sapere quando ne arrivano di nuove."""
+    dati = json.dumps([repos, siti, meta, traduzioni or {}], ensure_ascii=False, sort_keys=True)
     return hashlib.sha256(dati.encode('utf-8')).hexdigest()[:16]
+
+def traduzioni_valide(lingua, src, warn):
+    """Le traduzioni utilizzabili per `lingua` (None per l'italiano), con un avviso se ne
+    mancano o ne sono scadute: la pagina mostra l'italiano al loro posto, e va detto."""
+    if lingua == 'it':
+        return None
+    trad = tr.carica(ROOT, lingua)
+    buone = tr.valide(trad, src)
+    if len(buone) < len(src):
+        scadute = sum(1 for k in trad if k in src and k not in buone)
+        warn.append(f"⚠️ traduzioni {lingua}: {len(src) - len(buone)} voci su {len(src)} restano in "
+                    f"italiano ({scadute} scadute) — python3 scripts/traduzioni.py mancanti {lingua}")
+    return buone
 
 def main():
     cfg   = config()
     L     = LOCALI[cfg['lingua']]
     warn  = []
     pub   = cd.dati_pubblicati(ROOT)
-    versione = {'impronta': impronta(*pub)}
+    src   = tr.sorgenti(pub[0], pub[1])
+    versione = {'impronta': impronta(*pub, {l: tr.carica(ROOT, l) for l in tr.LINGUE})}
 
     # --- catalogo pubblicato: lo riscrive solo il manutentore ---
     # Chi ha clonato il repository non tocca i file tracciati: cosi' `git pull` non va mai in
     # conflitto con il suo catalogo. Le sue voci stanno nei *.local.json (catalogo_dati.py).
     if cd.manutentore(ROOT):
-        u_pub, md_pub, nr, ns, ver = catalogo(*pub, cfg, L)
-        json.dump(u_pub, open(os.path.join(ROOT, 'catalogo-unificato.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+        u_pub, md_pub, nr, ns, ver = catalogo(*pub, cfg, L, traduzioni_valide(cfg['lingua'], src, []))
+        json.dump(senza_interni(u_pub), open(os.path.join(ROOT, 'catalogo-unificato.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
         open(os.path.join(ROOT, 'CATALOGO-AI-TOOLS.md'), 'w', encoding='utf-8').write(md_pub)
-        os.makedirs(os.path.join(ROOT, 'docs'), exist_ok=True)
-        open(os.path.join(ROOT, PAGINA_PUB), 'w', encoding='utf-8').write(
-            pagina(u_pub, nr, ns, ver, cfg, L, L['piede_pub']))
+        # una pagina per lingua, tutte dagli stessi dati pubblicati
+        for lingua in LINGUE_PAGINE:
+            Lp = LOCALI[lingua]
+            u_l, _, _, _, _ = catalogo(*pub, cfg, Lp, traduzioni_valide(lingua, src, warn))
+            dest = os.path.join(ROOT, pagina_pub(lingua))
+            os.makedirs(os.path.dirname(dest), exist_ok=True)
+            open(dest, 'w', encoding='utf-8').write(
+                pagina(u_l, nr, ns, ver, Lp['titolo'], lingua, Lp['piede_pub'], selettore(lingua)))
         _, w = sync_skill_md(u_pub, nr, ns, L, ver)
         warn += w + sync_readme_badges(nr, ns, ver)
         versione.update({'repo': nr, 'siti': ns, 'verificato': ver})
         cd.salva(ROOT, VERSIONE, versione)
 
-    # --- catalogo installato nella skill: pubblicati + locali ---
+    # --- catalogo installato nella skill: pubblicati + locali, nella lingua dell'utente ---
     repos, siti, meta, res = cd.dati_uniti(ROOT)
-    unified, md, n_repo, n_sito, verificato = catalogo(repos, siti, meta, cfg, L)
+    trad = traduzioni_valide(cfg['lingua'], src, [] if cd.manutentore(ROOT) else warn)
+    unified, md, n_repo, n_sito, verificato = catalogo(repos, siti, meta, cfg, L, trad)
     skill_md, w = sync_skill_md(unified, n_repo, n_sito, L, verificato, scrivi=False)
     warn += w
     installazione = {'repository': ROOT, 'impronta': versione['impronta'],
@@ -387,9 +407,9 @@ def main():
             continue
         visti.add(os.path.realpath(d))
         open(os.path.join(d, 'CATALOGO-AI-TOOLS.md'), 'w', encoding='utf-8').write(md)
-        json.dump(unified, open(os.path.join(d, 'catalogo.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+        json.dump(senza_interni(unified), open(os.path.join(d, 'catalogo.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
         open(os.path.join(d, 'catalogo.html'), 'w', encoding='utf-8').write(
-            pagina(unified, n_repo, n_sito, verificato, cfg, L, L['piede_skill']))
+            pagina(unified, n_repo, n_sito, verificato, cfg['titolo'], cfg['lingua'], L['piede_skill']))
         if skill_md is not None:
             open(os.path.join(d, 'SKILL.md'), 'w', encoding='utf-8').write(skill_md)
         shutil.copyfile(CHECK_SRC, os.path.join(d, 'check_update.py'))

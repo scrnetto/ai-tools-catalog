@@ -9,7 +9,9 @@ con update-catalog.sh. Si controlla che:
   - una voce locale completi quella pubblicata con lo stesso indirizzo, e `nascondi` la tolga;
   - check_update.py riconosca la novita' e scarti una risposta malformata;
   - la pagina web tenga i testi dei terzi come dati (una descrizione con `</script>` non esce dal
-    blocco JSON) e segnali le voci locali solo nella copia della skill.
+    blocco JSON) e segnali le voci locali solo nella copia della skill;
+  - le traduzioni si applichino, e una traduzione scaduta (l'italiano e' cambiato dopo) lasci il
+    posto all'italiano invece di passare per buona.
 
 Esecuzione:  python3 -m unittest discover -s tests
 """
@@ -53,7 +55,7 @@ class Aggiornamenti(unittest.TestCase):
         os.makedirs(os.path.join(self.man, 'scripts'))
         os.makedirs(os.path.join(self.man, 'skill'))
         for f in ('catalogo_dati.py', 'build_catalog.py', 'check_update.py', 'fetch_gh_meta.py',
-                  'pagina-catalogo.html'):
+                  'pagina-catalogo.html', 'lingue.py', 'traduzioni.py'):
             shutil.copy(os.path.join(ROOT, 'scripts', f), os.path.join(self.man, 'scripts', f))
         for f in ('update-catalog.sh', '.gitignore', 'README.md'):
             shutil.copy(os.path.join(ROOT, f), os.path.join(self.man, f))
@@ -170,6 +172,66 @@ class Aggiornamenti(unittest.TestCase):
         with open(os.path.join(self.ute, 'docs', 'index.html'), encoding='utf-8') as f:
             pub = f.read()
         self.assertNotIn('io/mia', pub, 'una voce locale e\' finita nella pagina pubblicata')
+
+    def dati_pagina(self, path):
+        with open(path, encoding='utf-8') as f:
+            html = f.read()
+        return json.loads(re.search(r'<script type="application/json" id="dati">(.*?)</script>',
+                                    html, re.S).group(1))
+
+    def test_traduzioni(self):
+        sys.path.insert(0, os.path.join(self.man, 'scripts'))
+        import traduzioni as tr
+        src = tr.sorgenti(*cd.dati_pubblicati(self.man)[:2])
+        scarti = tr.applica(self.man, 'en', {
+            'owner1/progetto1': {'cosa_fa': 'Description 1', 'quando_usarlo': 'Use 1'},
+            'owner2/progetto2': {'cosa_fa': 'Description 2', 'quando_usarlo': 'Use 2'},
+            'owner2/progetto2x': {'cosa_fa': 'x', 'quando_usarlo': 'x'},
+            'owner3/progetto3': {'cosa_fa': 'Description 3', 'quando_usarlo': ' '}}, src)
+        self.assertEqual(set(scarti), {'owner2/progetto2x', 'owner3/progetto3'},
+                         'una chiave sconosciuta o un campo vuoto devono essere scartati')
+        # l'italiano della voce 2 cambia dopo la traduzione: la traduzione e' scaduta
+        repos = cd.carica(self.man, 'github-repos.json', [])
+        repos[1]['descrizione'] = 'Descrizione 2 riscritta'
+        cd.salva(self.man, 'github-repos.json', repos)
+        r = subprocess.run([sys.executable, 'scripts/build_catalog.py'], cwd=self.man, check=True,
+                           capture_output=True, text=True, env={**os.environ, 'HOME': self.home_man})
+        self.assertIn('traduzioni en: 2 voci su 3 restano in italiano (1 scadute)', r.stdout)
+
+        voci = {v['url']: v for v in self.dati_pagina(os.path.join(self.man, 'docs', 'en', 'index.html'))['voci']}
+        self.assertEqual(voci['https://github.com/owner1/progetto1']['cosa_fa'], 'Description 1')
+        self.assertNotIn('originale', voci['https://github.com/owner1/progetto1'])
+        self.assertEqual(voci['https://github.com/owner2/progetto2']['cosa_fa'], 'Descrizione 2 riscritta')
+        self.assertTrue(voci['https://github.com/owner2/progetto2']['originale'])
+        for l in ('es', 'de', 'fr'):
+            self.assertTrue(os.path.isfile(os.path.join(self.man, 'docs', l, 'index.html')), l)
+        it = self.dati_pagina(os.path.join(self.man, 'docs', 'index.html'))
+        self.assertEqual({v['url']: v['cosa_fa'] for v in it['voci']}['https://github.com/owner1/progetto1'],
+                         'Descrizione 1')
+
+        # un utente con lingua inglese: la sua skill e' tradotta, le sue voci restano sue
+        git(self.man, 'add', '-A')
+        git(self.man, 'commit', '-q', '-m', 'traduzioni')
+        git(self.man, 'push', '-q', 'origin', 'main')
+        git(self.ute, 'pull', '-q')
+        cd.salva(self.ute, 'config.json', {'catalogo': {'lingua': 'en'}})
+        cd.salva(self.ute, 'github-repos.local.json', [
+            {'progetto': 'Mine', 'descrizione': 'my own entry', 'url': 'https://github.com/me/mine',
+             'macro': 'A', 'uso': 'test'}])
+        self.build(self.ute, self.home_ute)
+        voci = self.skill(self.home_ute)
+        self.assertEqual(voci['https://github.com/owner1/progetto1']['cosa_fa'], 'Description 1')
+        from lingue import LOCALI
+        self.assertIn(voci['https://github.com/owner1/progetto1']['attivita'],
+                      LOCALI['en']['stato'].values(), "l'etichetta di attivita' non e' in inglese")
+        self.assertFalse(any(k.startswith('_') for v in voci.values() for k in v),
+                         'chiavi interne finite in catalogo.json')
+        pagina = self.dati_pagina(os.path.join(self.home_ute, '.agents', 'skills',
+                                               'ai-tools-catalog', 'catalogo.html'))
+        self.assertEqual(pagina['lingua'], 'en')
+        mia = {v['url']: v for v in pagina['voci']}['https://github.com/me/mine']
+        self.assertNotIn('originale', mia, "la voce dell'utente non e' «testo in italiano»")
+        self.assertEqual(git(self.ute, 'status', '--porcelain', '--untracked-files=no'), '')
 
 class Unione(unittest.TestCase):
 

@@ -1,0 +1,1736 @@
+{
+  "6551team/opennews-mcp": {
+    "cosa_fa": "MCP-Server, der Agenten über 85 Echtzeit-Nachrichtenquellen bereitstellt, mit Impact-Score und Long/Short-Signalen zu jedem Artikel.",
+    "quando_usarlo": "Wenn der Agent über aktuelle Marktnachrichten statt über sein Training nachdenken soll.",
+    "sorgente": "e7e7503fa840"
+  },
+  "666ghj/mirofish": {
+    "cosa_fa": "Engine für kollektive Intelligenz: simuliert Tausende KI-Agenten für Vorhersagen (chinesischer Student, viral)",
+    "quando_usarlo": "Engine für kollektive Intelligenz: simuliert Tausende Agenten für Vorhersagen.",
+    "sorgente": "dd40f6498b09"
+  },
+  "abi/screenshot-to-code": {
+    "cosa_fa": "Wandelt Screenshots, Mockups, Figma-Dateien und Bildschirmaufnahmen in Frontend-Code um (HTML/Tailwind, React, Vue, Bootstrap, Ionic) und versucht, auch Interaktionen und Animationen nachzubauen.",
+    "quando_usarlo": "Wenn du von einem Bild oder Video einer Oberfläche ausgehst und den passenden Code willst.",
+    "sorgente": "c79c589cea0c"
+  },
+  "adguardteam/adguardhome": {
+    "cosa_fa": "Selbst hostbarer DNS-Server, der Werbung und Tracker für das gesamte Heimnetz blockiert, ohne etwas auf den einzelnen Geräten zu installieren.",
+    "quando_usarlo": "Wenn du Tracker und Werbung auf Netzwerkebene statt Browser für Browser filtern willst.",
+    "sorgente": "47fc9cec4a76"
+  },
+  "affaan-m/everything-claude-code": {
+    "cosa_fa": "Ultimativer Leitfaden zum Claude-Code-Setup (marcobuilds7)",
+    "quando_usarlo": "Vollständiger Leitfaden/Setup, um Claude Code optimal zu konfigurieren.",
+    "sorgente": "bd017c044bf1"
+  },
+  "agalwood/motrix": {
+    "cosa_fa": "Plattformübergreifender Download-Manager auf Basis der aria2-Engine mit moderner Oberfläche: Direktlinks, FTP, Torrent und Magnet mit Multi-Threading, dazu ein Headless-Modus für Server und NAS.",
+    "quando_usarlo": "Wenn du große Dateien oder Torrents herunterladen musst, ohne dich auf den Download-Manager des Browsers zu verlassen.",
+    "sorgente": "e043e2d85a2a"
+  },
+  "agentconnect-md/agentconnect": {
+    "cosa_fa": "Selbst hostbares Multi-Agenten-System, das Agenten in Slack, Discord, Telegram und GitHub bringt: Jeder Agent hat eigenes Modell, eigene Tools, Berechtigungen und Gedächtnis und kann die anderen aufrufen.",
+    "quando_usarlo": "Wenn das Team Agenten aus den Tools aufrufen will, die es ohnehin nutzt, ohne weitere Oberfläche.",
+    "sorgente": "213a9ac44df3"
+  },
+  "agentskills.io": {
+    "cosa_fa": "Standard für die Skills von KI-Agenten (referenziert von Anthropic-Cybersecurity-Skills)",
+    "quando_usarlo": "Standard für die Skills von KI-Agenten.",
+    "sorgente": "01e74a64e470"
+  },
+  "agricidaniel/claude-seo": {
+    "cosa_fa": "SEO-Analyse-Skill für Claude Code (25 Sub-Skills)",
+    "quando_usarlo": "Claude-Code-Skill für SEO-Aufgaben.",
+    "sorgente": "7aab6fc5a9b7"
+  },
+  "ahmadpiran/restoredrill": {
+    "cosa_fa": "Prüft, ob sich PostgreSQL- und MySQL-Backups wirklich wiederherstellen lassen: startet einen Wegwerf-Container, spielt das letzte Backup ein, führt Prüfungen aus und erzeugt einen JSON-Report mit Datum und Dauer.",
+    "quando_usarlo": "Wenn du (auch für Audits) nachweisen musst, dass die Backups funktionieren, nicht nur, dass sie existieren.",
+    "sorgente": "63ed117b34c1"
+  },
+  "ahujasid/blender-mcp": {
+    "cosa_fa": "MCP, um Blender mit LLMs zu steuern",
+    "quando_usarlo": "MCP-Server, um Blender von einem Agenten aus zu steuern.",
+    "sorgente": "a2ed1ffedf84"
+  },
+  "ai.google.dev/gemma": {
+    "cosa_fa": "Embedding-Modell von Google für lokales On-Device-RAG",
+    "quando_usarlo": "Embedding-Modell von Google für lokales On-Device-RAG.",
+    "sorgente": "3a0f0ec03d5d"
+  },
+  "aiming-lab/autoresearchclaw": {
+    "cosa_fa": "Autonome wissenschaftliche Forschung mit KI (23-stage pipeline)",
+    "quando_usarlo": "Autonome wissenschaftliche Forschung mit KI (mehrstufige Pipeline).",
+    "sorgente": "9a68751f3d13"
+  },
+  "aishwaryanr/awesome-generative-ai-guide": {
+    "cosa_fa": "'One-Stop'-Repository von Aishwarya Naresh Reganti zu GenAI: Roadmaps zu RAG/Agenten/LLM-Grundlagen, kostenlose Kurse, Notebooks, Forschungs-Updates und 60 typische GenAI-Interviewfragen mit Antworten.",
+    "quando_usarlo": "Wenn du eine zentrale Anlaufstelle suchst, um GenAI zu lernen, dich auf Interviews vorzubereiten oder Roadmaps zu RAG und Agenten zu folgen.",
+    "sorgente": "5bd53ba79184"
+  },
+  "alexgreensh/token-optimizer": {
+    "cosa_fa": "Tool für Claude Code, das 'Phantom-Tokens' und aufgeblähte Konfigurationen findet, Checkpoints anlegt, um die Kontextkomprimierung zu überstehen, und ein Dashboard des Verbrauchs zeigt.",
+    "quando_usarlo": "Wenn lange Sitzungen nach der Komprimierung an Qualität verlieren oder der Token-Verbrauch unerklärlich ist.",
+    "licenza": "PolyForm Noncommercial 1.0.0 (+ Erlaubnis für Kleinunternehmen)",
+    "sorgente": "bba6b1db3b92"
+  },
+  "alibaba/open-code-review": {
+    "cosa_fa": "Von Alibaba veröffentlichtes System für automatische Reviews von Pull Requests, selbsthostbar und in CI/CD-Pipelines integrierbar, sodass der Code nicht an APIs Dritter geht.",
+    "quando_usarlo": "Wenn du automatische PR-Reviews willst, ohne den Unternehmenscode an ein externes SaaS zu schicken.",
+    "sorgente": "255a41e0158f"
+  },
+  "alibaba/zvec": {
+    "cosa_fa": "Open-Source-Vektordatenbank in-process (embedded)",
+    "quando_usarlo": "Eingebettete (in-process) Vektordatenbank für RAG ohne separaten Server.",
+    "sorgente": "97efba769937"
+  },
+  "alpbahadur/49-ide": {
+    "cosa_fa": "Open-Source-2D-IDE: eine zoombare Leinwand, auf der Terminals, Agenten-CLIs, Git, Issues und Dateien nebeneinander liegen, auch über mehrere Rechner ohne SSH, erreichbar vom Laptop oder Telefon.",
+    "quando_usarlo": "Wenn du viele Agenten in verschiedenen Terminals verwaltest und Tabs nicht mehr reichen, um sie zu verfolgen.",
+    "licenza": "BUSL-1.1 (wird am 2030-02-26 zu MIT)",
+    "sorgente": "1c4340c00ba5"
+  },
+  "amirmushichge/machine-vision": {
+    "cosa_fa": "Prozedurale Grafik im Stil von 'Machine Vision' im Browser auf lokalen Videos: analysiert Bewegung, Kanten und Licht und legt Punkte, Linien und Labels darüber; exportiert kurze Clips. Kein Upload.",
+    "quando_usarlo": "Wenn du generative Creative-Coding-Effekte auf ein eigenes Video legen willst, ohne schwere Software.",
+    "sorgente": "9e1969098a63"
+  },
+  "amnezia-vpn/amnezia-client": {
+    "cosa_fa": "VPN-Client, mit dem du ein persönliches VPN auf deinem eigenen Server einrichtest, mit verschleierten, zensurresistenten Protokollen.",
+    "quando_usarlo": "Wenn du keinem kommerziellen VPN-Anbieter vertrauen und lieber deinen eigenen Endpoint hosten willst.",
+    "sorgente": "f613f161bbea"
+  },
+  "andrewyng/aisuite": {
+    "cosa_fa": "Bibliothek von Andrew Ng mit einer einheitlichen Schnittstelle im OpenAI-Stil, um LLMs verschiedener Anbieter (OpenAI, Anthropic, Google, Mistral...) aufzurufen – der Modellwechsel erfordert nur einen einzigen String.",
+    "quando_usarlo": "Wenn du mehrere LLMs im Code testen/austauschen willst, ohne die Integration für jeden Anbieter neu zu schreiben.",
+    "sorgente": "96817c64f642"
+  },
+  "andrewyng/openworker": {
+    "cosa_fa": "Open-Source-KI-Co-Worker von Andrew Ng, der Aufgaben erledigt, statt nur zu antworten: verbindet sich mit über 40 Anwendungen, läuft lokal auf dem Mac, lässt das Modell wählen und hält die Daten auf dem Rechner.",
+    "quando_usarlo": "Wenn du einen lokalen, operativen Agenten willst, der mit deinen Apps verbunden ist, ohne Daten an einen Dienst zu senden.",
+    "sorgente": "bd3aca61ac91"
+  },
+  "andyyyy64/whichllm": {
+    "cosa_fa": "Tool zur Wahl des besten lokalen LLM für den eigenen VRAM",
+    "quando_usarlo": "Das beste lokale LLM passend zu deinem VRAM auswählen.",
+    "sorgente": "482958b3011d"
+  },
+  "anemll/dspark-vllm-gx10": {
+    "cosa_fa": "Port für vLLM, der DeepSeek V4 Flash (NVFP4) auf zwei verbundenen DGX-Spark-/ASUS-GX10-Knoten ausführt, mit Live-Dashboard und reproduzierbarem Deployment-Ablauf.",
+    "quando_usarlo": "Wenn du zwei DGX Spark hast und darauf ein Modell laufen lassen willst, das für einen allein zu groß ist.",
+    "sorgente": "6c378e8fe005"
+  },
+  "anil-matcha/awesome-jev-by-typesafe": {
+    "cosa_fa": "Sammlung von Use Cases, Patterns, Prompts und Startcode für Jev von TypeSafe (Sortierung, Routing, Ja/Nein-Screening).",
+    "quando_usarlo": "Wenn du mit Jev oder einem Klon anfängst und konkrete Beispiele als Ausgangspunkt suchst.",
+    "sorgente": "ad197707af66"
+  },
+  "anil-matcha/open-generative-ai": {
+    "cosa_fa": "Open-Source-Studio für Bild- und Videogenerierung, das Hunderte Modelle (Flux, Kling, Veo usw.) bündelt und direkt die API-Keys der Anbieter nutzt, ohne den Aufschlag und die verfallenden Credits der 'Wrapper'-Plattformen. Hieß früher Open-Higgsfield-AI.",
+    "quando_usarlo": "Wenn du viele Video-/Bildinhalte generierst und die Anbieter zum Listenpreis statt über einen Wiederverkäufer bezahlen willst.",
+    "sorgente": "655d4fef3c6c"
+  },
+  "ankitects/anki": {
+    "cosa_fa": "Spaced-Repetition-System mit aktivem Abrufen: zeigt jeden Lerninhalt genau dann, wenn das Gedächtnis ihn zu verlieren droht. Ursprünglich in Python, der Kern wurde nach Rust auf SQLite verlagert, und der FSRS-Algorithmus berechnet die Wiederholungsintervalle.",
+    "quando_usarlo": "Wenn du einen technischen Stoff (APIs, Syntax, Terminologie) langfristig lernen willst, statt ihn immer wieder nachzulesen.",
+    "sorgente": "f46fab3bcda7"
+  },
+  "annota.ai": {
+    "cosa_fa": "Plattform zur Aufbereitung von Daten für KI: Bildannotation, OCR mit Überprüfung des Dokumenttextes und Export als COCO oder Markdown, mit einer MCP-Verbindung, die die Daten für Agenten bereitstellt.",
+    "quando_usarlo": "Wenn du PDFs und Bilder in Datasets oder in Markdown für eine Wissensdatenbank umwandeln musst.",
+    "sorgente": "8bd97c2474e3"
+  },
+  "anthropics/claude-plugins-official": {
+    "cosa_fa": "Claude-Code-Plugin für iterative Development Loops",
+    "quando_usarlo": "Claude-Code-Plugin für iterative Loops autonomer Entwicklung.",
+    "sorgente": "0113084f2beb"
+  },
+  "anthropics/knowledge-work-plugins": {
+    "cosa_fa": "Offizielles Anthropic-Repository mit 11 Plugins für Wissensarbeiter (Vertrieb, Marketing, Finance, Support, Recht usw.), die Claude in einen rollenspezifischen Spezialisten verwandeln: Markdown-Skills, Slash-Commands, Subagents, MCP-Konnektoren und Hooks, ohne Code.",
+    "quando_usarlo": "Wenn du Claude Code/Cowork fertige Kompetenzen für eine Unternehmensrolle (Sales, Finance, Legal...) geben willst, indem du anpassbare dateibasierte Plugins installierst.",
+    "sorgente": "9370d3bc7581"
+  },
+  "antirez/ds4": {
+    "cosa_fa": "Lokale Inferenz-Engine für DeepSeek V4 Flash auf Consumer-Hardware (antirez)",
+    "quando_usarlo": "Frontier-Modelle (DeepSeek V4) lokal auf Mac/Consumer-Hardware laufen lassen (antirez).",
+    "sorgente": "6c86a3f9fe3e"
+  },
+  "appsmithorg/appsmith": {
+    "cosa_fa": "Open-Source-Low-Code-Plattform, um interne Tools und Unternehmens-Dashboards zu bauen, ohne Berge an repetitivem Code zu schreiben.",
+    "quando_usarlo": "Wenn du schnell interne Admin-Panels erstellen musst, die an deine Datenbanken und APIs angebunden sind.",
+    "sorgente": "e333571f29b8"
+  },
+  "aprilnea/openlogi": {
+    "cosa_fa": "Open-Source-Alternative zu Logitech Options+ in Rust: spricht über HID++ direkt mit der Logitech-Hardware, ohne Konto und Telemetrie, mit Konfiguration in einer Textdatei.",
+    "quando_usarlo": "Wenn du Tasten, DPI und Gesten von Logitech-Mäusen/-Tastaturen lokal umbelegen willst, auch unter Linux.",
+    "sorgente": "86f2ebd591c3"
+  },
+  "aquasecurity/trivy": {
+    "cosa_fa": "Open-Source-Scanner für Schwachstellen, Secrets und Fehlkonfigurationen",
+    "quando_usarlo": "Sicherheitsscanner für Schwachstellen, Secrets und Misconfigs (Branchenstandard). ⚠️ ≥0.71.1 verwenden und nie 0.69.4: Im März 2026 wurde die Supply Chain kompromittiert (GHSA-69fq-xp46-6x23, Binary 0.69.4 und Tags von trivy-action/setup-trivy umgeschrieben, Diebstahl von Secrets); Path Traversal in 0.71.1 behoben (GHSA-mcj4-mphf-j9ff). In CI die Actions per SHA pinnen.",
+    "sorgente": "5832ecf51ebe"
+  },
+  "artificialanalysis.ai": {
+    "cosa_fa": "Unabhängiger Index, der KI-Modelle nach Intelligenz, Kosten pro Aufgabe und Generierungsgeschwindigkeit vergleicht, mit Diagrammen, die die verschiedenen Metriken kreuzen.",
+    "quando_usarlo": "Wenn du ein Modell wählen musst und Qualität, Preis und Latenz abwägen willst, statt nur auf einen Benchmark zu schauen.",
+    "sorgente": "3ab20b359fca"
+  },
+  "asciimoo/hister": {
+    "cosa_fa": "Macht den Browserverlauf zu einer persönlichen Suchmaschine, indem der Volltext besuchter Seiten indexiert wird; läuft lokal oder auf einem privaten Server, mit Erweiterungen, CLI und MCP-Unterstützung.",
+    "quando_usarlo": "Wenn du eine vor Wochen gelesene Passage wiederfinden musst und Titel und URL nicht reichen.",
+    "sorgente": "17096323a499"
+  },
+  "aside.com": {
+    "cosa_fa": "Browser mit integriertem Agenten, der auf Websites arbeitet, auf denen der Nutzer bereits eine Sitzung offen hat, und Aufgaben an seiner Stelle ausführt. Gibt lokale Datenverarbeitung an und einen Passwortmanager, der authentifiziert, ohne dem Agenten die Zugangsdaten offenzulegen.",
+    "quando_usarlo": "Wenn die Automatisierung über authentifizierte Websites laufen muss, die keine API anbieten.",
+    "sorgente": "f01e7bde7199"
+  },
+  "asokurasu/text-humanizer": {
+    "cosa_fa": "Open-Source-Tool, das KI-generierten Text so umschreibt, dass er natürlicher klingt und die Bedeutung erhalten bleibt, per mehrsprachigem LLM-Rewriting.",
+    "quando_usarlo": "Wenn ein mit KI geschriebener Entwurf den typisch künstlichen Ton hat und du einen ersten automatischen Überarbeitungsdurchgang willst.",
+    "sorgente": "54dd6b92b9a5"
+  },
+  "astral-sh/ruff": {
+    "cosa_fa": "In Rust geschriebener Python-Linter und -Formatter, um Größenordnungen schneller als Flake8 und Black, der in einem einzigen Tool vereint, was früher mehrere Pakete und Konfigurationen erforderte.",
+    "quando_usarlo": "Wenn das Linting des Python-Projekts langsam ist oder über zu viele Tools verstreut.",
+    "sorgente": "461ee3f012ac"
+  },
+  "atomicbot-ai/atomic-agent": {
+    "cosa_fa": "Open-Source-Agent, der plant, im Web navigiert, Dateien bearbeitet und ein Gedächtnis führt – vollständig lokal auf einem kleinen Modell, mit laut Angaben konkurrenzfähigen Ergebnissen im GAIA-Benchmark.",
+    "quando_usarlo": "Wenn du einen Allzweck-Agenten willst, der deinen Rechner nicht verlässt.",
+    "sorgente": "9096538262d9"
+  },
+  "automattic/harper": {
+    "cosa_fa": "Blitzschnelle, datenschutzorientierte Open-Source-Grammatikprüfung: läuft lokal, ohne Text an externe Server zu senden.",
+    "quando_usarlo": "Wenn du eine Alternative zu Grammarly willst, die deine Texte nicht in die Cloud schickt.",
+    "sorgente": "1950b176b19b"
+  },
+  "ayghri/i-have-adhd": {
+    "cosa_fa": "Skill, die dem Coding-Assistenten zehn Ausgaberegeln auferlegt: zuerst der exakte Befehl oder die exakte Datei, keine Vorreden und keine ellenlangen Erklärungen.",
+    "quando_usarlo": "Wenn die Antworten des Agenten ausschweifend sind und du sofort zur zu ändernden Zeile kommen musst.",
+    "sorgente": "89be15879765"
+  },
+  "baidu/unlimited-ocr": {
+    "cosa_fa": "Open-Source-OCR-Modell von Baidu für Dokument-Parsing (Weiterentwicklung von DeepSeek-OCR)",
+    "quando_usarlo": "Open-Source-OCR-Modell, um Unternehmensdokumente lokal zu parsen (Baidu).",
+    "sorgente": "0f7de3f9ec36"
+  },
+  "biclab/spikingbrain-7b": {
+    "cosa_fa": "Brain-inspired LLM (CAS): Hybrid Attention + Spike Encoding, 100x TTFT",
+    "quando_usarlo": "Effizientes brain-inspired LLM (spiking) mit sehr langem Kontext.",
+    "sorgente": "ace4941851fa"
+  },
+  "bigskysoftware/htmx": {
+    "cosa_fa": "Erweitert HTML, sodass jedes Element HTTP-Requests auslösen und Teile der Seite aktualisieren kann; Logik und Zustand bleiben auf dem Server, ohne JavaScript-Framework im Client.",
+    "quando_usarlo": "Wenn eine dynamische Oberfläche keine SPA rechtfertigt und du serverseitig bleiben willst.",
+    "sorgente": "1c06ae0575bd"
+  },
+  "bilawalsidhu/gods-eye-view": {
+    "cosa_fa": "Fotorealistischer 3D-Globus im Browser (CesiumJS), der in Echtzeit Flüge, Schiffsrouten, Satelliten, Erdbebendaten, Brände und Verkehrskameras bündelt, mit Nacht-/Wärmebild-Shadern und Sprachagent.",
+    "quando_usarlo": "Wenn du eine Referenz für Echtzeit-Geodatenvisualisierung auf einem 3D-Globus im Browser suchst.",
+    "sorgente": "4dd541098216"
+  },
+  "blazux/qwen3.8-flash-dgx": {
+    "cosa_fa": "Rezept, um Qwen3.8-Flash (rund 176B Parameter) auf einem einzelnen DGX Spark auszuführen, indem eine große Tabelle bei Bedarf von der Festplatte nachgeladen wird, um Unified Memory freizumachen, mit den für die Stabilität nötigen Patches.",
+    "quando_usarlo": "Wenn du einen DGX Spark hast und darauf ein Modell laufen lassen willst, das größer ist als sein Speicher.",
+    "licenza": "Apache-2.0",
+    "sorgente": "f9878780d42c"
+  },
+  "block/buzz": {
+    "cosa_fa": "Workspace, in dem menschliche Entwickler und KI-Agenten gleichberechtigt zusammenarbeiten, von Block geschaffen, um die Abhängigkeit von Slack und GitHub zu verringern.",
+    "quando_usarlo": "Wenn du eine gemeinsame Umgebung willst, in der menschliches Team und Agenten an denselben Tasks arbeiten.",
+    "sorgente": "7b42949e22cb"
+  },
+  "bloopai/vibe-kanban": {
+    "cosa_fa": "Coding Agents mit Kanban aufwerten (BloopAI)",
+    "quando_usarlo": "Die Tasks eines Coding Agents mit einem Kanban-Board verwalten.",
+    "sorgente": "9e0ecb7695f5"
+  },
+  "bmad-code-org/bmad-method": {
+    "cosa_fa": "Breakthrough Method for Agile AI Driven Development",
+    "quando_usarlo": "Agile Methode, um Softwareentwicklung mit KI zu steuern (strukturiertes Planning).",
+    "sorgente": "0f1529d8c25d"
+  },
+  "braveopotato/fcksignups": {
+    "cosa_fa": "Von der Community kuratierter Katalog von Open-Source-Tools, die im Browser laufen und weder Registrierung noch Account brauchen.",
+    "quando_usarlo": "Wenn du schnell etwas konvertieren oder formatieren musst, ohne noch einen Account anzulegen.",
+    "sorgente": "8730f917ac91"
+  },
+  "breezexian/uniphysgen": {
+    "cosa_fa": "Forschungsarbeit, die 3D-Assets 'simulationsbereit' macht: weist segmentierten Teilen physikalische Eigenschaften (Masse, Reibung, Material) und Gelenke zu und überprüft sie mit Tests in der Simulation.",
+    "quando_usarlo": "Wenn du 3D-Assets für Robotiksimulatoren oder Embodied AI vorbereitest und die Roh-Meshes keine Physik haben.",
+    "sorgente": "28fc97813b9c"
+  },
+  "browser-use/browser-use": {
+    "cosa_fa": "Bibliothek, die einem KI-Agenten die Kontrolle über einen echten Browser gibt: Seiten öffnen, klicken, Formulare ausfüllen und in natürlicher Sprache beschriebene Aufgaben ausführen.",
+    "quando_usarlo": "Wenn der Agent auf Websites arbeiten muss, die keine API anbieten.",
+    "sorgente": "de42efd08b96"
+  },
+  "browser-use/video-use": {
+    "cosa_fa": "Open-Source-Skill (von browser-use), die einen Coding Agent wie Claude Code in einen agentischen Videoeditor verwandelt: Rohclips in einen Ordner legen, das gewünschte Video beschreiben, und der Agent arbeitet mit Transkripten, Timestamps, Waveforms und ffmpeg bis zur final.mp4.",
+    "quando_usarlo": "Wenn du Videos aus Rohmaterial schneiden willst, indem du Claude Code/Codex per Text anweist, die Timeline zu schneiden und zusammenzusetzen.",
+    "sorgente": "74c7d914698c"
+  },
+  "bruin-data/bruin": {
+    "cosa_fa": "Open-Source-Tool für End-to-End-Datenpipelines in SQL und Python: Ingestion aus mehreren Quellen, Transformationen und Qualitätsprüfungen in einem einzigen Projekt, selbst gehostet.",
+    "quando_usarlo": "Wenn du Ingestion, Transformation und Datenqualität in einem Tool willst, statt mehrere Dienste zu kombinieren.",
+    "sorgente": "062911876f6b"
+  },
+  "bruin-data/dac": {
+    "cosa_fa": "Dashboards als Code in YAML und JSX mit integriertem Semantic Layer: versionierbar und reviewbar wie der restliche Code und von einem Agenten bearbeitbar.",
+    "quando_usarlo": "Wenn du Dashboards unter Versionskontrolle willst, statt sie in einem BI-Tool von Hand zu konfigurieren.",
+    "sorgente": "a822ae3e7859"
+  },
+  "cactus-compute/needle": {
+    "cosa_fa": "Winzige Automatisierungsmodelle (2 Bit, 8-29 MB) für kleine Geräte: Sie führen keine Gespräche, sondern wählen, welche Funktion mit welchen Argumenten aufgerufen wird, und extrahieren strukturierte Daten. Needle 3 hat etwa 121M Parameter; Benchmarks laut Autoren. Anonyme Telemetrie standardmäßig aktiv (NEEDLE_TELEMETRY=0 zum Abschalten). Apache-2.0.",
+    "quando_usarlo": "Wenn Offline-Tool-Calling auf Telefon, Smart Home oder Geräten ohne Bildschirm für kurze, klare Befehle gebraucht wird.",
+    "sorgente": "004cbb9bd22b"
+  },
+  "calesthio/crucix": {
+    "cosa_fa": "Lokales OSINT-Intelligence-Terminal: sammelt alle paar Minuten Dutzende öffentlicher Feeds (Brände per Satellit, Flug- und Schiffsverkehr, Strahlung, Konfliktzonen, Wirtschafts- und Marktindikatoren), zeigt sie auf einer 3D-Karte und korreliert Signale über verschiedene Domänen. Mit einem LLM verbunden, sendet es gestufte Warnungen an Telegram oder Discord und reagiert auf Befehle. Keine Cloud, keine Telemetrie.",
+    "quando_usarlo": "Wenn du ein Situational-Awareness-Dashboard auf offenen Quellen mit automatischen Warnungen auf deinem eigenen Rechner willst.",
+    "sorgente": "11a41f439fbf"
+  },
+  "calesthio/openmontage": {
+    "cosa_fa": "Open-Source-Agent, der aus einem einzigen Prompt ein fertiges Video produziert: Recherche, Drehbuch, Bild- und Videogenerierung, Beschaffung echter Clips, Stimme, Musik, Untertitel und finales Rendering.",
+    "quando_usarlo": "Wenn du einem Agenten die gesamte Produktion eines Videos übertragen willst, nicht nur die Generierung der Clips.",
+    "sorgente": "dc3252a5f734"
+  },
+  "capsoftware/cap": {
+    "cosa_fa": "Open-Source-Alternative zu Loom, um den Bildschirm aufzunehmen und die Videos per Link zu teilen; auch selbst gehostet verfügbar.",
+    "quando_usarlo": "Wenn du asynchrone Videoerklärungen verschicken musst, ohne von Loom abhängig zu sein.",
+    "licenza": "AGPL-3.0 (Crates cap-camera*/scap-* MIT)",
+    "sorgente": "02c91e6c7450"
+  },
+  "cathrynlavery/diagram-design": {
+    "cosa_fa": "Open-Source-Skill, mit der der Agent redaktionelle Diagramme in nativem HTML/SVG auf einem strengen Raster erzeugt, mit automatischer Extraktion der Farbpalette von einer angegebenen Website und Dutzenden fertiger Vorlagen.",
+    "quando_usarlo": "Wenn du ein präsentables Architekturdiagramm statt des üblichen anonymen KI-generierten Diagramms brauchst.",
+    "sorgente": "90b71227284e"
+  },
+  "chmarax/herdr-nvim": {
+    "cosa_fa": "Plugin, das Neovim als dauerhafte Seitenleiste in den herdr-Workspace integriert, mit einer Auswahl, die die gerade vom Agenten bearbeiteten Dateien auflistet und dabei Ausgabe, Git-Historie und nicht committete Änderungen abgleicht.",
+    "quando_usarlo": "Wenn du herdr mit Coding-Agenten nutzt und die geänderten Dateien sofort in Neovim öffnen willst.",
+    "sorgente": "8ed9b4317190"
+  },
+  "chopratejas/headroom": {
+    "cosa_fa": "Lokaler Kontextkompressions-Layer: -60/95 % Tokens gegenüber den LLMs (Netflix-Ingenieur T. Chopra)",
+    "quando_usarlo": "Den Kontext für LLMs komprimieren und die Token-Kosten um 60-95 % senken.",
+    "sorgente": "65d8ee6251d8"
+  },
+  "cline/cline": {
+    "cosa_fa": "Open-Source-Coding-Agent, der in der IDE, im Terminal oder als Desktop-App läuft: analysiert das gesamte Projekt, bearbeitet mehrere Dateien, führt Befehle aus, installiert Abhängigkeiten, startet Tests und Builds und behebt Fehler selbstständig. Unterstützt OpenAI, Anthropic, Gemini, OpenRouter und lokale Modelle über Ollama oder LM Studio und ist mit MCP und Plugins erweiterbar.",
+    "quando_usarlo": "Wenn du einen Coding-Agenten in VS Code mit freier Modellwahl willst, einschließlich lokaler Modelle.",
+    "sorgente": "f33977241f05"
+  },
+  "cloakhq/cloakbrowser": {
+    "cosa_fa": "Browser für Automatisierung und Scraping, darauf ausgelegt, nicht von Cloudflare und Anti-Bot-Systemen blockiert zu werden.",
+    "quando_usarlo": "Wenn deine Scraping-Skripte von automatischen Erkennungssystemen blockiert werden.",
+    "sorgente": "ef39028e090a"
+  },
+  "cloudflare/computer": {
+    "cosa_fa": "Runtime für Agenten, die den persistenten Zustand des Dateisystems (Durable Objects + SQLite) von modularen Ausführungsumgebungen trennt – von Shell-Containern bis zur schnellen JavaScript-Auswertung in Workers.",
+    "quando_usarlo": "Wenn du einem Agenten eine echte Arbeitsumgebung geben musst, ohne deine Infrastruktur offenzulegen.",
+    "sorgente": "e956133049c0"
+  },
+  "codeberg.org": {
+    "cosa_fa": "Git-Hosting-Plattform, betrieben von einem deutschen gemeinnützigen Verein und vollständig Open Source (auf Basis von Forgejo): ethische Alternative zu GitHub zum Hosten von Repositories.",
+    "quando_usarlo": "Wenn du eine quelloffene, gemeinnützige Alternative zu GitHub für deine Repositories suchst.",
+    "sorgente": "0609dcede077"
+  },
+  "conardli/easy-dataset": {
+    "cosa_fa": "Datasets aus PDFs für das LLM-Training erstellen",
+    "quando_usarlo": "Trainingsdatensätze für LLMs aus PDFs/Dokumenten erstellen.",
+    "sorgente": "36dc1c8bae8b"
+  },
+  "continual-intelligence/seal": {
+    "cosa_fa": "MIT-Framework: LLMs, die ihre eigenen Trainingsdaten erzeugen und sich anpassen (Self-Edits)",
+    "quando_usarlo": "LLM, das sich selbst anpasst, indem es eigene Trainingsdaten erzeugt (MIT-Forschung).",
+    "sorgente": "5405f0a353de"
+  },
+  "copilotkit/openbot": {
+    "cosa_fa": "Open-Source-KI-Kollegen mit eigenem Computer (Browser, Dateien, Tools): generative UI, Remote- und lokales Computer Use, Übergaben zwischen Agent und Mensch und vollständige Protokollierung der Aktionen, kompatibel mit jedem AG-UI-Agenten.",
+    "quando_usarlo": "Wenn im Unternehmen operative Agenten mit Nachvollziehbarkeit jeder Aktion und Handoff an Menschen gebraucht werden.",
+    "sorgente": "cfba6f766a61"
+  },
+  "cordiverse/cordis": {
+    "cosa_fa": "TypeScript-Meta-Framework für im laufenden Betrieb ladbare und entladbare Plugins: isoliert jedes Plugin in einer Kontexthierarchie und macht Seiteneffekte deterministisch rückgängig, ohne Memory Leaks oder Neustarts.",
+    "quando_usarlo": "Wenn du eine Plugin-Runtime baust (auch für KI-Agenten) und Hot Reload ohne verwaiste Ressourcen brauchst.",
+    "sorgente": "db2bde9d5a1c"
+  },
+  "coreyhaines31/marketingskills": {
+    "cosa_fa": "Sammlung von Marketing-Skills für Coding-Agenten (CRO, Copywriting, SEO, Analytics, Growth) mit eigenen Slash-Commands; MIT-Lizenz, kompatibel mit Claude Code, Codex, Cursor und Windsurf.",
+    "quando_usarlo": "Wenn der Agent Landingpages, E-Mails oder SEO-Audits nach bereits strukturierten Playbooks erstellen soll.",
+    "sorgente": "6a68a94a0d70"
+  },
+  "crispstrobe/crispasr": {
+    "cosa_fa": "C++-Runtime auf Basis von ggml, die viele Spracherkennungs- und Sprachsynthesemodelle (Whisper, Parakeet, Voxtral, Canary und weitere) unter einer einheitlichen Schnittstelle vereint, offline und lokal.",
+    "quando_usarlo": "Wenn du mehrsprachiges On-Device-ASR/TTS brauchst, ohne für jedes Modell eine eigene Runtime zu verwalten.",
+    "sorgente": "259edab17633"
+  },
+  "crosstalk-solutions/project-nomad": {
+    "cosa_fa": "Vollständig offline laufender KI-Stack: lokale Wikipedia, Weltkarten und LLM-Assistent, die ohne Internetverbindung funktionieren.",
+    "quando_usarlo": "Wenn du Wissen und KI in Umgebungen ohne Netz oder in Notfall-/Off-Grid-Szenarien brauchst.",
+    "sorgente": "1869e189332d"
+  },
+  "cupy/cupy": {
+    "cosa_fa": "GPU-beschleunigte, NumPy-kompatible Array-Bibliothek",
+    "quando_usarlo": "GPU-Array-Bibliothek (NumPy-kompatibel) zur Beschleunigung von Berechnungen/Data Science.",
+    "sorgente": "ae6ae235f0be"
+  },
+  "cypress-io/cypress": {
+    "cosa_fa": "End-to-End-Testing-Framework für Webanwendungen: führt Tests direkt im Browser aus, mit Time-Travel, visuellem Debugging und automatischen Wartezeiten, um Bugs vor dem Release abzufangen.",
+    "quando_usarlo": "Wenn du zuverlässige E2E-Tests fürs Frontend willst, die bei jeder Codeänderung im Browser laufen.",
+    "sorgente": "58538d920a53"
+  },
+  "dahlia/logtape": {
+    "cosa_fa": "Logging-Bibliothek ohne Abhängigkeiten: Bibliotheken können ohne Konfiguration loggen, während die Anwendung die Kontrolle behält; läuft auf Deno, Node, Bun, im Browser und am Edge, mit integrierter Datenschwärzung.",
+    "quando_usarlo": "Wenn du einer veröffentlichten Bibliothek Logging hinzufügen musst, ohne ihren Nutzern Entscheidungen aufzuzwingen.",
+    "sorgente": "8879cfb4d3eb"
+  },
+  "danielravina/stemkit": {
+    "cosa_fa": "Trennt einen Song (auch von YouTube) in Spuren für Gesang, Schlagzeug, Bass, Gitarre und Klavier, lokal und ohne Upload.",
+    "quando_usarlo": "Wenn du die getrennten Spuren eines Stücks zum Üben, Remixen oder für Karaoke brauchst.",
+    "sorgente": "092f53747a36"
+  },
+  "david-crty/databasement": {
+    "cosa_fa": "Selbstgehosteter Manager für Datenbank-Backups mit Web-UI: plant und stellt MySQL, PostgreSQL, MongoDB, Redis und weitere wieder her, nach S3, SFTP oder lokalen Speicher.",
+    "quando_usarlo": "Wenn du die Backups mehrerer Datenbanken über eine einzige Oberfläche automatisieren und überwachen musst.",
+    "sorgente": "a72e8f7d129c"
+  },
+  "davidealbertazzi97-jpg/open-upsilon-logic": {
+    "cosa_fa": "Projekt, das Coding Agents ein deterministisches logisches Gedächtnis im Prolog-Stil zur Seite stellt, um Context Drift und Halluzinationen zu verringern, statt sie blind das Dateisystem durchsuchen zu lassen.",
+    "quando_usarlo": "Wenn du mit logischen Guardrails über einem Schwarm von Agenten experimentieren willst; sehr junges Projekt, die Aktivität vor der Einführung prüfen.",
+    "sorgente": "b9be5ff12725"
+  },
+  "deepseek-ai/deepseek-harness": {
+    "cosa_fa": "Harness für Coding-Agenten von DeepSeek unter MIT-Lizenz, aufgebaut nach der Philosophie 'everything is a plugin': Modelle, Dateisystem, Tools, Session-Storage, Berechtigungen und Web UI sind austauschbare Komponenten. Modellagnostisch, funktioniert mit Claude, GPT, Gemini oder lokalen Endpunkten über Ollama und vLLM.",
+    "quando_usarlo": "Wenn du eine Runtime für Coding-Agenten willst, in der sich Shell, Sandbox oder Ausführungsschleife ersetzen lassen, ohne die Engine neu zu schreiben.",
+    "sorgente": "082aad30e30e"
+  },
+  "deusdata/codebase-memory-mcp": {
+    "cosa_fa": "MCP-Server, der die Codebase in einen persistenten Knowledge Graph (Funktionen, Klassen, Aufrufe, Routen, Abhängigkeiten) verwandelt, den Coding Agents abfragen können; 158 Sprachen, alles lokal, ein einziges Binary.",
+    "quando_usarlo": "Wenn der Agent Tokens verbrennt, um das Projekt immer wieder neu zu erkunden, und du ihm eine stabile Karte der Architektur geben willst.",
+    "sorgente": "86c57acaeb98"
+  },
+  "dicebear/dicebear": {
+    "cosa_fa": "Open-Source-Bibliothek zur Erzeugung einzigartiger, deterministischer Avatare aus einem Seed/einer Benutzer-ID, mit Dutzenden Stilen und HTTP-API: praktisch, um Profile zu füllen, ohne ein Foto-Upload zu verlangen.",
+    "quando_usarlo": "Wenn du für jeden Nutzer deiner App einen einzigartigen Standard-Avatar ohne Bild-Upload brauchst.",
+    "sorgente": "c2855dff8087"
+  },
+  "diegosouzapw/omniroute": {
+    "cosa_fa": "MIT-lizenziertes AI-Gateway, das Hunderte LLM-Anbieter hinter einem einzigen Endpoint vereint, mit automatischem Fallback und Token-Kompression.",
+    "quando_usarlo": "Wenn dir bei einem Anbieter die Tokens ausgehen und du automatisches Routing und Fallback zwischen vielen Modellen willst.",
+    "sorgente": "5986518aeb4c"
+  },
+  "dietrichgebert/ponytail": {
+    "cosa_fa": "Open-Source-Skill für Coding Agents (Claude Code, Cursor, Codex und andere), die den Agenten wie den faulsten Entwickler 'denken' lässt: Vor dem Schreiben von Code prüft er, ob er wirklich nötig ist oder ob die Stdlib/eine Abhängigkeit das schon erledigt – weniger generierter Code (~54 % weniger), Kosten und Zeit.",
+    "quando_usarlo": "Wenn der Coding Agent Over-Engineering und redundanten Code vermeiden und bestehende Standards und Bibliotheken wiederverwenden soll.",
+    "sorgente": "08d430070100"
+  },
+  "diffusionstudio/editor": {
+    "cosa_fa": "Open-Source-Videoeditor für Agenten: Kompositionen in JSX, bidirektionales Editing zwischen Canvas und Code, CLI zum Inspizieren und Rendern, Generierung von Bildern, Videos und Voice-over.",
+    "quando_usarlo": "Wenn ein Agent Videos schneiden oder bearbeiten soll und das Projekt als versionierbarer Code bleiben soll.",
+    "sorgente": "731df03b0049"
+  },
+  "diolinux/photogimp": {
+    "cosa_fa": "Patch, der GIMP mit Layout, Tastenkürzeln und Icons im Photoshop-Stil umorganisiert, um die Reibung beim Umstieg zu verringern.",
+    "quando_usarlo": "Wenn du von Photoshop zu GIMP wechselst und wegen der Oberfläche keine Produktivität verlieren willst.",
+    "sorgente": "679c495a61a1"
+  },
+  "diwenne/openreply": {
+    "cosa_fa": "Open-Source-Alternative zu Kommentar-zu-DM-Bots: automatisiert DM-Antworten auf Kommentare über die offiziellen Meta-APIs, ohne Passwort und ohne Sperrrisiko.",
+    "quando_usarlo": "Wenn du ein Profil betreust und die Antworten auf Kommentare automatisieren willst, ohne die offiziellen APIs zu verlassen.",
+    "sorgente": "93ed480c087b"
+  },
+  "docling-project/docling": {
+    "cosa_fa": "Open-Source-Bibliothek (entstanden bei IBM Research), die komplexe Dokumente – PDF, DOCX, PPTX, XLSX, HTML, EPUB, Bilder, Audio, LaTeX – in Markdown, HTML oder strukturiertes JSON für LLMs und RAG-Pipelines umwandelt. Rekonstruiert Layout, Lesereihenfolge, Tabellen, Formeln und Code, führt OCR auf Scans aus und kann Diagramme beschreiben. Läuft lokal, hat API- und MCP-Server und lässt sich mit LangChain, LlamaIndex, CrewAI und Haystack integrieren.",
+    "quando_usarlo": "Wenn du heterogene Dokumente in eine RAG- oder Agenten-Pipeline einspeisen musst und einfache Textextraktion Tabellen und Struktur verliert.",
+    "sorgente": "31f740024859"
+  },
+  "dottxt-ai/outlines": {
+    "cosa_fa": "Bibliothek, die LLMs strukturierte, gültige Ausgaben (JSON, Regex, Grammatiken) aufzwingt und fragiles Parsing überflüssig macht.",
+    "quando_usarlo": "Wenn das LLM JSON oder starre Formate zurückgeben muss, die deine Anwendung direkt verarbeitet.",
+    "sorgente": "c128ea1d495d"
+  },
+  "drafted.ai": {
+    "cosa_fa": "Erzeugt einen Grundriss aus einer Liste von Räumen und leitet daraus die passende 3D-Außenansicht ab: Schlüsselpositionen werden von Hand gewählt, Wände, Türen und Flure von der KI ergänzt, mit selektiver Neugenerierung und Export als CAD oder PDF.",
+    "quando_usarlo": "Wenn du von einer Raumliste zu einem Grundriss und einem 3D-Baukörper kommen willst, ohne ein CAD zu öffnen.",
+    "sorgente": "7e052fa563fb"
+  },
+  "dreamina.capcut.com": {
+    "cosa_fa": "KI-Generator für Videos und Bilder von CapCut: Long-Video-Modus mit Clips von bis zu einigen Minuten in einer einzigen Generierung und bis zu 50 Referenzen, um die Motive konsistent zu halten.",
+    "quando_usarlo": "Wenn du ein langes, konsistentes Video brauchst, ohne einzelne Clips zusammenzufügen.",
+    "sorgente": "c9735438f0d3"
+  },
+  "duriantaco/ravage": {
+    "cosa_fa": "CLI für Security-Tests von Webanwendungen, für die eine Autorisierung vorliegt: deterministisches Recon, Validierung und optionale modellgesteuerte Angriffsschleife, mit nachverfolgtem Scope, Authentifizierung und Belegen.",
+    "quando_usarlo": "Wenn du eine eigene oder autorisierte Webanwendung testen und die Belege dokumentieren musst.",
+    "sorgente": "f0a710fc88ae"
+  },
+  "duriantaco/skylos": {
+    "cosa_fa": "CLI und Gate für Pull Requests, das KI-generierten Code gegen das echte Repo prüft: erkennt erfundene Helper, APIs und Abhängigkeiten mit 215 Regeln; läuft lokal, in CI, in VS Code und via MCP.",
+    "quando_usarlo": "Wenn du Halluzinationen und toten Code abfangen musst, bevor sie in einen Merge gelangen.",
+    "sorgente": "41395dd09c87"
+  },
+  "dyad-sh/dyad": {
+    "cosa_fa": "Lokaler Open-Source-AI-App-Builder (Alternative zu Lovable/Bolt/v0)",
+    "quando_usarlo": "Apps lokal mit KI bauen (offene Alternative zu Lovable/Bolt/v0).",
+    "sorgente": "0d6876edd256"
+  },
+  "earthtojake/text-to-cad": {
+    "cosa_fa": "Skill-Bibliothek, mit der KI-Agenten an CAD, Robotik und digitaler Fertigung arbeiten können: erzeugt STEP/STL/3MF/GLB-Modelle aus Text oder Bildern, DXF-Zeichnungen, G-Code und URDF/SRDF/SDF-Dateien.",
+    "quando_usarlo": "Wenn ein Agent vom Code-Generieren zum Konstruieren druckbarer mechanischer Teile übergehen soll.",
+    "sorgente": "b2a4b78589ed"
+  },
+  "elliothux/open-compute": {
+    "cosa_fa": "Selbst gehostete, mit Cloudflare Workers kompatible Plattform mit KV, D1, R2, Durable Objects, Queues und Workflows in einem einzigen Rust-Binary, installierbar mit einer Zeile.",
+    "quando_usarlo": "Wenn du für Workers geschriebene Apps auf deinem eigenen Server ausführen willst, ohne von Cloudflare abhängig zu sein.",
+    "sorgente": "d8123602ce54"
+  },
+  "emcie-co/parlant": {
+    "cosa_fa": "Framework für kundenorientierte AI Agents (Python)",
+    "quando_usarlo": "Framework zum Bau von Konversationsagenten mit kontrollierten Regeln/Verhaltensweisen.",
+    "sorgente": "2253c1e86ed1"
+  },
+  "emergent.sh": {
+    "cosa_fa": "App Builder, der aus der textuellen Beschreibung eines Arbeitsablaufs das komplette Full-Stack-System mit Live-URL und responsiver Oberfläche generiert.",
+    "quando_usarlo": "Wenn du ein Verwaltungssystem oder eine interne App willst, ohne sie von Hand zu bauen.",
+    "sorgente": "0428dfd6c154"
+  },
+  "f/awesome-chatgpt-prompts": {
+    "cosa_fa": "Open-Source-Bibliothek von Prompts für Schreiben, Coding, Bild- und Videogenerierung und Recherche, auch über die Website prompts.chat abrufbar und in Coding-Agenten integrierbar.",
+    "quando_usarlo": "Wenn du einen bewährten Ausgangspunkt suchst, statt den Prompt von Grund auf zu schreiben.",
+    "sorgente": "f29307c533cc"
+  },
+  "facebookresearch/sam-audio": {
+    "cosa_fa": "Segment Anything Model für Audio (Meta)",
+    "quando_usarlo": "Audiospuren mit KI isolieren/trennen (Meta).",
+    "sorgente": "c0a95214e1c2"
+  },
+  "feitangyuan/motion-web": {
+    "cosa_fa": "Skill für Agenten, die beibringt, 'motion-first' animierte Websites mit Three.js, Canvas 2D, WebGL oder CSS und realistischer Physik zu bauen, mit sieben fertigen Beispielen.",
+    "quando_usarlo": "Wenn du einen Agenten um eine Website mit reichhaltigen Animationen bittest und er bewährten Patterns folgen soll.",
+    "licenza": "CC BY-NC 4.0",
+    "sorgente": "952bacf159b8"
+  },
+  "fingerprint.to": {
+    "cosa_fa": "Suchmaschine für öffentliche Daten, die Prüfungen parallel ausführt und die Ergebnisse streamt: Username oder E-Mail auf über 700 Plattformen und Personensuche über öffentliche Register.",
+    "quando_usarlo": "Wenn eine schnelle Prüfung auf offenen Quellen nötig ist, ohne auf das Ende aller Abfragen zu warten.",
+    "sorgente": "515c48155afe"
+  },
+  "firecrawl/pdf-inspector": {
+    "cosa_fa": "Rust-Bibliothek, die ein PDF klassifiziert (textbasiert, gescannt, bildbasiert oder gemischt), entscheidet, welche Seiten wirklich OCR brauchen, und den vorhandenen Text samt Positionsinformationen lokal extrahiert.",
+    "quando_usarlo": "Wenn eine Dokumenten-Pipeline Zeit verschwendet, weil sie auch PDFs mit vorhandenem Text durch die OCR schickt.",
+    "sorgente": "46cb97b0560d"
+  },
+  "fleetbase/fleetbase": {
+    "cosa_fa": "Modulares Open-Source-Betriebssystem für Logistik und Supply Chain: Echtzeit-Tracking von Aufträgen und Fahrern auf der Karte, Auftragsverwaltung auf einem visuellen Board, APIs und Erweiterungen für zusätzliche Funktionen. Selbst hostbar.",
+    "quando_usarlo": "Wenn du ein Liefer- oder Flottenmanagementsystem bauen musst und lieber auf einer erweiterbaren Plattform statt bei null startest.",
+    "sorgente": "b494d4f3e561"
+  },
+  "fmtlib/fmt": {
+    "cosa_fa": "Formatierungsbibliothek für C++ mit sauberer Syntax, Typprüfungen zur Compile-Zeit und besserer Performance als printf und die Standard-Streams; Grundlage von std::format.",
+    "quando_usarlo": "Wenn du in C++ Strings formatieren musst, ohne zwischen Geschwindigkeit und Speichersicherheit wählen zu müssen.",
+    "sorgente": "4e50925ca202"
+  },
+  "futuregene/future-os": {
+    "cosa_fa": "Ein einziger KI-Agent mit Rust-Kern, erreichbar über Terminal, Desktop, Mobilgerät und Chat-Apps, mit geteiltem Gedächtnis und geteilten Sitzungen; jede Aktion erfordert die ausdrückliche Zustimmung des Nutzers.",
+    "quando_usarlo": "Wenn du einen persönlichen Assistenten willst, der dieselbe Aufgabe über Computer und Telefon verfolgt, ohne heimlich zu handeln.",
+    "sorgente": "7fa7540116cc"
+  },
+  "garrytan/gstack": {
+    "cosa_fa": "Open-Source-Setup von Claude Code von Garry Tan (CEO von Y Combinator): 23 meinungsstarke Skills, die als CEO, Designer, Eng Manager, Release Manager, Doc Engineer und QA agieren und den Agenten in ein operatives Team verwandeln. Kompatibel mit 8 Hosts (Claude Code, Codex, Cursor usw.).",
+    "quando_usarlo": "Wenn du einen strukturierten Multi-Rollen-Workflow für Claude Code mit fertigen Übergaben zwischen Design, Eng und QA übernehmen willst.",
+    "sorgente": "16f5c5816dea"
+  },
+  "gaurav-gosain/tuios": {
+    "cosa_fa": "In Go geschriebener Terminal-Multiplexer mit modaler Steuerung im Vim-Stil und BSP-Tiling: neun Workspaces, Fuzzy-Palette, Kitty-Grafikprotokoll, Daemon-Modus und Multi-Client-Sitzungen.",
+    "quando_usarlo": "Wenn du eine moderne Alternative zu tmux mit praktisch null CPU-Last im Leerlauf willst.",
+    "sorgente": "b30d86243adc"
+  },
+  "geroldmeisinger/comfyui-outputlists-combiner": {
+    "cosa_fa": "ComfyUI-Nodes, um viele Prompts und Varianten in einem einzigen Durchlauf auszuführen: Listen aus Tabellen, JSON oder Text, Parameterkombinationen (LoRA, Sampler) und Vergleichsraster.",
+    "quando_usarlo": "Wenn du in ComfyUI Prompt- oder Parameter-Sweeps machen musst, ohne jedes Bild einzeln zu starten.",
+    "sorgente": "f2d3101497b1"
+  },
+  "git-agni/prod-farm-ios-core": {
+    "cosa_fa": "Selbst gehostetes System, um echte iPhones zu registrieren, sie live im Browser zu sehen und fernzusteuern, mit Postgres-basiertem Scheduler für geplante Veröffentlichungen. Apache-2.0-Lizenz, keine Bindung an Cloud-Dienste.",
+    "quando_usarlo": "Wenn du eine Flotte physischer iOS-Geräte (Tests oder Automatisierung) über ein einziges Dashboard orchestrieren musst.",
+    "sorgente": "a3e4e3ce505d"
+  },
+  "github/spec-kit": {
+    "cosa_fa": "Spec-driven development toolkit (GitHub)",
+    "quando_usarlo": "Um eine spec-driven Entwicklung (von der Spezifikation zum Code) mit Agenten aufzusetzen.",
+    "sorgente": "e8072c0cccc4"
+  },
+  "gitreverse.com": {
+    "cosa_fa": "Webdienst (und Erweiterung), der, wenn man in der URL eines öffentlichen Repos 'github' durch 'gitreverse' ersetzt, daraus einen Prompt in natürlicher Sprache erzeugt, um das Projekt mit einem Coding-Agenten nachzubauen. Eigener LLM-Key erforderlich.",
+    "quando_usarlo": "Wenn du ein GitHub-Repo verstehen oder nachbauen willst, indem du es in einen fertigen Prompt für einen KI-Coding-Agenten umwandelst.",
+    "sorgente": "cb8c43e90714"
+  },
+  "goauthentik/authentik": {
+    "cosa_fa": "Selbstgehosteter Open-Source-Identity-Provider: zentralisiert Zugänge mit OAuth2, OpenID Connect, SAML und LDAP, anpassbaren Login-Flows und MFA mit Passkeys oder Hardware-Schlüsseln.",
+    "quando_usarlo": "Wenn du ein einheitliches SSO für Homelab oder Unternehmen willst, ohne für Okta oder Auth0 zu bezahlen.",
+    "sorgente": "d4c4e4aa45bc"
+  },
+  "google-research/timesfm": {
+    "cosa_fa": "Foundation Model für Zeitreihen-Forecasting von Google Research: sagt Verkäufe, Verbräuche oder Bestände zero-shot vorher, ohne für jeden Datensatz ein eigenes Modell zu trainieren.",
+    "quando_usarlo": "Wenn du Prognosen für Zeitreihen (Verkäufe, Nachfrage, Metriken) erstellen musst, ohne ein Modell von Grund auf zu trainieren.",
+    "sorgente": "35a0332343e1"
+  },
+  "google/artemis": {
+    "cosa_fa": "Google-Framework, das Anweisungen in natürlicher Sprache in zuverlässige Android-Automatisierungen umsetzt und End-to-End-Abläufe in Apps ausführt.",
+    "quando_usarlo": "Wenn du komplette Abläufe in Android-Apps automatisieren oder testen willst, indem du sie beschreibst, statt UI-Skripte zu schreiben.",
+    "sorgente": "68de26541e93"
+  },
+  "graphify-labs/graphify": {
+    "cosa_fa": "Wandelt eine Codebase samt Dokumentation, SQL-Schemas, Konfigurationen und PDFs in einen abfragbaren Knowledge Graph um, damit der Agent zur Orientierung nicht die Dateien neu lesen muss.",
+    "quando_usarlo": "Wenn der Agent Tokens verbrennt, um in jeder Sitzung die Projektstruktur neu zu entdecken.",
+    "sorgente": "6196675f9b5e"
+  },
+  "guijiai/heygem.ai": {
+    "cosa_fa": "Open-Source- und selbst hostbare Alternative zu HeyGen, um Gesicht und Stimme zu klonen und sprechende Avatare mit Lip-Sync zu erzeugen, mit modularer Pipeline, die jede TTS-Engine akzeptiert.",
+    "quando_usarlo": "Wenn du einen sprechenden digitalen Avatar ohne Abos und ohne Warteschlangen auf Cloud-Servern brauchst.",
+    "sorgente": "49fa7714995d"
+  },
+  "hacksider/deep-live-cam": {
+    "cosa_fa": "Live-Face-Swap auf der Webcam aus einem einzigen Foto, 93k Sterne",
+    "quando_usarlo": "Live-Face-Swap auf der Webcam aus einem einzigen Foto (ethischer Einsatz erforderlich).",
+    "sorgente": "69b2252ca22c"
+  },
+  "hackunderway/searchphone": {
+    "cosa_fa": "OSINT-Toolkit für Telefonnummern: Validierung und Anbieter über Numverify, parallele Suche auf Google, DuckDuckGo, Reddit und GitHub, Abgleich mit der Infostealer-Datenbank von Hudson Rock sowie automatische JSON- und PDF-Reports.",
+    "quando_usarlo": "Wenn du im Rahmen einer autorisierten Ermittlung prüfen musst, wem eine Nummer gehört.",
+    "sorgente": "5bb6e74997aa"
+  },
+  "hanyuanwang/livestream-agent-studio": {
+    "cosa_fa": "Windows-Desktop-Studio mit vier lokalen KI-Agenten für Live-E-Commerce (für Douyin gedacht): Creator-Suche, Transkription von Livestreams mit Zeitstempeln, Analyse dessen, was Traffic erzeugt, und Skripte für Kurzvideos.",
+    "quando_usarlo": "Wenn du Live-Commerce betreibst und Livestreams lokal analysieren willst; auch nützlich als Beispiel für einen vertikalen Multi-Agenten-Workflow.",
+    "sorgente": "8811db85cb2c"
+  },
+  "hardenrun/aif": {
+    "cosa_fa": "Lokale Firewall für Coding- und persönliche Agenten (Claude Code, Cursor): fängt Aktionen vor der Ausführung ab, blockiert Befehle, die nach Datenexfiltration oder Schaden am Rechner aussehen, und zeigt an, was blockiert wurde.",
+    "quando_usarlo": "Wenn du Agenten mit Shell-Zugriff laufen lässt und eine technische Sperre willst, nicht nur im Prompt geschriebene Regeln.",
+    "licenza": "proprietär (AIF Beta License)",
+    "sorgente": "13baa3e30867"
+  },
+  "harnessrouter/systemoneharness": {
+    "cosa_fa": "Harness für 'System One'-Modelle (Jev und ähnliche): zwingt das Modell, eine Aktion aus einer geschlossenen Liste typisierter Optionen zu wählen, verfolgt die Konfidenz und bricht unterhalb eines Schwellenwerts ab, statt zu erfinden. Protokolliert jede Entscheidung. Führt die Modelle lokal oder über HarnessRouter aus.",
+    "quando_usarlo": "Wenn du risikoreiche Entscheidungen automatisierst und eingeschränkte, überprüfbare Entscheidungen mit expliziter Ablehnung unter einer Konfidenzschwelle willst.",
+    "sorgente": "5eb8623c8bf1"
+  },
+  "harry0703/moneyprinterturbo": {
+    "cosa_fa": "Pipeline, die aus einem Thema oder Schlüsselwort komplette Hochformatvideos erzeugt: Skript, Sprecherstimme, Untertitel, Clip-Beschaffung und finaler Schnitt.",
+    "quando_usarlo": "Wenn du Shorts oder Reels in Serie nur ausgehend von einem Thema produzieren musst.",
+    "sorgente": "2887df88db24"
+  },
+  "hash-7777/hashcortx": {
+    "cosa_fa": "Local-First-KI-Workspace: Multi-Provider-Chat, autonomer Coding-Agent mit Python-Sandbox und von einem Wächter in Rust kontrollierten Berechtigungen, 3D-Modelle, ERP und Multi-Agenten-Abläufe, auch mit Offline-Modellen.",
+    "quando_usarlo": "Wenn du eine einzige Desktop-App willst, die Chat und Coding-Agenten mit strengen Berechtigungen lokal vereint.",
+    "sorgente": "8e44c1199c9f"
+  },
+  "hashfunction/markuprplus": {
+    "cosa_fa": "Nimmt Bildschirm und Stimme auf, während du Bugs markierst, indem du Kreise auf den Bildschirm zeichnest; ordnet dann mit lokaler KI die Sätze den Markierungen zu und erzeugt pro Problem einen strukturierten Markdown-Report für den Coding-Agenten.",
+    "quando_usarlo": "Wenn du Claude Code oder Codex visuelle Bugs mit präzisen Belegen statt vager Beschreibungen erklären musst.",
+    "sorgente": "4c6925970b10"
+  },
+  "helpcode-ai/anythingmcp": {
+    "cosa_fa": "Wandelt REST-, SOAP-, GraphQL- oder SQL-APIs in MCP-Tools für Claude und ChatGPT um, mit über 200 fertigen Konnektoren (ERP, E-Commerce, SAP). Selbst gehostet.",
+    "quando_usarlo": "Wenn ein KI-Assistent bestehende Unternehmenssysteme nutzen soll, ohne für jedes einen eigenen MCP-Server zu schreiben.",
+    "sorgente": "b5d1465c5db1"
+  },
+  "herdrdev/herdr": {
+    "cosa_fa": "Multiplexer für KI-Agenten im Terminal: mehrere Agenten in getrennten Panels, Sitzungen, die ein Detach überstehen, und eine Socket-API, über die die Agenten selbst Panels erstellen und sich koordinieren.",
+    "quando_usarlo": "Wenn du mehrere Coding Agents parallel laufen lässt und nicht mehr weißt, wer arbeitet und wer blockiert ist.",
+    "sorgente": "f1eed09c2148"
+  },
+  "hexo-ai/sia": {
+    "cosa_fa": "Self-Improving-AI-Framework: Ein Meta-Agent erzeugt einen aufgabenspezifischen Agenten und verbessert ihn iterativ, indem er Harness und Gewichte (LoRA) aktualisiert.",
+    "quando_usarlo": "Wenn sich ein Agent ohne manuelles Tuning selbst auf einen Benchmark optimieren soll.",
+    "sorgente": "c6defbe1a1e2"
+  },
+  "heygen-com/hyperframes": {
+    "cosa_fa": "Open-Source-Framework von HeyGen, um MP4-Videos zu erzeugen, indem man eine Szene wie eine Webseite beschreibt (HTML, CSS, Medien, Animationen); agent-native, mit installierbaren Skills für Claude Code, Cursor, Codex und andere.",
+    "quando_usarlo": "Wenn du Videos 'as code' (HTML/CSS) produzieren willst, die ein Coding Agent automatisieren kann – ähnlich wie Remotion, aber in reinem HTML.",
+    "sorgente": "0a0b126a1804"
+  },
+  "heyputer/puter": {
+    "cosa_fa": "Serverloses Open-Source-Backend für KI-generierte Apps: Eine einzige Client-Bibliothek bietet Zugriff auf KI-Modelle, Nutzer-Authentifizierung, Cloud-Storage, NoSQL-Datenbank und Hosting, ohne im Frontend offengelegte API-Keys. Enthält standardmäßig Sandboxing, Rate Limiting und Missbrauchsfilter.",
+    "quando_usarlo": "Wenn ein von einem Agenten generierter Prototyp Auth, Storage und Datenbank braucht, ohne ein Backend aufzusetzen.",
+    "sorgente": "c23e0fc29bf0"
+  },
+  "higgsfield.ai": {
+    "cosa_fa": "KI-native Kreativsuite für Bild- und Videogenerierung, mit App Builder und einem MCP-Server, der aus Claude oder Cursor aufgerufen werden kann, um Inhalte in Serie zu produzieren.",
+    "quando_usarlo": "Wenn du Videos oder Creatives in großen Mengen generieren und von einem Agenten per MCP steuern willst.",
+    "sorgente": "b3ed9a7c831a"
+  },
+  "hkuds/cli-anything": {
+    "cosa_fa": "Making ALL Software Agent-Native (HKUDS)",
+    "quando_usarlo": "Um beliebige Software per CLI von einem KI-Agenten steuerbar zu machen.",
+    "sorgente": "a565e8451bf3"
+  },
+  "hkuds/deeptutor": {
+    "cosa_fa": "System für assistiertes Lernen und Coding mit persistentem Langzeitgedächtnis über Sitzungen hinweg, damit man nicht jedes Mal bei null anfängt.",
+    "quando_usarlo": "Wenn du einen KI-Tutor willst, der sich deine Lücken und Fortschritte von einer Sitzung zur nächsten merkt.",
+    "sorgente": "886ea42b4269"
+  },
+  "hkuds/nanobot": {
+    "cosa_fa": "Leichtgewichtiger persönlicher Open-Source-KI-Agent (HKUDS)",
+    "quando_usarlo": "Leichtgewichtiger persönlicher KI-Assistent, steuerbar über Telegram/WhatsApp, dauerhaft auf deinem PC aktiv.",
+    "sorgente": "ec8643e4d1d2"
+  },
+  "hkuds/videorag": {
+    "cosa_fa": "Mit deinen Videos chatten (HKUDS, KDD'2026)",
+    "quando_usarlo": "Mit einem RAG-System mit den eigenen Videos chatten bzw. sie abfragen.",
+    "sorgente": "8653df0a41f3"
+  },
+  "hopit-ai/india-trade-cli": {
+    "cosa_fa": "Agentische Trading-Plattform für den indischen Markt: Sieben LLM-Analysten untersuchen parallel dasselbe Wertpapier (Technik, Nachrichten, Sentiment), Befürworter von Kauf und Verkauf debattieren, und ein 'Manager'-Agent fasst einen Plan zusammen. Läuft lokal im Terminal.",
+    "quando_usarlo": "Wenn du Multi-Agenten-Architekturen mit Debatte für die Finanzanalyse untersuchst; nicht als Anlageberatung.",
+    "sorgente": "f6277a051cc9"
+  },
+  "hoppscotch/hoppscotch": {
+    "cosa_fa": "Open-Source-Alternative zu Postman zum Testen von APIs, selbstgehostet nutzbar, ohne Collections in externe Clouds hochzuladen.",
+    "quando_usarlo": "Wenn du APIs testest und nicht willst, dass Endpoints und Zugangsdaten auf Servern Dritter landen.",
+    "sorgente": "1a1a8f5816b0"
+  },
+  "hqarroum/docker-android": {
+    "cosa_fa": "Vollständiges Android-Gerät, das mit einem einzigen Docker-Befehl startet: ADB-Port-Forwarding, KVM- und GPU-Beschleunigung, headless und bereit für CI.",
+    "quando_usarlo": "Wenn du eine Android-App in der Pipeline testen musst, ohne von Hand installierte Emulatoren.",
+    "sorgente": "3048c0ff5902"
+  },
+  "htdt/godogen": {
+    "cosa_fa": "Generiert vollständige Spiele aus einer Beschreibung: Architektur, Assets, Code, Screenshots und visuelle QA, mit Qualitätsschleife, die Screenshots aus der Engine aufnimmt und Rendering-Probleme behebt; unterstützt Godot 4, Bevy und Babylon.js.",
+    "quando_usarlo": "Wenn du ein Spiel prototypen und Claude Code oder Codex die gesamte Pipeline bearbeiten lassen willst.",
+    "sorgente": "789cfa92df69"
+  },
+  "huggingface.co/hyrelabs/Homura-30B-GGUF": {
+    "cosa_fa": "Agentisches Open-Weights-Modell mit 30B, verteilt in GGUF-Quantisierungen, gedacht für den lokalen Betrieb auf Consumer-Hardware oder privaten Servern.",
+    "quando_usarlo": "Wenn du ein dichtes, aber lokal ausführbares Modell willst, kombiniert mit einer externen Guardrail.",
+    "sorgente": "56e9f5e93430"
+  },
+  "icewhaletech/casaos": {
+    "cosa_fa": "Open-Source-Betriebssystem, das einen alten PC, einen Raspberry Pi oder einen Mini-PC in eine persönliche Heim-Cloud für Dateien, Daten und selbstgehostete Dienste verwandelt.",
+    "quando_usarlo": "Wenn du auf recycelter Hardware eine selbstgehostete Heim-Cloud mit einer einfachen UI für Apps und Dienste aufbauen willst.",
+    "sorgente": "3cbbd349dd97"
+  },
+  "img2threejs/img2threejs": {
+    "cosa_fa": "Rekonstruiert das Objekt eines Bildes als prozedurales Three.js-Modell in TypeScript, bereits geriggt und animiert, mit physikalischen VFX und 360-Grad-Orbit, ohne klassische 3D-Pipeline.",
+    "quando_usarlo": "Wenn du aus einem einzelnen Bild ein im Browser inspizierbares und animierbares 3D-Asset brauchst.",
+    "sorgente": "84eb1dbf7cc7"
+  },
+  "insait-institute/genieredux": {
+    "cosa_fa": "World Models mit virtuellen Umgebungen (Google Genie)",
+    "quando_usarlo": "World Model: generative virtuelle Umgebungen (Nachbau von Google Genie).",
+    "sorgente": "43104ae57616"
+  },
+  "iofficeai/officecli": {
+    "cosa_fa": "Ermöglicht KI-Agenten, Word-, Excel- und PowerPoint-Dateien direkt im Terminal zu erstellen, zu lesen und zu bearbeiten.",
+    "quando_usarlo": "Wenn dein Agent Office-Dokumente programmatisch erstellen oder aktualisieren muss.",
+    "sorgente": "6848af0387aa"
+  },
+  "ionic-team/capacitor": {
+    "cosa_fa": "Runtime, die eine einzige Web-Codebase als iOS-, Android- und PWA-App veröffentlicht, mit plattformübergreifenden nativen APIs, eigenen Plugins in Swift und Kotlin/Java und nativen Projekten als echtem Quellcode.",
+    "quando_usarlo": "Wenn du eine Web-App in die Stores bringen willst, ohne sie nativ neu zu schreiben.",
+    "sorgente": "7bd44fc53d84"
+  },
+  "iquestlab/iquest-coder-v1": {
+    "cosa_fa": "Chinesisches Open-Source-Programmiermodell",
+    "quando_usarlo": "Alternatives Open-Source-Programmiermodell.",
+    "sorgente": "10f8b32f279a"
+  },
+  "iv-org/invidious": {
+    "cosa_fa": "Alternatives, selbst hostbares Web-Frontend für YouTube: vermittelt zu den Videoservern und entfernt Tracker, Werbung und schwere Skripte, ohne Google-Account.",
+    "quando_usarlo": "Wenn du YouTube-Inhalte über einen selbst gehosteten Dienst ansehen oder einbinden willst.",
+    "sorgente": "fc4b6c7940e4"
+  },
+  "jamiepine/voicebox": {
+    "cosa_fa": "Lokale Voice-Suite: Stimmklonen aus wenigen Sekunden Audio, Diktat per Hotkey in jedes Textfeld und TTS für Claude Code oder Cursor via MCP.",
+    "quando_usarlo": "Wenn du hochwertiges TTS und Diktat ohne Cloud-Kosten willst und ohne deine Stimme online zu schicken.",
+    "sorgente": "d0b8a2811e98"
+  },
+  "jaredpalmer/kev": {
+    "cosa_fa": "Familie von Entscheidungsmodellen im Stil von Jev auf Basis von Qwen3.5/3.8, selbst trainierbar und ausführbar: liefern Ja/Nein, Auswahlen und Bewertungen als Wahrscheinlichkeiten.",
+    "quando_usarlo": "Wenn du eine selbst gehostete Alternative zu Jev willst, die du auch auf deine Domäne nachtrainieren kannst.",
+    "sorgente": "2ec5c7e93cf0"
+  },
+  "jarrettyu/alphamemo": {
+    "cosa_fa": "Forschungsframework, in dem ein LLM nach Finanzformeln/Alphas sucht und dabei ein strukturiertes Gedächtnis erfolgreicher und gescheiterter Versuche führt. Kleines Repository ohne angegebene Lizenz.",
+    "quando_usarlo": "Wenn du 'self-evolving'-Ansätze mit Gedächtnis für quantitative Forschung untersuchst; nicht als fertiges Werkzeug.",
+    "licenza": "keine Lizenz (alle Rechte vorbehalten)",
+    "sorgente": "5a9a2c85f567"
+  },
+  "java-jiang/poweratlas": {
+    "cosa_fa": "LLM-Forschungsagent für die gemeinsame Planung von Rechenleistung in Rechenzentren und Stromnetz, trainiert durch Überprüfung der physikalischen Machbarkeit der Antworten; enthält den Benchmark ECBench.",
+    "quando_usarlo": "Wenn dich Energieoptimierung von Rechenzentren mit LLMs auf Forschungsebene interessiert.",
+    "licenza": "Apache-2.0",
+    "sorgente": "b83ac1b0e917"
+  },
+  "jaywebtech/autoshorts": {
+    "cosa_fa": "Local-First-Desktop-App, die lange Audio-/Videoaufnahmen in mehrere vertikale Clips umwandelt und die Momente mit dem meisten Potenzial einstuft. Ohne angegebene Lizenz.",
+    "quando_usarlo": "Wenn du Shorts aus einem langen Video auf deinem eigenen Rechner extrahieren willst.",
+    "licenza": "keine Lizenz (alle Rechte vorbehalten)",
+    "sorgente": "1834abede008"
+  },
+  "jchanvfx/nodegraphqt": {
+    "cosa_fa": "Python/Qt-Framework zum Bau von Node-Graph-Oberflächen: vertikales und Pipe-Layout, eigene Nodes und Widgets, Tab-Suche, Durchtrennen von Verbindungen sowie Zoom-/Pan-Steuerung.",
+    "quando_usarlo": "Wenn du einer Pipeline oder einem internen Python-Tool eine visuelle Node-Oberfläche geben willst.",
+    "sorgente": "aee365dcad2d"
+  },
+  "jcodesmore/ai-website-cloner-template": {
+    "cosa_fa": "Template, um eine bestehende Website mit KI-Agenten in einer modernen Codebase neu aufzubauen",
+    "quando_usarlo": "Template, um eine bestehende Website mit Agenten in eine moderne Codebase zu klonen.",
+    "sorgente": "3c89b2cae31c"
+  },
+  "jd-opensource/joyai-video-edit": {
+    "cosa_fa": "Echtzeit-Videoeditor, gesteuert durch Anweisungen in natürlicher Sprache: ändert Motiv, Hintergrund, Stil und Bewegung Frame für Frame in Streams oder Dateien, mit etwa 30 FPS in 720p.",
+    "quando_usarlo": "Wenn du ein Video (auch im Streaming) bearbeiten willst, indem du die Änderung in Worten beschreibst.",
+    "sorgente": "653fc7ada12b"
+  },
+  "jenkinsci/jenkins": {
+    "cosa_fa": "Traditionsreicher Open-Source-Automatisierungsserver für CI/CD: Pipeline as Code, Tausende Plugins, Build/Test/Deploy verteilt auf mehrere Knoten.",
+    "quando_usarlo": "Wenn du eine selbstgehostete, erweiterbare CI/CD-Engine brauchst, die vom Git-Anbieter unabhängig ist.",
+    "sorgente": "21582b514776"
+  },
+  "jina.ai": {
+    "cosa_fa": "Jina Embedding V4, Embedding-Modell für RAG",
+    "quando_usarlo": "Embedding-Modelle für RAG (Jina).",
+    "sorgente": "ffae5c44fd49"
+  },
+  "julyx10/lap": {
+    "cosa_fa": "Local-First-Fotomanager für große Foto- und Videobibliotheken: arbeitet auf den vorhandenen Ordnern und ergänzt Suche mit lokaler KI, visuelle Ähnlichkeit, Gesichts-Clustering, intelligente Alben, Karte und Duplikatsuche. Über 60 Formate inklusive RAW; Windows, macOS und Linux (Tauri/Rust).",
+    "quando_usarlo": "Wenn du semantische Suche und Erkennung für deine Fotos willst, ohne sie in eine Cloud hochzuladen.",
+    "sorgente": "aee4a20c97c0"
+  },
+  "justvugg/colibri": {
+    "cosa_fa": "Inferenz-Engine in reinem C ohne Abhängigkeiten, die riesige MoE-Modelle (GLM-5.2 744B, Kimi K3) auf Consumer-Hardware ausführt, indem sie die Experts von der Festplatte streamt.",
+    "quando_usarlo": "Wenn du Frontier-Modelle lokal auf einem Rechner mit wenig RAM und ohne dedizierte GPUs ausführen willst.",
+    "sorgente": "de981366f07b"
+  },
+  "kablex/comfyui-ref2va-vsa": {
+    "cosa_fa": "Custom Node für ComfyUI, der Sparse Attention auf das Modell MiniMax H3 anwendet, um Videos einer Figur auf einer einzigen Consumer-GPU deutlich schneller zu generieren; verwirft einen Großteil der Videodaten, lässt aber das Referenzbild intakt, damit das Gesicht konsistent bleibt.",
+    "quando_usarlo": "Wenn du Clips einer Figur auf lokaler Hardware generierst und die Renderzeit der Engpass ist.",
+    "sorgente": "3c9fa6a5d834"
+  },
+  "karakeep-app/karakeep": {
+    "cosa_fa": "Open-Source-Bookmark-Manager mit KI: speichert Links, Artikel, Bilder, PDFs und Notizen und macht sie mit automatischen Tags durchsuchbar.",
+    "quando_usarlo": "Wenn du überall Links und Material sammelst und nie etwas wiederfindest.",
+    "sorgente": "56e8933b223c"
+  },
+  "karpathy/nanochat": {
+    "cosa_fa": "Minimal ChatGPT clone (Andrej Karpathy)",
+    "quando_usarlo": "Ein minimales ChatGPT von Grund auf studieren/nachbauen (Karpathy), zu Lernzwecken.",
+    "sorgente": "beba37819001"
+  },
+  "keli-wen/agy-staff": {
+    "cosa_fa": "Lässt Claude Code und Codex die Antigravity-CLI von Google (agy) als schnellen Gemini-Assistenten nutzen, an den kleine Aufgaben delegiert werden.",
+    "quando_usarlo": "Wenn dein Haupt-Coding-Agent bei einfachen Aufgaben langsam oder teuer ist und du sie an ein schnelleres Modell delegieren willst.",
+    "sorgente": "23863c3299d7"
+  },
+  "knockoutez/wigolo": {
+    "cosa_fa": "Liefert Coding Agents aktuelle Bibliotheksdokumentation und überwindet so die Grenze veralteter Trainingsdaten.",
+    "quando_usarlo": "Wenn der Agent veraltete APIs nutzt, weil sein Training Monate zurückliegt.",
+    "sorgente": "ad143f1618c0"
+  },
+  "kosuke55/drawtonomy": {
+    "cosa_fa": "Whiteboard im Browser, um Fahrszenarien (Fahrspuren, Fahrzeuge) zu zeichnen und sofort mit einer integrierten Simulations-Engine auszuführen, die sagt, ob der Test besteht. Alles lokal.",
+    "quando_usarlo": "Wenn du Testszenarien für autonomes Fahren schnell skizzieren und überprüfen musst.",
+    "sorgente": "fb3cd987a82d"
+  },
+  "krispuckett/murmur": {
+    "cosa_fa": "SwiftUI-Paket mit animierten 'Orbs' mit Metal-Shadern im Glaslook, die auf Stimme und Tippen reagieren, um den Zuständen eines KI-Assistenten Präsenz zu geben.",
+    "quando_usarlo": "Wenn du die Oberfläche eines Assistenten für Apple-Plattformen gestaltest und lebendige Statusanzeigen statt Spinnern willst.",
+    "sorgente": "41f28cb084f3"
+  },
+  "labs.google/code-wiki": {
+    "cosa_fa": "Automatische Generierung von Code-Dokumentation (Google)",
+    "quando_usarlo": "Automatische Generierung von Code-Dokumentation (Google).",
+    "sorgente": "508647e64089"
+  },
+  "lakr233/vphone-cli": {
+    "cosa_fa": "Erstellt und startet virtuelle iPhones auf Apple Silicon über Virtualization.framework: VM-Erstellung mit einem Befehl, mehrere Firmwares, Klonen/Export/Import, SSH- und VNC-Zugriff.",
+    "quando_usarlo": "Wenn du ein per Kommandozeile skriptbares virtuelles iPhone für Tests und Automatisierungen brauchst.",
+    "sorgente": "1ccda9268d49"
+  },
+  "langchain-ai/deepagents": {
+    "cosa_fa": "LangChain-Bibliothek zum Bau 'tiefer' Agenten: explizite Planung, virtuelles Dateisystem, Sub-Agenten und langlebiger Kontext über der einfachen Tool-Calling-Schleife.",
+    "quando_usarlo": "Wenn ein Agent mit einer einzigen Schleife der Aufgabe nicht gewachsen ist und fertige Planung und Sub-Agenten gebraucht werden.",
+    "sorgente": "bef5abdba7ae"
+  },
+  "leemysw/yovoice": {
+    "cosa_fa": "Open-Source-Desktop-App für macOS und Windows: lokale Sprachsynthese, Stimmklonen und Steuerung der Emotion, ohne Cloud-APIs und ohne Kosten pro Zeichen.",
+    "quando_usarlo": "Wenn du eine synthetische oder geklonte Stimme für Inhalte brauchst und nicht für nutzungsbasierte TTS-Dienste zahlen willst.",
+    "sorgente": "4482a57f4679"
+  },
+  "lfnovo/open-notebook": {
+    "cosa_fa": "Selbstgehostete Open-Source-Implementierung von NotebookLM: Dokumente hochladen und Zusammenfassungen, Antworten und Verknüpfungen zwischen Konzepten erhalten, mit der Möglichkeit, für Datensouveränität komplett lokal zu laufen (Ollama, SurrealDB).",
+    "quando_usarlo": "Wenn du ein selbstgehostetes/lokales NotebookLM willst, um deine Dokumente unter voller Kontrolle über die Daten abzufragen.",
+    "sorgente": "a3122ad5eab9"
+  },
+  "libretranslate/libretranslate": {
+    "cosa_fa": "Selbstgehostete Open-Source-API für maschinelle Übersetzung",
+    "quando_usarlo": "Selbstgehostete API für maschinelle Übersetzung (Datenschutz, keine Kosten pro Aufruf).",
+    "sorgente": "d99bc317913d"
+  },
+  "lightricks/ltx-video": {
+    "cosa_fa": "Open-Source-Modell von Lightricks zur Videogenerierung aus Text und Bildern, optimiert für schnelle Inferenz.",
+    "quando_usarlo": "Wenn du Videos aus Prompts lokal mit einem Open-Source-Modell generieren willst.",
+    "sorgente": "17d1c5a1c5ef"
+  },
+  "localsend/localsend": {
+    "cosa_fa": "Open-Source-App, die als universelles AirDrop zwischen Android, iOS, Windows, macOS und Linux funktioniert: Geräte im selben lokalen Netz finden sich selbst, die Übertragung ist direkt und verschlüsselt, ohne Cloud oder Messenger, die Dateien neu komprimieren.",
+    "quando_usarlo": "Wenn du Dateien zwischen Rechnern mit verschiedenen Betriebssystemen ohne Cloud dazwischen übertragen musst.",
+    "sorgente": "7d9a7b5788ab"
+  },
+  "lukasniessen/archunitpython": {
+    "cosa_fa": "Bibliothek für Architekturtests in Python: formuliert Abhängigkeitsregeln zwischen Modulen und Schichten als automatische Tests, erkennt zirkuläre Imports und lässt den Build fehlschlagen, wenn Grenzen verletzt werden.",
+    "quando_usarlo": "Wenn ein Python-Projekt wächst (auch mit von Agenten geschriebenem Code) und die Architektur in der CI überprüft werden soll.",
+    "sorgente": "2d8593c14514"
+  },
+  "lunarphp/lunar": {
+    "cosa_fa": "E-Commerce-Backend für Laravel: Produkte, Bestellungen und Mitarbeiterverwaltung mit erweiterbarem Filament-Admin-Panel, wobei das Storefront vollständig unter deiner Kontrolle bleibt.",
+    "quando_usarlo": "Wenn du einen maßgeschneiderten E-Commerce-Shop in Laravel baust und das Backend nicht neu schreiben willst.",
+    "sorgente": "0c4fb2022f27"
+  },
+  "lyogavin/airllm": {
+    "cosa_fa": "70B-Modelle auf Consumer-Hardware ausführen, Layer für Layer geladen",
+    "quando_usarlo": "70B-Modelle auf Consumer-Hardware ausführen (Layer-by-Layer-Laden).",
+    "sorgente": "97edc3800952"
+  },
+  "magnitudedev/magnitude": {
+    "cosa_fa": "Open-Source-Inference-Server, der die Hardware profiliert, passende Modelle für die Maschine empfiehlt und Download, Tuning und lokale Ausführung verwaltet; stellt sie Coding-Harnesses bereit (Claude Code, Codex, OpenCode, Cline).",
+    "quando_usarlo": "Wenn du den eigenen Rechner als Backend für den Agenten nutzen willst, ohne API-Key und ohne Kosten pro Token.",
+    "sorgente": "6124002fbf0e"
+  },
+  "markqvist/reticulum": {
+    "cosa_fa": "Verschlüsselter Netzwerk-Stack, der über heterogene Medien funktioniert, einschließlich LoRa-Funk: Ende-zu-Ende-Mesh-Netz ohne öffentliche IP-Adressen und ohne Provider-Infrastruktur.",
+    "quando_usarlo": "Wenn zwei Knoten ohne öffentliches Netz kommunizieren sollen, aus Gründen der Ausfallsicherheit oder Isolation.",
+    "sorgente": "2d02322f282a"
+  },
+  "mauriceboe/trek": {
+    "cosa_fa": "Selbstgehosteter Reise-/Trip-Planer mit Echtzeit-Kollaboration, interaktiven Karten, PWA-Unterstützung, SSO, Budget und Packlisten; stellt außerdem einen MCP-Server für KI-Assistenten bereit.",
+    "quando_usarlo": "Wenn du Gruppenreisen organisierst und statt verstreuter Tabellen und Chats einen kollaborativen, selbstgehosteten Planer willst.",
+    "sorgente": "722795213402"
+  },
+  "max-sixty/worktrunk": {
+    "cosa_fa": "CLI, die Git-Worktrees einfach anlegen, nutzen und entfernen lässt und jeder Aufgabe ein unabhängiges, an einen Branch gebundenes Arbeitsverzeichnis zuweist. Gedacht, um mehrere Agenten (Claude Code, Codex) parallel am selben Projekt arbeiten zu lassen, ohne dass sie sich in die Quere kommen.",
+    "quando_usarlo": "Wenn du mehrere Agenten gleichzeitig im selben Repo laufen lässt und jede Aufgabe in einem Worktree isolieren musst.",
+    "sorgente": "458f7c553e06"
+  },
+  "megadose/holehe": {
+    "cosa_fa": "OSINT-Tool, das auf über 120 Plattformen prüft, ob eine E-Mail-Adresse registriert ist, indem es die Antworten der Passwort-Wiederherstellungsformulare auswertet, ohne den Inhaber zu benachrichtigen.",
+    "quando_usarlo": "Wenn du im Rahmen eines Assessments eine Digital-Footprint-Analyse zu einer E-Mail durchführst oder verstehen willst, wie exponiert du bist.",
+    "sorgente": "fed56a8b1dcd"
+  },
+  "megootronic/blink": {
+    "cosa_fa": "macOS-Menüleisten-App, die laufende Dev-Server und iOS-Simulatoren erkennt, deren Framework identifiziert und sie mit einem Klick neu startet. Swift, alles lokal.",
+    "quando_usarlo": "Wenn du mit vielen lokalen Dev-Servern arbeitest und Zeit damit verlierst herauszufinden, welcher abgestürzt ist.",
+    "sorgente": "af21fcca2be2"
+  },
+  "mengto/threeui": {
+    "cosa_fa": "Open-Source-Bibliothek mit fertigen 3D-Hero-Sections, Icons und Motion-Komponenten für Three.js, mit interaktivem Komponentenkatalog.",
+    "quando_usarlo": "Wenn du einer Website eine 3D-Hero-Section hinzufügen willst, ohne sie von Grund auf zu bauen.",
+    "sorgente": "876ecedafa04"
+  },
+  "microsoft/agent-lightning": {
+    "cosa_fa": "Framework von Microsoft Research, um beliebige AI Agents per Reinforcement Learning zu trainieren, ohne ihren Code umzuschreiben: entkoppelt Ausführung und Training (LightningRL, Credit Assignment) und unterstützt mehrere Backends.",
+    "quando_usarlo": "Wenn du einen bestehenden KI-Agenten mit RL verbessern willst, ohne die Architektur deines Workflows neu aufzubauen.",
+    "sorgente": "043992ca8115"
+  },
+  "microsoft/markitdown": {
+    "cosa_fa": "Token-effizientes Microsoft-Tool, das PDFs und andere Dokumente in Markdown umwandelt, das LLMs nativ verstehen – das senkt den Token-Verbrauch und verbessert die Antwortqualität.",
+    "quando_usarlo": "Wenn du Dokumente (PDF, Office usw.) einem LLM zuführen musst und sie dafür in sauberes, schlankes Markdown umwandelst.",
+    "sorgente": "f0a162672fc1"
+  },
+  "microsoft/trellis": {
+    "cosa_fa": "Structured 3D Latents für 3D-Generierung (Microsoft)",
+    "quando_usarlo": "Strukturierte 3D-Modelle aus Text oder Bildern generieren (Microsoft).",
+    "sorgente": "c70b4e5c1cd3"
+  },
+  "microsoft/vibevoice": {
+    "cosa_fa": "Frontier-Open-Source-Text-to-Speech (Microsoft)",
+    "quando_usarlo": "Hochwertiges Open-Source-Text-to-Speech (Microsoft).",
+    "sorgente": "029b5e36139e"
+  },
+  "milind-soni/openmausbot": {
+    "cosa_fa": "Open-Source- und Local-First-Alternative zu Multi-Agenten-Chatbots: nutzt die bereits installierten CLIs von Claude, Codex und Grok, kann isolierte Cloud-Desktops oder lokale VMs steuern und bindet Hunderte Apps über Composio ein.",
+    "quando_usarlo": "Wenn du eine Multi-Agenten-Chatoberfläche willst, die auf deinem Rechner bleibt, mit deinen eigenen Keys.",
+    "sorgente": "cca78c769ad8"
+  },
+  "milome/bmad-speckit-sdd-flow": {
+    "cosa_fa": "End-to-End-Workflow mit BMAD- + Speckit-Integration",
+    "quando_usarlo": "Workflow, der BMAD + Spec Kit für spec-driven Development kombiniert.",
+    "sorgente": "ae60a282a62e"
+  },
+  "mistral.ai/news/voxtral-tts": {
+    "cosa_fa": "Voxtral 4B, Open-Weight-TTS-Modell (Alternative zu ElevenLabs) – nur Modell/Website, kein Repo",
+    "quando_usarlo": "Open-Weight-Stimme/TTS von Mistral, Alternative zu ElevenLabs (Modell, kein Repo).",
+    "sorgente": "ad95b702f80a"
+  },
+  "mitkox/stolen-thoughts": {
+    "cosa_fa": "Forschungsarbeit mit Demo und Validierungssuite, die zeigt, wie verschlüsselte Reasoning-Traces proprietärer LLM-APIs mit einem schwächeren Modell als Orakel rekonstruiert werden können.",
+    "quando_usarlo": "Wenn du die Risiken offengelegten Reasonings in APIs bewertest, die du nutzt oder entwirfst.",
+    "sorgente": "5c5fd29d6f75"
+  },
+  "mobile-next/mobile-mcp": {
+    "cosa_fa": "MCP-Server, mit dem Agenten wie Claude Code, Codex, Cursor oder Gemini iOS- und Android-Apps auf Emulatoren, Simulatoren und echten Geräten steuern können: Bildschirm lesen, Tap, Swipe, Tippen, Apps installieren, Deep Links, Logs und Aufnahme. Nutzt vor allem den Accessibility-Baum und greift nur bei Bedarf auf Screenshots zurück.",
+    "quando_usarlo": "Wenn dein Coding-Agent eine mobile App über eine einheitliche Schnittstelle für Android und iOS testen oder steuern soll.",
+    "sorgente": "a2469bcd11b7"
+  },
+  "moonshotai/kimi-k2.5": {
+    "cosa_fa": "Multimodales Open-Source-KI-Modell (Moonshot AI)",
+    "quando_usarlo": "Leistungsstarkes Open-Source-LLM, um viele Agenten parallel zu orchestrieren und für Visual Coding.",
+    "sorgente": "9bcf7cd61d1c"
+  },
+  "motion.so": {
+    "cosa_fa": "KI-Agent zur Erzeugung von Motion-Graphics-Videos aus Prompts: übernimmt Recherche, Design, Animation, Voiceover und Schnitt, per MCP aus Claude oder Cursor aufrufbar.",
+    "quando_usarlo": "Wenn du ein professionelles Animationsvideo brauchst, ohne After Effects zu öffnen, auch von Claude per MCP gesteuert.",
+    "sorgente": "330fae78a33e"
+  },
+  "mukul975/anthropic-cybersecurity-skills": {
+    "cosa_fa": "817 strukturierte Cybersecurity-Skills für KI-Agenten, gemappt auf 6 Frameworks (MITRE ATT&CK, NIST CSF 2.0, ATLAS, D3FEND, NIST AI RMF, F3); Standard agentskills.io",
+    "quando_usarlo": "Einem KI-Agenten ~800 Cybersecurity-Skills geben, die auf Standard-Frameworks gemappt sind.",
+    "sorgente": "2ca3cc766318"
+  },
+  "mukul975/cve-mcp-server": {
+    "cosa_fa": "MCP-Server, der Claude rund zwanzig Threat-Intelligence-Tools über Dutzende APIs bereitstellt: CVE-Suche, EPSS-Scores, KEV-Katalog der CISA, bekannte Exploits, mit einer Risikobewertung, um zu entscheiden, was zuerst behoben wird.",
+    "quando_usarlo": "Wenn du Schwachstellen priorisieren musst und der Assistent NVD, CISA und öffentliche Exploits selbst abgleichen soll.",
+    "sorgente": "1dc98be84a5d"
+  },
+  "mutonby/openshorts": {
+    "cosa_fa": "Open-Source-Generator für vertikale Clips aus langen Videos oder von YouTube: automatische Erkennung der Highlights, Face-Tracking, Untertitel und Synchronisation, selbst hostbar mit Docker (MIT) und ohne Wasserzeichen.",
+    "quando_usarlo": "Wenn du aus langen Inhalten Shorts gewinnen willst, ohne Paywall oder Plattformlimits.",
+    "sorgente": "177885ad1cf6"
+  },
+  "mvanhorn/last30days-skill": {
+    "cosa_fa": "Skill, die einen KI-Agenten zur Suchmaschine über die letzten 30 Tage macht",
+    "quando_usarlo": "Skill, die einem Agenten eine Suchmaschine über die letzten 30 Tage gibt.",
+    "sorgente": "7f756a20381c"
+  },
+  "mvt-project/mvt": {
+    "cosa_fa": "Forensik-Toolkit des Security Lab von Amnesty International, um auf Android- und iOS-Geräten nach Spuren von Spyware (z. B. Pegasus) zu suchen, abgeglichen mit öffentlichen Indicators of Compromise. Für Analysten, kein Virenscanner: Das Fehlen von Indikatoren beweist nicht, dass das Gerät sauber ist.",
+    "quando_usarlo": "Wenn du eine forensische Analyse an einem Telefon durchführen musst, das im Verdacht steht, durch gezielte Spyware kompromittiert zu sein.",
+    "licenza": "MVT License 1.1 (nicht OSI: nur einvernehmliche forensische Analysen)",
+    "sorgente": "0b4a87ce1f51"
+  },
+  "mysteriumnetwork/node": {
+    "cosa_fa": "Dezentraler VPN-Knoten auf Basis von WireGuard, verteilt via Docker: stellt die eigene Bandbreite gegen Vergütung einem globalen Netzwerk zur Verfügung.",
+    "quando_usarlo": "Wenn du Teil eines dezentralen VPN-Netzwerks sein willst, statt einen zentralen Anbieter zu nutzen.",
+    "sorgente": "f57a276b430b"
+  },
+  "nab138/iloader": {
+    "cosa_fa": "Open-Source-App für Sideloading auf iPhone und iPad vom Computer aus: installiert SideStore, LiveContainer und IPA-Dateien und verwaltet Zertifikate, App-IDs und Pairing-Dateien automatisch. Läuft auf Windows, macOS und Linux und erlaubt das Einsehen und Widerrufen von Entwicklerzertifikaten.",
+    "quando_usarlo": "Wenn du iOS-Builds außerhalb des App Store installieren musst, ohne das Zertifikats-Prozedere von Hand zu erledigen.",
+    "sorgente": "a57879330342"
+  },
+  "nadimtuhin/claude-token-optimizer": {
+    "cosa_fa": "Reorganisiert die Projektdokumentation, sodass Claude beim Start nur wenige wesentliche Dateien lädt und der Rest in einem bei Bedarf abgefragten Archiv liegt; erkennt den Stack und konfiguriert sich in wenigen Sekunden.",
+    "quando_usarlo": "Wenn der Anfangskontext von Claude Code mit selten benötigter Dokumentation überladen ist.",
+    "sorgente": "44eede4e82a1"
+  },
+  "nandhakishorm/laya": {
+    "cosa_fa": "Open-Source-Entscheidungsmodell ('System 1') mit rund 421M Parametern: liefert in einem einzigen Durchlauf typisierte Entscheidungen (Auswahl, Score, Ja/Nein) zu beliebigem Text, in Millisekunden und lokal (~1 GB Speicher). Selbst gehostete Alternative zu Jev; Apache-2.0.",
+    "quando_usarlo": "Wenn du Texte (Tickets, E-Mails) in hoher Frequenz klassifizieren oder routen musst und ein generatives LLM zu langsam oder zu teuer ist.",
+    "sorgente": "f06b74ea3cc1"
+  },
+  "nanmicoder/mediacrawler": {
+    "cosa_fa": "Open-Source-Crawler, der öffentliche Inhalte der wichtigsten chinesischen sozialen Netzwerke (Xiaohongshu, Douyin, Bilibili, Weibo, Zhihu) sammelt, indem er mit Playwright einen echten Browser steuert; Export nach CSV/JSON/Excel, SQLite und MySQL, mit WebUI.",
+    "quando_usarlo": "Wenn du öffentliche Daten aus chinesischen sozialen Netzwerken sammeln musst, ohne deren Signaturalgorithmen nachzuimplementieren.",
+    "sorgente": "ed1172530077"
+  },
+  "nationalsecurityagency/ghidra": {
+    "cosa_fa": "Reverse-Engineering-Framework der NSA: Disassemblierung, Dekompilierung, Kontrollflussanalyse, Graphen und Scripting für Binärdateien ohne Quellcode.",
+    "quando_usarlo": "Wenn du eine kompilierte Datei analysieren musst: Malware, Firmware oder Legacy-Software ohne Quellcode.",
+    "sorgente": "b14e8756b933"
+  },
+  "nawfalmotii79/plfm_radar": {
+    "cosa_fa": "Open-Hardware-Projekt eines Radars mit Multi-Target-Tracking: PCB, FPGA-Code, vollständige Schaltpläne und Python-GUI, MIT-Lizenz.",
+    "quando_usarlo": "Wenn du eine vollständige, freie Referenz brauchst, um ein Radar zu bauen oder zu studieren.",
+    "sorgente": "63f67004f3d9"
+  },
+  "nstarlive.com": {
+    "cosa_fa": "OSINT-Recherche-Browser, der visuelle, Identitäts-, Krypto- und Netzwerkermittlung vereint: Globus mit über 250.000 öffentlichen Kameras, plattformübergreifende Username-Suche, Wallet-Tracking über Dutzende Chains, Geolokalisierung von Bildern und Funk-Tools.",
+    "quando_usarlo": "Wenn eine Ermittlung auf offenen Quellen mehrere Datenarten in einer einzigen Oberfläche verknüpfen muss.",
+    "sorgente": "07c512a3db3b"
+  },
+  "nutlope/hallmark": {
+    "cosa_fa": "Skill/Regeln, damit Coding Agents Frontend-Oberflächen erzeugen, die nicht nach 'AI slop' aussehen, mit konsistenten Designkriterien.",
+    "quando_usarlo": "Wenn die von Cursor oder Claude Code generierten UIs alle gleich aussehen und du ihre visuelle Qualität heben willst.",
+    "sorgente": "3ea54e85076e"
+  },
+  "nuviomedia/nuviomobile": {
+    "cosa_fa": "Open-Source-Mobile-Client eines Mediacenters für die eigene Mediathek, geschrieben in Kotlin mit Compose Multiplatform: synchronisiert Fortschritt, Untertitel und Metadaten. Teil eines Ökosystems, das auch Android TV und Smart TVs mit Tizen/webOS abdeckt.",
+    "quando_usarlo": "Wenn du ein reales Beispiel für eine Compose-Multiplatform-App suchst oder einen Client für eine selbst gehostete Mediathek.",
+    "sorgente": "10dea8b11d57"
+  },
+  "nvidia/nemoclaw": {
+    "cosa_fa": "NVIDIA-Schicht, die Agenten wie Hermes, LangChain Deep Agents und OpenClaw in OpenShell mit Policy-basierten Guardrails und verwalteter Inferenz ausführt.",
+    "quando_usarlo": "Wenn ein ständig aktiver Assistent auf dem Rechner explizite und überprüfbare Grenzen braucht.",
+    "sorgente": "8e2bc4e572d8"
+  },
+  "nvidia/skillspector": {
+    "cosa_fa": "NVIDIA-Security-Scanner für die Skills von KI-Agenten (erkennt bösartige Muster)",
+    "quando_usarlo": "NVIDIA-Scanner, der die Sicherheit von Agenten-Skills vor der Installation prüft.",
+    "sorgente": "dacd1871dd22"
+  },
+  "oblien/openship": {
+    "cosa_fa": "Selbsthostbare Open-Source-Plattform für das Deployment von Anwendungen: erkennt Stack und Build-Befehle aus einem Repo oder Ordner und übernimmt Build, Routing, HTTPS mit Let's Encrypt und automatische Deploys bei jedem Push.",
+    "quando_usarlo": "Wenn du ein eigenes PaaS auf VPS oder Homelab willst, statt für einen Managed Service zu bezahlen.",
+    "sorgente": "00b81cb13406"
+  },
+  "ocornut/imgui": {
+    "cosa_fa": "Immediate-Mode-C++-Bibliothek zum schnellen Bau technischer GUIs (Debugger, Profiler, Editoren, Panels für Game Engines) ohne externe Abhängigkeiten; erzeugt Vertex Buffer zur Integration in den eigenen Renderer.",
+    "quando_usarlo": "Wenn du ein Control Panel oder Debug-Tool in einer C++/3D-App brauchst, ohne ein UI-Framework mitzuschleppen.",
+    "sorgente": "95e541643201"
+  },
+  "olow304/memvid": {
+    "cosa_fa": "Videobasiertes KI-Gedächtnis: Millionen Chunks in MP4-Dateien, semantische Suche ohne DB",
+    "quando_usarlo": "Gedächtnis für KI-Agenten, das Millionen Chunks in MP4-Dateien speichert, semantische Suche ohne DB.",
+    "sorgente": "b66079e51fa6"
+  },
+  "omnichar/omnichar": {
+    "cosa_fa": "Open-Source-Studio für konsistente KI-Figuren über Bilder und Videos hinweg: baut zwischen verschiedenen Modellen übertragbare Identitäten auf, trainiert LoRAs und generiert auf der eigenen GPU.",
+    "quando_usarlo": "Wenn dieselbe Figur in mehreren generierten Bildern und Videos wiedererkennbar bleiben muss.",
+    "sorgente": "e0520efe5061"
+  },
+  "ooples/token-optimizer-mcp": {
+    "cosa_fa": "MCP-Server, der die Tokens von Coding-Agenten mit Caching und Kontextkompression misst und reduziert und einen lokalen Knowledge Graph mit etwa fünfzehn Clients teilt.",
+    "quando_usarlo": "Wenn du mehrere Coding-Assistenten nutzt und redundanten Kontext messen und kürzen willst.",
+    "sorgente": "0d88a560a4bf"
+  },
+  "open-dev-society/openstock": {
+    "cosa_fa": "Open-Source-Alternative zu kostenpflichtigen Marktplattformen: Echtzeitkurse, technische Charts, Watchlists und Aggregation des Sentiments aus sozialen Medien und Nachrichten. Next.js und TypeScript, lokal oder selbst gehostet lauffähig.",
+    "quando_usarlo": "Wenn du ein persönliches, anpassbares Markt-Dashboard ohne Abos willst.",
+    "sorgente": "faa94afdd7ea"
+  },
+  "openbao/openbao": {
+    "cosa_fa": "Community-Fork (Linux Foundation, MPL-2.0-Lizenz) von HashiCorp Vault, entstanden nach dem Wechsel von Vault zur BSL: gleiche Architektur und APIs zur Verwaltung von Secrets, Zertifikaten, dynamischen Zugangsdaten und Encryption as a Service.",
+    "quando_usarlo": "Wenn du einen Vault-kompatiblen Secrets Manager mit einer wirklich quelloffenen Lizenz brauchst.",
+    "sorgente": "85da21123aec"
+  },
+  "openclaw/openclaw": {
+    "cosa_fa": "Personal AI assistant - Any OS, Any Platform",
+    "quando_usarlo": "Universeller Open-Source-KI-Assistent/-Agent zum Selbsthosten.",
+    "sorgente": "4ea12d18bb82"
+  },
+  "openclaw/wacrawl": {
+    "cosa_fa": "CLI, die die lokalen WhatsApp-Dateien auf dem Mac in ein offline durchsuchbares Archiv umwandelt und verschlüsselte Backups in ein Git-Repository schreibt.",
+    "quando_usarlo": "Wenn du den WhatsApp-Chatverlauf durchsuchen oder verschlüsselt archivieren willst, ohne Dienste Dritter.",
+    "sorgente": "55d88d8606ab"
+  },
+  "opendatalab/mineru": {
+    "cosa_fa": "Wandelt komplexe Dokumente in strukturierte Daten für LLMs/RAG/Agenten um",
+    "quando_usarlo": "Komplexe Dokumente in strukturierte Daten für LLMs/RAG/Agenten umwandeln.",
+    "sorgente": "bac23f8876e0"
+  },
+  "opengeos/geolibre": {
+    "cosa_fa": "Cloud-native Open-Source-GIS-Plattform, um Geodaten im Browser, auf dem Desktop oder in Jupyter zu erkunden und zu analysieren: interaktive Karten, 3D, räumliches SQL und lokale Verarbeitung mit DuckDB-WASM Spatial.",
+    "quando_usarlo": "Wenn du Geodaten visualisieren oder abfragen musst, ohne sie an einen externen Dienst zu schicken.",
+    "sorgente": "70f08f464b45"
+  },
+  "openobserve/openobserve": {
+    "cosa_fa": "Cloud-native Observability-Plattform in Rust, die Logs, Metriken, Traces, RUM und AI/LLM-Observability vereint: Parquet-Storage auf S3, Deployment als einzelnes Binary, natives OpenTelemetry, Abfragen in SQL und PromQL.",
+    "quando_usarlo": "Wenn sich die Kosten von Elasticsearch oder Datadog nicht mehr rechnen und du eine selbstgehostete Alternative willst.",
+    "sorgente": "010b27d306e2"
+  },
+  "opensandbox-group/opensandbox": {
+    "cosa_fa": "Infrastruktur isolierter Sandboxes für autonome Agenten: Umgebungen für Code, Browsing und vollständige Desktops, SDKs in fünf Sprachen, Docker/Kubernetes mit gVisor, Kata oder Firecracker, Credential Vault und MCP-Server.",
+    "quando_usarlo": "Wenn du einen Agenten Code ausführen lassen musst, ohne ihm Zugriff auf deinen Rechner zu geben.",
+    "sorgente": "f8c46d99f454"
+  },
+  "oraios/serena": {
+    "cosa_fa": "MCP-Server, der dem Agenten die semantischen Werkzeuge einer IDE bereitstellt: Symbolbaum abfragen, Referenzen verfolgen und gezielte Refactorings statt zeilenweisem Lesen der Dateien.",
+    "quando_usarlo": "Wenn der Agent an einem großen Projekt arbeitet und die Textsuche Tokens verschwendet und den Code kaputt macht.",
+    "sorgente": "b7bd5c9d0b11"
+  },
+  "p-e-w/heretic": {
+    "cosa_fa": "Sicherheitsfilter von LLMs entfernen (censorship removal)",
+    "quando_usarlo": "Um die Zensurfilter eines lokal ausgeführten Open-Source-LLM zu entfernen (bewusster Einsatz).",
+    "sorgente": "1590d8acc263"
+  },
+  "palmier-io/palmier-pro": {
+    "cosa_fa": "Open-Source-Videoeditor für macOS (YC-backed), der einen MCP-Server in die Timeline integriert: Claude Code, Codex oder Cursor können per Text Clips generieren, schneiden und den Schnitt organisieren. Editor, MCP-Server und Chat-Agent stehen unter GPLv3.",
+    "quando_usarlo": "Wenn du einen nativen macOS-Videoeditor willst, den ein Coding Agent über MCP für agentischen Schnitt steuern kann.",
+    "sorgente": "040c54e39198"
+  },
+  "panniantong/agent-reach": {
+    "cosa_fa": "Open-Source-Scaffolding/-CLI, das einem KI-Agenten in Echtzeit Zugriff auf Twitter, Reddit, YouTube, GitHub, Bilibili gibt, ohne kostenpflichtige APIs: eine Installation und eine SKILL.md, die Upstream-Tools (yt-dlp, gh usw.) orchestriert.",
+    "quando_usarlo": "Wenn dein Agent Social Media und Webplattformen in Echtzeit lesen soll, ohne für offizielle APIs zu bezahlen.",
+    "sorgente": "c38fa7a35732"
+  },
+  "paperclipai/paperclip": {
+    "cosa_fa": "Node.js-Server mit React-Oberfläche, der ein Team von KI-Agenten wie ein Unternehmen orchestriert: Organigramm, Budget pro Agent, Governance und Ausrichtung an Zielen, alles über ein Dashboard, das Fortschritt und Kosten zeigt. Man definiert ein Geschäftsziel, vergibt Rollen (CEO, CTO, Ingenieure, Designer, Marketing) und genehmigt die Ausgaben. Funktioniert mit OpenClaw, Claude Code, Codex, Cursor, Bash und HTTP. Die Autoren fassen es so zusammen: Wenn OpenClaw ein Mitarbeiter ist, ist Paperclip das Unternehmen.",
+    "quando_usarlo": "Wenn du mehrere Agenten verschiedener Anbieter laufen lässt und sie mit Budget und Aufsicht auf ein Ziel hin koordinieren musst, statt sie einzeln zu starten und zu verfolgen.",
+    "sorgente": "c8c80e35cfaa"
+  },
+  "paperless-ngx/paperless-ngx": {
+    "cosa_fa": "Von der Community gepflegtes selbst gehostetes Dokumentenmanagementsystem: erfasst Scans und PDFs, führt OCR aus, indexiert sie für die Volltextsuche und archiviert sie mit Tags, Korrespondenten und Dokumenttypen, die auch automatisch zugewiesen werden können.",
+    "quando_usarlo": "Wenn du papierlos werden und ein durchsuchbares Dokumentenarchiv auf deinem Server statt in einer fremden Cloud haben willst.",
+    "sorgente": "01883137575a"
+  },
+  "pascalorg/editor": {
+    "cosa_fa": "Open-Source-3D-Architektureditor im Browser (React Three Fiber, Three.js, WebGPU) für Wände, Geschosse, Dächer, Türen und Fenster, mit lokaler CLI und MCP-Tools, die auch für Agenten gedacht sind.",
+    "quando_usarlo": "Wenn du Gebäude im Web in 3D modellieren und auch einen Agenten daran arbeiten lassen willst.",
+    "sorgente": "6d7102b1f726"
+  },
+  "pbakaus/impeccable": {
+    "cosa_fa": "Design-Skill für Coding Agents: legt visuellen Kontext, Ton, Farben und Typografie des Projekts fest und wendet deterministische Regeln an, um die immer gleichen KI-generierten UIs zu vermeiden.",
+    "quando_usarlo": "Wenn die vom Agenten erzeugte Oberfläche nach Template aussieht und du eine konsistente visuelle Identität durchsetzen willst.",
+    "sorgente": "9934eefee7bc"
+  },
+  "pbanddev/comfyui-node-organizer": {
+    "cosa_fa": "ComfyUI-Erweiterung, die die Nodes eines Workflows automatisch in Zeilen und Spalten ausrichtet und ordnet, mit Labels, um die Anordnung von Gruppen zu erzwingen; per Undo rückgängig zu machen.",
+    "quando_usarlo": "Wenn ein ComfyUI-Workflow zu einem unlesbaren Knäuel geworden ist.",
+    "sorgente": "9a0100850d37"
+  },
+  "penpot/penpot": {
+    "cosa_fa": "Open-Source-Plattform für kollaboratives Design und Prototyping, die in nativen Webstandards (SVG, HTML, CSS, JSON) denkt – eine echte Brücke zwischen Design und Frontend-Entwicklung.",
+    "quando_usarlo": "Wenn du eine Open-Source-Alternative zu Figma mit einem Design-Entwicklungs-Handoff auf Basis offener Webstandards suchst.",
+    "sorgente": "e607d89fadd7"
+  },
+  "permissionlesstech/bitchat": {
+    "cosa_fa": "Dezentrale Messaging-App, die über ein Bluetooth-Mesh auch komplett offline funktioniert, ohne zentrale Server.",
+    "quando_usarlo": "Wenn du ohne Netzinfrastruktur oder ohne Abhängigkeit von einem zentralen Server kommunizieren musst.",
+    "sorgente": "6e8c1a7d3c90"
+  },
+  "perplexityai/bumblebee": {
+    "cosa_fa": "Read-only Supply-Chain-Scanner für Entwickler-Endpoints (Perplexity)",
+    "quando_usarlo": "Read-only Supply-Chain-Scanner für Entwicklerrechner (Perplexity).",
+    "sorgente": "b1a873e3460c"
+  },
+  "pewdiepie-archdaemon/odysseus": {
+    "cosa_fa": "Selbstgehosteter Open-Source-KI-Workspace von PewDiePie: Chat+Agenten, Deep Research, Dokumente, E-Mail, Notizen/Tasks, mit lokalen Modellen (Ollama, llama.cpp, vLLM) oder APIs. Private Alternative zu ChatGPT/Claude.",
+    "quando_usarlo": "Wenn du einen vollständigen, privaten, selbstgehosteten KI-Workspace mit lokalen Modellen und ohne Cloud-Abhängigkeit willst.",
+    "sorgente": "ee7220bcc8ed"
+  },
+  "pingdotgg/t3code": {
+    "cosa_fa": "Minimale Web-GUI, um mehrere Coding Agents über eine einzige Oberfläche zu steuern: unterstützt Codex, Claude Code, Cursor und andere.",
+    "quando_usarlo": "Wenn du mehrere Coding Agents parallel nutzt und sie über ein einziges Dashboard verwalten willst.",
+    "sorgente": "67920a29f868"
+  },
+  "pixel-agents-hq/pixel-agents": {
+    "cosa_fa": "VS-Code-Extension für Claude Code (virtuelle Agenten)",
+    "quando_usarlo": "VS-Code-Erweiterung, die Claude-Code-Agenten als 'Büro' voller Figuren darstellt.",
+    "sorgente": "75679d2d32b2"
+  },
+  "posthog/posthog": {
+    "cosa_fa": "All-in-One-Open-Source-Plattform für Product Analytics: Events, Session Replay, Feature Flags, A/B-Tests und Umfragen, selbstgehostet.",
+    "quando_usarlo": "Wenn du verstehen willst, wie dein Produkt genutzt wird, ohne die Daten an externe Analytics-Dienste abzugeben.",
+    "sorgente": "f6b67bd95b28"
+  },
+  "prabhanshukamal2121/j.a.r.v.i.s": {
+    "cosa_fa": "Persönlicher KI-Assistent mit n8n + Telegram",
+    "quando_usarlo": "Persönlicher Assistent im JARVIS-Stil, gebaut mit n8n.",
+    "sorgente": "f20e71a48efb"
+  },
+  "pranshuparmar/witr": {
+    "cosa_fa": "CLI in Go, die die Kausalkette eines PID rekonstruiert: von init bis zum finalen Prozess, unter Einbeziehung von Diensten, Supervisoren, Containern und File Locks; JSON-Ausgabe und interaktive TUI.",
+    "quando_usarlo": "Wenn ein Port belegt oder eine Datei gesperrt ist und du sofort wissen willst, wer den Prozess gestartet hat.",
+    "sorgente": "648797064ce0"
+  },
+  "proactor.ai": {
+    "cosa_fa": "Preisseite von Proactor.ai (KI-Assistent)",
+    "quando_usarlo": "Tool/KI-Assistent (Preise prüfen).",
+    "sorgente": "f69d63c5dde3"
+  },
+  "protocolbuffers/protobuf": {
+    "cosa_fa": "Protocol Buffers: binäres Serialisierungsformat von Google, um strukturierte Daten kompakt und sprachübergreifend auszutauschen.",
+    "quando_usarlo": "Wenn du ein effizientes, typisiertes Datenschema für RPC oder die Kommunikation zwischen Diensten brauchst.",
+    "sorgente": "afe116e6fe0b"
+  },
+  "pullmyboots/x-minimaxh3": {
+    "cosa_fa": "Lokaler Dienst, um das Videomodell MiniMax H3 auf einer einzigen GPU auszuführen (angegeben ab 8 GB VRAM), mit Upscaling ohne zweite Modellkopie, Weboberfläche und Hardware-Monitoring.",
+    "quando_usarlo": "Wenn du Videos mit MiniMax H3 auf deiner Consumer-GPU statt über die API generieren willst.",
+    "licenza": "Quellcode einsehbar, alle Rechte vorbehalten (nicht Open Source)",
+    "sorgente": "85f3d6f553ad"
+  },
+  "pumpkin-mc/pumpkin": {
+    "cosa_fa": "Von Grund auf in Rust neu geschriebener Minecraft-Server: kommt ohne JVM aus, startet in wenigen Sekunden und senkt den Ressourcenverbrauch drastisch.",
+    "quando_usarlo": "Wenn du einen Minecraft-Server hostest und deutlich mehr Leistung und schnelleren Start als mit der Java-Implementierung willst.",
+    "sorgente": "c7fcbd30bf66"
+  },
+  "punitarani/fli": {
+    "cosa_fa": "Open-Source-Python-Bibliothek, CLI und MCP-Server für Google Flights: Flugsuche mit erweiterten Filtern und flexiblen Daten, integrierbar mit Claude, um in natürlicher Sprache den günstigsten Flug zu finden. Es gibt auch den TypeScript-Port fli-js.",
+    "quando_usarlo": "Wenn du Flüge programmatisch (auch über Claude/MCP) suchen willst, ohne Dutzende Tabs bei Vergleichsportalen zu öffnen.",
+    "sorgente": "c1531ef99579"
+  },
+  "qhr69/linca": {
+    "cosa_fa": "Trainierbares Caching-Verfahren zur Beschleunigung von Diffusionsmodellen (z. B. FLUX, Qwen-Image): sagt Zwischendaten aus den vorherigen Schritten voraus, statt sie neu zu berechnen, mit angegebenen Beschleunigungen bis 7x.",
+    "quando_usarlo": "Wenn die Bildgenerierung mit Diffusion zu langsam ist und du eine Beschleunigung ohne Modellwechsel ausprobieren willst.",
+    "sorgente": "1ff65547fb94"
+  },
+  "qwenlm/qwen-image-2.1": {
+    "cosa_fa": "Open-Source-Modell von Alibaba/Qwen zum Erzeugen und Bearbeiten von Bildern aus Text, lokal ausführbar.",
+    "quando_usarlo": "Wenn du Bildgenerierung und -bearbeitung mit einem offenen Modell auf deiner eigenen GPU brauchst.",
+    "licenza": "Qwen Research License (nicht kommerziell)",
+    "sorgente": "9185e68f2f83"
+  },
+  "qwenlm/qwen3-coder": {
+    "cosa_fa": "Open-Source-KI-Coding-Modell (Qwen Team)",
+    "quando_usarlo": "Effizienter Open-Source-Coding-Agent (wenige aktive Parameter) zur Codegenerierung.",
+    "sorgente": "bf403dd658f8"
+  },
+  "qwenlm/qwen3-tts": {
+    "cosa_fa": "Open-Source-Text-to-Speech (Alibaba Qwen)",
+    "quando_usarlo": "Stimmklonen und Open-Source-Text-to-Speech (Alibaba Qwen).",
+    "sorgente": "51dd93e7e6b0"
+  },
+  "raphire/win11debloat": {
+    "cosa_fa": "Einfaches, leichtgewichtiges PowerShell-Skript, das Windows 10/11 von Bloatware, Telemetrie, Werbung und vorinstallierten Apps befreit, mit interaktiven oder stillen Optionen.",
+    "quando_usarlo": "Wenn du einen neuen Windows-PC einrichtest und Bloatware, Telemetrie und unnötige Apps schnell entfernen willst.",
+    "sorgente": "f787de465dfc"
+  },
+  "raymondhuang210129/llama.cpp-adaptive-kv-streaming": {
+    "cosa_fa": "Fork von llama.cpp, der den KV-Cache dynamisch zwischen VRAM und Systemspeicher verschiebt, um lange Kontexte auf kleinen GPUs zu bewältigen (angegeben: ein 27B auf 16 GB VRAM).",
+    "quando_usarlo": "Wenn der KV-Cache langer Gespräche nicht in deine GPU passt; es ist ein Fork, prüfe also, wie nah er an Upstream ist.",
+    "sorgente": "05ad13bf510a"
+  },
+  "reactor-team/infinite-livestream": {
+    "cosa_fa": "Endloser KI-generierter Video-Livestream: Chatnachrichten werden zu Skripten und dann zu Videos mit Audio, und der Stream füllt Wartezeiten mit Überbrückungsinhalten.",
+    "quando_usarlo": "Wenn du mit interaktivem, vom Publikum gesteuertem generativem Video experimentieren willst.",
+    "sorgente": "9effab965f4a"
+  },
+  "reconurge/flowsint": {
+    "cosa_fa": "OSINT mit interaktiven Graphen der Beziehungen zwischen Daten",
+    "quando_usarlo": "OSINT-Recherchen mit interaktiven Graphen der Beziehungen zwischen Daten.",
+    "sorgente": "db4c2a3e0a03"
+  },
+  "refactoringhq/tolaria": {
+    "cosa_fa": "Open-Source-Desktop-App für robuste Notizen",
+    "quando_usarlo": "Open-Source-Desktop-App für Notizen, die Formatwechsel überstehen.",
+    "sorgente": "d723056fba5b"
+  },
+  "render.com": {
+    "cosa_fa": "Hosting für kostenloses Self-Hosting von n8n (Tutorial)",
+    "quando_usarlo": "Hosting für kostenloses Self-Hosting (z. B. n8n).",
+    "sorgente": "91b6a475aae0"
+  },
+  "resemble-ai/chatterbox": {
+    "cosa_fa": "Open-Source-TTS-Modell (MIT) von Resemble AI mit Voice Cloning, Mehrsprachigkeit und integriertem Watermarking: lokale, kostenlose Alternative zu ElevenLabs, per pip installierbar.",
+    "quando_usarlo": "Wenn du hochwertige Sprachsynthese oder Stimmklonen lokal willst, ohne für Cloud-Dienste zu bezahlen.",
+    "sorgente": "c553398a7f93"
+  },
+  "revealer.us": {
+    "cosa_fa": "OSINT-Dienst, der einen Username oder eine E-Mail-Adresse über Hunderte Quellmodule sucht, gefundene Profile korreliert und Data-Breach-Archive abfragt, wobei Quellentyp, Datum und Kategorien offengelegter Felder angezeigt werden. Gibt an, niemals Passwortwerte anzuzeigen.",
+    "quando_usarlo": "Wenn du in einem Assessment die öffentliche Exponierung einer Kennung messen musst, angefangen bei deinen eigenen.",
+    "sorgente": "7180e684f972"
+  },
+  "ripienaar/free-for-dev": {
+    "cosa_fa": "Gepflegte Liste von SaaS-, PaaS- und IaaS-Diensten mit echten kostenlosen Tarifen (keine zeitlich begrenzten Tests) für Entwickler und DevOps-Teams.",
+    "quando_usarlo": "Wenn du Hosting, CI oder Infrastruktur mit einem Free Tier suchst, auf dem man wirklich aufbauen kann.",
+    "sorgente": "bb8b9c7b611d"
+  },
+  "rizzo-ai-academy/rizzo-flow": {
+    "cosa_fa": "Offene, lokale Nachbildung der Idee von Jev: typisierte Entscheidungen eines LLM (Auswahl, Ja/Nein) ohne Token-Generierung, durch direktes Auslesen der Wahrscheinlichkeiten.",
+    "quando_usarlo": "Wenn du lokal mit Entscheidungen im Stil von Jev experimentieren willst, ausgehend von einem LLM, das du bereits hast.",
+    "sorgente": "d7fe0a5a95c0"
+  },
+  "roadmaus/comfyui-continuity": {
+    "cosa_fa": "ComfyUI-Paket, das mit einem einzigen Node vollständige Videos mit Audio aus Prompts und Referenzbildern erzeugt und lokal verschiedene Modellfamilien ohne API-Keys ansteuert.",
+    "quando_usarlo": "Wenn du mehrere Videomodelle in ComfyUI ausprobieren willst, ohne für jedes einen eigenen Workflow zu bauen.",
+    "sorgente": "8e95368cd75c"
+  },
+  "robbyant/lingbot-map": {
+    "cosa_fa": "Echtzeit-3D-Rekonstruktion für Robotik und Augmented Reality, ohne zwischen Geschwindigkeit und Kartenqualität wählen zu müssen.",
+    "quando_usarlo": "Wenn du Live-3D-Kartierung und -Rekonstruktion auf Robotern oder AR-Geräten brauchst.",
+    "sorgente": "498af83c67f5"
+  },
+  "roble3/cc-blender-skill": {
+    "cosa_fa": "Claude-Code-Skill für Blender 3D",
+    "quando_usarlo": "Claude-Code-Skill zum Steuern von Blender (3D).",
+    "sorgente": "5fccb0e64057"
+  },
+  "roboflow/supervision": {
+    "cosa_fa": "Computer-Vision-Bibliothek (Roboflow), 40k+ Sterne",
+    "quando_usarlo": "Python-Bibliothek für Computer Vision (Annotationen, Tracking) von Roboflow.",
+    "sorgente": "28edd687a77f"
+  },
+  "rommapp/romm": {
+    "cosa_fa": "Selbstgehostete Plattform, die eine ROM-Sammlung in eine geordnete Bibliothek im Browser verwandelt, mit Metadaten und Covern für über 400 Plattformen.",
+    "quando_usarlo": "Wenn du deine ROM-Sammlung über eine übersichtliche Weboberfläche katalogisieren und spielen willst.",
+    "sorgente": "181234791ea5"
+  },
+  "rookedsysc/kanvibe": {
+    "cosa_fa": "Tastaturgesteuerter Kanban-Desktop-Workspace für Coding-Agenten: integrierte Terminals, Git-Worktrees und Hooks, die Karten von TODO nach DONE verschieben, indem sie den Sitzungen von Claude Code, Codex oder Gemini folgen, und am Ende die Branches aufräumen.",
+    "quando_usarlo": "Wenn du mehrere Agenten parallel arbeiten lässt und auf einen Blick sehen willst, wie weit jede Aufgabe ist.",
+    "sorgente": "8c285abc7e0e"
+  },
+  "ruc-datalab/evoontology": {
+    "cosa_fa": "Forschungsprojekt (RUC Data Lab), das automatisch eine Ontologie-/Semantikschicht für Agenten, die mit Daten arbeiten, aufbaut und weiterentwickelt, damit sie nicht von Hand gepflegt werden muss. Auch als Plugin für Claude Code und Codex verfügbar; begleitet von einem Paper auf arXiv.",
+    "quando_usarlo": "Wenn ein Agent Unternehmensdaten abfragt und der handgeschriebene Semantic Layer zum Engpass wird.",
+    "sorgente": "d19880c94901"
+  },
+  "runable.com": {
+    "cosa_fa": "Plattform für einen Allzweck-KI-Agenten, der Aufgaben End-to-End plant und ausführt: erzeugt Websites, Videos, Slides, Bilder, Apps und Workflows mit einem einzigen Abo.",
+    "quando_usarlo": "Wenn du einen Alleskönner-Agenten willst, der fertige Ergebnisse liefert, ohne dass du die Toolchain selbst aufbaust.",
+    "sorgente": "bd941ce265e4"
+  },
+  "sachinsavkare/jarvis-pa-lovable-11-labs-n8n": {
+    "cosa_fa": "Voice-AI-Assistent mit n8n + Lovable + ElevenLabs",
+    "quando_usarlo": "JARVIS-Variante mit n8n + ElevenLabs + Lovable.",
+    "sorgente": "f4107d9042f5"
+  },
+  "sakana.ai/fugu": {
+    "cosa_fa": "Modellfamilie von Sakana AI in zwei Varianten: Fugu Max, ausgerichtet auf Orchestrierung und Routing von Aufgaben bei niedrigen Inferenzkosten, und Fugu Ultra für die anspruchsvollsten Aufgaben.",
+    "quando_usarlo": "Wenn du Alternativen zu US-Frontier-Modellen mit Blick auf die Kosten pro Aufgabe prüfst.",
+    "sorgente": "18b4a36b4f80"
+  },
+  "salah-xd/archify": {
+    "cosa_fa": "Local-First-Chrome-Erweiterung (MV3), die eine Web-App direkt im Browser analysiert: rekonstruiert die Frontend-Architektur und bewertet die clientseitige Sicherheit, ohne dass Daten den Rechner verlassen. Deckt den Fall ab, dass der Quellcode nicht verfügbar ist. Namensgleich, aber unabhängig von der Diagramm-Skill tt-a1i/archify.",
+    "quando_usarlo": "Wenn du dir ein Bild von Architektur und clientseitiger Sicherheit einer Web-App machen musst, deren Repository du nicht hast – ein erster Blick, kein Befund: Das Backend sieht es nicht.",
+    "sorgente": "ad19560af7a6"
+  },
+  "samuelgursky/davinci-resolve-mcp": {
+    "cosa_fa": "MCP-Server, der jeden kompatiblen Client mit DaVinci Resolve Studio verbindet: Steuerung von Edit, Color, Fusion und Fairlight, Medienanalyse, Marker und Render-Setup. Stellt 377 granulare Tools oder einen kompakten Modus mit 36 Tools bereit; MIT-Lizenz.",
+    "quando_usarlo": "Wenn ein Agent Schnitt- und Color-Operationen in DaVinci Resolve ausführen soll, statt sie nur zu beschreiben.",
+    "sorgente": "88c64d5198fd"
+  },
+  "sceneai.art": {
+    "cosa_fa": "Kostenpflichtige Bibliothek fertiger Prompts zur Generierung animierter Web-Sections und Landingpages, wöchentlich aktualisiert; einige Vorschauen sind ohne Account einsehbar.",
+    "quando_usarlo": "Wenn du einen bewährten Ausgangspunkt suchst, um eine Seite generieren zu lassen, statt den Prompt von Grund auf zu schreiben.",
+    "sorgente": "c1b516a8a24b"
+  },
+  "schollz/croc": {
+    "cosa_fa": "Peer-to-Peer-Dateiübertragung im Terminal mit einer geheimen Passphrase: funktioniert über Relays zwischen verschiedenen Netzen, ohne Ports zu öffnen, mit Ende-zu-Ende-Verschlüsselung, fortsetzbaren Übertragungen und selbstgehosteten Relays.",
+    "quando_usarlo": "Wenn du Dateien zwischen zwei Rechnern übertragen musst, ohne Cloud, Konto oder Netzwerkkonfiguration.",
+    "sorgente": "03f41758c728"
+  },
+  "securo-finance/securo": {
+    "cosa_fa": "Selbstgehostete Verwaltung persönlicher Finanzen: vollständiger Überblick über Konten und Ausgaben auf der eigenen Infrastruktur, ohne Daten an Dritte abzugeben.",
+    "quando_usarlo": "Wenn du Konten und Ausgaben verfolgen willst, ohne deine Daten mit einem Cloud-Dienst zu verbinden.",
+    "sorgente": "5090a5ab852d"
+  },
+  "seed.bytedance.com/en": {
+    "cosa_fa": "Team/Organisation ByteDance Seed (KI-Forschung)",
+    "quando_usarlo": "KI-Forschungsteam von ByteDance (Modell-Hub).",
+    "sorgente": "4c11da0390bf"
+  },
+  "seed.bytedance.com/en/seedance2_0": {
+    "cosa_fa": "Offizielle Seite des Videomodells Seedance 2.0 (ByteDance Seed)",
+    "quando_usarlo": "Offizielle Seite des Videomodells Seedance (siehe zugehörige Repos).",
+    "sorgente": "7ac028bb62a8"
+  },
+  "sentelabsai/openexecutive": {
+    "cosa_fa": "Virtuelles Führungsteam: eine konsistente KI-Persona, gestützt von acht spezialisierten Agenten (FastAPI), die die typischen Funktionen einer Geschäftsleitung abdecken.",
+    "quando_usarlo": "Wenn du eine strukturierte Zweitmeinung zu Managemententscheidungen eines Projekts oder Unternehmens willst.",
+    "sorgente": "9a69ff8e0a2d"
+  },
+  "shadcn-labs/pdfcn": {
+    "cosa_fa": "Komponenten-Registry im shadcn-Stil zur PDF-Erzeugung in React: Komponenten werden ins Projekt kopiert und zu Tabellen, Formularen, Diagrammen, Rechnungen und Reports kombiniert, mit Renderer Takumi oder Forme. Die Dokumentation zeigt Live-Vorschauen. Kein gehosteter Editor: Die Logik bleibt in der Anwendung.",
+    "quando_usarlo": "Wenn eine React-App ansprechende PDFs (Rechnungen, Reports) erzeugen muss und du sie nicht aus Layout-Primitiven bauen willst.",
+    "sorgente": "150e6b95912c"
+  },
+  "shiyu-coder/kronos": {
+    "cosa_fa": "Open-Source-Foundation-Model für Börsendaten/Finanzcharts",
+    "quando_usarlo": "Foundation Model zur Analyse von Börsendaten/finanziellen Zeitreihen.",
+    "sorgente": "c5fc1221b8bc"
+  },
+  "simplex-chat/simplex-chat": {
+    "cosa_fa": "Private Messaging-Plattform, die keinerlei persistente Kennung erfordert (keine Telefonnummer, E-Mail oder Konto-ID) und so die für Apps wie Signal typischen Netzwerk-Metadaten vermeidet.",
+    "quando_usarlo": "Wenn du einen wirklich anonymen Chat ohne persistente Kennungen und mit Metadaten-Minimierung brauchst.",
+    "sorgente": "ae8d807b0e42"
+  },
+  "sipeed/picoclaw": {
+    "cosa_fa": "Ultra-lightweight AI assistant in Go (Sipeed)",
+    "quando_usarlo": "Ultraleichter KI-Assistent in Go für minimale Hardware (Sipeed).",
+    "sorgente": "44b2477f4433"
+  },
+  "software-mansion/argent": {
+    "cosa_fa": "Agentisches Toolkit zur Steuerung von iOS-, Android-, TV- und Desktop-Apps: physische iPhones per USB, Simulatoren und Emulatoren, Tap/Swipe/Tippen, UI-Inspektion, Logs, Netzwerkverkehr und visuelle Regression.",
+    "quando_usarlo": "Wenn ein Agent auf dem echten Gerät testen und debuggen soll, nicht nur anhand von Screenshots.",
+    "sorgente": "c4c3ee113438"
+  },
+  "soirihiroka/shrimply": {
+    "cosa_fa": "Nichtlinearer Open-Source-Videoeditor in Rust mit mehrspuriger Audio/Video-Timeline und integrierten KI-Werkzeugen, die lokal laufen: automatische Transkription, Sprachsynthese und Videogenerierung.",
+    "quando_usarlo": "Wenn du einen Desktop-Editor willst, der klassischen Schnitt und KI-Funktionen verbindet, ohne das Material in eine Cloud zu schicken.",
+    "sorgente": "a5cd5c7a6c39"
+  },
+  "soxoj/maigret": {
+    "cosa_fa": "OSINT-Tool, das ausgehend von einem Benutzernamen Tausende Websites durchsucht, die Profile verknüpft und ausschließlich aus öffentlichen Daten ein digitales Dossier einer Person erstellt.",
+    "quando_usarlo": "Wenn du OSINT-Aufklärung zu einem Benutzernamen betreiben und die Online-Präsenz einer Person über viele Websites hinweg kartieren musst.",
+    "sorgente": "ca712bece841"
+  },
+  "stanford-tml/robot_keyframe_kit": {
+    "cosa_fa": "Stanford-Tool, um Bewegungen beliebiger Roboter durch Bearbeiten von Keyframes in MuJoCo über eine visuelle Oberfläche zu erstellen, mit Spiegelmodus, der die Gelenkrichtungen automatisch handhabt.",
+    "quando_usarlo": "Wenn du einen Roboter in der Simulation animieren musst, ohne Trajektorien von Hand zu schreiben.",
+    "sorgente": "371a7da42cf0"
+  },
+  "stanfordnlp/dspy": {
+    "cosa_fa": "Framework zum Bau modularer KI-Systeme in Python: komponierbarer Code statt fragiler Prompts, mit automatischer Optimierung von Prompts und Gewichten für Klassifikatoren, RAG und agentische Loops.",
+    "quando_usarlo": "Wenn du das Verhalten eines LLM programmieren und es anhand von Metriken statt von Hand optimieren lassen willst.",
+    "sorgente": "498bed696f73"
+  },
+  "startrail-org/pixelrag": {
+    "cosa_fa": "'Pixel-natives' RAG-System: statt Text zu extrahieren, macht es Screenshots der Seiten und ruft per Bild mit einem Vision-Language-Modell (Qwen3-VL + FAISS) ab, robust bei Tabellen und komplexen Layouts. Enthält das Plugin pixelbrowse für Claude Code.",
+    "quando_usarlo": "Wenn textbasiertes RAG bei PDFs/Seiten mit komplexen Layouts scheitert und du auf Bildbasis abrufen willst.",
+    "sorgente": "e6062135c2fe"
+  },
+  "steviebuilds/agent-room": {
+    "cosa_fa": "Lokale Besprechungsräume, in denen Codex, Claude Code und andere Agenten live diskutieren, Kontext teilen und die Arbeit gegenseitig reviewen; der Nutzer schaut zu oder greift über den Browser ein. Keine Cloud, kein Account.",
+    "quando_usarlo": "Wenn mehrere Coding-Agenten sich über ein Review oder einen Bug austauschen sollen, statt isoliert zu arbeiten.",
+    "sorgente": "112a7b6367fc"
+  },
+  "stirling-tools/stirling-pdf": {
+    "cosa_fa": "Selbstgehostete PDF-Verwaltung/-Bearbeitung",
+    "quando_usarlo": "PDFs selbstgehostet verwalten/bearbeiten (kein Abo, kein Cloud-Upload).",
+    "sorgente": "c63dbaec8fc9"
+  },
+  "stitch.withgoogle.com": {
+    "cosa_fa": "Gestaltung grafischer Oberflächen aus natürlicher Sprache",
+    "quando_usarlo": "UI aus natürlicher Sprache generieren und dann an Claude Code übergeben (Google).",
+    "sorgente": "51b3833cd14d"
+  },
+  "stremio/stremio-web": {
+    "cosa_fa": "PWA-Frontend von Stremio in React; Add-on-Engine, Kataloge und Synchronisierung sind in Rust geschrieben und nach WebAssembly in einem Web Worker kompiliert.",
+    "quando_usarlo": "Wenn du ein reales Beispiel für eine React- + Rust/WASM-Architektur mit der schweren Logik außerhalb des Hauptthreads suchst.",
+    "sorgente": "d557993c0907"
+  },
+  "sudoingx/qwen38-mtp": {
+    "cosa_fa": "Rezept und Benchmark aus der Community: Ein Flag von llama.cpp aktiviert den bereits in Qwen3.8-27B vorhandenen MTP-Head und erhöht die Decoding-Geschwindigkeit auf Consumer-GPUs um etwa 30-40 %.",
+    "quando_usarlo": "Wenn du Qwen3.8 lokal mit llama.cpp betreibst und mehr Geschwindigkeit ohne neue Hardware willst.",
+    "sorgente": "0045f3034dd4"
+  },
+  "supertone-oss-archive/supertonic": {
+    "cosa_fa": "Vollständig lokales, hochperformantes Text-to-Speech — Repository im 09/2026 archiviert, nicht mehr gepflegt",
+    "quando_usarlo": "Vollständig lokales, hochperformantes Text-to-Speech.",
+    "sorgente": "6097671fc9bd"
+  },
+  "swarmclawai/swarmclaw": {
+    "cosa_fa": "Selbstgehostete Multi-Agent-Runtime/-Framework: delegiert an Claude Code, Codex, OpenClaw, Hermes usw.",
+    "quando_usarlo": "Multi-Agent-Runtime, die Claude Code, Codex, OpenClaw, Hermes usw. orchestriert.",
+    "sorgente": "65805fa615c5"
+  },
+  "tauricresearch/tradingagents": {
+    "cosa_fa": "Multi-Agent-Framework für Trading (struktureller Zwilling von ai-hedge-fund)",
+    "quando_usarlo": "Multi-Agent-LLM-Framework für den Finanzhandel.",
+    "sorgente": "c4bc9bf9200a"
+  },
+  "tencent/teamai-cli": {
+    "cosa_fa": "Tencent-Tool, das Skills, Regeln, Dokumentation, Agenten, Hooks und MCP-Konfigurationen in einem Git-Repository zentralisiert und sie dann automatisch an die Tools des Teams verteilt. Kompatibel mit Claude Code, Codex, Cursor, OpenCode und CodeBuddy.",
+    "quando_usarlo": "Wenn im Team jeder andere Prompts und Konfigurationen hat und du sie an einem Ort versionieren willst.",
+    "sorgente": "b25f687bc6d2"
+  },
+  "tencent/tencentdb-agent-memory": {
+    "cosa_fa": "Lokales persistentes Gedächtnis für KI-Agenten, 4-stufige Pipeline, keine externen APIs (Tencent)",
+    "quando_usarlo": "Lokales persistentes 4-stufiges Gedächtnis für KI-Agenten, keine externen APIs (Tencent).",
+    "sorgente": "63b9b27104d6"
+  },
+  "tencentcloud/cubesandbox": {
+    "cosa_fa": "Sichere Ausführungs-Sandbox für KI-Agenten: isoliert Befehle, Paketinstallationen und generierten Code in einer kontrollierten Umgebung.",
+    "quando_usarlo": "Wenn du einen KI-Agenten beliebigen Code ausführen lässt und ihn vom Host-System isolieren willst.",
+    "sorgente": "bc67e2919fc8"
+  },
+  "tencentcloud/tencentdb-agent-memory": {
+    "cosa_fa": "Gedächtnissystem für KI-Agenten von Tencent Cloud: speichert Präferenzen und Gespräche als Langzeitgedächtnis, um den Kontext über Sitzungen hinweg zu erhalten.",
+    "quando_usarlo": "Wenn sich ein Agent Präferenzen und Verlauf des Nutzers von einer Sitzung zur nächsten merken muss.",
+    "sorgente": "b1bcf68ca5df"
+  },
+  "testsprite.com": {
+    "cosa_fa": "KI-Agent, der Probleme in von Coding-Agenten generiertem Code behebt",
+    "quando_usarlo": "KI-Agent, der generierten Code testet/repariert.",
+    "sorgente": "c900f034aa56"
+  },
+  "toeverything/affine": {
+    "cosa_fa": "Local-first-Workspace, der Dokumente, Whiteboard und Datenbank auf einem einzigen Edgeless-Canvas vereint, mit multimodaler KI für Texte, Präsentationen und Mindmaps; selbsthostbar und in Echtzeit synchronisiert.",
+    "quando_usarlo": "Wenn du eine selbstgehostete Alternative zu Notion und Miro ohne Cloud-Lock-in suchst.",
+    "sorgente": "0f7bf488d475"
+  },
+  "togatoga/karukan": {
+    "cosa_fa": "Japanische Eingabemethode (IME), die Sprachmodelle nutzt, um Homophone zu disambiguieren und die Kana-Kanji-Konvertierung zu verbessern.",
+    "quando_usarlo": "Wenn du auf Japanisch schreibst und eine genauere Konvertierung von Homophonen als mit klassischen IMEs willst.",
+    "sorgente": "794ef96905a8"
+  },
+  "tongyi-mai/z-image": {
+    "cosa_fa": "Effiziente Bildgenerierung, 6B (Alibaba Tongyi)",
+    "quando_usarlo": "Kostenlose und offene Bildgenerierung (Alibaba).",
+    "sorgente": "54b88d88876c"
+  },
+  "topoteretes/cognee": {
+    "cosa_fa": "Gedächtnis-Layer für KI-Agenten: baut aus den Interaktionen Knowledge Graphs auf, damit der Kontext zwischen Sitzungen nicht verloren geht.",
+    "quando_usarlo": "Wenn dein Agent am Ende der Sitzung alles vergisst und du ein strukturiertes, persistentes Gedächtnis brauchst.",
+    "sorgente": "5f031fb8b8d5"
+  },
+  "traderalice/openalice": {
+    "cosa_fa": "KI-Trading-Agent für Aktien, Krypto, Forex und Rohstoffe: von der Recherche über Einstieg und Management bis zum Ausstieg, mit konfigurierbaren Risiko-Guardrails.",
+    "quando_usarlo": "Wenn du mit einem automatisierten Trading-Desk experimentieren willst, dessen Risikolimits die KI nicht umgehen kann.",
+    "sorgente": "0a66278c5b8f"
+  },
+  "trycua/cua": {
+    "cosa_fa": "Open-Source-Infrastruktur für 'Computer Use'-Agenten: plattformübergreifende Treiber in Rust zur Steuerung von Desktop-Apps und Browsern (auch per MCP und im Hintergrund), Cloud-Sandboxes und lokale VMs auf Apple Silicon, leichte Modelle für Mikroentscheidungen in der Oberfläche sowie Benchmarks für Training und Evaluierung.",
+    "quando_usarlo": "Wenn du Agenten baust, die grafische Oberflächen isoliert und reproduzierbar bedienen müssen.",
+    "sorgente": "9139230decb7"
+  },
+  "tryghost/ghost": {
+    "cosa_fa": "Open-Source-CMS in Node.js für digitales Publizieren: schlanker Editor, native Verwaltung von Mitgliedschaften und Abos sowie Newsletter-Versand ohne Drittplattformen.",
+    "quando_usarlo": "Wenn du Inhalte veröffentlichst und Blog, Newsletter und Abos in einem selbst gehosteten System willst.",
+    "sorgente": "621a18e0ff93"
+  },
+  "tt-a1i/archify": {
+    "cosa_fa": "Skill für Coding-Agenten (Claude Code, Codex CLI, Cursor, OpenCode), die Architektur-, Workflow-, Sequenz-, Datenfluss- und Lebenszyklusdiagramme als eigenständiges, interaktives und animiertes HTML erzeugt, das exportierbar ist. Der Unterschied zu anderen Generatoren: Sie kann ein echtes Repository lesen und eine am Quellcode eines bestimmten Commits verankerte Karte erzeugen, mit versionierbarem typisiertem JSON neben dem Diagramm.",
+    "quando_usarlo": "Wenn du zeigen musst, wie ein System wirklich aufgebaut ist, und das Diagramm gegen den Code überprüfbar sein soll, statt aus dem Gedächtnis von Hand gezeichnet.",
+    "sorgente": "ced7b694f090"
+  },
+  "tursodatabase/turso": {
+    "cosa_fa": "Moderne Neuimplementierung von SQLite in Rust: beseitigt historische Grenzen der Original-Engine bei erhaltener Kompatibilität, mit verbesserter Nebenläufigkeit und Replikation.",
+    "quando_usarlo": "Wenn du SQLite willst, aber mit nebenläufigen Schreibzugriffen und modernen Funktionen, ohne den SQL-Dialekt zu wechseln.",
+    "sorgente": "fcbcd2c64676"
+  },
+  "tw93/pake": {
+    "cosa_fa": "Macht aus jeder Website mit einem Befehl eine Desktop-App",
+    "quando_usarlo": "Jede Website mit einem Befehl in eine Desktop-App verwandeln.",
+    "sorgente": "6d4934a8beab"
+  },
+  "twentyhq/twenty": {
+    "cosa_fa": "Modernes Open-Source-CRM, selbsthostbare Alternative zu Salesforce/HubSpot: keine steigenden Lizenzkosten und Unternehmensdaten unter deiner Kontrolle. UI im Notion-Stil, GraphQL, anpassbar.",
+    "quando_usarlo": "Wenn du ein selbstgehostetes Open-Source-CRM ohne Vendor-Lock-in und ohne nutzungsbasierte Lizenzen brauchst.",
+    "sorgente": "9f0a3a5d69f3"
+  },
+  "typellm/typellm": {
+    "cosa_fa": "Typsichere Generierung mit LLMs: beschränkt die Ausgabe auf die geforderte Struktur, um fehlerhafte Antworten zu vermeiden.",
+    "quando_usarlo": "Wenn dein Code strukturierte LLM-Ausgaben verarbeitet und du kein fragiles Parsing und keine Retries handhaben willst.",
+    "sorgente": "52b56cf727cb"
+  },
+  "typesafe.ai": {
+    "cosa_fa": "Kommerzielles Modell im Early Access, das keinen Text, sondern Entscheidungen erzeugt: Man übergibt einen Zustand und die geschlossene Menge zulässiger Antworten und erhält einen typisierten Wert mit Wahrscheinlichkeit und Konfidenzscore, gedacht zur Verarbeitung durch Code. Zugang per API, Preis auf Anfrage.",
+    "quando_usarlo": "Wenn in einer Pipeline eine Klassifizierung oder Auswahl zwischen bekannten Optionen gebraucht wird, keine Antwort in natürlicher Sprache.",
+    "sorgente": "07b96e6f459f"
+  },
+  "umn-zhaolab/pocket-slam": {
+    "cosa_fa": "Code zum ICRA'26-Paper über SLAM mit 3D Gaussian Splatting bei geringem Speicherbedarf: entfernt für das Rendering nicht benötigte Punkte, mit laut Angaben bis zu 99 % kleineren und über 5x schnelleren Karten.",
+    "quando_usarlo": "Wenn du 3D-Rekonstruktion in Echtzeit mit 3DGS auf begrenzter Hardware machst.",
+    "sorgente": "064c13a6a3ed"
+  },
+  "unslothai/unsloth": {
+    "cosa_fa": "LLMs in VS Code + Colab trainieren",
+    "quando_usarlo": "Wenn du LLMs (Llama, Mistral usw.) schnell und mit wenig VRAM per Fine-Tuning anpassen willst.",
+    "sorgente": "e3d85cf948a9"
+  },
+  "upscayl/upscayl": {
+    "cosa_fa": "KI-basierter Open-Source-Bild-Upscaler: vergrößert niedrig aufgelöste Fotos lokal, ohne Abo.",
+    "quando_usarlo": "Wenn du pixelige Bilder vergrößern musst, ohne für Cloud-Upscaling-Dienste zu bezahlen.",
+    "sorgente": "4ed8ed7d81f1"
+  },
+  "usestrix/strix": {
+    "cosa_fa": "KI-Agenten für Application Penetration Testing: nicht nur statische Analyse, sondern echte, autonom ausgeführte Exploits.",
+    "quando_usarlo": "Wenn du SAST um einen automatisierten Pentest ergänzen willst, der prüft, welche Schwachstellen wirklich ausnutzbar sind.",
+    "sorgente": "a7377440aee0"
+  },
+  "viarotel-org/escrcpy": {
+    "cosa_fa": "Vollständige grafische Oberfläche für scrcpy, um Android-Geräte vom Computer aus zu steuern: Mirroring, drahtloses ADB, Keyboard-Mapping und Verwaltung mehrerer Geräte gleichzeitig.",
+    "quando_usarlo": "Wenn du Android-Geräte vom Desktop aus steuern oder testen willst, ohne scrcpy auf der Kommandozeile zu starten.",
+    "sorgente": "316ce401acf8"
+  },
+  "vincentwei1021/anything2explainer": {
+    "cosa_fa": "Skill für Claude Code und Codex, die ein Thema in ein Erklärvideo in Motion Graphics verwandelt: Recherche, Erzählung, Storyboard und Code der Einstellungen, TTS-Stimme mit wortgenau synchronisierten Untertiteln, Kapitel und Fortschrittsbalken. Jedes Frame wird in Remotion gezeichnet, nicht als Pixel generiert.",
+    "quando_usarlo": "Wenn du ein reproduzierbares und per Code korrigierbares Erklärvideo statt eines generierten Videos brauchst.",
+    "sorgente": "641a0e1ede73"
+  },
+  "vincentwei1021/video-shotcraft": {
+    "cosa_fa": "Open-Source-Skill für Coding Agents, die ausgehend von den Produkt-Assets Werbespots erstellt: Storyboard, Einstellungen, Schnitt und Sounddesign, gerendert mit Remotion.",
+    "quando_usarlo": "Wenn du einen Spot für ein digitales Produkt brauchst, ohne ihn von Hand zu schneiden.",
+    "sorgente": "097dcdc50eed"
+  },
+  "virattt/ai-hedge-fund": {
+    "cosa_fa": "Simulierter Hedgefonds mit KI-Agenten (Buffett, Cathie Wood, technischer Analyst, Risikomanager); Paper Trading, kein garantierter Gewinn",
+    "quando_usarlo": "Simulierter Hedgefonds mit KI-Agenten (Paper Trading, zu Lernzwecken, kein garantierter Gewinn).",
+    "sorgente": "eacd675e6d0d"
+  },
+  "virgiliojr94/book-to-skill": {
+    "cosa_fa": "Wandelt Bücher und technische Dokumente (PDF, EPUB, DOCX, Markdown, HTML, RTF, MOBI) in eine strukturierte Skill für den Agenten um, mit mentalen Modellen, Entscheidungsregeln, Patterns und Anti-Patterns.",
+    "quando_usarlo": "Wenn der Agent den Inhalt eines Handbuchs beim Arbeiten anwenden soll, statt dass du ihn selbst im Kopf behalten musst.",
+    "sorgente": "8c40af97f047"
+  },
+  "voltagent/awesome-design-md": {
+    "cosa_fa": "Sammlung von Design Systems Dutzender bekannter Unternehmen (Apple, Stripe, Linear, Notion und andere) im Markdown-Format, installierbar als Stilreferenz in einem Coding Agent.",
+    "quando_usarlo": "Wenn der Agent der visuellen Sprache eines wiedererkennbaren Design Systems folgen soll, statt zu erfinden.",
+    "sorgente": "9df55fc7d130"
+  },
+  "vrgamegirl19/vrgdg-seedvr2-tensorrt-studio": {
+    "cosa_fa": "Lokales Studio (JavaScript + FastAPI) für Videorestaurierung und Upscaling mit TensorRT-beschleunigtem SeedVR2, mit Vorher/Nachher-Vorschau und Fortsetzung abgebrochener Renderings.",
+    "quando_usarlo": "Wenn du alte Videos auf deiner NVIDIA-GPU restaurieren oder hochskalieren musst.",
+    "sorgente": "1cf539040324"
+  },
+  "webadderallorg/recordly": {
+    "cosa_fa": "Kostenloser Open-Source-Bildschirmrekorder für Mac, Windows und Linux für Demovideos: folgt dem Cursor und entscheidet selbst, wohin gezoomt wird, glättet Mausbewegungen, hebt Klicks hervor und bietet eine Timeline zum Schneiden und Beschleunigen. Exportiert als MP4 und GIF. Braucht zwei Berechtigungen (Bildschirmaufnahme und Bedienungshilfen), damit der automatische Zoom funktioniert; unter Linux auf Wayland vs. X11 achten.",
+    "quando_usarlo": "Wenn du eine Demo oder ein Software-Tutorial bereits 'geschnitten' produzieren musst, ohne Videoeditor.",
+    "licenza": "AGPL-3.0",
+    "sorgente": "f78e38ef9838"
+  },
+  "xai-org/plugin-marketplace": {
+    "cosa_fa": "Offizieller Plugin-Marketplace von xAI für Grok Build: kuratierter Index, der auf an bestimmte Commits gebundene Quellen verweist, um stille Updates zu vermeiden.",
+    "quando_usarlo": "Wenn du Grok Build nutzt und es mit versionsfixierten Plugins erweitern willst.",
+    "licenza": "keine Lizenz (Drittanbieter-Plugins mit eigenen Lizenzen)",
+    "sorgente": "c7504339427b"
+  },
+  "xhtoken/spark-x2.5": {
+    "cosa_fa": "Familie kompakter Sprachmodelle (4B und 1,7B) für On-Device-Einsatz und agentische Abläufe, mit hybrider Attention-Architektur und nativem Kontext bis 1M Token; über 200 Sprachen. Gewichte auf Hugging Face, ModelScope und Ollama, auch in FP8/INT8.",
+    "quando_usarlo": "Wenn du ein kleines, lokal lauffähiges Modell mit sehr langem Kontext brauchst.",
+    "sorgente": "26efcffd4b6c"
+  },
+  "xixihhhh/hotclip": {
+    "cosa_fa": "Open-Source-Tool, das lange Videos, Livestream-Aufzeichnungen und Podcasts in vertikale Clips mit Untertiteln schneidet und die Highlights per KI findet. Lokal, ohne Wasserzeichen.",
+    "quando_usarlo": "Wenn du aus langen Inhalten Shorts gewinnen willst, ohne Credit-basierte Dienste.",
+    "sorgente": "b8db6727d6fb"
+  },
+  "yakhyo/uniface": {
+    "cosa_fa": "Python-Bibliothek, die in einer einzigen API Gesichtserkennung, -wiedererkennung, Tracking, Keypoints, Gesichtssegmentierung, Hintergrundentfernung, Blick- und Posenschätzung, Alter/Geschlecht und Liveness Detection vereint.",
+    "quando_usarlo": "Wenn du eine Face-AI-Anwendung bauen musst, ohne vier verschiedene Frameworks zusammenzukleben.",
+    "sorgente": "06d4182352cb"
+  },
+  "yaofang-liu/pusa-vidgen": {
+    "cosa_fa": "Video-Diffusion-Modell mit Vectorized Timestep Adaptation (VTA); Fine-Tuning von Wan2.1-T2V-14B zu ~1/200 der Kosten",
+    "quando_usarlo": "Kostengünstige KI-Videogenerierung (Fine-Tuning von Wan2.1).",
+    "sorgente": "0dba5c29be59"
+  },
+  "yc-software/qm": {
+    "cosa_fa": "System aus KI-Agenten, mit dem Y Combinator seine internen Abläufe (Buchhaltung, Recht, Events, Engineering) betreibt, als Open-Source-Unternehmensinfrastruktur veröffentlicht.",
+    "quando_usarlo": "Wenn du ein reales Referenzbeispiel suchst, wie man einen Agenten-Stack für den Betrieb eines Unternehmens strukturiert.",
+    "sorgente": "65740b65a62b"
+  },
+  "yorukot/superfile": {
+    "cosa_fa": "Open-Source-Dateimanager mit moderner Oberfläche im Terminal: visuelle Navigation, Vorschauen und schnelle Operationen.",
+    "quando_usarlo": "Wenn du im Terminal lebst und Dateien verwalten willst, ohne auf eine gut lesbare UI zu verzichten.",
+    "sorgente": "5849660735bc"
+  },
+  "yuliskov/smarttube": {
+    "cosa_fa": "Alternativer Open-Source-YouTube-Client für Android TV und Fire Stick: entfernt Werbung, integriert SponsorBlock, erlaubt die manuelle Wahl von Codec und Auflösung bis 4K HDR und braucht keine Google Play Services.",
+    "quando_usarlo": "Wenn du auf einem Android-TV-Gerät einen schlankeren und besser konfigurierbaren Client als den offiziellen brauchst.",
+    "sorgente": "82b8f9b25bb3"
+  },
+  "yusufb5/asciline": {
+    "cosa_fa": "Hochperformante Echtzeit-Rendering-Engine für ASCII-Video: wandelt Frames in Text und Farbblöcke um und überträgt sie per WebSocket (binär) mit 30 FPS auf ein HTML5-Canvas. Demo auf asciline.dev.",
+    "quando_usarlo": "Wenn du mit Video-Streaming experimentieren willst, das im Browser vollständig als Text/ASCII dargestellt wird.",
+    "sorgente": "72fe75c1f05d"
+  },
+  "zackriya-solutions/meetily": {
+    "cosa_fa": "Transkription und Zusammenfassung von Meetings komplett lokal, damit vertrauliche Gespräche deinen Computer nicht verlassen.",
+    "quando_usarlo": "Wenn du vertrauliche Calls protokollieren musst, ohne das Audio an Cloud-Dienste zu senden.",
+    "sorgente": "1405a458b938"
+  },
+  "zai-org/glm-image": {
+    "cosa_fa": "Autoregressive Image Generation (Zhipu AI)",
+    "quando_usarlo": "Autoregressive Bildgenerierung (Zhipu AI).",
+    "sorgente": "a7d6d21a449b"
+  },
+  "zai-org/glm-ocr": {
+    "cosa_fa": "Multimodales OCR-Modell (zai-org), komplexe PDFs -> Markdown, 0.9B",
+    "quando_usarlo": "Multimodales OCR: komplexe PDFs → saubere Markdown-Dateien für Agenten (Zhipu).",
+    "sorgente": "031dfc406dc9"
+  },
+  "zannael/fishertiger": {
+    "cosa_fa": "Open-Source- und Local-First-Berater für das Fantacalcio der Serie A: Spielerprognosen, konfigurierbare Auktionsregeln, Unterstützung bei der Live-Auktion und Simulationen.",
+    "quando_usarlo": "Wenn du ein kompaktes Beispiel für einen Local-First-Berater mit Prognosen und Simulationen auf Sportdaten brauchst.",
+    "sorgente": "27dd713e1ca7"
+  },
+  "zapier/wade-skills": {
+    "cosa_fa": "Die meistgenutzten Agenten-Skills von Wade Foster (CEO von Zapier): ein 'Kriegsrat' kritischer Experten, der Ideen auf die Probe stellt, Extraktion von Aufgaben aus Protokollen und eine nach Priorität geordnete Wochenagenda.",
+    "quando_usarlo": "Wenn du konkrete Beispiele für Management-Skills suchst, die du an deinen Assistenten anpassen kannst.",
+    "sorgente": "8a9e059223c6"
+  },
+  "zhouxiaoka/autoclip": {
+    "cosa_fa": "KI-gestützte Extraktion der besten Momente aus langen Videos und Schnitt zu kurzen Clips für Kurzvideo-Plattformen; die KI kann auch lokal laufen.",
+    "quando_usarlo": "Wenn du halbautomatisch Clips aus Podcasts oder langen Videos produzieren musst.",
+    "sorgente": "4c6ce582ca7f"
+  }
+}
