@@ -2357,7 +2357,8 @@
     "categoria": "Dev/Media",
     "fonte": "link diretto da Marco 22/09/2026; anche gabriaprile 21/09/2026 (reel DdjBFNoFHmB)",
     "macro": "H",
-    "uso": "Quando devi produrre una demo o un tutorial di software già 'montato', senza passare da un editor video."
+    "uso": "Quando devi produrre una demo o un tutorial di software già 'montato', senza passare da un editor video.",
+    "licenza": "AGPL-3.0"
   },
   {
     "id": 238,
@@ -2517,7 +2518,8 @@
     "categoria": "Sicurezza",
     "fonte": "devop.sbs 22/09/2026 (reel DdmcRIqREQg)",
     "macro": "G",
-    "uso": "Quando devi fare un'analisi forense su un telefono sospetto di compromissione da spyware mirato."
+    "uso": "Quando devi fare un'analisi forense su un telefono sospetto di compromissione da spyware mirato.",
+    "licenza": "MVT License 1.1 (non OSI: solo analisi forensi consensuali)"
   },
   {
     "id": 254,
@@ -2547,7 +2549,8 @@
     "categoria": "Dev/Media",
     "fonte": "dariofontanel.ai 13/09/2026 (reel DdO8qAyIbf2)",
     "macro": "H",
-    "uso": "Quando devi mandare spiegazioni video asincrone senza dipendere da Loom."
+    "uso": "Quando devi mandare spiegazioni video asincrone senza dipendere da Loom.",
+    "licenza": "AGPL-3.0 (crate cap-camera*/scap-* MIT)"
   },
   {
     "id": 257,
@@ -2627,7 +2630,8 @@
     "categoria": "AI Research",
     "fonte": "github_dev 23/09/2026 (reel Ddv0vYkScgG)",
     "macro": "J",
-    "uso": "Quando ti interessa l'ottimizzazione energetica dei data center con LLM, a livello di ricerca."
+    "uso": "Quando ti interessa l'ottimizzazione energetica dei data center con LLM, a livello di ricerca.",
+    "licenza": "Apache-2.0"
   },
   {
     "id": 265,
@@ -2647,7 +2651,8 @@
     "categoria": "AI/Video",
     "fonte": "github_dev 23/09/2026 (reel Ddu9zInSAO1)",
     "macro": "F",
-    "uso": "Quando vuoi generare video con MiniMax H3 sulla tua GPU consumer invece che via API."
+    "uso": "Quando vuoi generare video con MiniMax H3 sulla tua GPU consumer invece che via API.",
+    "licenza": "sorgente visibile, tutti i diritti riservati (non open source)"
   },
   {
     "id": 267,
@@ -2707,7 +2712,8 @@
     "categoria": "Finanza/Trading",
     "fonte": "github_dev 23/09/2026 (reel DdrGpAXSdwN)",
     "macro": "I",
-    "uso": "Quando studi approcci 'self-evolving' con memoria per la ricerca quantitativa; non come strumento pronto."
+    "uso": "Quando studi approcci 'self-evolving' con memoria per la ricerca quantitativa; non come strumento pronto.",
+    "licenza": "nessuna licenza (tutti i diritti riservati)"
   },
   {
     "id": 273,
@@ -2757,7 +2763,8 @@
     "categoria": "LLM locale",
     "fonte": "github_dev 23/09/2026 (reel DdpYvNzS2W6)",
     "macro": "C",
-    "uso": "Quando hai un DGX Spark e vuoi farci girare un modello più grande della sua memoria."
+    "uso": "Quando hai un DGX Spark e vuoi farci girare un modello più grande della sua memoria.",
+    "licenza": "Apache-2.0"
   },
   {
     "id": 278,
@@ -2797,7 +2804,8 @@
     "categoria": "AI/Coding",
     "fonte": "github_dev 16/09/2026 (reel Ddlhn0cSUtZ)",
     "macro": "A",
-    "uso": "Quando le sessioni lunghe perdono qualità dopo la compattazione o il consumo di token è inspiegabile."
+    "uso": "Quando le sessioni lunghe perdono qualità dopo la compattazione o il consumo di token è inspiegabile.",
+    "licenza": "PolyForm Noncommercial 1.0.0 (+ permesso piccole imprese)"
   },
   {
     "id": 282,
@@ -2847,7 +2855,8 @@
     "categoria": "Claude Code Plugin",
     "fonte": "github_dev 16/09/2026 (reel DdihTkDy3Ex)",
     "macro": "A",
-    "uso": "Quando usi Grok Build e vuoi estenderlo con plugin a versione bloccata."
+    "uso": "Quando usi Grok Build e vuoi estenderlo con plugin a versione bloccata.",
+    "licenza": "nessuna licenza (plugin di terzi con licenze proprie)"
   },
   {
     "id": 287,
@@ -2867,7 +2876,8 @@
     "categoria": "Sicurezza/Agenti",
     "fonte": "github_dev 16/09/2026 (reel DdhO4NWSkWO)",
     "macro": "G",
-    "uso": "Quando fai girare agenti con accesso alla shell e vuoi un muro tecnico, non solo regole scritte nel prompt."
+    "uso": "Quando fai girare agenti con accesso alla shell e vuoi un muro tecnico, non solo regole scritte nel prompt.",
+    "licenza": "proprietaria (AIF Beta License)"
   },
   {
     "id": 289,
@@ -2927,7 +2937,8 @@
     "categoria": "AI/Coding",
     "fonte": "github_dev 16/09/2026 (reel DdeOrHEyOKJ)",
     "macro": "A",
-    "uso": "Quando gestisci molti agenti in terminali diversi e le schede non bastano più a seguirli."
+    "uso": "Quando gestisci molti agenti in terminali diversi e le schede non bastano più a seguirli.",
+    "licenza": "BUSL-1.1 (diventa MIT il 2030-02-26)"
   },
   {
     "id": 295,
@@ -3057,7 +3068,8 @@
     "categoria": "AI/Video",
     "fonte": "gittrend.io 24/09/2026 (reel DdrgWghFLHg)",
     "macro": "F",
-    "uso": "Quando vuoi estrarre short da un video lungo lavorando sulla tua macchina."
+    "uso": "Quando vuoi estrarre short da un video lungo lavorando sulla tua macchina.",
+    "licenza": "nessuna licenza (tutti i diritti riservati)"
   },
   {
     "id": 308,
@@ -3067,7 +3079,8 @@
     "categoria": "Claude Code Skill",
     "fonte": "gittrend.io 24/09/2026 (reel Ddq_RtLEU7c)",
     "macro": "A",
-    "uso": "Quando chiedi a un agente un sito con animazioni ricche e vuoi che segua pattern collaudati."
+    "uso": "Quando chiedi a un agente un sito con animazioni ricche e vuoi che segua pattern collaudati.",
+    "licenza": "CC BY-NC 4.0"
   },
   {
     "id": 309,
@@ -3127,7 +3140,8 @@
     "categoria": "AI/Immagini",
     "fonte": "gittrend.io 22/09/2026 (reel DdmQR7MgQtG)",
     "macro": "F",
-    "uso": "Quando ti serve generazione ed editing di immagini con un modello aperto da far girare sulla tua GPU."
+    "uso": "Quando ti serve generazione ed editing di immagini con un modello aperto da far girare sulla tua GPU.",
+    "licenza": "Qwen Research License (non commerciale)"
   },
   {
     "id": 315,

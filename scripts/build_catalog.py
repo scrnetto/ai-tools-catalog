@@ -7,6 +7,8 @@ Input  (nella root del progetto):
     config.json                -> opzionale (vedi config.example.json): titolo e fonte del catalogo
     github-repos.json          -> ogni repo deve avere: id, progetto, descrizione, url,
                                    categoria, fonte, macro (A..Z), uso
+                                   opzionale: licenza -> verificata a mano sul file LICENSE, prevale su
+                                   quella di GitHub (che per le licenze non standard dice NOASSERTION)
     siti-web.json              -> ogni sito: id, sito, url, descrizione, fonte, macro, uso
     gh-meta.json               -> metadati attività per id repo (da fetch_gh_meta.py + scraping)
 
@@ -243,7 +245,7 @@ def main():
             'tipo': 'repo', 'macro': r.get('macro', 'H'), 'macro_nome': MACRO.get(r.get('macro', 'H')),
             'nome': r['progetto'], 'cosa_fa': r['descrizione'], 'quando_usarlo': r.get('uso', ''),
             'url': r['url'], 'stelle': m.get('stars'), 'ultimo_push': (m.get('pushed') or '')[:10],
-            'attivita': lab, 'attivita_emoji': em, 'licenza': m.get('license'),
+            'attivita': lab, 'attivita_emoji': em, 'licenza': r.get('licenza') or m.get('license'),
             'linguaggio': m.get('lang'), 'fonte': r.get('fonte', '')})
     for s in siti:
         c = s.get('macro', 'Z')

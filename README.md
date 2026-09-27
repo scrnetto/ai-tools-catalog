@@ -180,7 +180,7 @@ The token is read in this order — first match wins:
 | Path | Role |
 |---|---|
 | `config.example.json` | Configuration schema — copy to `config.json` (gitignored) |
-| `github-repos.json` | Catalogued repos (`id, progetto, descrizione, url, categoria, fonte, macro, uso`) |
+| `github-repos.json` | Catalogued repos (`id, progetto, descrizione, url, categoria, fonte, macro, uso`; optional `licenza`, checked by hand on the LICENSE file, overrides GitHub's `NOASSERTION`) |
 | `siti-web.json` | Non-repo websites |
 | `gh-meta.json` | GitHub activity metadata, keyed by repo id |
 | `instagram-profili.json` | Profile-monitoring state (reels already seen, per handle) |
