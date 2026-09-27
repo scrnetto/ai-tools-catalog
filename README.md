@@ -14,6 +14,9 @@ project** through a global skill — Claude Code, OpenCode, Codex, Gemini CLI, A
 GitHub Copilot and any other agent that supports the open [Agent Skills](https://agentskills.io)
 format.
 
+**Browse the catalog online: <https://scrnetto.github.io/ai-tools-catalog/>** — search and filter by
+category, activity and license.
+
 > The tooling and docs are in English; the catalog *entries* are in Italian, because that is the
 > language of the reels they come from. Section headings and status labels follow
 > `catalogo.lingua` in your config — see [Configuration](#configuration).
@@ -24,7 +27,8 @@ format.
   research). Counts are regenerated on every build.
 - Per entry: what it does, *when to use it*, and activity status (⭐ stars, last push, license).
 - Human-readable output: [`CATALOGO-AI-TOOLS.md`](CATALOGO-AI-TOOLS.md). Structured data:
-  `catalogo-unificato.json`. Searchable web page with filters: `docs/index.html`, a single HTML
+  `catalogo-unificato.json`. Searchable web page with filters: `docs/index.html`, published on
+  [GitHub Pages](https://scrnetto.github.io/ai-tools-catalog/) — a single HTML
   file that makes no network requests (the installed skill gets its own copy, `catalogo.html`,
   which also shows your local entries).
 
