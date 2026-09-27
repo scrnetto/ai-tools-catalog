@@ -15,9 +15,10 @@ GitHub Copilot and any other agent that supports the open [Agent Skills](https:/
 format.
 
 **Browse the catalog online: <https://scrnetto.github.io/ai-tools-catalog/>** — search and filter by
-category, activity and license. Also in [English](https://scrnetto.github.io/ai-tools-catalog/en/),
+category, activity and license. It opens in your browser's language when available (English
+otherwise); pick one directly: [Italiano](https://scrnetto.github.io/ai-tools-catalog/it/),
 [Español](https://scrnetto.github.io/ai-tools-catalog/es/),
-[Deutsch](https://scrnetto.github.io/ai-tools-catalog/de/) and
+[Deutsch](https://scrnetto.github.io/ai-tools-catalog/de/),
 [Français](https://scrnetto.github.io/ai-tools-catalog/fr/).
 
 > The tooling and docs are in English; the catalog *entries* are written in Italian, because that is
@@ -125,7 +126,8 @@ cp config.example.json config.json     # then set your own chat
 | `whatsapp.self_chat` | `true` if it is the "message yourself" chat |
 | `instagram.enabled` | `false` → skip profile monitoring |
 | `catalogo.titolo` / `catalogo.fonte` | Heading and source line of the generated catalog |
-| `catalogo.lingua` | `it` (default), `en`, `es`, `de` or `fr` — language of the installed catalog: entries, category names, status labels, the web page |
+| `catalogo.lingua` | `en` (default), `it`, `es`, `de` or `fr` — language of the installed catalog: entries, category names, status labels, the web page |
+| `catalogo.url_pagine` | Maintainer only, optional: public address of the web pages (e.g. `https://you.github.io/ai-tools-catalog/`), used for the `hreflang` links that let search engines show each visitor their language |
 | `catalogo.manutentore` | `true` only for whoever publishes the catalog — see [Your own entries and updates](#your-own-entries-and-updates) |
 | `github.token` | Optional GitHub token — see [below](#github-token-optional) |
 
@@ -186,7 +188,14 @@ Point `URL` in `scripts/check_update.py` to your fork.
 Entries are written once, in Italian, in `github-repos.json` and `siti-web.json`. Their
 translations live in `traduzioni/en.json`, `es.json`, `de.json` and `fr.json`, one object per entry
 keyed by address (`owner/name` or the normalized URL), and `scripts/build_catalog.py` builds one
-web page per language (`docs/<lang>/index.html`) plus the installed skill in your `catalogo.lingua`.
+web page per language plus the installed skill in your `catalogo.lingua`. English is the default:
+it is the site root (`docs/index.html`), the other languages are in `docs/<lang>/index.html`.
+
+The root page sends visitors whose browser prefers Italian, Spanish, German or French to that page;
+anyone else stays on English. A language picked from the selector is remembered in the browser
+(`localStorage`, nothing is sent anywhere) and wins over the browser's language on the next visit.
+Only the root redirects: a link to `/de/` always opens the German page. Without JavaScript the root
+simply shows English.
 
 Each translation records a fingerprint of the Italian text it was made from. If the Italian changes
 later, the translation counts as **stale**: the build shows the Italian text instead, marks it

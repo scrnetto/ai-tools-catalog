@@ -40,7 +40,8 @@ The file is **gitignored** because it holds the name of your chat; the tracked s
 | `whatsapp.self_chat` | `true` = the "message yourself" chat; `false` = look it up by name in the list |
 | `instagram.enabled` | `false` → Phase B (profile monitoring) skipped |
 | `catalogo.titolo` / `catalogo.fonte` | Heading and source line of `CATALOGO-AI-TOOLS.md` |
-| `catalogo.lingua` | `it` (default), `en`, `es`, `de` or `fr` — language of the installed catalog (entries included, from `traduzioni/`) |
+| `catalogo.lingua` | `en` (default), `it`, `es`, `de` or `fr` — language of the installed catalog (entries included, from `traduzioni/`) |
+| `catalogo.url_pagine` | Maintainer only, optional: public address of the web pages, for the `hreflang` links |
 | `github.token` | Optional GitHub token (60 → 5000 API requests/hour). Create it with **no permissions**: public repo metadata needs none. Read only if `config.json` is gitignored; `GITHUB_TOKEN` in the environment takes precedence. |
 
 One-off overrides from the command: `/sync-ai-catalog "Chat Name"`, `--only-instagram`,

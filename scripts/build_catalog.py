@@ -18,8 +18,9 @@ dai file tracciati (le voci locali non ci finiscono mai):
     catalogo-unificato.json, CATALOGO-AI-TOOLS.md, catalog-version.json (impronta dei dati),
     skill/SKILL.md (conteggi, data di verifica e indice categorie rigenerati; il resto invariato),
     i due badge dinamici del README.
-    docs/index.html e docs/<lingua>/index.html (la pagina web consultabile, servita da GitHub
-    Pages, una per lingua: le voci tradotte vengono da traduzioni/<lingua>.json).
+    docs/index.html (inglese, la lingua di default) e docs/<lingua>/index.html per le altre: la
+    pagina web consultabile, servita da GitHub Pages; le voci tradotte vengono da
+    traduzioni/<lingua>.json. docs/en/ rimanda alla radice.
 Output per chiunque, dall'unione pubblicati + locali, in ogni cartella di SKILL_DIRS che esiste:
     SKILL.md, CATALOGO-AI-TOOLS.md, catalogo.json, catalogo.html (la stessa pagina web, con le
     voci locali segnalate), check_update.py, installazione.json. Tutti nella lingua di
@@ -43,10 +44,14 @@ SKILL_DIRS = [os.path.expanduser(p) for p in ('~/.agents/skills/ai-tools-catalog
 SKILL_SRC = os.path.join(ROOT, 'skill', 'SKILL.md')
 CHECK_SRC = os.path.join(ROOT, 'scripts', 'check_update.py')
 PAGINA_SRC = os.path.join(ROOT, 'scripts', 'pagina-catalogo.html')
-# l'italiano, lingua in cui il catalogo e' scritto, sta nella radice del sito; le altre sotto
-LINGUE_PAGINE = ('it',) + tr.LINGUE
+# Il sito: l'inglese, lingua di default, sta nella radice; le altre in docs/<lingua>/. La pagina
+# della radice porta chi ha il browser in un'altra lingua disponibile alla sua (vedi il template).
+LINGUA_DEFAULT = 'en'
+LINGUE_PAGINE = (LINGUA_DEFAULT,) + tuple(l for l in ('it',) + tr.LINGUE if l != LINGUA_DEFAULT)
 def pagina_pub(lingua):
-    return os.path.join('docs', 'index.html') if lingua == 'it' else os.path.join('docs', lingua, 'index.html')
+    return os.path.join('docs', 'index.html' if lingua == LINGUA_DEFAULT else os.path.join(lingua, 'index.html'))
+# /en/ e' stato l'indirizzo della pagina inglese prima che diventasse la radice: resta un rimando
+RIMANDO_EN = os.path.join('docs', 'en', 'index.html')
 # confrontato da check_update.py con quello pubblicato: lo scrive solo il manutentore
 VERSIONE = 'catalog-version.json'
 
@@ -119,11 +124,14 @@ def config():
         cfg = load('config.json').get('catalogo', {})
     except FileNotFoundError:
         cfg = {}
-    out = {'lingua': cfg.get('lingua') or 'it'}
+    out = {'lingua': cfg.get('lingua') or LINGUA_DEFAULT}
     if out['lingua'] not in LOCALI:
         print(f"  ⚠️ lingua '{out['lingua']}' non supportata (disponibili: "
-              f"{', '.join(LOCALI)}): uso 'it'")
-        out['lingua'] = 'it'
+              f"{', '.join(LOCALI)}): uso '{LINGUA_DEFAULT}'")
+        out['lingua'] = LINGUA_DEFAULT
+    # indirizzo pubblico delle pagine, per i link hreflang ai motori di ricerca (solo manutentore)
+    url = (cfg.get('url_pagine') or '').strip()
+    out['url_pagine'] = url.rstrip('/') + '/' if re.fullmatch(r'https://[^\s"<>]+', url) else None
     # titolo e fonte hanno un default per lingua; se l'utente li ha scritti, restano i suoi
     for k in ('titolo', 'fonte'):
         out[k] = cfg.get(k) or LOCALI[out['lingua']][k]
@@ -308,12 +316,13 @@ def senza_interni(unified):
     """Le voci come finiscono nei file JSON: senza le chiavi `_` che servono solo alla pagina."""
     return [{k: v for k, v in u.items() if not k.startswith('_')} for u in unified]
 
-def pagina(unified, n_repo, n_sito, verificato, titolo, lingua, piede, lingue=None):
+def pagina(unified, n_repo, n_sito, verificato, titolo, lingua, piede, lingue=None, url=None):
     """La pagina web del catalogo: un solo file HTML con i dati dentro, che non fa richieste di
     rete. I testi vengono da reel e pagine di terzi, quindi nel JSON incorporato `<`, `>` e `&`
     diventano escape \\u: una descrizione con `</script>` non puo' chiudere il blocco dei dati.
     Lo script della pagina poi li inserisce solo come testo.
-    `lingue`: [(codice, nome, href)] per il selettore della lingua; None se la pagina e' una sola."""
+    `lingue`: [(codice, nome, href)] per il selettore della lingua; None se la pagina e' una sola.
+    `url`: indirizzo pubblico del sito, per i link hreflang; senza, non se ne scrivono."""
     L = LOCALI[lingua]
     macro = [c for c in ORDER if any(u['macro'] == c for u in unified)]
     stati = [c for c in ('molto_attivo', 'attivo', 'rallentato', 'fermo', 'archiviato', 'nd', 'sito')
@@ -329,20 +338,45 @@ def pagina(unified, n_repo, n_sito, verificato, titolo, lingua, piede, lingue=No
             'verificato': verificato, 'macro': macro,
             'macro_breve': {c: L['macro_breve'][c] for c in macro},
             'stati': [[c, L['stato'][c]] for c in stati], 'ui': L['ui'], 'piede': piede,
-            'lingue': lingue or [], 'voci': voci}
+            'lingue': lingue or [], 'radice': bool(lingue) and lingua == LINGUA_DEFAULT,
+            'voci': voci}
     js = json.dumps(dati, ensure_ascii=False, separators=(',', ':'))
     js = js.replace('<', '\\u003c').replace('>', '\\u003e').replace('&', '\\u0026')
     tpl = open(PAGINA_SRC, encoding='utf-8').read()
     esc = lambda s: s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;')
+    alt = ''
+    if lingue and url:
+        # i motori di ricerca mostrano a ciascuno la pagina nella sua lingua; x-default e' la radice
+        alt = ''.join(f'<link rel="alternate" hreflang="{l}" href="{esc(url + indirizzo(l))}">\n'
+                      for l in LINGUE_PAGINE)
+        alt += f'<link rel="alternate" hreflang="x-default" href="{esc(url)}">\n'
+        alt += f'<link rel="canonical" href="{esc(url + indirizzo(lingua))}">\n'
     return (tpl.replace('__LINGUA__', esc(lingua)).replace('__TITOLO__', esc(titolo))
-               .replace('__DATI__', js))
+               .replace('__ALTERNATE__\n', alt).replace('__DATI__', js))
+
+def indirizzo(lingua):
+    """Percorso della pagina in `lingua` rispetto alla radice del sito."""
+    return '' if lingua == LINGUA_DEFAULT else f'{lingua}/'
+
+def rimando_en(url):
+    """La pagina di /en/: rimanda alla radice e ricorda la scelta dell'inglese, perche' chi ha
+    seguito un link a /en/ l'inglese l'ha chiesto e la radice non deve portarlo altrove."""
+    dest = 'index.html'
+    return ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
+            '<meta http-equiv="Content-Security-Policy" content="default-src \'none\'; '
+            'script-src \'unsafe-inline\'; base-uri \'none\'">\n'
+            f'<meta http-equiv="refresh" content="0; url=../{dest}">\n'
+            + (f'<link rel="canonical" href="{url}">\n' if url else '') +
+            '<title>AI &amp; Dev tools catalog</title>\n</head>\n<body>\n'
+            f'<p><a href="../{dest}">AI &amp; Dev tools catalog</a></p>\n'
+            "<script>try { localStorage.setItem('ai-tools-catalog.lingua', 'en'); } catch (e) {}\n"
+            f"location.replace('../{dest}' + location.hash);</script>\n</body>\n</html>\n")
 
 def selettore(lingua):
     """[(codice, nome, href)] dalla pagina in `lingua` a tutte le altre, con link relativi: il
     sito funziona uguale su GitHub Pages e aperto dal disco."""
-    su = '' if lingua == 'it' else '../'
-    return [(l, LOCALI[l]['nome'], su + ('index.html' if l == 'it' else f'{l}/index.html'))
-            for l in LINGUE_PAGINE]
+    su = '' if lingua == LINGUA_DEFAULT else '../'
+    return [(l, LOCALI[l]['nome'], su + indirizzo(l) + 'index.html') for l in LINGUE_PAGINE]
 
 def impronta(repos, siti, meta, traduzioni=None):
     """Impronta dei dati pubblicati: cambia se e solo se cambia il catalogo pubblicato, e non
@@ -386,7 +420,10 @@ def main():
             dest = os.path.join(ROOT, pagina_pub(lingua))
             os.makedirs(os.path.dirname(dest), exist_ok=True)
             open(dest, 'w', encoding='utf-8').write(
-                pagina(u_l, nr, ns, ver, Lp['titolo'], lingua, Lp['piede_pub'], selettore(lingua)))
+                pagina(u_l, nr, ns, ver, Lp['titolo'], lingua, Lp['piede_pub'], selettore(lingua),
+                       cfg['url_pagine']))
+        os.makedirs(os.path.join(ROOT, os.path.dirname(RIMANDO_EN)), exist_ok=True)
+        open(os.path.join(ROOT, RIMANDO_EN), 'w', encoding='utf-8').write(rimando_en(cfg['url_pagine']))
         _, w = sync_skill_md(u_pub, nr, ns, L, ver)
         warn += w + sync_readme_badges(nr, ns, ver)
         versione.update({'repo': nr, 'siti': ns, 'verificato': ver})

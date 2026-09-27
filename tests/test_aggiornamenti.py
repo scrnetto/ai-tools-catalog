@@ -198,14 +198,23 @@ class Aggiornamenti(unittest.TestCase):
                            capture_output=True, text=True, env={**os.environ, 'HOME': self.home_man})
         self.assertIn('traduzioni en: 2 voci su 3 restano in italiano (1 scadute)', r.stdout)
 
-        voci = {v['url']: v for v in self.dati_pagina(os.path.join(self.man, 'docs', 'en', 'index.html'))['voci']}
+        # l'inglese e' la lingua di default: sta nella radice del sito, e solo la' si reindirizza
+        en = self.dati_pagina(os.path.join(self.man, 'docs', 'index.html'))
+        self.assertEqual((en['lingua'], en['radice']), ('en', True))
+        voci = {v['url']: v for v in en['voci']}
         self.assertEqual(voci['https://github.com/owner1/progetto1']['cosa_fa'], 'Description 1')
         self.assertNotIn('originale', voci['https://github.com/owner1/progetto1'])
         self.assertEqual(voci['https://github.com/owner2/progetto2']['cosa_fa'], 'Descrizione 2 riscritta')
         self.assertTrue(voci['https://github.com/owner2/progetto2']['originale'])
-        for l in ('es', 'de', 'fr'):
-            self.assertTrue(os.path.isfile(os.path.join(self.man, 'docs', l, 'index.html')), l)
-        it = self.dati_pagina(os.path.join(self.man, 'docs', 'index.html'))
+        for l in ('it', 'es', 'de', 'fr'):
+            d = self.dati_pagina(os.path.join(self.man, 'docs', l, 'index.html'))
+            self.assertEqual((d['lingua'], d['radice']), (l, False), l)
+        # /en/ era l'indirizzo della pagina inglese: resta un rimando alla radice, che ricorda la scelta
+        with open(os.path.join(self.man, 'docs', 'en', 'index.html'), encoding='utf-8') as f:
+            rimando = f.read()
+        self.assertIn("location.replace('../index.html'", rimando)
+        self.assertIn("setItem('ai-tools-catalog.lingua', 'en')", rimando)
+        it = self.dati_pagina(os.path.join(self.man, 'docs', 'it', 'index.html'))
         self.assertEqual({v['url']: v['cosa_fa'] for v in it['voci']}['https://github.com/owner1/progetto1'],
                          'Descrizione 1')
 
@@ -229,9 +238,34 @@ class Aggiornamenti(unittest.TestCase):
         pagina = self.dati_pagina(os.path.join(self.home_ute, '.agents', 'skills',
                                                'ai-tools-catalog', 'catalogo.html'))
         self.assertEqual(pagina['lingua'], 'en')
+        self.assertFalse(pagina['radice'], 'la copia nella skill non deve reindirizzare')
         mia = {v['url']: v for v in pagina['voci']}['https://github.com/me/mine']
         self.assertNotIn('originale', mia, "la voce dell'utente non e' «testo in italiano»")
         self.assertEqual(git(self.ute, 'status', '--porcelain', '--untracked-files=no'), '')
+
+    def test_hreflang(self):
+        cfg = cd.carica(self.man, 'config.json', {})
+        cfg['catalogo']['url_pagine'] = 'https://esempio.github.io/catalogo'
+        cd.salva(self.man, 'config.json', cfg)
+        self.build(self.man, self.home_man)
+        with open(os.path.join(self.man, 'docs', 'de', 'index.html'), encoding='utf-8') as f:
+            html = f.read()
+        self.assertIn('<link rel="alternate" hreflang="x-default" href="https://esempio.github.io/catalogo/">', html)
+        self.assertIn('<link rel="alternate" hreflang="it" href="https://esempio.github.io/catalogo/it/">', html)
+        self.assertIn('<link rel="canonical" href="https://esempio.github.io/catalogo/de/">', html)
+        # un indirizzo che non e' https non finisce nella pagina
+        cfg['catalogo']['url_pagine'] = 'javascript:alert(1)'
+        cd.salva(self.man, 'config.json', cfg)
+        self.build(self.man, self.home_man)
+        with open(os.path.join(self.man, 'docs', 'index.html'), encoding='utf-8') as f:
+            self.assertNotIn('hreflang="x-default"', f.read())
+
+    def test_lingua_di_default(self):
+        # chi non ha config.json, o non indica la lingua, ha il catalogo in inglese
+        self.build(self.ute, self.home_ute)
+        pagina = self.dati_pagina(os.path.join(self.home_ute, '.agents', 'skills',
+                                               'ai-tools-catalog', 'catalogo.html'))
+        self.assertEqual(pagina['lingua'], 'en')
 
 class Unione(unittest.TestCase):
 

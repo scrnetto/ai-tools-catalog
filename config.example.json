@@ -11,12 +11,13 @@
     "enabled": true
   },
 
-  "_catalogo": "manutentore: true only for whoever publishes the catalog. Everyone else keeps it false: your own entries then go to the *.local.json files, which git ignores, so git pull never clashes with them.",
+  "_catalogo": "manutentore: true only for whoever publishes the catalog. Everyone else keeps it false: your own entries then go to the *.local.json files, which git ignores, so git pull never clashes with them. url_pagine (maintainer only, optional): public address of the web pages, for the hreflang links.",
   "catalogo": {
     "titolo": "AI & Dev tools catalog",
     "fonte": "reels and links saved in chat",
     "lingua": "en",
-    "manutentore": false
+    "manutentore": false,
+    "url_pagine": ""
   },
 
   "_github": "Optional. Raises the GitHub API quota from 60 to 5000 requests/hour, so a full --refresh finishes in one pass. Create it with NO scopes (classic) or 'Public repositories, read-only' (fine-grained): reading public repo metadata needs no permission, so a leaked token grants nothing. GITHUB_TOKEN in the environment takes precedence and is the safer place for it; the token below is only read if config.json is gitignored.",

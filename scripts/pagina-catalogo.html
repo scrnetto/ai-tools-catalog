@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <title>__TITOLO__</title>
+__ALTERNATE__
 <style>
 /* Grafica: design system «Safe Console» disegnato con Google Stitch (2026-09-27), riportata a
    font di sistema e CSS scritto qui: la pagina non fa nessuna richiesta di rete. */
@@ -184,6 +185,28 @@ footer .wrap{display:grid;gap:4px;padding-block:16px;font:12px/1.6 var(--mono);c
   // (textContent), mai come HTML, e i link sono ammessi solo in https.
   const META = JSON.parse(document.getElementById('dati').textContent);
   const VOCI = META.voci, T = META.ui;
+
+  // Lingua. La radice del sito e' la pagina di default (inglese): chi ha il browser in un'altra
+  // lingua disponibile viene portato alla sua, a meno che non abbia gia' scelto dal selettore.
+  // La scelta resta nel browser (localStorage), non va da nessuna parte. Le pagine delle altre
+  // lingue non reindirizzano mai: un link a /de/ porta sempre al tedesco.
+  const SCELTA = 'ai-tools-catalog.lingua';
+  // solo percorsi relativi scritti dal build, mai un indirizzo che venga dai dati
+  const LINGUE = META.lingue.filter(([, , href]) => /^(\.\.\/)?([a-z]{2}\/)?index\.html$/.test(href));
+  if (META.radice) {
+    let scelta = null;
+    try { scelta = localStorage.getItem(SCELTA); } catch (e) {}
+    const codici = LINGUE.map(([c]) => c);
+    let dest = codici.includes(scelta) ? scelta : null;
+    if (!dest) for (const l of navigator.languages || [navigator.language || '']) {
+      const c = String(l).slice(0, 2).toLowerCase();
+      if (codici.includes(c)) { dest = c; break; }
+    }
+    if (dest && dest !== META.lingua) {
+      location.replace(LINGUE.find(([c]) => c === dest)[2] + location.hash);
+      return;
+    }
+  }
   // stato e classe di licenza arrivano gia' come codici dal build: i filtri non dipendono
   // dalla lingua della pagina, le etichette si'
   const LIC = [['libera', 'ok'], ['copyleft', 'warn'], ['limitata', 'warn'], ['chiusa', 'bad'],
@@ -296,14 +319,14 @@ footer .wrap{display:grid;gap:4px;padding-block:16px;font:12px/1.6 var(--mono);c
   $('filtri').setAttribute('aria-label', T.filtri);
   $('titolo').textContent = META.titolo;
   $('ver').textContent = 'v' + META.verificato.replaceAll('-', '.');
-  if (META.lingue.length) {
+  if (LINGUE.length) {
     const nav = $('lang'); nav.hidden = false; nav.setAttribute('aria-label', T.lingua);
-    for (const [codice, nome, href] of META.lingue) {
-      // solo percorsi relativi scritti dal build, mai un indirizzo che venga dai dati
-      if (!/^(\.\.\/)?([a-z]{2}\/)?index\.html$/.test(href)) continue;
+    for (const [codice, nome, href] of LINGUE) {
       const a = el('a', null, codice.toUpperCase()); a.href = href; a.lang = codice;
       a.title = nome; a.setAttribute('hreflang', codice);
       if (codice === META.lingua) a.setAttribute('aria-current', 'page');
+      // la scelta esplicita vince sulla lingua del browser, anche alla prossima visita
+      a.onclick = () => { try { localStorage.setItem(SCELTA, codice); } catch (e) {} };
       nav.append(a);
     }
   }
