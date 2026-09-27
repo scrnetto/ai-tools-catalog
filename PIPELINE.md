@@ -26,7 +26,7 @@ the Agent Skills format — up to date.
 3. For each new reel, reads the **Instagram caption** (meta tag) and derives the GitHub repo (explicit
    or verified via web search) or the website. Only tool-related reels are catalogued; anything
    uncertain is reported rather than guessed.
-4. Writes the new records (with `macro` + `uso`) into `github-repos.json` / `siti-web.json`.
+4. Writes the new records (with `macro` + `uso`) into `github-repos.json` / `siti-web.json` if you publish the catalog (`catalogo.manutentore`), otherwise into their `.local.json` twins — see the README, «Your own entries and updates».
 5. Fetches activity metadata and **rebuilds** the catalog and the skill.
 
 ## Configuration (`config.json`)
@@ -53,13 +53,13 @@ falls back to neutral defaults.
 | `config.json` / `config.example.json` | Local configuration (gitignored) / tracked schema |
 | `github-repos.json` | Catalogued repos (`id, progetto, descrizione, url, categoria, fonte, macro, uso`) |
 | `siti-web.json` | Non-repo websites (same fields, `sito` instead of `progetto`) |
-| `gh-meta.json` | GitHub metadata (stars, last push, license) by repo id |
+| `gh-meta.json` | GitHub metadata (stars, last push, license) by `owner/name` (plus `gh-meta.local.json` for your own entries) |
 | `instagram-profili.json` | Profile-monitoring state (handle → reels seen/catalogued, last check) |
 | `chat-messaggi.csv` | Raw message dump (gitignored) |
 | `catalogo-unificato.json` / `CATALOGO-AI-TOOLS.md` | Generated outputs |
 | `siti-personali.json` | Non-dev entries, kept out of the repo (gitignored) |
 | `scripts/fetch_gh_meta.py` | Fetches activity metadata (incremental merge, `--refresh` to re-check) |
-| `scripts/build_catalog.py` | Builds the catalog and updates `~/.claude/skills/ai-tools-catalog/` |
+| `scripts/build_catalog.py` | Builds the catalog and updates the installed skill (`~/.agents/skills/ai-tools-catalog/`), merging your `.local.json` entries |
 
 ## Rebuild only, without re-reading WhatsApp
 ```bash

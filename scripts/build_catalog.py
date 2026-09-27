@@ -10,19 +10,23 @@ Input  (nella root del progetto):
                                    opzionale: licenza -> verificata a mano sul file LICENSE, prevale su
                                    quella di GitHub (che per le licenze non standard dice NOASSERTION)
     siti-web.json              -> ogni sito: id, sito, url, descrizione, fonte, macro, uso
-    gh-meta.json               -> metadati attività per id repo (da fetch_gh_meta.py + scraping)
+    gh-meta.json               -> metadati attività per owner/nome (da fetch_gh_meta.py + scraping)
+    *.local.json               -> voci e metadati dell'utente, uniti ai precedenti (catalogo_dati.py)
 
-Output:
-    catalogo-unificato.json    (root progetto)
-    CATALOGO-AI-TOOLS.md       (root progetto)
-    skill/SKILL.md             (root progetto: conteggi, data di verifica e indice categorie
-                                rigenerati dai dati reali; il resto della prosa resta invariato)
-    e copia dei tre (json -> catalogo.json) in ogni cartella di SKILL_DIRS che esiste
+Output del catalogo pubblicato, solo se config.json ha "catalogo": {"manutentore": true}, e solo
+dai file tracciati (le voci locali non ci finiscono mai):
+    catalogo-unificato.json, CATALOGO-AI-TOOLS.md, catalog-version.json (impronta dei dati),
+    skill/SKILL.md (conteggi, data di verifica e indice categorie rigenerati; il resto invariato),
+    i due badge dinamici del README.
+Output per chiunque, dall'unione pubblicati + locali, in ogni cartella di SKILL_DIRS che esiste:
+    SKILL.md, CATALOGO-AI-TOOLS.md, catalogo.json, check_update.py, installazione.json.
+Chi non e' il manutentore non modifica file tracciati: cosi' `git pull` non va in conflitto.
 
 Uso:
     python3 scripts/build_catalog.py
 """
-import json, os, re, datetime
+import json, os, re, datetime, hashlib, shutil
+import catalogo_dati as cd
 
 ROOT  = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # ~/.agents/skills e' la cartella comune agli agent che adottano lo standard Agent Skills;
@@ -31,6 +35,9 @@ ROOT  = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKILL_DIRS = [os.path.expanduser(p) for p in ('~/.agents/skills/ai-tools-catalog',
                                               '~/.claude/skills/ai-tools-catalog')]
 SKILL_SRC = os.path.join(ROOT, 'skill', 'SKILL.md')
+CHECK_SRC = os.path.join(ROOT, 'scripts', 'check_update.py')
+# confrontato da check_update.py con quello pubblicato: lo scrive solo il manutentore
+VERSIONE = 'catalog-version.json'
 
 # I nomi delle macro-categorie e la prosa generata dipendono da catalogo.lingua in config.json.
 # I *dati* (descrizione/uso delle voci) restano nella lingua in cui sono stati scritti: qui si
@@ -164,7 +171,7 @@ def indice_categorie(unified, L):
         out.append(f"- **{c} · {MACRO[c]}** ({len(items)}): {nomi}")
     return out
 
-def sync_skill_md(unified, n_repo, n_sito, L, verificato):
+def sync_skill_md(unified, n_repo, n_sito, L, verificato, scrivi=True):
     """Riallinea le parti dinamiche di skill/SKILL.md (conteggi nella description, data di
     verifica, indice categorie). E' la `description` a decidere quando l'agente invoca la skill:
     se resta indietro il catalogo risulta sottodimensionato. Le sostituzioni che non trovano
@@ -206,7 +213,8 @@ def sync_skill_md(unified, n_repo, n_sito, L, verificato):
         warn.append(f"⚠️ SKILL.md: `description` di {len(' '.join(desc.group(1).split()))} "
                     "caratteri, lo standard Agent Skills ne ammette 1024")
 
-    open(SKILL_SRC, 'w', encoding='utf-8').write(txt)
+    if scrivi:
+        open(SKILL_SRC, 'w', encoding='utf-8').write(txt)
     return txt, warn
 
 def sync_readme_badges(n_repo, n_sito, verificato):
@@ -228,18 +236,12 @@ def sync_readme_badges(n_repo, n_sito, verificato):
     open(path, 'w', encoding='utf-8').write(txt)
     return warn
 
-def main():
-    cfg   = config()
-    L     = LOCALI[cfg['lingua']]
-    MACRO = L['macro']
-    S     = L['stato']
-    repos = load('github-repos.json')
-    siti  = load('siti-web.json')
-    meta  = load('gh-meta.json')
-
+def catalogo(repos, siti, meta, cfg, L):
+    """Voci unificate e markdown del catalogo, dai dati passati (pubblicati o uniti)."""
+    MACRO, S = L['macro'], L['stato']
     unified = []
     for r in repos:
-        m = meta.get(str(r['id']), {})
+        m = meta.get(cd.chiave_repo(r['url'])) or {}
         em, lab = stato(m, S)
         unified.append({
             'tipo': 'repo', 'macro': r.get('macro', 'H'), 'macro_nome': MACRO.get(r.get('macro', 'H')),
@@ -261,18 +263,16 @@ def main():
               f"({', '.join(u['nome'] for u in scartate)})")
         unified = [u for u in unified if u['macro'] != PRIVATA]
 
-    json.dump(unified, open(os.path.join(ROOT, 'catalogo-unificato.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-
-    # --- Markdown ---
     n_repo = sum(1 for u in unified if u['tipo'] == 'repo')
     n_sito = sum(1 for u in unified if u['tipo'] == 'sito')
+    verificato = data_verifica(meta)
     OUT = []
     OUT.append(f"# 📚 {cfg['titolo']}")
     OUT.append('')
     OUT.append(L['intro'])
     OUT.append(f"> {cfg['fonte']}.")
     OUT.append(L['conteggi'].format(r=n_repo, s=n_sito))
-    OUT.append(L['verifica'].format(d=data_verifica(meta)) + L['legenda'])
+    OUT.append(L['verifica'].format(d=verificato) + L['legenda'])
     OUT.append('')
     OUT.append(L['indice'])
     for c in ORDER:
@@ -300,16 +300,41 @@ def main():
                               f"{u['ultimo_push'] or S['nd']}{lic}")
             OUT.append(f"| {nome} | {cosa} | {quando} | {stato_cell} |")
         OUT.append('')
-    md = '\n'.join(OUT) + '\n'
-    open(os.path.join(ROOT, 'CATALOGO-AI-TOOLS.md'), 'w', encoding='utf-8').write(md)
+    return unified, '\n'.join(OUT) + '\n', n_repo, n_sito, verificato
 
-    # --- SKILL.md: riallinea conteggi, data e indice ---
-    skill_md, warn = sync_skill_md(unified, n_repo, n_sito, L, data_verifica(meta))
+def impronta(repos, siti, meta):
+    """Impronta dei dati pubblicati: cambia se e solo se cambia il catalogo pubblicato, e non
+    dipende dalla data del build (i campi calcolati come 'attivita' restano fuori)."""
+    dati = json.dumps([repos, siti, meta], ensure_ascii=False, sort_keys=True)
+    return hashlib.sha256(dati.encode('utf-8')).hexdigest()[:16]
 
-    # --- README: i due badge dinamici (conteggi e data di verifica) ---
-    warn += sync_readme_badges(n_repo, n_sito, data_verifica(meta))
+def main():
+    cfg   = config()
+    L     = LOCALI[cfg['lingua']]
+    warn  = []
+    pub   = cd.dati_pubblicati(ROOT)
+    versione = {'impronta': impronta(*pub)}
 
-    # --- copia nella skill globale ---
+    # --- catalogo pubblicato: lo riscrive solo il manutentore ---
+    # Chi ha clonato il repository non tocca i file tracciati: cosi' `git pull` non va mai in
+    # conflitto con il suo catalogo. Le sue voci stanno nei *.local.json (catalogo_dati.py).
+    if cd.manutentore(ROOT):
+        u_pub, md_pub, nr, ns, ver = catalogo(*pub, cfg, L)
+        json.dump(u_pub, open(os.path.join(ROOT, 'catalogo-unificato.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+        open(os.path.join(ROOT, 'CATALOGO-AI-TOOLS.md'), 'w', encoding='utf-8').write(md_pub)
+        _, w = sync_skill_md(u_pub, nr, ns, L, ver)
+        warn += w + sync_readme_badges(nr, ns, ver)
+        versione.update({'repo': nr, 'siti': ns, 'verificato': ver})
+        cd.salva(ROOT, VERSIONE, versione)
+
+    # --- catalogo installato nella skill: pubblicati + locali ---
+    repos, siti, meta, res = cd.dati_uniti(ROOT)
+    unified, md, n_repo, n_sito, verificato = catalogo(repos, siti, meta, cfg, L)
+    skill_md, w = sync_skill_md(unified, n_repo, n_sito, L, verificato, scrivi=False)
+    warn += w
+    installazione = {'repository': ROOT, 'impronta': versione['impronta'],
+                     'voci_locali': res, 'generato': today().isoformat()}
+
     aggiornate, visti = [], set()
     for d in SKILL_DIRS:
         if not os.path.isdir(d) or os.path.realpath(d) in visti:
@@ -319,6 +344,8 @@ def main():
         json.dump(unified, open(os.path.join(d, 'catalogo.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
         if skill_md is not None:
             open(os.path.join(d, 'SKILL.md'), 'w', encoding='utf-8').write(skill_md)
+        shutil.copyfile(CHECK_SRC, os.path.join(d, 'check_update.py'))
+        cd.salva(d, 'installazione.json', installazione)
         aggiornate.append(d)
     if aggiornate:
         skill_msg = f"skill aggiornata: {', '.join(aggiornate)}"
@@ -328,6 +355,9 @@ def main():
 
     by_cat = {c: sum(1 for u in unified if u['macro'] == c) for c in ORDER}
     print(f"Catalogo generato: {len(unified)} voci ({n_repo} repo + {n_sito} siti)")
+    if any(res.values()):
+        print(f"  voci locali: {res['locali_nuove']} aggiunte, {res['completate']} che completano "
+              f"una voce pubblicata, {res['nascoste']} voci pubblicate nascoste")
     print("Per categoria:", {c: n for c, n in by_cat.items() if n})
     print(skill_msg)
     for w in warn:

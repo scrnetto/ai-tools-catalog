@@ -116,6 +116,7 @@ cp config.example.json config.json     # then set your own chat
 | `instagram.enabled` | `false` → skip profile monitoring |
 | `catalogo.titolo` / `catalogo.fonte` | Heading and source line of the generated catalog |
 | `catalogo.lingua` | `it` (default) or `en` — language of category names, status labels and generated prose |
+| `catalogo.manutentore` | `true` only for whoever publishes the catalog — see [Your own entries and updates](#your-own-entries-and-updates) |
 | `github.token` | Optional GitHub token — see [below](#github-token-optional) |
 
 For a one-off run you can also use `/sync-ai-catalog "Another Chat"` or
@@ -127,6 +128,49 @@ by the Instagram profiles tracked in `instagram-profili.json`.
 Adding a language means adding one entry to `LOCALI` in `scripts/build_catalog.py`. Note that only
 the *scaffolding* is translated — entry descriptions stay in whatever language they were written in,
 and the prose of `skill/SKILL.md` is not generated, so it keeps its own language.
+
+## Your own entries and updates
+The catalog you install is the **published** one (the tracked files) merged with **your own**
+entries, which live in files git ignores:
+
+| Published (tracked) | Yours (gitignored) |
+|---|---|
+| `github-repos.json` | `github-repos.local.json` |
+| `siti-web.json` | `siti-web.local.json` |
+| `gh-meta.json` | `gh-meta.local.json` |
+| `instagram-profili.json` | `instagram-profili.local.json` |
+
+`build_catalog.py` merges them by address — `owner/name` for repos, the URL for sites — never by
+numeric `id`, which could clash:
+
+- an entry of yours with a new address is **added**;
+- an entry with the same address as a published one **completes** it: fields you set win, the
+  rest (and the GitHub metadata) come from the published entry — e.g. to rewrite a description;
+- `{"url": "...", "nascondi": true}` **hides** a published entry you don't want;
+- for activity metadata, the most recent check wins, whichever file it is in.
+
+`fetch_gh_meta.py` and the update agent write only to your `.local.json` files, so `git pull`
+never clashes with your catalog.
+
+**Knowing when there is an update.** The installed skill carries `check_update.py`: the skill tells
+the agent to run it the first time it is used in a session. At most once a day it downloads only
+`catalog-version.json` — a fingerprint of the published data — from a fixed address in the script,
+and compares it with the one you installed. When they differ, the agent tells you. It never updates
+by itself: updating means downloading and running new code, and that is your call.
+
+**Updating:**
+```bash
+./update-catalog.sh        # Linux/macOS
+.\update-catalog.ps1       # Windows
+```
+It runs `git pull --ff-only` and rebuilds, merging your entries back in. If you edited a tracked
+file by hand it stops instead of mixing the two: move those changes to the `.local.json` files
+first. The merge is covered by `tests/test_aggiornamenti.py`, which runs two real git clones through
+a publish → local edits → publish → update cycle.
+
+**Publishing a catalog of your own (fork).** Set `"manutentore": true` under `catalogo` in your
+`config.json`: the scripts then write to the tracked files and regenerate `catalog-version.json`.
+Point `URL` in `scripts/check_update.py` to your fork.
 
 ## Updating the catalog
 Requires a browser with WhatsApp Web logged in (and Instagram logged in for profile monitoring).
@@ -182,12 +226,16 @@ The token is read in this order — first match wins:
 | `config.example.json` | Configuration schema — copy to `config.json` (gitignored) |
 | `github-repos.json` | Catalogued repos (`id, progetto, descrizione, url, categoria, fonte, macro, uso`; optional `licenza`, checked by hand on the LICENSE file, overrides GitHub's `NOASSERTION`) |
 | `siti-web.json` | Non-repo websites |
-| `gh-meta.json` | GitHub activity metadata, keyed by repo id |
+| `gh-meta.json` | GitHub activity metadata, keyed by `owner/name` |
 | `instagram-profili.json` | Profile-monitoring state (reels already seen, per handle) |
-| `scripts/` | `fetch_gh_meta.py`, `build_catalog.py` |
+| `*.local.json` | Your own entries and state, gitignored, merged at build time |
+| `catalog-version.json` | Fingerprint of the published catalog, read by `check_update.py` |
+| `scripts/` | `fetch_gh_meta.py`, `build_catalog.py`, `catalogo_dati.py` (the merge), `check_update.py` |
 | `skill/SKILL.md` | Skill definition, in the open Agent Skills format (redistributable) |
 | `.claude/agents/` · `.claude/commands/` | Update agent and slash command |
 | `install-skill.sh` · `install-skill.ps1` | Install the skill on a new machine, for every agent |
+| `update-catalog.sh` · `update-catalog.ps1` | Pull the published catalog and rebuild, keeping your entries |
+| `tests/` | `python3 -m unittest discover -s tests` |
 | `LICENSE` · `LICENSE-DATA` | MIT for the code, CC BY 4.0 for the catalog data — see [License](#license) |
 
 ## Privacy

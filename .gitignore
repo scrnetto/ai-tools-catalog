@@ -13,6 +13,9 @@ whatsapp-login.png
 # snapshot delle pagine WhatsApp/Instagram (contengono dati personali)
 .playwright-mcp/
 
+# --- Voci e stato dell'utente: il catalogo pubblicato non le tocca, build_catalog.py le unisce ---
+*.local.json
+
 # --- Temporanei / build ---
 __pycache__/
 *.pyc

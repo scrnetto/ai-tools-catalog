@@ -33,6 +33,16 @@ chat WhatsApp personale, ripuliti e arricchiti con metadati GitHub reali.
 4. I dati di attività sono stati verificati il **2026-09-27**: se serve precisione attuale,
    ricontrolla il repo (le stelle/push cambiano nel tempo).
 
+## Aggiornamenti del catalogo
+La prima volta che usi questa skill in una sessione, esegui `python3 check_update.py` da questa
+cartella (è lo script accanto a questo file). Controlla al massimo una volta al giorno se il
+catalogo pubblicato è cambiato, e non modifica niente.
+- Se riporta una novità, **dillo all'utente** con il comando che lo script indica. **Non eseguire
+  l'aggiornamento tu**: scarica ed esegue codice nuovo, e lo decide l'utente.
+- Se il controllo non riesce, prosegui con il catalogo installato senza insistere.
+- L'aggiornamento conserva le voci aggiunte dall'utente: stanno in file separati che il catalogo
+  pubblicato non tocca.
+
 ## Categorie e contenuto (indice rapido)
 - **A · Coding Agent, Claude Code & sviluppo AI-assistito** (48): Everything Claude Code, DeepSeek Harness (dsh), ponytail, Spec Kit, gstack, awesome-design-md, screenshot-to-code, Archify, impeccable, Cline, BMAD-METHOD, Marketing Skills, i-have-adhd, CLI-Anything, diagram-design, herdr, Ralph Loop, ai-website-cloner-template, Serena, blender-mcp, hallmark, Vibe Kanban, knowledge-work-plugins, t3code, Dyad, Claude SEO, Pixel Agents, worktrunk, mobile-mcp, Godogen, wigolo, teamai-cli, token-optimizer, agy-staff, 49-IDE, claude-token-optimizer, token-optimizer-mcp, motion-web, xAI plugin-marketplace, herdr-nvim, KanVibe, Agent Room, MarkuprPlus, cc-blender-skill, BMAD-Speckit-SDD-Flow, Google Stitch, GitReverse, Emergent
 - **B · Framework Agenti AI & assistenti personali** (38): OpenClaw, browser-use, Paperclip, odysseus, Agent-Reach, MiroFish, NanoBot, DSPy, buzz, PicoClaw, deepagents, Cua, agent-lightning, OpenWorker, Parlant, OpenSandbox, QM, ARTEMIS (Google), Cloudflare Computer, OpenBot, OpenExecutive, OpenMausBot, Argent, Atomic Agent, sia, AgentConnect, LiveStream-Agent-Studio, SwarmClaw, AnythingMCP, HashCortX, FutureOS, wade-skills, J.A.R.V.I.S, JARVIS-PA-Lovable, Proactor.ai, agentskills.io, Runable, Aside
@@ -47,13 +57,15 @@ chat WhatsApp personale, ripuliti e arricchiti con metadati GitHub reali.
 
 ## Aggiornare il catalogo
 Questa cartella è **generata**: non modificarne i file. La sorgente è il repository
-`ai-tools-catalog` (https://github.com/scrnetto/ai-tools-catalog), che contiene la configurazione
-(`config.json`: chat WhatsApp e/o profili Instagram monitorati) e i file di lavoro:
-`github-repos.json`, `siti-web.json`, `instagram-profili.json` (stato monitoraggio profili),
-`gh-meta.json` (metadati attività).
-Quando arrivano nuovi reel/link: aggiorna i JSON, poi esegui `python3 scripts/fetch_gh_meta.py` e
-`python3 scripts/build_catalog.py`. Quest'ultimo rigenera `CATALOGO-AI-TOOLS.md` + `catalogo.json`
-e riallinea da solo, in questo file, i **conteggi nella description**, la **data di verifica** e
-l'**indice categorie** qui sopra: non modificarli a mano, verrebbero sovrascritti. Il resto della
-prosa è libero. La sorgente versionata è `skill/SKILL.md` nel progetto, copiata poi nelle cartelle
-in cui la skill è installata.
+`ai-tools-catalog` (https://github.com/scrnetto/ai-tools-catalog); dove è installato lo dice
+`installazione.json`. Il catalogo qui è l'unione di due parti:
+- le voci **pubblicate**: `github-repos.json`, `siti-web.json`, `gh-meta.json`;
+- le voci **dell'utente**: gli stessi nomi con `.local.json` (`github-repos.local.json`, ...),
+  ignorati da git. Una voce locale con lo stesso URL di una pubblicata la completa o la
+  corregge; con `"nascondi": true` la toglie dal catalogo.
+Chi non pubblica il catalogo aggiunge le voci **solo** nei `.local.json`. Poi esegue
+`python3 scripts/fetch_gh_meta.py` e `python3 scripts/build_catalog.py`. Quest'ultimo rigenera
+`CATALOGO-AI-TOOLS.md` + `catalogo.json` e riallinea da solo, in questo file, i **conteggi nella
+description**, la **data di verifica** e l'**indice categorie** qui sopra: non modificarli a mano,
+verrebbero sovrascritti. Il resto della prosa è libero. La sorgente versionata è `skill/SKILL.md`
+nel progetto, copiata poi nelle cartelle in cui la skill è installata.

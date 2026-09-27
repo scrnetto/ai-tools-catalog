@@ -1,5 +1,5 @@
 {
- "1": {
+ "unslothai/unsloth": {
   "slug": "unslothai/unsloth",
   "stars": 76855,
   "pushed": "2026-09-27",
@@ -10,7 +10,7 @@
   "desc": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more.",
   "fetched": "2026-09-27"
  },
- "2": {
+ "hkuds/cli-anything": {
   "slug": "HKUDS/CLI-Anything",
   "stars": 50681,
   "pushed": "2026-09-22",
@@ -21,7 +21,7 @@
   "desc": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
   "fetched": "2026-09-27"
  },
- "3": {
+ "github/spec-kit": {
   "slug": "github/spec-kit",
   "stars": 139064,
   "pushed": "2026-09-25",
@@ -32,7 +32,7 @@
   "desc": "💫 Toolkit to help you get started with SDD or any other process!",
   "fetched": "2026-09-27"
  },
- "4": {
+ "affaan-m/everything-claude-code": {
   "slug": "affaan-m/everything-claude-code",
   "stars": 268127,
   "pushed": "2026-09-24",
@@ -43,7 +43,7 @@
   "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
   "fetched": "2026-09-27"
  },
- "5": {
+ "p-e-w/heretic": {
   "slug": "p-e-w/heretic",
   "stars": 32425,
   "pushed": "2026-09-25",
@@ -54,7 +54,7 @@
   "desc": "Fully automatic censorship removal for language models",
   "fetched": "2026-09-27"
  },
- "6": {
+ "hkuds/nanobot": {
   "slug": "HKUDS/nanobot",
   "stars": 48609,
   "pushed": "2026-09-27",
@@ -65,7 +65,7 @@
   "desc": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
   "fetched": "2026-09-27"
  },
- "7": {
+ "emcie-co/parlant": {
   "slug": "emcie-co/parlant",
   "stars": 18294,
   "pushed": "2026-07-12",
@@ -76,7 +76,7 @@
   "desc": "Build reliable customer-facing AI agents with Parlant: an interaction control harness optimized for controlled, consistent, and predictable LLM interactions.",
   "fetched": "2026-09-27"
  },
- "8": {
+ "moonshotai/kimi-k2.5": {
   "slug": "MoonshotAI/Kimi-K2.5",
   "stars": 2309,
   "pushed": "2026-08-06",
@@ -87,7 +87,7 @@
   "desc": "Open Visual Agentic Intelligence",
   "fetched": "2026-09-27"
  },
- "9": {
+ "qwenlm/qwen3-coder": {
   "slug": "QwenLM/Qwen3-Coder",
   "stars": 16841,
   "pushed": "2026-03-24",
@@ -98,7 +98,7 @@
   "desc": "Qwen3-Coder is the code version of Qwen3, the large language model series developed by Qwen team.",
   "fetched": "2026-09-27"
  },
- "10": {
+ "openclaw/openclaw": {
   "slug": "openclaw/openclaw",
   "stars": 390630,
   "pushed": "2026-09-27",
@@ -109,7 +109,7 @@
   "desc": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ",
   "fetched": "2026-09-27"
  },
- "11": {
+ "pixel-agents-hq/pixel-agents": {
   "slug": "pixel-agents-hq/pixel-agents",
   "stars": 9419,
   "pushed": "2026-09-21",
@@ -120,7 +120,7 @@
   "desc": "Pixel office.",
   "fetched": "2026-09-27"
  },
- "12": {
+ "bmad-code-org/bmad-method": {
   "slug": "bmad-code-org/BMAD-METHOD",
   "stars": 53539,
   "pushed": "2026-09-27",
@@ -131,7 +131,7 @@
   "desc": "Breakthrough Method for Agile Ai Driven Development",
   "fetched": "2026-09-27"
  },
- "13": {
+ "microsoft/trellis": {
   "slug": "microsoft/trellis",
   "stars": 13707,
   "pushed": "2026-06-26",
@@ -142,7 +142,7 @@
   "desc": "Official repo for paper \"Structured 3D Latents for Scalable and Versatile 3D Generation\" (CVPR'25 Spotlight).",
   "fetched": "2026-09-27"
  },
- "14": {
+ "qwenlm/qwen3-tts": {
   "slug": "QwenLM/Qwen3-TTS",
   "stars": 13558,
   "pushed": "2026-03-17",
@@ -153,7 +153,7 @@
   "desc": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning.",
   "fetched": "2026-09-27"
  },
- "15": {
+ "karpathy/nanochat": {
   "slug": "karpathy/nanochat",
   "stars": 58285,
   "pushed": "2026-09-07",
@@ -164,7 +164,7 @@
   "desc": "The best ChatGPT that $100 can buy.",
   "fetched": "2026-09-27"
  },
- "16": {
+ "bloopai/vibe-kanban": {
   "slug": "BloopAI/vibe-kanban",
   "stars": 28201,
   "pushed": "2026-09-19",
@@ -175,7 +175,7 @@
   "desc": "Get 10X more out of Claude Code, Codex or any coding agent",
   "fetched": "2026-09-27"
  },
- "17": {
+ "aiming-lab/autoresearchclaw": {
   "slug": "aiming-lab/AutoResearchClaw",
   "stars": 14534,
   "pushed": "2026-08-19",
@@ -186,7 +186,7 @@
   "desc": "Fully autonomous & self-evolving research from idea to paper. Chat an Idea. Get a Paper. 🦞",
   "fetched": "2026-09-27"
  },
- "18": {
+ "agricidaniel/claude-seo": {
   "slug": "AgriciDaniel/claude-seo",
   "stars": 17772,
   "pushed": "2026-09-23",
@@ -197,7 +197,7 @@
   "desc": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions, including DataForSEO, Firecrawl, Ahrefs and Matomo.",
   "fetched": "2026-09-27"
  },
- "19": {
+ "facebookresearch/sam-audio": {
   "slug": "facebookresearch/sam-audio",
   "stars": 3645,
   "pushed": "2026-05-26",
@@ -208,7 +208,7 @@
   "desc": "The repository provides code for running inference with the Meta Segment Anything Audio Model (SAM-Audio), links for downloading the trained model checkpoints, and example notebooks that show how to use the model.",
   "fetched": "2026-09-27"
  },
- "20": {
+ "tongyi-mai/z-image": {
   "slug": "Tongyi-MAI/Z-Image",
   "stars": 12052,
   "pushed": "2026-02-09",
@@ -219,7 +219,7 @@
   "desc": null,
   "fetched": "2026-09-27"
  },
- "21": {
+ "conardli/easy-dataset": {
   "slug": "ConardLi/easy-dataset",
   "stars": 14951,
   "pushed": "2026-05-01",
@@ -230,7 +230,7 @@
   "desc": "A powerful tool for creating datasets for LLM fine-tuning 、RAG and Eval",
   "fetched": "2026-09-27"
  },
- "22": {
+ "microsoft/vibevoice": {
   "slug": "microsoft/VibeVoice",
   "stars": 54510,
   "pushed": "2026-09-03",
@@ -241,7 +241,7 @@
   "desc": "Open-Source Frontier Voice AI",
   "fetched": "2026-09-27"
  },
- "23": {
+ "sipeed/picoclaw": {
   "slug": "sipeed/picoclaw",
   "stars": 30014,
   "pushed": "2026-09-24",
@@ -252,7 +252,7 @@
   "desc": "Tiny, Fast, and Deployable anywhere — automate the mundane, unleash your creativity",
   "fetched": "2026-09-27"
  },
- "24": {
+ "zai-org/glm-image": {
   "slug": "zai-org/GLM-Image",
   "stars": 1050,
   "pushed": "2026-03-20",
@@ -263,7 +263,7 @@
   "desc": "GLM-Image: Auto-regressive for Dense-knowledge and High-fidelity Image Generation.",
   "fetched": "2026-09-27"
  },
- "26": {
+ "insait-institute/genieredux": {
   "slug": "insait-institute/GenieRedux",
   "stars": 77,
   "pushed": "2026-05-14",
@@ -274,7 +274,7 @@
   "desc": "A framework for training world models with virtual environments, complete with annotated environment dataset (RetroAct), exploration agent (AutoExplore Agent), and GenieRedux-G - an implementation of Genie with enhancements",
   "fetched": "2026-09-27"
  },
- "27": {
+ "hkuds/videorag": {
   "slug": "hkuds/videorag",
   "stars": 3387,
   "pushed": "2026-03-18",
@@ -285,7 +285,7 @@
   "desc": "[KDD'2026] \"VideoRAG: Chat with Your Videos\"",
   "fetched": "2026-09-27"
  },
- "28": {
+ "iquestlab/iquest-coder-v1": {
   "slug": "IQuestLab/IQuest-Coder-V1",
   "stars": 1395,
   "pushed": "2026-03-02",
@@ -296,7 +296,7 @@
   "desc": null,
   "fetched": "2026-09-27"
  },
- "29": {
+ "roble3/cc-blender-skill": {
   "slug": "RobLe3/cc-blender-skill",
   "stars": 72,
   "pushed": "2026-05-01",
@@ -307,7 +307,7 @@
   "desc": "Claude Code skill plugin: drive Blender 5.x like a senior 3D artist via natural language. 10 chain-loadable skills (modeling, materials, lighting, cameras, rendering, animation, export, wireframe-to-3d, pro-workflow). Validated on 6 scene classes.",
   "fetched": "2026-09-27"
  },
- "30": {
+ "ahujasid/blender-mcp": {
   "slug": "ahujasid/blender-mcp",
   "stars": 29464,
   "pushed": "2026-09-27",
@@ -318,7 +318,7 @@
   "desc": "Community plugin to control Blender 3D with any LLM of your choice",
   "fetched": "2026-09-27"
  },
- "31": {
+ "prabhanshukamal2121/j.a.r.v.i.s": {
   "slug": "PrabhanshuKamal2121/J.A.R.V.I.S",
   "stars": 4,
   "pushed": "2025-07-21",
@@ -329,7 +329,7 @@
   "desc": "J.A.R.V.I.S. (Just A Rather Very Intelligent System) is an AI-powered personal assistant inspired by Tony Stark's iconic companion. Built on the n8n workflow automation platform, it integrates various APIs and AI models to handle voice, text, and image-based tasks.",
   "fetched": "2026-09-27"
  },
- "32": {
+ "sachinsavkare/jarvis-pa-lovable-11-labs-n8n": {
   "slug": "SachinSavkare/JARVIS-PA-Lovable-11-Labs-n8n",
   "stars": 0,
   "pushed": "2026-04-30",
@@ -340,7 +340,7 @@
   "desc": null,
   "fetched": "2026-09-27"
  },
- "33": {
+ "milome/bmad-speckit-sdd-flow": {
   "slug": "milome/BMAD-Speckit-SDD-Flow",
   "stars": 2,
   "pushed": "2026-09-23",
@@ -351,7 +351,7 @@
   "desc": "AI-TDD control plane for requirement contracts and evidence-chain delivery across Cursor, Claude Code, and Codex, built on BMAD + Spec-Kit.",
   "fetched": "2026-09-27"
  },
- "34": {
+ "anthropics/claude-plugins-official": {
   "slug": "anthropics/claude-plugins-official",
   "stars": 37076,
   "pushed": "2026-09-25",
@@ -362,7 +362,7 @@
   "desc": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
   "fetched": "2026-09-27"
  },
- "35": {
+ "yaofang-liu/pusa-vidgen": {
   "slug": "Yaofang-Liu/Pusa-VidGen",
   "stars": 686,
   "pushed": "2026-02-13",
@@ -373,7 +373,7 @@
   "desc": "Pusa: Thousands Timesteps Video Diffusion Model",
   "fetched": "2026-09-27"
  },
- "36": {
+ "mukul975/anthropic-cybersecurity-skills": {
   "slug": "mukul975/Anthropic-Cybersecurity-Skills",
   "stars": 33445,
   "pushed": "2026-08-31",
@@ -384,7 +384,7 @@
   "desc": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
   "fetched": "2026-09-27"
  },
- "37": {
+ "stirling-tools/stirling-pdf": {
   "slug": "Stirling-Tools/Stirling-PDF",
   "stars": 93092,
   "pushed": "2026-09-27",
@@ -395,7 +395,7 @@
   "desc": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
   "fetched": "2026-09-27"
  },
- "38": {
+ "shiyu-coder/kronos": {
   "slug": "shiyu-coder/Kronos",
   "stars": 39483,
   "pushed": "2026-04-13",
@@ -406,7 +406,7 @@
   "desc": "Kronos: A Foundation Model for the Language of Financial Markets",
   "fetched": "2026-09-27"
  },
- "39": {
+ "reconurge/flowsint": {
   "slug": "reconurge/flowsint",
   "stars": 8960,
   "pushed": "2026-09-24",
@@ -417,7 +417,7 @@
   "desc": "A modern platform for visual, flexible, and extensible graph-based investigations. For cybersecurity analysts and investigators.",
   "fetched": "2026-09-27"
  },
- "40": {
+ "mvanhorn/last30days-skill": {
   "slug": "mvanhorn/last30days-skill",
   "stars": 62983,
   "pushed": "2026-09-23",
@@ -428,7 +428,7 @@
   "desc": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
   "fetched": "2026-09-27"
  },
- "41": {
+ "lyogavin/airllm": {
   "slug": "lyogavin/airllm",
   "stars": 35061,
   "pushed": "2026-09-27",
@@ -439,7 +439,7 @@
   "desc": "AirLLM 70B inference with single 4GB GPU",
   "fetched": "2026-09-27"
  },
- "42": {
+ "refactoringhq/tolaria": {
   "slug": "refactoringhq/tolaria",
   "stars": 19908,
   "pushed": "2026-09-25",
@@ -450,7 +450,7 @@
   "desc": "Desktop app to manage markdown knowledge bases",
   "fetched": "2026-09-27"
  },
- "43": {
+ "aquasecurity/trivy": {
   "slug": "aquasecurity/trivy",
   "stars": 38091,
   "pushed": "2026-09-25",
@@ -461,7 +461,7 @@
   "desc": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more",
   "fetched": "2026-09-27"
  },
- "44": {
+ "andyyyy64/whichllm": {
   "slug": "Andyyyy64/whichllm",
   "stars": 6694,
   "pushed": "2026-09-19",
@@ -472,7 +472,7 @@
   "desc": "Find the local LLM that actually runs and performs best on your hardware. Ranked by real, recency-aware benchmarks, not parameter count. One command, run it instantly.",
   "fetched": "2026-09-27"
  },
- "45": {
+ "supertone-oss-archive/supertonic": {
   "slug": "supertone-oss-archive/supertonic",
   "stars": 13791,
   "pushed": "2026-09-09",
@@ -483,7 +483,7 @@
   "desc": "Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX.",
   "fetched": "2026-09-27"
  },
- "46": {
+ "alibaba/zvec": {
   "slug": "alibaba/zvec",
   "stars": 16009,
   "pushed": "2026-09-26",
@@ -494,7 +494,7 @@
   "desc": "A lightweight, lightning-fast, in-process vector database",
   "fetched": "2026-09-27"
  },
- "47": {
+ "tw93/pake": {
   "slug": "tw93/Pake",
   "stars": 61750,
   "pushed": "2026-09-25",
@@ -505,7 +505,7 @@
   "desc": "🤱🏻 Turn any webpage into a desktop app with one command.",
   "fetched": "2026-09-27"
  },
- "48": {
+ "roboflow/supervision": {
   "slug": "roboflow/supervision",
   "stars": 51059,
   "pushed": "2026-09-26",
@@ -516,7 +516,7 @@
   "desc": "We write your reusable computer vision tools. 💜",
   "fetched": "2026-09-27"
  },
- "49": {
+ "opendatalab/mineru": {
   "slug": "opendatalab/MinerU",
   "stars": 80707,
   "pushed": "2026-09-24",
@@ -527,7 +527,7 @@
   "desc": "Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.",
   "fetched": "2026-09-27"
  },
- "50": {
+ "cupy/cupy": {
   "slug": "cupy/cupy",
   "stars": 12343,
   "pushed": "2026-09-26",
@@ -538,7 +538,7 @@
   "desc": "NumPy & SciPy for GPU",
   "fetched": "2026-09-27"
  },
- "51": {
+ "jcodesmore/ai-website-cloner-template": {
   "slug": "JCodesMore/ai-website-cloner-template",
   "stars": 35339,
   "pushed": "2026-09-27",
@@ -549,7 +549,7 @@
   "desc": "Clone any website with one command using AI coding agents",
   "fetched": "2026-09-27"
  },
- "52": {
+ "libretranslate/libretranslate": {
   "slug": "LibreTranslate/LibreTranslate",
   "stars": 16860,
   "pushed": "2026-09-03",
@@ -560,7 +560,7 @@
   "desc": "Free and Open Source Machine Translation API. Self-hosted, offline capable and easy to setup.",
   "fetched": "2026-09-27"
  },
- "53": {
+ "hacksider/deep-live-cam": {
   "slug": "hacksider/Deep-Live-Cam",
   "stars": 96839,
   "pushed": "2026-09-26",
@@ -571,7 +571,7 @@
   "desc": "real time face swap and one-click video deepfake with only a single image",
   "fetched": "2026-09-27"
  },
- "54": {
+ "zai-org/glm-ocr": {
   "slug": "zai-org/GLM-OCR",
   "stars": 7473,
   "pushed": "2026-04-21",
@@ -582,7 +582,7 @@
   "desc": "GLM-OCR: Accurate ×  Fast × Comprehensive",
   "fetched": "2026-09-27"
  },
- "55": {
+ "666ghj/mirofish": {
   "slug": "666ghj/MiroFish",
   "stars": 74938,
   "pushed": "2026-09-16",
@@ -593,7 +593,7 @@
   "desc": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
   "fetched": "2026-09-27"
  },
- "56": {
+ "antirez/ds4": {
   "slug": "antirez/ds4",
   "stars": 22731,
   "pushed": "2026-09-20",
@@ -604,7 +604,7 @@
   "desc": "DeepSeek 4 Flash and PRO local inference engine for Metal, CUDA and ROCm",
   "fetched": "2026-09-27"
  },
- "57": {
+ "nvidia/skillspector": {
   "slug": "NVIDIA/SkillSpector",
   "stars": 18407,
   "pushed": "2026-09-26",
@@ -615,7 +615,7 @@
   "desc": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
   "fetched": "2026-09-27"
  },
- "58": {
+ "continual-intelligence/seal": {
   "slug": "Continual-Intelligence/SEAL",
   "stars": 1863,
   "pushed": "2025-08-01",
@@ -626,7 +626,7 @@
   "desc": "Self-Adapting Language Models",
   "fetched": "2026-09-27"
  },
- "59": {
+ "biclab/spikingbrain-7b": {
   "slug": "BICLab/SpikingBrain-7B",
   "stars": 1383,
   "pushed": "2026-05-14",
@@ -637,7 +637,7 @@
   "desc": "Spiking Brain-inspired Large Models, integrating hybrid efficient attention, MoE modules and spike encoding into its architecture",
   "fetched": "2026-09-27"
  },
- "60": {
+ "olow304/memvid": {
   "slug": "Olow304/memvid",
   "stars": 16555,
   "pushed": "2026-07-14",
@@ -648,7 +648,7 @@
   "desc": "Memory layer for AI Agents. Replace complex RAG pipelines with a serverless, single-file memory layer. Give your agents instant retrieval and long-term memory.",
   "fetched": "2026-09-27"
  },
- "61": {
+ "dyad-sh/dyad": {
   "slug": "dyad-sh/dyad",
   "stars": 21612,
   "pushed": "2026-09-25",
@@ -659,7 +659,7 @@
   "desc": "Local, open-source AI app builder for power users ✨ v0 / Lovable / Replit / Bolt alternative 🌟 Star if you like it!",
   "fetched": "2026-09-27"
  },
- "62": {
+ "chopratejas/headroom": {
   "slug": "chopratejas/headroom",
   "stars": 73924,
   "pushed": "2026-09-27",
@@ -670,7 +670,7 @@
   "desc": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
   "fetched": "2026-09-27"
  },
- "63": {
+ "perplexityai/bumblebee": {
   "slug": "perplexityai/bumblebee",
   "stars": 5043,
   "pushed": "2026-09-23",
@@ -681,7 +681,7 @@
   "desc": "Read-only developer endpoint scanner for on-disk package, extension, and developer-tool metadata, built to check exposure to known software supply-chain compromises.",
   "fetched": "2026-09-27"
  },
- "64": {
+ "baidu/unlimited-ocr": {
   "slug": "baidu/Unlimited-OCR",
   "stars": 26390,
   "pushed": "2026-07-29",
@@ -692,7 +692,7 @@
   "desc": "Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing.",
   "fetched": "2026-09-27"
  },
- "65": {
+ "tencent/tencentdb-agent-memory": {
   "slug": "Tencent/TencentDB-Agent-Memory",
   "stars": 27307,
   "pushed": "2026-09-25",
@@ -703,7 +703,7 @@
   "desc": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
   "fetched": "2026-09-27"
  },
- "66": {
+ "swarmclawai/swarmclaw": {
   "slug": "swarmclawai/swarmclaw",
   "stars": 681,
   "pushed": "2026-06-30",
@@ -714,7 +714,7 @@
   "desc": "Open-source self-hosted AI agent runtime and multi-agent framework for autonomous agent swarms. Agent memory, MCP tools, schedules, delegation, and 23+ LLM providers (Claude, GPT, Gemini, OpenRouter, Ollama). A practical Claude Code and LangChain alternative.",
   "fetched": "2026-09-27"
  },
- "67": {
+ "virattt/ai-hedge-fund": {
   "slug": "virattt/ai-hedge-fund",
   "stars": 63768,
   "pushed": "2026-09-26",
@@ -725,7 +725,7 @@
   "desc": "An AI Hedge Fund Team",
   "fetched": "2026-09-27"
  },
- "68": {
+ "tauricresearch/tradingagents": {
   "slug": "TauricResearch/TradingAgents",
   "stars": 108844,
   "pushed": "2026-09-25",
@@ -736,7 +736,7 @@
   "desc": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
   "fetched": "2026-09-27"
  },
- "69": {
+ "anthropics/knowledge-work-plugins": {
   "slug": "anthropics/knowledge-work-plugins",
   "stars": 25707,
   "pushed": "2026-09-26",
@@ -747,7 +747,7 @@
   "desc": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
   "fetched": "2026-09-27"
  },
- "70": {
+ "soxoj/maigret": {
   "slug": "soxoj/maigret",
   "stars": 38005,
   "pushed": "2026-09-27",
@@ -758,7 +758,7 @@
   "desc": "🕵️‍♂️ Collect a dossier on a person by username from 6K websites",
   "fetched": "2026-09-27"
  },
- "71": {
+ "browser-use/video-use": {
   "slug": "browser-use/video-use",
   "stars": 27361,
   "pushed": "2026-09-24",
@@ -769,7 +769,7 @@
   "desc": "Edit videos with coding agents",
   "fetched": "2026-09-27"
  },
- "72": {
+ "simplex-chat/simplex-chat": {
   "slug": "simplex-chat/simplex-chat",
   "stars": 19495,
   "pushed": "2026-09-27",
@@ -780,7 +780,7 @@
   "desc": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!",
   "fetched": "2026-09-27"
  },
- "73": {
+ "icewhaletech/casaos": {
   "slug": "IceWhaleTech/CasaOS",
   "stars": 37272,
   "pushed": "2025-08-06",
@@ -791,7 +791,7 @@
   "desc": "CasaOS - A simple, easy-to-use, elegant open-source Personal Cloud system.",
   "fetched": "2026-09-27"
  },
- "74": {
+ "mauriceboe/trek": {
   "slug": "mauriceboe/TREK",
   "stars": 14392,
   "pushed": "2026-09-26",
@@ -802,7 +802,7 @@
   "desc": "A self-hosted travel/trip planner with real-time collaboration, interactive maps, PWA support, SSO, budgets, packing lists, and more.",
   "fetched": "2026-09-27"
  },
- "75": {
+ "penpot/penpot": {
   "slug": "penpot/penpot",
   "stars": 60436,
   "pushed": "2026-09-26",
@@ -813,7 +813,7 @@
   "desc": "Penpot: The open-source design platform for Product teams that need scalable collaboration.",
   "fetched": "2026-09-27"
  },
- "76": {
+ "heygen-com/hyperframes": {
   "slug": "heygen-com/hyperframes",
   "stars": 53486,
   "pushed": "2026-09-27",
@@ -824,7 +824,7 @@
   "desc": "Write HTML. Render video. Built for agents.",
   "fetched": "2026-09-27"
  },
- "77": {
+ "microsoft/markitdown": {
   "slug": "microsoft/markitdown",
   "stars": 187248,
   "pushed": "2026-09-21",
@@ -835,7 +835,7 @@
   "desc": "Python tool for converting files and office documents to Markdown.",
   "fetched": "2026-09-27"
  },
- "78": {
+ "panniantong/agent-reach": {
   "slug": "Panniantong/Agent-Reach",
   "stars": 85689,
   "pushed": "2026-09-15",
@@ -846,7 +846,7 @@
   "desc": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
   "fetched": "2026-09-27"
  },
- "79": {
+ "garrytan/gstack": {
   "slug": "garrytan/gstack",
   "stars": 134304,
   "pushed": "2026-09-27",
@@ -857,7 +857,7 @@
   "desc": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
   "fetched": "2026-09-27"
  },
- "80": {
+ "dietrichgebert/ponytail": {
   "slug": "DietrichGebert/ponytail",
   "stars": 146742,
   "pushed": "2026-09-14",
@@ -868,7 +868,7 @@
   "desc": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
   "fetched": "2026-09-27"
  },
- "81": {
+ "palmier-io/palmier-pro": {
   "slug": "palmier-io/palmier-pro",
   "stars": 14475,
   "pushed": "2026-09-26",
@@ -879,7 +879,7 @@
   "desc": "macOS video editor built for AI",
   "fetched": "2026-09-27"
  },
- "82": {
+ "lfnovo/open-notebook": {
   "slug": "lfnovo/open-notebook",
   "stars": 39547,
   "pushed": "2026-09-20",
@@ -890,7 +890,7 @@
   "desc": "An Open Source implementation of Notebook LM with more flexibility and features",
   "fetched": "2026-09-27"
  },
- "83": {
+ "aishwaryanr/awesome-generative-ai-guide": {
   "slug": "aishwaryanr/awesome-generative-ai-guide",
   "stars": 29606,
   "pushed": "2026-09-17",
@@ -901,7 +901,7 @@
   "desc": "A one stop repository for generative AI research updates, interview resources, notebooks and much more!",
   "fetched": "2026-09-27"
  },
- "84": {
+ "punitarani/fli": {
   "slug": "punitarani/fli",
   "stars": 3193,
   "pushed": "2026-09-20",
@@ -912,7 +912,7 @@
   "desc": "Google Flights MCP, CLI and Python Library",
   "fetched": "2026-09-27"
  },
- "85": {
+ "twentyhq/twenty": {
   "slug": "twentyhq/twenty",
   "stars": 57556,
   "pushed": "2026-09-27",
@@ -923,7 +923,7 @@
   "desc": "The open alternative to Salesforce, designed for AI.",
   "fetched": "2026-09-27"
  },
- "86": {
+ "google-research/timesfm": {
   "slug": "google-research/timesfm",
   "stars": 33826,
   "pushed": "2026-09-15",
@@ -934,7 +934,7 @@
   "desc": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
   "fetched": "2026-09-27"
  },
- "87": {
+ "raphire/win11debloat": {
   "slug": "Raphire/Win11Debloat",
   "stars": 57641,
   "pushed": "2026-09-10",
@@ -945,7 +945,7 @@
   "desc": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.",
   "fetched": "2026-09-27"
  },
- "88": {
+ "cypress-io/cypress": {
   "slug": "cypress-io/cypress",
   "stars": 51025,
   "pushed": "2026-09-27",
@@ -956,7 +956,7 @@
   "desc": "Fast, easy and reliable testing for anything that runs in a browser.",
   "fetched": "2026-09-27"
  },
- "89": {
+ "andrewyng/aisuite": {
   "slug": "andrewyng/aisuite",
   "stars": 16309,
   "pushed": "2026-09-18",
@@ -967,7 +967,7 @@
   "desc": "Simple, unified interface to multiple Generative AI providers ",
   "fetched": "2026-09-27"
  },
- "90": {
+ "yusufb5/asciline": {
   "slug": "YusufB5/ASCILINE",
   "stars": 2750,
   "pushed": "2026-09-26",
@@ -978,7 +978,7 @@
   "desc": "A high-performance ASCII video rendering engine featuring real-time WebSocket binary streaming and an isolated compiler for serverless static generation. Built for low-latency 30 FPS playback on HTML5 Canvas.",
   "fetched": "2026-09-27"
  },
- "91": {
+ "microsoft/agent-lightning": {
   "slug": "microsoft/agent-lightning",
   "stars": 18490,
   "pushed": "2026-09-17",
@@ -989,7 +989,7 @@
   "desc": "The absolute trainer to light up AI agents.",
   "fetched": "2026-09-27"
  },
- "92": {
+ "dicebear/dicebear": {
   "slug": "dicebear/dicebear",
   "stars": 9721,
   "pushed": "2026-09-27",
@@ -1000,7 +1000,7 @@
   "desc": "DiceBear is an avatar library for designers and developers. 🌍",
   "fetched": "2026-09-27"
  },
- "93": {
+ "resemble-ai/chatterbox": {
   "slug": "resemble-ai/chatterbox",
   "stars": 26579,
   "pushed": "2026-07-21",
@@ -1011,7 +1011,7 @@
   "desc": "SoTA open-source TTS",
   "fetched": "2026-09-27"
  },
- "94": {
+ "startrail-org/pixelrag": {
   "slug": "StarTrail-org/PixelRAG",
   "stars": 10102,
   "pushed": "2026-09-27",
@@ -1022,7 +1022,7 @@
   "desc": "https://arxiv.org/abs/2606.28344. The end of web parsing. The beginning of scalable pixel-native search. link: https://pixelrag.ai/",
   "fetched": "2026-09-27"
  },
- "95": {
+ "pewdiepie-archdaemon/odysseus": {
   "slug": "pewdiepie-archdaemon/odysseus",
   "stars": 87623,
   "pushed": "2026-09-24",
@@ -1033,7 +1033,7 @@
   "desc": "Self-hosted AI workspace. ",
   "fetched": "2026-09-27"
  },
- "96": {
+ "jenkinsci/jenkins": {
   "slug": "jenkinsci/jenkins",
   "stars": 26591,
   "pushed": "2026-09-27",
@@ -1044,7 +1044,7 @@
   "desc": "Jenkins automation server",
   "fetched": "2026-09-27"
  },
- "97": {
+ "tursodatabase/turso": {
   "slug": "tursodatabase/turso",
   "stars": 24406,
   "pushed": "2026-09-27",
@@ -1055,7 +1055,7 @@
   "desc": "A SQL database in Rust: SQLite-compatible, now also speaking Postgres (experimental). The LLVM of databases.",
   "fetched": "2026-09-27"
  },
- "98": {
+ "togatoga/karukan": {
   "slug": "togatoga/karukan",
   "stars": 735,
   "pushed": "2026-09-26",
@@ -1066,7 +1066,7 @@
   "desc": "Japanese Input Method System for Linux, macOS, Neural Kana-Kanji Conversion Engine",
   "fetched": "2026-09-27"
  },
- "99": {
+ "tencentcloud/cubesandbox": {
   "slug": "TencentCloud/CubeSandbox",
   "stars": 12721,
   "pushed": "2026-09-24",
@@ -1077,7 +1077,7 @@
   "desc": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
   "fetched": "2026-09-27"
  },
- "100": {
+ "pingdotgg/t3code": {
   "slug": "pingdotgg/t3code",
   "stars": 23670,
   "pushed": "2026-09-27",
@@ -1088,7 +1088,7 @@
   "desc": null,
   "fetched": "2026-09-27"
  },
- "101": {
+ "crosstalk-solutions/project-nomad": {
   "slug": "Crosstalk-Solutions/project-nomad",
   "stars": 38552,
   "pushed": "2026-09-25",
@@ -1099,7 +1099,7 @@
   "desc": "Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, courses, maps, and optional local AI, all running on hardware you own with no internet required.",
   "fetched": "2026-09-27"
  },
- "102": {
+ "nutlope/hallmark": {
   "slug": "Nutlope/hallmark",
   "stars": 29202,
   "pushed": "2026-08-06",
@@ -1110,7 +1110,7 @@
   "desc": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
   "fetched": "2026-09-27"
  },
- "103": {
+ "posthog/posthog": {
   "slug": "PostHog/posthog",
   "stars": 39963,
   "pushed": "2026-09-27",
@@ -1121,7 +1121,7 @@
   "desc": ":hedgehog: PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
   "fetched": "2026-09-27"
  },
- "104": {
+ "hkuds/deeptutor": {
   "slug": "HKUDS/DeepTutor",
   "stars": 40355,
   "pushed": "2026-09-27",
@@ -1132,7 +1132,7 @@
   "desc": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
   "fetched": "2026-09-27"
  },
- "105": {
+ "protocolbuffers/protobuf": {
   "slug": "protocolbuffers/protobuf",
   "stars": 72070,
   "pushed": "2026-09-27",
@@ -1143,7 +1143,7 @@
   "desc": "Protocol Buffers - Google's data interchange format",
   "fetched": "2026-09-27"
  },
- "106": {
+ "knockoutez/wigolo": {
   "slug": "KnockOutEZ/wigolo",
   "stars": 5411,
   "pushed": "2026-09-27",
@@ -1154,7 +1154,7 @@
   "desc": "The go-to web for your AI coding agent — local-first search, fetch, crawl & research over MCP. No API keys, no cloud, $0/query. Public beta.",
   "fetched": "2026-09-27"
  },
- "107": {
+ "usestrix/strix": {
   "slug": "usestrix/strix",
   "stars": 65128,
   "pushed": "2026-09-25",
@@ -1165,7 +1165,7 @@
   "desc": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
   "fetched": "2026-09-27"
  },
- "108": {
+ "topoteretes/cognee": {
   "slug": "topoteretes/cognee",
   "stars": 31019,
   "pushed": "2026-09-27",
@@ -1176,7 +1176,7 @@
   "desc": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.",
   "fetched": "2026-09-27"
  },
- "109": {
+ "robbyant/lingbot-map": {
   "slug": "Robbyant/lingbot-map",
   "stars": 17137,
   "pushed": "2026-09-08",
@@ -1187,7 +1187,7 @@
   "desc": "(ECCV 2026 oral & best paper candidate) LingBot-Map: Geometric Context Transformer for Streaming 3D Reconstruction",
   "fetched": "2026-09-27"
  },
- "110": {
+ "dottxt-ai/outlines": {
   "slug": "dottxt-ai/outlines",
   "stars": 15886,
   "pushed": "2026-09-21",
@@ -1198,7 +1198,7 @@
   "desc": "Structured Outputs",
   "fetched": "2026-09-27"
  },
- "111": {
+ "block/buzz": {
   "slug": "block/buzz",
   "stars": 34954,
   "pushed": "2026-09-26",
@@ -1209,7 +1209,7 @@
   "desc": "A hive mind communication platform",
   "fetched": "2026-09-27"
  },
- "112": {
+ "automattic/harper": {
   "slug": "Automattic/harper",
   "stars": 15962,
   "pushed": "2026-09-26",
@@ -1220,7 +1220,7 @@
   "desc": "Offline, privacy-first grammar checker. Fast, open-source, Rust-powered",
   "fetched": "2026-09-27"
  },
- "113": {
+ "pumpkin-mc/pumpkin": {
   "slug": "Pumpkin-MC/Pumpkin",
   "stars": 11359,
   "pushed": "2026-09-26",
@@ -1231,7 +1231,7 @@
   "desc": "Empowering everyone to host fast and efficient Minecraft servers",
   "fetched": "2026-09-27"
  },
- "114": {
+ "yorukot/superfile": {
   "slug": "yorukot/superfile",
   "stars": 23391,
   "pushed": "2026-09-24",
@@ -1242,7 +1242,7 @@
   "desc": "Pretty fancy and modern terminal file manager",
   "fetched": "2026-09-27"
  },
- "115": {
+ "appsmithorg/appsmith": {
   "slug": "appsmithorg/appsmith",
   "stars": 40954,
   "pushed": "2026-09-26",
@@ -1253,7 +1253,7 @@
   "desc": "Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.",
   "fetched": "2026-09-27"
  },
- "116": {
+ "permissionlesstech/bitchat": {
   "slug": "permissionlesstech/bitchat",
   "stars": 36283,
   "pushed": "2026-09-27",
@@ -1264,7 +1264,7 @@
   "desc": "bluetooth mesh chat, IRC vibes",
   "fetched": "2026-09-27"
  },
- "117": {
+ "hoppscotch/hoppscotch": {
   "slug": "hoppscotch/hoppscotch",
   "stars": 80522,
   "pushed": "2026-09-26",
@@ -1275,7 +1275,7 @@
   "desc": "Open-Source API Development Ecosystem • https://hoppscotch.io • Offline, On-Prem & Cloud • Web, Desktop & CLI • Open-Source Alternative to Postman, Insomnia",
   "fetched": "2026-09-27"
  },
- "118": {
+ "jamiepine/voicebox": {
   "slug": "jamiepine/voicebox",
   "stars": 55819,
   "pushed": "2026-08-09",
@@ -1286,7 +1286,7 @@
   "desc": "The open-source AI voice studio. Clone, dictate, create.",
   "fetched": "2026-09-27"
  },
- "119": {
+ "amnezia-vpn/amnezia-client": {
   "slug": "amnezia-vpn/amnezia-client",
   "stars": 15219,
   "pushed": "2026-09-26",
@@ -1297,7 +1297,7 @@
   "desc": "Amnezia VPN Client (Desktop+Mobile)",
   "fetched": "2026-09-27"
  },
- "120": {
+ "cloakhq/cloakbrowser": {
   "slug": "CloakHQ/CloakBrowser",
   "stars": 31724,
   "pushed": "2026-09-24",
@@ -1308,7 +1308,7 @@
   "desc": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.",
   "fetched": "2026-09-27"
  },
- "121": {
+ "rommapp/romm": {
   "slug": "rommapp/romm",
   "stars": 13184,
   "pushed": "2026-09-27",
@@ -1319,7 +1319,7 @@
   "desc": "A beautiful, powerful, self-hosted ROM manager and player.",
   "fetched": "2026-09-27"
  },
- "122": {
+ "upscayl/upscayl": {
   "slug": "upscayl/upscayl",
   "stars": 49937,
   "pushed": "2026-09-15",
@@ -1330,7 +1330,7 @@
   "desc": "🆙 Upscayl - #1 Free and Open Source AI Image Upscaler for Linux, MacOS and Windows.",
   "fetched": "2026-09-27"
  },
- "123": {
+ "karakeep-app/karakeep": {
   "slug": "karakeep-app/karakeep",
   "stars": 29303,
   "pushed": "2026-09-27",
@@ -1341,7 +1341,7 @@
   "desc": "A self-hostable bookmark-everything app (links, notes and images) with AI-based automatic tagging and full text search",
   "fetched": "2026-09-27"
  },
- "124": {
+ "zackriya-solutions/meetily": {
   "slug": "Zackriya-Solutions/meetily",
   "stars": 31145,
   "pushed": "2026-09-15",
@@ -1352,7 +1352,7 @@
   "desc": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS & Windows. Understand How to write meeting minutes",
   "fetched": "2026-09-27"
  },
- "125": {
+ "iofficeai/officecli": {
   "slug": "iOfficeAI/OfficeCLI",
   "stars": 31284,
   "pushed": "2026-09-27",
@@ -1363,7 +1363,7 @@
   "desc": "OfficeCLI is the first and best Office suite  purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
   "fetched": "2026-09-27"
  },
- "126": {
+ "diolinux/photogimp": {
   "slug": "Diolinux/PhotoGIMP",
   "stars": 18144,
   "pushed": "2026-09-27",
@@ -1374,7 +1374,7 @@
   "desc": "A Patch for GIMP 3+ for Photoshop Users",
   "fetched": "2026-09-27"
  },
- "127": {
+ "lightricks/ltx-video": {
   "slug": "Lightricks/LTX-Video",
   "stars": 10990,
   "pushed": "2026-01-05",
@@ -1385,7 +1385,7 @@
   "desc": "Official repository for LTX-Video",
   "fetched": "2026-09-27"
  },
- "128": {
+ "diegosouzapw/omniroute": {
   "slug": "diegosouzapw/OmniRoute",
   "stars": 70634,
   "pushed": "2026-09-27",
@@ -1396,7 +1396,7 @@
   "desc": "Never stop coding. Free MIT AI gateway: one endpoint, 359 providers (150+ free), 1200+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by hundreds of contributors",
   "fetched": "2026-09-27"
  },
- "129": {
+ "david-crty/databasement": {
   "slug": "David-Crty/databasement",
   "stars": 2460,
   "pushed": "2026-09-25",
@@ -1407,7 +1407,7 @@
   "desc": "Self-hosted database backup manager with a web UI. Schedule, backup, and restore MySQL, PostgreSQL, MariaDB, Microsoft SQL Server, MongoDB, SQLite & Redis to S3, SFTP, Samba or local storage. SSH Tunnel support.",
   "fetched": "2026-09-27"
  },
- "130": {
+ "traderalice/openalice": {
   "slug": "TraderAlice/OpenAlice",
   "stars": 7179,
   "pushed": "2026-09-25",
@@ -1418,7 +1418,7 @@
   "desc": "Your one-person Wall Street. An AI trading agent covering equities, crypto, commodities, forex, and macro — from research through position entry, ongoing management, to exit.",
   "fetched": "2026-09-27"
  },
- "131": {
+ "justvugg/colibri": {
   "slug": "JustVugg/colibri",
   "stars": 37866,
   "pushed": "2026-09-27",
@@ -1429,7 +1429,7 @@
   "desc": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
   "fetched": "2026-09-27"
  },
- "132": {
+ "hexo-ai/sia": {
   "slug": "hexo-ai/sia",
   "stars": 2158,
   "pushed": "2026-08-26",
@@ -1440,7 +1440,7 @@
   "desc": "SIA is a Self Improving AI framework to autonomously improve the performance of any AI system (Model / Agent) on a benchmark task.",
   "fetched": "2026-09-27"
  },
- "133": {
+ "aprilnea/openlogi": {
   "slug": "AprilNEA/OpenLogi",
   "stars": 22296,
   "pushed": "2026-09-27",
@@ -1451,7 +1451,7 @@
   "desc": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
   "fetched": "2026-09-27"
  },
- "134": {
+ "pbakaus/impeccable": {
   "slug": "pbakaus/impeccable",
   "stars": 71682,
   "pushed": "2026-09-26",
@@ -1462,7 +1462,7 @@
   "desc": "The design language that makes your AI harness better at design.",
   "fetched": "2026-09-27"
  },
- "135": {
+ "agalwood/motrix": {
   "slug": "agalwood/Motrix",
   "stars": 55908,
   "pushed": "2026-09-27",
@@ -1473,7 +1473,7 @@
   "desc": "A full-featured download manager.",
   "fetched": "2026-09-27"
  },
- "136": {
+ "ocornut/imgui": {
   "slug": "ocornut/imgui",
   "stars": 76384,
   "pushed": "2026-09-25",
@@ -1484,7 +1484,7 @@
   "desc": "Dear ImGui: Bloat-free Graphical User interface for C++ with minimal dependencies",
   "fetched": "2026-09-27"
  },
- "137": {
+ "cordiverse/cordis": {
   "slug": "cordiverse/cordis",
   "stars": 8842,
   "pushed": "2026-09-08",
@@ -1495,7 +1495,7 @@
   "desc": "Meta-Framework of Spatiotemporal Composability",
   "fetched": "2026-09-27"
  },
- "138": {
+ "nanmicoder/mediacrawler": {
   "slug": "NanmiCoder/MediaCrawler",
   "stars": 65801,
   "pushed": "2026-09-19",
@@ -1506,7 +1506,7 @@
   "desc": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫  | 知乎问答文章｜评论爬虫",
   "fetched": "2026-09-27"
  },
- "139": {
+ "megadose/holehe": {
   "slug": "megadose/holehe",
   "stars": 15023,
   "pushed": "2024-09-10",
@@ -1517,7 +1517,7 @@
   "desc": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
   "fetched": "2026-09-27"
  },
- "140": {
+ "opengeos/geolibre": {
   "slug": "opengeos/GeoLibre",
   "stars": 7693,
   "pushed": "2026-09-27",
@@ -1528,7 +1528,7 @@
   "desc": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.",
   "fetched": "2026-09-27"
  },
- "141": {
+ "cathrynlavery/diagram-design": {
   "slug": "cathrynlavery/diagram-design",
   "stars": 42537,
   "pushed": "2026-09-27",
@@ -1539,7 +1539,7 @@
   "desc": "Editorial diagram design for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
   "fetched": "2026-09-27"
  },
- "142": {
+ "deusdata/codebase-memory-mcp": {
   "slug": "DeusData/codebase-memory-mcp",
   "stars": 45017,
   "pushed": "2026-09-27",
@@ -1550,7 +1550,7 @@
   "desc": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
   "fetched": "2026-09-27"
  },
- "143": {
+ "pranshuparmar/witr": {
   "slug": "pranshuparmar/witr",
   "stars": 22510,
   "pushed": "2026-08-15",
@@ -1561,7 +1561,7 @@
   "desc": "Why is this running? Trace any process, port, container, or file back to what started it - CLI + TUI. ",
   "fetched": "2026-09-27"
  },
- "144": {
+ "herdrdev/herdr": {
   "slug": "herdrdev/herdr",
   "stars": 40952,
   "pushed": "2026-09-27",
@@ -1572,7 +1572,7 @@
   "desc": "the runtime your coding agents live on",
   "fetched": "2026-09-27"
  },
- "145": {
+ "goauthentik/authentik": {
   "slug": "goauthentik/authentik",
   "stars": 25744,
   "pushed": "2026-09-27",
@@ -1583,7 +1583,7 @@
   "desc": "The authentication glue you need.",
   "fetched": "2026-09-27"
  },
- "146": {
+ "earthtojake/text-to-cad": {
   "slug": "earthtojake/text-to-cad",
   "stars": 16416,
   "pushed": "2026-09-27",
@@ -1594,7 +1594,7 @@
   "desc": "A library of agent skills for CAD, CAE and CAM",
   "fetched": "2026-09-27"
  },
- "147": {
+ "cloudflare/computer": {
   "slug": "cloudflare/computer",
   "stars": 9290,
   "pushed": "2026-09-23",
@@ -1605,7 +1605,7 @@
   "desc": "Give your agent a computer 👾",
   "fetched": "2026-09-27"
  },
- "148": {
+ "schollz/croc": {
   "slug": "schollz/croc",
   "stars": 40452,
   "pushed": "2026-09-26",
@@ -1616,7 +1616,7 @@
   "desc": "Easily and securely send things from one computer to another :crocodile: :package:",
   "fetched": "2026-09-27"
  },
- "149": {
+ "astral-sh/ruff": {
   "slug": "astral-sh/ruff",
   "stars": 49808,
   "pushed": "2026-09-27",
@@ -1627,7 +1627,7 @@
   "desc": "An extremely fast Python linter and code formatter, written in Rust.",
   "fetched": "2026-09-27"
  },
- "150": {
+ "oblien/openship": {
   "slug": "oblien/openship",
   "stars": 12531,
   "pushed": "2026-09-27",
@@ -1638,7 +1638,7 @@
   "desc": "Self-hosted deployment platform",
   "fetched": "2026-09-27"
  },
- "151": {
+ "nawfalmotii79/plfm_radar": {
   "slug": "NawfalMotii79/PLFM_RADAR",
   "stars": 25451,
   "pushed": "2026-06-17",
@@ -1649,7 +1649,7 @@
   "desc": "Open-source, low-cost 10.5 GHz PLFM phased array RADAR system",
   "fetched": "2026-09-27"
  },
- "152": {
+ "hqarroum/docker-android": {
   "slug": "HQarroum/docker-android",
   "stars": 7284,
   "pushed": "2026-05-07",
@@ -1660,7 +1660,7 @@
   "desc": "🤖 A minimal and customizable Docker image running the Android emulator as a service.",
   "fetched": "2026-09-27"
  },
- "153": {
+ "securo-finance/securo": {
   "slug": "securo-finance/securo",
   "stars": 3832,
   "pushed": "2026-09-25",
@@ -1671,7 +1671,7 @@
   "desc": "Open-source personal finance manager. Self-hosted, privacy-first.",
   "fetched": "2026-09-27"
  },
- "154": {
+ "jd-opensource/joyai-video-edit": {
   "slug": "jd-opensource/JoyAI-Video-Edit",
   "stars": 1895,
   "pushed": "2026-09-23",
@@ -1682,7 +1682,7 @@
   "desc": "[Official Repo] JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion",
   "fetched": "2026-09-27"
  },
- "155": {
+ "lunarphp/lunar": {
   "slug": "lunarphp/lunar",
   "stars": 3741,
   "pushed": "2026-09-25",
@@ -1693,7 +1693,7 @@
   "desc": "An open-source package that brings the power of modern headless e-commerce functionality to Laravel.",
   "fetched": "2026-09-27"
  },
- "156": {
+ "harry0703/moneyprinterturbo": {
   "slug": "harry0703/MoneyPrinterTurbo",
   "stars": 126229,
   "pushed": "2026-09-27",
@@ -1704,7 +1704,7 @@
   "desc": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
   "fetched": "2026-09-27"
  },
- "157": {
+ "opensandbox-group/opensandbox": {
   "slug": "opensandbox-group/OpenSandbox",
   "stars": 15530,
   "pushed": "2026-09-27",
@@ -1715,7 +1715,7 @@
   "desc": "Secure, Fast, and Extensible Sandbox runtime for AI agents.",
   "fetched": "2026-09-27"
  },
- "158": {
+ "dahlia/logtape": {
   "slug": "dahlia/logtape",
   "stars": 2003,
   "pushed": "2026-09-26",
@@ -1726,7 +1726,7 @@
   "desc": "Unobtrusive logging library with zero dependencies for Deno, Node.js, Bun, browsers, and edge functions",
   "fetched": "2026-09-27"
  },
- "159": {
+ "calesthio/openmontage": {
   "slug": "calesthio/OpenMontage",
   "stars": 61474,
   "pushed": "2026-09-06",
@@ -1737,7 +1737,7 @@
   "desc": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
   "fetched": "2026-09-27"
  },
- "160": {
+ "6551team/opennews-mcp": {
   "slug": "6551Team/opennews-mcp",
   "stars": 2377,
   "pushed": "2026-09-14",
@@ -1748,7 +1748,7 @@
   "desc": "News Aggregation · AI Ratings · Trading Signals · Real-time Updates",
   "fetched": "2026-09-27"
  },
- "161": {
+ "stanfordnlp/dspy": {
   "slug": "stanfordnlp/dspy",
   "stars": 38370,
   "pushed": "2026-09-27",
@@ -1759,7 +1759,7 @@
   "desc": "DSPy: The framework for programming—not prompting—language models",
   "fetched": "2026-09-27"
  },
- "162": {
+ "duriantaco/skylos": {
   "slug": "duriantaco/skylos",
   "stars": 837,
   "pushed": "2026-09-27",
@@ -1770,7 +1770,7 @@
   "desc": "Open source local-first PR scanner that finds dead code, security bugs, secrets, quality regressions, and AI-code mistakes before merge. For first timers refer to https://duriantaco.github.io/skylos/repo-map/",
   "fetched": "2026-09-27"
  },
- "163": {
+ "mysteriumnetwork/node": {
   "slug": "mysteriumnetwork/node",
   "stars": 1354,
   "pushed": "2026-09-23",
@@ -1781,7 +1781,7 @@
   "desc": "Mysterium Network Node -  official implementation of distributed VPN network (dVPN) protocol",
   "fetched": "2026-09-27"
  },
- "164": {
+ "toeverything/affine": {
   "slug": "toeverything/AFFiNE",
   "stars": 73013,
   "pushed": "2026-09-26",
@@ -1792,7 +1792,7 @@
   "desc": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. ",
   "fetched": "2026-09-27"
  },
- "165": {
+ "gaurav-gosain/tuios": {
   "slug": "Gaurav-Gosain/tuios",
   "stars": 3746,
   "pushed": "2026-09-27",
@@ -1803,7 +1803,7 @@
   "desc": "A terminal window manager that knows what your agents are doing. Tiling panes, workspaces, sessions that survive restarts, and one Inbox for every coding agent.",
   "fetched": "2026-09-27"
  },
- "166": {
+ "openobserve/openobserve": {
   "slug": "openobserve/openobserve",
   "stars": 22151,
   "pushed": "2026-09-27",
@@ -1814,7 +1814,7 @@
   "desc": "Open source observability platform for logs, metrics, traces, RUM (web, android, ios), Session replay, pipelines, SLO and LLM observability. A sophisticated, simple and highly performant alternative to Datadog, Splunk, and Elasticsearch with 140x lower storage costs and single binary deployment.",
   "fetched": "2026-09-27"
  },
- "167": {
+ "yakhyo/uniface": {
   "slug": "yakhyo/uniface",
   "stars": 1916,
   "pushed": "2026-09-26",
@@ -1825,7 +1825,7 @@
   "desc": "UniFace: A Unified Face Analysis Library for Python | Detection, alignment, landmarks, face-mesh, recognition, parsing, gaze, attributes and anti-spoofing under one API.",
   "fetched": "2026-09-27"
  },
- "168": {
+ "voltagent/awesome-design-md": {
   "slug": "VoltAgent/awesome-design-md",
   "stars": 118264,
   "pushed": "2026-09-21",
@@ -1836,7 +1836,7 @@
   "desc": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
   "fetched": "2026-09-27"
  },
- "169": {
+ "vincentwei1021/video-shotcraft": {
   "slug": "Vincentwei1021/video-shotcraft",
   "stars": 9675,
   "pushed": "2026-09-27",
@@ -1847,7 +1847,7 @@
   "desc": "AI video skill for Claude Code & Codex — cinematic product videos with Remotion: 152 shot recipe cards, 209 motion previews, a production-ready template",
   "fetched": "2026-09-27"
  },
- "170": {
+ "alibaba/open-code-review": {
   "slug": "alibaba/open-code-review",
   "stars": 41782,
   "pushed": "2026-09-24",
@@ -1858,7 +1858,7 @@
   "desc": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
   "fetched": "2026-09-27"
  },
- "171": {
+ "davidealbertazzi97-jpg/open-upsilon-logic": {
   "slug": "davidealbertazzi97-jpg/OPEN-UPSILON-LOGIC",
   "stars": 4,
   "pushed": "2026-08-04",
@@ -1869,7 +1869,7 @@
   "desc": "A memory of your agent guided by deterministic logic to avoid hallucinations and token consumption. It also allaws to use in parallel multiple agents",
   "fetched": "2026-09-27"
  },
- "172": {
+ "diwenne/openreply": {
   "slug": "diwenne/openreply",
   "stars": 2457,
   "pushed": "2026-09-21",
@@ -1880,7 +1880,7 @@
   "desc": "The open-source Manychat alternative",
   "fetched": "2026-09-27"
  },
- "173": {
+ "yc-software/qm": {
   "slug": "yc-software/qm",
   "stars": 15260,
   "pushed": "2026-09-27",
@@ -1891,7 +1891,7 @@
   "desc": "Multiplayer agent harness for work.",
   "fetched": "2026-09-27"
  },
- "174": {
+ "atomicbot-ai/atomic-agent": {
   "slug": "AtomicBot-ai/atomic-agent",
   "stars": 2507,
   "pushed": "2026-09-25",
@@ -1902,7 +1902,7 @@
   "desc": "Atomic Agent is a local-first AI agent. Runs open-weight models on your own machine via llama.cpp.",
   "fetched": "2026-09-27"
  },
- "175": {
+ "tencentcloud/tencentdb-agent-memory": {
   "slug": "TencentCloud/TencentDB-Agent-Memory",
   "stars": 27307,
   "pushed": "2026-09-25",
@@ -1913,7 +1913,7 @@
   "desc": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
   "fetched": "2026-09-27"
  },
- "176": {
+ "ayghri/i-have-adhd": {
   "slug": "ayghri/i-have-adhd",
   "stars": 51486,
   "pushed": "2026-09-19",
@@ -1924,7 +1924,7 @@
   "desc": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
   "fetched": "2026-09-27"
  },
- "177": {
+ "viarotel-org/escrcpy": {
   "slug": "viarotel-org/escrcpy",
   "stars": 11910,
   "pushed": "2026-09-01",
@@ -1935,7 +1935,7 @@
   "desc": "📱 Display and control your Android device graphically with scrcpy.",
   "fetched": "2026-09-27"
  },
- "178": {
+ "stremio/stremio-web": {
   "slug": "Stremio/stremio-web",
   "stars": 13971,
   "pushed": "2026-09-27",
@@ -1946,7 +1946,7 @@
   "desc": "Stremio - Freedom to Stream",
   "fetched": "2026-09-27"
  },
- "179": {
+ "magnitudedev/magnitude": {
   "slug": "magnitudedev/magnitude",
   "stars": 5214,
   "pushed": "2026-09-27",
@@ -1957,7 +1957,7 @@
   "desc": "Open source inference engine for the hardware you already own. Profiles your machine, recommends the best open models for it, and tunes them for your exact hardware. Works on Apple Silicon, NVIDIA, AMD, or nothing but a CPU.",
   "fetched": "2026-09-27"
  },
- "180": {
+ "braveopotato/fcksignups": {
   "slug": "BraveOPotato/FckSignups",
   "stars": 4360,
   "pushed": "2026-09-23",
@@ -1968,7 +1968,7 @@
   "desc": "A list of tools that are open-source, in-browser, and require no-signups!",
   "fetched": "2026-09-27"
  },
- "181": {
+ "abi/screenshot-to-code": {
   "slug": "abi/screenshot-to-code",
   "stars": 79753,
   "pushed": "2026-09-09",
@@ -1979,7 +1979,7 @@
   "desc": "Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)",
   "fetched": "2026-09-27"
  },
- "182": {
+ "fmtlib/fmt": {
   "slug": "fmtlib/fmt",
   "stars": 25812,
   "pushed": "2026-09-26",
@@ -1990,7 +1990,7 @@
   "desc": "A modern formatting library",
   "fetched": "2026-09-27"
  },
- "183": {
+ "iv-org/invidious": {
   "slug": "iv-org/invidious",
   "stars": 24798,
   "pushed": "2026-09-25",
@@ -2001,7 +2001,7 @@
   "desc": "Invidious is an alternative front-end to YouTube",
   "fetched": "2026-09-27"
  },
- "184": {
+ "firecrawl/pdf-inspector": {
   "slug": "firecrawl/pdf-inspector",
   "stars": 19371,
   "pushed": "2026-09-27",
@@ -2012,7 +2012,7 @@
   "desc": "Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions.",
   "fetched": "2026-09-27"
  },
- "185": {
+ "bigskysoftware/htmx": {
   "slug": "bigskysoftware/htmx",
   "stars": 49521,
   "pushed": "2026-09-22",
@@ -2023,7 +2023,7 @@
   "desc": "</> htmx - high power tools for HTML",
   "fetched": "2026-09-27"
  },
- "186": {
+ "nationalsecurityagency/ghidra": {
   "slug": "NationalSecurityAgency/ghidra",
   "stars": 79756,
   "pushed": "2026-09-25",
@@ -2034,7 +2034,7 @@
   "desc": "Ghidra is a software reverse engineering (SRE) framework",
   "fetched": "2026-09-27"
  },
- "187": {
+ "bilawalsidhu/gods-eye-view": {
   "slug": "bilawalsidhu/gods-eye-view",
   "stars": 43798,
   "pushed": "2026-09-27",
@@ -2045,7 +2045,7 @@
   "desc": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
   "fetched": "2026-09-27"
  },
- "188": {
+ "browser-use/browser-use": {
   "slug": "browser-use/browser-use",
   "stars": 116467,
   "pushed": "2026-09-26",
@@ -2056,7 +2056,7 @@
   "desc": "Agents that use the browser.",
   "fetched": "2026-09-27"
  },
- "189": {
+ "asciimoo/hister": {
   "slug": "asciimoo/hister",
   "stars": 5750,
   "pushed": "2026-09-26",
@@ -2067,7 +2067,7 @@
   "desc": "Your own search engine",
   "fetched": "2026-09-27"
  },
- "190": {
+ "oraios/serena": {
   "slug": "oraios/serena",
   "stars": 29836,
   "pushed": "2026-09-24",
@@ -2078,7 +2078,7 @@
   "desc": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
   "fetched": "2026-09-27"
  },
- "191": {
+ "virgiliojr94/book-to-skill": {
   "slug": "virgiliojr94/book-to-skill",
   "stars": 32666,
   "pushed": "2026-09-22",
@@ -2089,7 +2089,7 @@
   "desc": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
   "fetched": "2026-09-27"
  },
- "192": {
+ "tryghost/ghost": {
   "slug": "TryGhost/Ghost",
   "stars": 55441,
   "pushed": "2026-09-27",
@@ -2100,7 +2100,7 @@
   "desc": "Independent technology for modern publishing, memberships, subscriptions and newsletters.",
   "fetched": "2026-09-27"
  },
- "193": {
+ "pascalorg/editor": {
   "slug": "pascalorg/editor",
   "stars": 24333,
   "pushed": "2026-09-27",
@@ -2111,7 +2111,7 @@
   "desc": "Open-source 3D architectural editor with a local CLI, MCP tools, and practical workflows for humans and AI agents.",
   "fetched": "2026-09-27"
  },
- "194": {
+ "software-mansion/argent": {
   "slug": "software-mansion/argent",
   "stars": 2916,
   "pushed": "2026-09-25",
@@ -2122,7 +2122,7 @@
   "desc": "An agentic toolkit to control, debug, and profile iOS and Android apps. Made by Software Mansion.",
   "fetched": "2026-09-27"
  },
- "195": {
+ "coreyhaines31/marketingskills": {
   "slug": "coreyhaines31/marketingskills",
   "stars": 51645,
   "pushed": "2026-09-05",
@@ -2133,7 +2133,7 @@
   "desc": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
   "fetched": "2026-09-27"
  },
- "196": {
+ "duriantaco/ravage": {
   "slug": "duriantaco/ravage",
   "stars": 50,
   "pushed": "2026-09-21",
@@ -2144,7 +2144,7 @@
   "desc": "AI powered web security testing for authorized targets",
   "fetched": "2026-09-27"
  },
- "197": {
+ "agentconnect-md/agentconnect": {
   "slug": "agentconnect-md/agentconnect",
   "stars": 1436,
   "pushed": "2026-09-27",
@@ -2155,7 +2155,7 @@
   "desc": "The open-source, multi-agent alternative to Claude Tag.  @ any agent, wherever work happens, they work alongside your team, learning as they go.",
   "fetched": "2026-09-27"
  },
- "198": {
+ "img2threejs/img2threejs": {
   "slug": "img2threejs/img2threejs",
   "stars": 16984,
   "pushed": "2026-09-23",
@@ -2166,7 +2166,7 @@
   "desc": "Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D.",
   "fetched": "2026-09-27"
  },
- "199": {
+ "ionic-team/capacitor": {
   "slug": "ionic-team/capacitor",
   "stars": 16739,
   "pushed": "2026-09-25",
@@ -2177,7 +2177,7 @@
   "desc": "Build cross-platform Native Progressive Web Apps for iOS, Android, and the Web ⚡️",
   "fetched": "2026-09-27"
  },
- "200": {
+ "diffusionstudio/editor": {
   "slug": "diffusionstudio/editor",
   "stars": 3099,
   "pushed": "2026-09-23",
@@ -2188,7 +2188,7 @@
   "desc": "An open-source video editor built for agents. Edits become code, code becomes video.",
   "fetched": "2026-09-27"
  },
- "201": {
+ "adguardteam/adguardhome": {
   "slug": "AdguardTeam/AdGuardHome",
   "stars": 37082,
   "pushed": "2026-09-25",
@@ -2199,7 +2199,7 @@
   "desc": "Network-wide ads & trackers blocking DNS server",
   "fetched": "2026-09-27"
  },
- "202": {
+ "lakr233/vphone-cli": {
   "slug": "Lakr233/vphone-cli",
   "stars": 14510,
   "pushed": "2026-09-27",
@@ -2210,7 +2210,7 @@
   "desc": null,
   "fetched": "2026-09-27"
  },
- "203": {
+ "mutonby/openshorts": {
   "slug": "mutonby/openshorts",
   "stars": 5715,
   "pushed": "2026-09-27",
@@ -2221,7 +2221,7 @@
   "desc": "Open source AI clip generator: turns long videos into viral 9:16 shorts with AI moment detection, face tracking, subtitles and dubbing. Self-host free with Docker (MIT), or use the cloud with GPU speed from $12/mo. MCP server and API for AI agents.",
   "fetched": "2026-09-27"
  },
- "204": {
+ "htdt/godogen": {
   "slug": "htdt/godogen",
   "stars": 7009,
   "pushed": "2026-09-26",
@@ -2232,7 +2232,7 @@
   "desc": "Autonomous game development for Godot, Bevy, and Babylon.js with Claude Code and Codex",
   "fetched": "2026-09-27"
  },
- "205": {
+ "jchanvfx/nodegraphqt": {
   "slug": "jchanvfx/NodeGraphQt",
   "stars": 1829,
   "pushed": "2026-03-11",
@@ -2243,7 +2243,7 @@
   "desc": "A node graph UI framework written in python using Qt.",
   "fetched": "2026-09-27"
  },
- "206": {
+ "hackunderway/searchphone": {
   "slug": "HackUnderway/SearchPhone",
   "stars": 1997,
   "pushed": "2026-08-24",
@@ -2254,7 +2254,7 @@
   "desc": "Phone number OSINT toolkit with multi-API search (Google, GitHub, Numverify, Reddit, DuckDuckGo), Hudson Rock infostealer intelligence, and automatic report generation.",
   "fetched": "2026-09-27"
  },
- "207": {
+ "mengto/threeui": {
   "slug": "MengTo/threeui",
   "stars": 6239,
   "pushed": "2026-09-03",
@@ -2265,7 +2265,7 @@
   "desc": "Open-source ThreeUI Community catalog with live interactive components and complete Community source.",
   "fetched": "2026-09-27"
  },
- "208": {
+ "copilotkit/openbot": {
   "slug": "CopilotKit/openbot",
   "stars": 5622,
   "pushed": "2026-09-27",
@@ -2276,7 +2276,7 @@
   "desc": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
   "fetched": "2026-09-27"
  },
- "209": {
+ "ripienaar/free-for-dev": {
   "slug": "ripienaar/free-for-dev",
   "stars": 138669,
   "pushed": "2026-09-27",
@@ -2287,7 +2287,7 @@
   "desc": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
   "fetched": "2026-09-27"
  },
- "210": {
+ "guijiai/heygem.ai": {
   "slug": "GuijiAI/HeyGem.ai",
   "stars": 15586,
   "pushed": "2026-04-21",
@@ -2298,7 +2298,7 @@
   "desc": "🚀 Truly open-source AI avatar(digital human) toolkit for offline video generation and digital human cloning.",
   "fetched": "2026-09-27"
  },
- "211": {
+ "markqvist/reticulum": {
   "slug": "markqvist/Reticulum",
   "stars": 7387,
   "pushed": "2026-09-26",
@@ -2309,7 +2309,7 @@
   "desc": "The cryptography-based networking stack for building unstoppable networks with LoRa, Packet Radio, WiFi and everything in between.",
   "fetched": "2026-09-27"
  },
- "212": {
+ "milind-soni/openmausbot": {
   "slug": "milind-soni/OpenMausBot",
   "stars": 3601,
   "pushed": "2026-09-27",
@@ -2320,7 +2320,7 @@
   "desc": "Open Source Alternative to Grok Bot with a virtual machine that bots can use",
   "fetched": "2026-09-27"
  },
- "213": {
+ "graphify-labs/graphify": {
   "slug": "Graphify-Labs/graphify",
   "stars": 121777,
   "pushed": "2026-09-26",
@@ -2331,7 +2331,7 @@
   "desc": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
   "fetched": "2026-09-27"
  },
- "214": {
+ "f/awesome-chatgpt-prompts": {
   "slug": "f/awesome-chatgpt-prompts",
   "stars": 171381,
   "pushed": "2026-09-09",
@@ -2342,7 +2342,7 @@
   "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
   "fetched": "2026-09-27"
  },
- "215": {
+ "sentelabsai/openexecutive": {
   "slug": "SenteLabsAI/OpenExecutive",
   "stars": 5332,
   "pushed": "2026-09-27",
@@ -2353,7 +2353,7 @@
   "desc": "AI-powered virtual executive team — a single coherent executive persona backed by 8 specialist agents (FastAPI + Next.js).",
   "fetched": "2026-09-27"
  },
- "216": {
+ "nvidia/nemoclaw": {
   "slug": "NVIDIA/NemoClaw",
   "stars": 22549,
   "pushed": "2026-09-27",
@@ -2364,7 +2364,7 @@
   "desc": "Run agents like Hermes, LangChain Deep Agents, and OpenClaw more securely inside NVIDIA OpenShell with managed inference",
   "fetched": "2026-09-27"
  },
- "217": {
+ "cline/cline": {
   "slug": "cline/cline",
   "stars": 69428,
   "pushed": "2026-09-27",
@@ -2375,7 +2375,7 @@
   "desc": "Autonomous coding agent as an SDK, IDE extension, or CLI assistant.",
   "fetched": "2026-09-27"
  },
- "218": {
+ "ankitects/anki": {
   "slug": "ankitects/anki",
   "stars": 31596,
   "pushed": "2026-09-25",
@@ -2386,7 +2386,7 @@
   "desc": "Anki is a smart spaced repetition flashcard program",
   "fetched": "2026-09-27"
  },
- "219": {
+ "max-sixty/worktrunk": {
   "slug": "max-sixty/worktrunk",
   "stars": 8427,
   "pushed": "2026-09-27",
@@ -2397,7 +2397,7 @@
   "desc": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
   "fetched": "2026-09-27"
  },
- "220": {
+ "localsend/localsend": {
   "slug": "localsend/localsend",
   "stars": 92804,
   "pushed": "2026-09-24",
@@ -2408,7 +2408,7 @@
   "desc": "An open-source cross-platform alternative to AirDrop",
   "fetched": "2026-09-27"
  },
- "221": {
+ "yuliskov/smarttube": {
   "slug": "yuliskov/SmartTube",
   "stars": 34203,
   "pushed": "2026-09-27",
@@ -2419,7 +2419,7 @@
   "desc": "Browse media content with your own rules on Android TV",
   "fetched": "2026-09-27"
  },
- "222": {
+ "zannael/fishertiger": {
   "slug": "Zannael/fishertiger",
   "stars": 85,
   "pushed": "2026-09-14",
@@ -2430,7 +2430,7 @@
   "desc": "Local-first Classic Fantacalcio Serie A advisor with player projections, configurable auction rules, live auction support, and Monte Carlo season simulations.",
   "fetched": "2026-09-27"
  },
- "223": {
+ "nab138/iloader": {
   "slug": "nab138/iloader",
   "stars": 3617,
   "pushed": "2026-09-23",
@@ -2441,7 +2441,7 @@
   "desc": "User friendly sideloader",
   "fetched": "2026-09-27"
  },
- "224": {
+ "nuviomedia/nuviomobile": {
   "slug": "NuvioMedia/NuvioMobile",
   "stars": 3638,
   "pushed": "2026-09-27",
@@ -2452,7 +2452,7 @@
   "desc": "Official Nuvio Mobile Repository",
   "fetched": "2026-09-27"
  },
- "225": {
+ "tencent/teamai-cli": {
   "slug": "Tencent/teamai-cli",
   "stars": 5022,
   "pushed": "2026-09-27",
@@ -2463,7 +2463,7 @@
   "desc": "Make Every Team AI Native",
   "fetched": "2026-09-27"
  },
- "226": {
+ "deepseek-ai/deepseek-harness": {
   "slug": "deepseek-ai/deepseek-harness",
   "stars": 237364,
   "pushed": "2026-09-24",
@@ -2474,7 +2474,7 @@
   "desc": "DeepSeek Harness: Everything is a Plugin.",
   "fetched": "2026-09-27"
  },
- "227": {
+ "heyputer/puter": {
   "slug": "HeyPuter/puter",
   "stars": 43604,
   "pushed": "2026-09-26",
@@ -2485,7 +2485,7 @@
   "desc": "🌐 The Internet Computer! Free, Open-Source, and Self-Hostable.",
   "fetched": "2026-09-27"
  },
- "228": {
+ "git-agni/prod-farm-ios-core": {
   "slug": "Git-Agni/prod-FARM-IOS-Core",
   "stars": 1571,
   "pushed": "2026-09-07",
@@ -2496,7 +2496,7 @@
   "desc": "A farm of real iPhones, run from your Mac. Open-source iOS device automation with live control, a Postgres-backed scheduler, and TikTok workflows. Self-hosted, Apache-2.0.",
   "fetched": "2026-09-27"
  },
- "229": {
+ "samuelgursky/davinci-resolve-mcp": {
   "slug": "samuelgursky/davinci-resolve-mcp",
   "stars": 3179,
   "pushed": "2026-09-26",
@@ -2507,7 +2507,7 @@
   "desc": "MCP server integration for DaVinci Resolve Studio",
   "fetched": "2026-09-27"
  },
- "230": {
+ "vincentwei1021/anything2explainer": {
   "slug": "Vincentwei1021/anything2explainer",
   "stars": 2101,
   "pushed": "2026-09-18",
@@ -2518,7 +2518,7 @@
   "desc": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
   "fetched": "2026-09-27"
  },
- "231": {
+ "kablex/comfyui-ref2va-vsa": {
   "slug": "Kablex/ComfyUI-Ref2VA-VSA",
   "stars": 414,
   "pushed": "2026-09-16",
@@ -2529,7 +2529,7 @@
   "desc": null,
   "fetched": "2026-09-27"
  },
- "232": {
+ "langchain-ai/deepagents": {
   "slug": "langchain-ai/deepagents",
   "stars": 29798,
   "pushed": "2026-09-27",
@@ -2540,7 +2540,7 @@
   "desc": "The batteries-included agent harness.",
   "fetched": "2026-09-27"
  },
- "233": {
+ "andrewyng/openworker": {
   "slug": "andrewyng/openworker",
   "stars": 18302,
   "pushed": "2026-09-24",
@@ -2551,7 +2551,7 @@
   "desc": null,
   "fetched": "2026-09-27"
  },
- "234": {
+ "paperclipai/paperclip": {
   "slug": "paperclipai/paperclip",
   "stars": 88500,
   "pushed": "2026-09-27",
@@ -2562,7 +2562,7 @@
   "desc": "The open-source app everyone uses to manage agents at work",
   "fetched": "2026-09-27"
  },
- "235": {
+ "tt-a1i/archify": {
   "slug": "tt-a1i/archify",
   "stars": 72515,
   "pushed": "2026-09-27",
@@ -2573,7 +2573,7 @@
   "desc": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
   "fetched": "2026-09-27"
  },
- "236": {
+ "salah-xd/archify": {
   "slug": "Salah-XD/archify",
   "stars": 44,
   "pushed": "2026-08-22",
@@ -2584,7 +2584,7 @@
   "desc": "Understand Software. Architecture intelligence + client-side security for any web app, right in your browser. Local-first Chrome (MV3) extension.",
   "fetched": "2026-09-27"
  },
- "237": {
+ "webadderallorg/recordly": {
   "slug": "webadderallorg/Recordly",
   "stars": 31488,
   "pushed": "2026-09-23",
@@ -2595,7 +2595,7 @@
   "desc": "Create polished demo videos without editing skills. Mac/Windows/Linux",
   "fetched": "2026-09-27"
  },
- "238": {
+ "docling-project/docling": {
   "slug": "docling-project/docling",
   "stars": 68032,
   "pushed": "2026-09-25",
@@ -2606,7 +2606,7 @@
   "desc": "Get your documents ready for gen AI",
   "fetched": "2026-09-27"
  },
- "239": {
+ "paperless-ngx/paperless-ngx": {
   "slug": "paperless-ngx/paperless-ngx",
   "stars": 46086,
   "pushed": "2026-09-27",
@@ -2617,7 +2617,7 @@
   "desc": "A community-supported supercharged document management system: scan, index and archive all your documents",
   "fetched": "2026-09-27"
  },
- "240": {
+ "soirihiroka/shrimply": {
   "slug": "soirihiroka/shrimply",
   "stars": 1157,
   "pushed": "2026-09-26",
@@ -2628,7 +2628,7 @@
   "desc": "you're telling me a shrimp made this video?!",
   "fetched": "2026-09-27"
  },
- "241": {
+ "fleetbase/fleetbase": {
   "slug": "fleetbase/fleetbase",
   "stars": 3925,
   "pushed": "2026-09-27",
@@ -2639,7 +2639,7 @@
   "desc": "Modular logistics and supply chain operating system (LSOS)",
   "fetched": "2026-09-27"
  },
- "242": {
+ "calesthio/crucix": {
   "slug": "calesthio/Crucix",
   "stars": 12025,
   "pushed": "2026-05-20",
@@ -2650,7 +2650,7 @@
   "desc": "Your personal intelligence agent. Watches the world from multiple data sources and pings you when something changes.",
   "fetched": "2026-09-27"
  },
- "243": {
+ "harnessrouter/systemoneharness": {
   "slug": "HarnessRouter/SystemOneHarness",
   "stars": 172,
   "pushed": "2026-09-21",
@@ -2661,7 +2661,7 @@
   "desc": "The System One harness for System One models. Run Jev and other System One models locally or directly on HarnessRouter.ai.",
   "fetched": "2026-09-27"
  },
- "244": {
+ "mobile-next/mobile-mcp": {
   "slug": "mobile-next/mobile-mcp",
   "stars": 7648,
   "pushed": "2026-09-23",
@@ -2672,7 +2672,7 @@
   "desc": "Model Context Protocol Server for Mobile Automation and Scraping (iOS, Android, Emulators, Simulators and Real Devices)",
   "fetched": "2026-09-27"
  },
- "245": {
+ "ruc-datalab/evoontology": {
   "slug": "ruc-datalab/EvoOntology",
   "stars": 431,
   "pushed": "2026-09-23",
@@ -2683,7 +2683,7 @@
   "desc": "EvoOntology: A Self-Evolving Ontology Layer for Data Agents ⚙️ EvoOntology插件为Claude Code/Codex 建立&进化本体层",
   "fetched": "2026-09-27"
  },
- "246": {
+ "google/artemis": {
   "slug": "google/artemis",
   "stars": 10414,
   "pushed": "2026-09-12",
@@ -2694,7 +2694,7 @@
   "desc": "ARTEMIS turns natural-language instructions into reliable Android automation. It automates end-to-end workflows, captures logs, and integrates seamlessly with AI coding assistants such as Antigravity, Codex, and Claude Code.  It also achieves 99%+ success rate on AndroidWorld Benchmark.",
   "fetched": "2026-09-27"
  },
- "247": {
+ "shadcn-labs/pdfcn": {
   "slug": "shadcn-labs/pdfcn",
   "stars": 2233,
   "pushed": "2026-09-24",
@@ -2705,7 +2705,7 @@
   "desc": "Beautiful pdf components, built on Takumi and Forme. 100% Free, Zero config, one command setup.",
   "fetched": "2026-09-27"
  },
- "248": {
+ "nandhakishorm/laya": {
   "slug": "NandhaKishorM/laya",
   "stars": 26316,
   "pushed": "2026-09-26",
@@ -2716,7 +2716,7 @@
   "desc": "Non-autoregressive System 1 decision engine. Typed choice, score and yes/no decisions over any text in a single forward pass, in 100+ languages, with a router that picks the right checkpoint per request.",
   "fetched": "2026-09-27"
  },
- "249": {
+ "xhtoken/spark-x2.5": {
   "slug": "XHToken/Spark-X2.5",
   "stars": 390,
   "pushed": "2026-09-20",
@@ -2727,7 +2727,7 @@
   "desc": "Spark-x2.5 open model series. Pushing the Limits of Agentic Capabilities in On-Device Models",
   "fetched": "2026-09-27"
  },
- "250": {
+ "openbao/openbao": {
   "slug": "openbao/openbao",
   "stars": 8114,
   "pushed": "2026-09-24",
@@ -2738,7 +2738,7 @@
   "desc": "OpenBao is a software solution to manage, store, and distribute sensitive data including secrets, certificates, and keys.",
   "fetched": "2026-09-27"
  },
- "251": {
+ "julyx10/lap": {
   "slug": "julyx10/lap",
   "stars": 3302,
   "pushed": "2026-09-27",
@@ -2749,7 +2749,7 @@
   "desc": "An offline-first photo manager for large local libraries",
   "fetched": "2026-09-27"
  },
- "252": {
+ "open-dev-society/openstock": {
   "slug": "Open-Dev-Society/OpenStock",
   "stars": 19356,
   "pushed": "2026-09-26",
@@ -2760,7 +2760,7 @@
   "desc": "OpenStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights — built openly, for everyone, forever free.",
   "fetched": "2026-09-27"
  },
- "253": {
+ "mvt-project/mvt": {
   "slug": "mvt-project/mvt",
   "stars": 14891,
   "pushed": "2026-09-25",
@@ -2771,7 +2771,7 @@
   "desc": "MVT (Mobile Verification Toolkit) helps with conducting forensics of mobile devices in order to find signs of a potential compromise.",
   "fetched": "2026-09-27"
  },
- "254": {
+ "trycua/cua": {
   "slug": "trycua/cua",
   "stars": 26611,
   "pushed": "2026-09-27",
@@ -2782,7 +2782,7 @@
   "desc": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
   "fetched": "2026-09-27"
  },
- "255": {
+ "cactus-compute/needle": {
   "slug": "cactus-compute/needle",
   "stars": 12742,
   "pushed": "2026-09-23",
@@ -2793,7 +2793,7 @@
   "desc": "Automation foundation model for tiny devices: 2-bit, 8-29 MB, tool calls, structured extraction and embeddings on phones, wearables, smart homes, robots, cars and microcontrollers.",
   "fetched": "2026-09-27"
  },
- "256": {
+ "capsoftware/cap": {
   "slug": "CapSoftware/Cap",
   "stars": 22853,
   "pushed": "2026-09-27",
@@ -2804,7 +2804,7 @@
   "desc": "Open source Loom alternative. Beautiful, shareable screen recordings.",
   "fetched": "2026-09-27"
  },
- "257": {
+ "anil-matcha/open-generative-ai": {
   "slug": "Anil-matcha/Open-Generative-AI",
   "stars": 29279,
   "pushed": "2026-09-25",
@@ -2815,7 +2815,7 @@
   "desc": "Unrestricted Open-source alternative to AI video platforms — Free AI image & video generation studio with 600+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed.",
   "fetched": "2026-09-27"
  },
- "258": {
+ "rizzo-ai-academy/rizzo-flow": {
   "slug": "Rizzo-AI-Academy/rizzo-flow",
   "stars": 653,
   "pushed": "2026-09-25",
@@ -2826,7 +2826,7 @@
   "desc": "The open, local take on Jev: typed decisions from an LLM, without generating a single token",
   "fetched": "2026-09-27"
  },
- "259": {
+ "steviebuilds/agent-room": {
   "slug": "steviebuilds/agent-room",
   "stars": 103,
   "pushed": "2026-07-12",
@@ -2837,7 +2837,7 @@
   "desc": "Private local meeting rooms where Codex, Claude Code, and other agents collaborate live.",
   "fetched": "2026-09-27"
  },
- "260": {
+ "hopit-ai/india-trade-cli": {
   "slug": "hopit-ai/india-trade-cli",
   "stars": 107,
   "pushed": "2026-09-03",
@@ -2848,7 +2848,7 @@
   "desc": "Vibe Trading — agentic AI trading platform for Indian markets. 7 LLM analyst agents analyze stocks in parallel, debate bull vs bear, and deliver trade plans. Open-source agentic quantitative researcher for NSE/BSE/NFO.",
   "fetched": "2026-09-27"
  },
- "261": {
+ "qhr69/linca": {
   "slug": "QHR69/LinCa",
   "stars": 16,
   "pushed": "2026-08-24",
@@ -2859,7 +2859,7 @@
   "desc": "A powerful trainable cache method for Diffusion Acceleration.",
   "fetched": "2026-09-27"
  },
- "262": {
+ "hanyuanwang/livestream-agent-studio": {
   "slug": "HanyuanWang/LiveStream-Agent-Studio",
   "stars": 1025,
   "pushed": "2026-08-24",
@@ -2870,7 +2870,7 @@
   "desc": "面向抖音直播电商的 Windows 本地 AI Agent Studio，贯通主播发现、直播洞察、直播复盘与短视频内容编导的统一智能工作流。",
   "fetched": "2026-09-27"
  },
- "263": {
+ "breezexian/uniphysgen": {
   "slug": "breezexian/UniPhysGen",
   "stars": 23,
   "pushed": "2026-09-26",
@@ -2881,7 +2881,7 @@
   "desc": "Unified Physical Grounding for Simulation-Ready 3D Assets",
   "fetched": "2026-09-27"
  },
- "264": {
+ "java-jiang/poweratlas": {
   "slug": "JAVA-Jiang/PowerAtlas",
   "stars": 18,
   "pushed": "2026-07-31",
@@ -2892,7 +2892,7 @@
   "desc": "LLM agent for electricity-computing co-scheduling, with the ECBench benchmark",
   "fetched": "2026-09-27"
  },
- "265": {
+ "megootronic/blink": {
   "slug": "megootronic/Blink",
   "stars": 179,
   "pushed": "2026-08-31",
@@ -2903,7 +2903,7 @@
   "desc": "A little robot that lives in your menu bar and keeps an eye on your running dev servers and iOS simulators.",
   "fetched": "2026-09-27"
  },
- "266": {
+ "pullmyboots/x-minimaxh3": {
   "slug": "PullMyBoots/X-MinimaxH3",
   "stars": 128,
   "pushed": "2026-09-12",
@@ -2914,7 +2914,7 @@
   "desc": null,
   "fetched": "2026-09-27"
  },
- "267": {
+ "hashfunction/markuprplus": {
   "slug": "hashfunction/MarkuprPlus",
   "stars": 78,
   "pushed": "2026-09-24",
@@ -2925,7 +2925,7 @@
   "desc": "Record your screen, narrate the bug, and hand your AI coding agent structured Markdown - one annotated screenshot per mark. Desktop app, CLI, and MCP server for Claude Code, Cursor, Codex, and Windsurf. On-device Whisper transcription, local-first, MIT.",
   "fetched": "2026-09-27"
  },
- "268": {
+ "umn-zhaolab/pocket-slam": {
   "slug": "UMN-ZhaoLab/Pocket-SLAM",
   "stars": 11,
   "pushed": "2026-09-14",
@@ -2936,7 +2936,7 @@
   "desc": "ICRA'26 Pocket-SLAM: Rendering-Area-Aware Pruning for Memory-Efficient 3DGS-SLAM",
   "fetched": "2026-09-27"
  },
- "269": {
+ "chmarax/herdr-nvim": {
   "slug": "ChmaraX/herdr-nvim",
   "stars": 216,
   "pushed": "2026-09-25",
@@ -2947,7 +2947,7 @@
   "desc": "Neovim, fully integrated into your herdr workspace",
   "fetched": "2026-09-27"
  },
- "270": {
+ "geroldmeisinger/comfyui-outputlists-combiner": {
   "slug": "geroldmeisinger/ComfyUI-outputlists-combiner",
   "stars": 202,
   "pushed": "2026-09-14",
@@ -2958,7 +2958,7 @@
   "desc": "Handle multiprompts and images within one run. Quick OutputLists from spreadsheet, JSON, multiline text, numberranges for sequential processing. Combinations of lists and prompts. Load any file with metadata and glob patterns. Native XYZ-GridPlots, with supergrids and videogrids. Inspect COMBO in LoRA loader, sampler etc. Strings with placeholders.",
   "fetched": "2026-09-27"
  },
- "271": {
+ "mukul975/cve-mcp-server": {
   "slug": "mukul975/cve-mcp-server",
   "stars": 1588,
   "pushed": "2026-09-18",
@@ -2969,7 +2969,7 @@
   "desc": "Production-grade MCP server giving Claude 27 security intelligence tools across 21 APIs — CVE lookup, EPSS scoring, CISA KEV, MITRE ATT&CK, Shodan, VirusTotal, and more.",
   "fetched": "2026-09-27"
  },
- "272": {
+ "jarrettyu/alphamemo": {
   "slug": "jarrettyu/alphamemo",
   "stars": 12,
   "pushed": "2026-05-26",
@@ -2980,7 +2980,7 @@
   "desc": null,
   "fetched": "2026-09-27"
  },
- "273": {
+ "pbanddev/comfyui-node-organizer": {
   "slug": "PBandDev/comfyui-node-organizer",
   "stars": 59,
   "pushed": "2026-03-24",
@@ -2991,7 +2991,7 @@
   "desc": "Automatically align and organize nodes in your workflow",
   "fetched": "2026-09-27"
  },
- "274": {
+ "futuregene/future-os": {
   "slug": "futuregene/future-os",
   "stars": 106,
   "pushed": "2026-09-27",
@@ -3002,7 +3002,7 @@
   "desc": "One AI agent, everywhere you work — terminal, desktop, mobile, and your chat apps. Rust core.",
   "fetched": "2026-09-27"
  },
- "275": {
+ "zapier/wade-skills": {
   "slug": "zapier/wade-skills",
   "stars": 92,
   "pushed": "2026-07-21",
@@ -3013,7 +3013,7 @@
   "desc": "The most frequently used agent skills of Wade Foster, CEO of Zapier",
   "fetched": "2026-09-27"
  },
- "276": {
+ "sudoingx/qwen38-mtp": {
   "slug": "sudoingX/qwen38-mtp",
   "stars": 318,
   "pushed": "2026-09-26",
@@ -3024,7 +3024,7 @@
   "desc": "One llama.cpp flag unlocks +33-39% decode speed for Qwen3.8-27B on consumer GPUs. The MTP head already ships inside your GGUF. Recipe, paired benchmarks, probe tool.",
   "fetched": "2026-09-27"
  },
- "277": {
+ "blazux/qwen3.8-flash-dgx": {
   "slug": "blazux/qwen3.8-Flash-DGX",
   "stars": 356,
   "pushed": "2026-09-27",
@@ -3035,7 +3035,7 @@
   "desc": "recipe for running Qwen3.8-Flash-Next on a single DGX Spark",
   "fetched": "2026-09-27"
  },
- "278": {
+ "rookedsysc/kanvibe": {
   "slug": "rookedsysc/kanvibe",
   "stars": 143,
   "pushed": "2026-09-27",
@@ -3046,7 +3046,7 @@
   "desc": "Keyboard-first desktop Kanban workspace for AI coding agents with embedded terminals, git worktrees, and hook-driven task tracking.",
   "fetched": "2026-09-27"
  },
- "279": {
+ "mitkox/stolen-thoughts": {
   "slug": "mitkox/stolen-thoughts",
   "stars": 59,
   "pushed": "2026-08-12",
@@ -3057,7 +3057,7 @@
   "desc": "Stealing Reasoning Traces from Proprietary LLM APIs",
   "fetched": "2026-09-27"
  },
- "280": {
+ "ooples/token-optimizer-mcp": {
   "slug": "ooples/token-optimizer-mcp",
   "stars": 537,
   "pushed": "2026-09-25",
@@ -3068,7 +3068,7 @@
   "desc": "Measure token savings per AI coding agent, optimize context, and share a live local knowledge graph across 16 CLI clients.",
   "fetched": "2026-09-27"
  },
- "281": {
+ "alexgreensh/token-optimizer": {
   "slug": "alexgreensh/token-optimizer",
   "stars": 2399,
   "pushed": "2026-09-27",
@@ -3079,7 +3079,7 @@
   "desc": "Find the ghost tokens. Fix them. Survive compaction. Avoid context quality decay. ",
   "fetched": "2026-09-27"
  },
- "282": {
+ "nadimtuhin/claude-token-optimizer": {
   "slug": "nadimtuhin/claude-token-optimizer",
   "stars": 605,
   "pushed": "2026-08-17",
@@ -3090,7 +3090,7 @@
   "desc": "Optimize token usage for Claude API calls",
   "fetched": "2026-09-27"
  },
- "283": {
+ "lukasniessen/archunitpython": {
   "slug": "LukasNiessen/ArchUnitPython",
   "stars": 672,
   "pushed": "2026-09-25",
@@ -3101,7 +3101,7 @@
   "desc": "ArchUnitPython is an architecture testing library. Specify and ensure architecture rules in your Python app. Easy setup and pipeline integration.",
   "fetched": "2026-09-27"
  },
- "284": {
+ "kosuke55/drawtonomy": {
   "slug": "kosuke55/drawtonomy",
   "stars": 115,
   "pushed": "2026-09-27",
@@ -3112,7 +3112,7 @@
   "desc": "Whiteboard for Driving Scenarios🚗",
   "fetched": "2026-09-27"
  },
- "285": {
+ "raymondhuang210129/llama.cpp-adaptive-kv-streaming": {
   "slug": "RaymondHuang210129/llama.cpp-adaptive-kv-streaming",
   "stars": 330,
   "pushed": "2026-09-12",
@@ -3123,7 +3123,7 @@
   "desc": "LLM inference in C/C++",
   "fetched": "2026-09-27"
  },
- "286": {
+ "xai-org/plugin-marketplace": {
   "slug": "xai-org/plugin-marketplace",
   "stars": 269,
   "pushed": "2026-09-26",
@@ -3134,7 +3134,7 @@
   "desc": "Official xAI plugin marketplace",
   "fetched": "2026-09-27"
  },
- "287": {
+ "anemll/dspark-vllm-gx10": {
   "slug": "Anemll/dspark-vllm-gx10",
   "stars": 79,
   "pushed": "2026-09-13",
@@ -3145,7 +3145,7 @@
   "desc": "Two-node DGX Spark/ASUS GX10 DeepSeek V4 Flash DSpark NVFP4 port for vLLM 0.25, with live dashboard and reproducible deployment.",
   "fetched": "2026-09-27"
  },
- "288": {
+ "hardenrun/aif": {
   "slug": "hardenrun/aif",
   "stars": 1055,
   "pushed": "2026-09-05",
@@ -3156,7 +3156,7 @@
   "desc": "On device Firewall for Coding and Personal Agents",
   "fetched": "2026-09-27"
  },
- "289": {
+ "stanford-tml/robot_keyframe_kit": {
   "slug": "Stanford-TML/robot_keyframe_kit",
   "stars": 171,
   "pushed": "2026-03-27",
@@ -3167,7 +3167,7 @@
   "desc": "Create motion for any robot through editing keyframe",
   "fetched": "2026-09-27"
  },
- "290": {
+ "crispstrobe/crispasr": {
   "slug": "CrispStrobe/CrispASR",
   "stars": 700,
   "pushed": "2026-09-27",
@@ -3178,7 +3178,7 @@
   "desc": "C++ ggml runtime hub for multilingual ASR and TTS models: Cohere Transcribe, Parakeet TDT, Voxtral, Canary 1B v2, etc, plus universal forced alignment, and more",
   "fetched": "2026-09-27"
  },
- "291": {
+ "amirmushichge/machine-vision": {
   "slug": "amirmushichge/machine-vision",
   "stars": 83,
   "pushed": "2026-08-30",
@@ -3189,7 +3189,7 @@
   "desc": "Browser-based procedural machine-vision graphics for local video.",
   "fetched": "2026-09-27"
  },
- "292": {
+ "vrgamegirl19/vrgdg-seedvr2-tensorrt-studio": {
   "slug": "vrgamegirl19/VRGDG-SeedVR2-TensorRT-Studio",
   "stars": 155,
   "pushed": "2026-09-05",
@@ -3200,7 +3200,7 @@
   "desc": "Local JavaScript + FastAPI video restoration studio for SeedVR2 with TensorRT acceleration, previews, synchronized comparisons, resumable renders, and post-processing.",
   "fetched": "2026-09-27"
  },
- "293": {
+ "roadmaus/comfyui-continuity": {
   "slug": "roadmaus/ComfyUI-Continuity",
   "stars": 95,
   "pushed": "2026-09-27",
@@ -3211,7 +3211,7 @@
   "desc": null,
   "fetched": "2026-09-27"
  },
- "294": {
+ "alpbahadur/49-ide": {
   "slug": "alpbahadur/49-IDE",
   "stars": 607,
   "pushed": "2026-09-23",
@@ -3222,7 +3222,7 @@
   "desc": "Open-source 2D IDE for managing AI agents in native CLIs, terminal, gits, beads issues, and files across multiple projects and machines. Self-host on a single machine via localhost OR host on a cluster via Tailscale OR connect to app.49agents.com (coming soon)",
   "fetched": "2026-09-27"
  },
- "295": {
+ "hash-7777/hashcortx": {
   "slug": "Hash-7777/HashCortX",
   "stars": 157,
   "pushed": "2026-09-27",
@@ -3233,7 +3233,7 @@
   "desc": "A local-first AI workspace — multi-provider chat, an autonomous coding agent, 3D models, ERPs, and multi-agent swarms in one native desktop app. No backend. No telemetry. No account. MIT-licensed.",
   "fetched": "2026-09-27"
  },
- "296": {
+ "ahmadpiran/restoredrill": {
   "slug": "ahmadpiran/restoredrill",
   "stars": 111,
   "pushed": "2026-09-08",
@@ -3244,7 +3244,7 @@
   "desc": "Proves your PostgreSQL and MySQL backups actually restore, before you find out the hard way.",
   "fetched": "2026-09-27"
  },
- "297": {
+ "openclaw/wacrawl": {
   "slug": "openclaw/wacrawl",
   "stars": 199,
   "pushed": "2026-09-25",
@@ -3255,7 +3255,7 @@
   "desc": "🧾 WhatsApp archaeology with encrypted receipts",
   "fetched": "2026-09-27"
  },
- "298": {
+ "reactor-team/infinite-livestream": {
   "slug": "reactor-team/infinite-livestream",
   "stars": 234,
   "pushed": "2026-09-02",
@@ -3266,7 +3266,7 @@
   "desc": null,
   "fetched": "2026-09-27"
  },
- "299": {
+ "krispuckett/murmur": {
   "slug": "krispuckett/murmur",
   "stars": 94,
   "pushed": "2026-08-29",
@@ -3277,7 +3277,7 @@
   "desc": "Responsive AI presence orbs for SwiftUI. Metal glass shaders with states, voice and typing signals.",
   "fetched": "2026-09-27"
  },
- "300": {
+ "elliothux/open-compute": {
   "slug": "elliothux/open-compute",
   "stars": 1262,
   "pushed": "2026-09-27",
@@ -3288,7 +3288,7 @@
   "desc": "Self-hosted Cloudflare Workers-compatible platform with KV, D1, R2, Durable Objects, Queues, and Workflows in one Rust binary.",
   "fetched": "2026-09-27"
  },
- "301": {
+ "leemysw/yovoice": {
   "slug": "leemysw/yovoice",
   "stars": 194,
   "pushed": "2026-09-26",
@@ -3299,7 +3299,7 @@
   "desc": "Open-source voice creation for macOS and Windows. Local TTS, voice cloning, and emotion control — no cloud APIs or per-character fees.",
   "fetched": "2026-09-27"
  },
- "302": {
+ "typellm/typellm": {
   "slug": "TypeLLM/TypeLLM",
   "stars": 787,
   "pushed": "2026-09-27",
@@ -3310,7 +3310,7 @@
   "desc": "TypeLLM: LLMs with type-safe generation",
   "fetched": "2026-09-27"
  },
- "303": {
+ "asokurasu/text-humanizer": {
   "slug": "asokurasu/text-humanizer",
   "stars": 738,
   "pushed": "2026-09-26",
@@ -3321,7 +3321,7 @@
   "desc": "A completely free open-sourced project designed to humanize AI-generated text through a multilingual LLM-powered rewriting pipeline. ",
   "fetched": "2026-09-27"
  },
- "304": {
+ "keli-wen/agy-staff": {
   "slug": "keli-wen/agy-staff",
   "stars": 660,
   "pushed": "2026-09-18",
@@ -3332,7 +3332,7 @@
   "desc": "Hire Google's Antigravity CLI (agy) as a fast Gemini staffer for Claude Code and OpenAI Codex.",
   "fetched": "2026-09-27"
  },
- "305": {
+ "xixihhhh/hotclip": {
   "slug": "xixihhhh/hotclip",
   "stars": 257,
   "pushed": "2026-09-23",
@@ -3343,7 +3343,7 @@
   "desc": "免费开源的 AI 剪辑 / 直播切片工具:长视频、直播回放、播客一键切成爆款竖屏短视频,直发抖音/快手/B站/小红书/视频号——AI 找高光金句、弹幕热度进爆点判断、自动加字幕、横屏转竖屏,本地运行无水印不上传 | Free open-source Opus Clip alternative, 100% local: AI clips long videos & livestream VODs into viral 9:16 shorts for TikTok & YouTube Shorts. No credits, no watermark, no uploads. Win/macOS/Linux.",
   "fetched": "2026-09-27"
  },
- "306": {
+ "jaredpalmer/kev": {
   "slug": "jaredpalmer/kev",
   "stars": 7337,
   "pushed": "2026-09-27",
@@ -3354,7 +3354,7 @@
   "desc": "Jev-like family of decision models built on top of Qwen3.5/3.8 you can train and run on your own",
   "fetched": "2026-09-27"
  },
- "307": {
+ "jaywebtech/autoshorts": {
   "slug": "JayWebtech/autoshorts",
   "stars": 886,
   "pushed": "2026-08-02",
@@ -3365,7 +3365,7 @@
   "desc": "AutoShorts is a local-first desktop application for turning long-form video or audio recordings into high-impact, vertical short-form clip candidates (9:16 portrait) with AI-powered viral moment ranking.",
   "fetched": "2026-09-27"
  },
- "308": {
+ "feitangyuan/motion-web": {
   "slug": "feitangyuan/motion-web",
   "stars": 527,
   "pushed": "2026-09-15",
@@ -3376,7 +3376,7 @@
   "desc": "Build motion-first, high-touch creative websites on vanilla Three.js / Canvas 2D / WebGL / CSS. A Claude Agent Skill with real physics and automated verification.",
   "fetched": "2026-09-27"
  },
- "309": {
+ "bruin-data/dac": {
   "slug": "bruin-data/dac",
   "stars": 767,
   "pushed": "2026-09-25",
@@ -3387,7 +3387,7 @@
   "desc": "DaC is a dashboard-as-code tool. Build interactive dashboards using YAML and JSX. Built-in semantic layer. Get your agents to build standardized, reviewable dashboards.",
   "fetched": "2026-09-27"
  },
- "310": {
+ "anil-matcha/awesome-jev-by-typesafe": {
   "slug": "Anil-matcha/awesome-jev-by-typesafe",
   "stars": 862,
   "pushed": "2026-09-23",
@@ -3398,7 +3398,7 @@
   "desc": "Evidence-backed use cases, patterns, prompts, and starter code for TypeSafe Jev — a System One model for fast, typed, confidence-aware decisions in software.",
   "fetched": "2026-09-27"
  },
- "311": {
+ "bruin-data/bruin": {
   "slug": "bruin-data/bruin",
   "stars": 1749,
   "pushed": "2026-09-25",
@@ -3409,7 +3409,7 @@
   "desc": "Build data pipelines with SQL and Python, ingest data from different sources, add quality checks, and build end-to-end flows.",
   "fetched": "2026-09-27"
  },
- "312": {
+ "zhouxiaoka/autoclip": {
   "slug": "zhouxiaoka/autoclip",
   "stars": 8979,
   "pushed": "2026-09-27",
@@ -3420,7 +3420,7 @@
   "desc": "AutoClip : AI-powered video clipping and highlight generation · 一款智能高光提取与剪辑的二创工具",
   "fetched": "2026-09-27"
  },
- "313": {
+ "danielravina/stemkit": {
   "slug": "danielravina/stemkit",
   "stars": 802,
   "pushed": "2026-09-23",
@@ -3431,7 +3431,7 @@
   "desc": "Split any YouTube song into stems",
   "fetched": "2026-09-27"
  },
- "314": {
+ "qwenlm/qwen-image-2.1": {
   "slug": "QwenLM/Qwen-Image-2.1",
   "stars": 1547,
   "pushed": "2026-09-20",
@@ -3442,7 +3442,7 @@
   "desc": "Qwen's most powerful open-source image generation model",
   "fetched": "2026-09-27"
  },
- "315": {
+ "omnichar/omnichar": {
   "slug": "omnichar/OmniChar",
   "stars": 408,
   "pushed": "2026-09-25",
@@ -3453,7 +3453,7 @@
   "desc": "AI character studio for portable identity. Build multi model consistent characters, train LoRAs, and generate on your own GPU.",
   "fetched": "2026-09-27"
  },
- "316": {
+ "helpcode-ai/anythingmcp": {
   "slug": "HelpCode-ai/anythingmcp",
   "stars": 461,
   "pushed": "2026-09-27",

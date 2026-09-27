@@ -21,12 +21,16 @@ Rate limits: 60 requests/hour per IP unauthenticated, 5000/hour with a token. A 
 catalog larger than 60 repos therefore cannot finish in one unauthenticated run — so refreshes are
 processed oldest-first and existing data is never discarded on failure. Re-running later resumes
 where the previous run stopped; each entry carries a `fetched` date so progress is tracked.
+
+Repos come from github-repos.json plus github-repos.local.json, and metadata is keyed by
+owner/name (see catalogo_dati.py). New metadata goes to gh-meta.local.json, which git ignores,
+unless config.json says "catalogo": {"manutentore": true}: then entries of the published catalog
+go to gh-meta.json.
 """
 import json, re, time, urllib.request, urllib.error, os, sys, datetime
+import catalogo_dati as cd
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-REPOS = os.path.join(ROOT, 'github-repos.json')
-META  = os.path.join(ROOT, 'gh-meta.json')
 
 def slug(u):
     m = re.search(r'github\.com/([^/]+/[^/?#]+)', u)
@@ -108,17 +112,17 @@ def eta(entry):
 def da_fare(repos, meta, opts):
     """Repo da interrogare, nell'ordine in cui vanno interrogati."""
     def senza_meta(r):
-        k = str(r['id'])
+        k = cd.chiave_repo(r['url'])
         return k not in meta or 'error' in meta.get(k, {})
 
     mancanti = [r for r in repos if senza_meta(r)]
     if not opts['refresh']:
         return mancanti, []
     vecchi = [r for r in repos if not senza_meta(r)
-              and (opts['max_age'] is None or eta(meta.get(str(r['id']))) > opts['max_age'])]
+              and (opts['max_age'] is None or eta(meta.get(cd.chiave_repo(r['url']))) > opts['max_age'])]
     # i mancanti prima, poi i piu' stantii: se il rate limit taglia la run, taglia
     # la parte meno urgente
-    vecchi.sort(key=lambda r: -eta(meta.get(str(r['id']))))
+    vecchi.sort(key=lambda r: -eta(meta.get(cd.chiave_repo(r['url']))))
     return mancanti, vecchi
 
 def fetch(s, token):
@@ -149,9 +153,15 @@ def quando_riprende():
 
 def main():
     opts  = parse_args(sys.argv[1:])
-    repos = json.load(open(REPOS, encoding='utf-8'))
-    meta  = json.load(open(META, encoding='utf-8')) if os.path.exists(META) else {}
+    repos, _, meta, _ = cd.dati_uniti(ROOT)
     oggi  = datetime.date.today().isoformat()
+    # dove finiscono i metadati aggiornati: nel file pubblicato solo per il manutentore, e solo
+    # per le voci pubblicate; tutto il resto nel file locale, che git ignora
+    pubblicate = {cd.chiave_repo(r['url']) for r in cd.dati_pubblicati(ROOT)[0]}
+    scrive_pubblicato = cd.manutentore(ROOT)
+    meta_pub = cd.carica(ROOT, cd.FILE['meta'], {})
+    meta_loc = cd.carica(ROOT, cd.locale(cd.FILE['meta']), {})
+    toccate = set()
 
     mancanti, vecchi = da_fare(repos, meta, opts)
     coda = mancanti + vecchi
@@ -170,9 +180,10 @@ def main():
     nuovi = rinfrescati = falliti = 0
     interrotto = False
     for r in coda:
-        k, s = str(r['id']), slug(r['url'])
+        k, s = cd.chiave_repo(r['url']), slug(r['url'])
         if not s:
             continue
+        toccate.add(k)
         era_presente = k in meta and 'error' not in meta[k]
         try:
             d, resta = fetch(s, opts['token'])
@@ -221,14 +232,24 @@ def main():
             falliti += 1
         time.sleep(0.0 if opts['token'] else 0.4)
 
-    json.dump(meta, open(META, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    for k in toccate:
+        if scrive_pubblicato and k in pubblicate:
+            meta_pub[k] = meta[k]
+            meta_loc.pop(k, None)
+        else:
+            meta_loc[k] = meta[k]
+    if scrive_pubblicato:
+        cd.salva(ROOT, cd.FILE['meta'], meta_pub)
+    if meta_loc:
+        cd.salva(ROOT, cd.locale(cd.FILE['meta']), meta_loc)
 
-    missing = [str(r['id']) for r in repos
-               if str(r['id']) not in meta or 'error' in meta.get(str(r['id']), {})]
+    missing = [cd.chiave_repo(r['url']) for r in repos
+               if cd.chiave_repo(r['url']) not in meta
+               or 'error' in meta.get(cd.chiave_repo(r['url']), {})]
     print(f"Fetched: {nuovi} new, {rinfrescati} refreshed, {falliti} failed | "
           f"with metadata: {len(repos) - len(missing)}/{len(repos)}")
     if missing:
-        print("IDs without metadata (complete via browser HTML scraping):", ",".join(missing))
+        print("Repos without metadata (complete via browser HTML scraping):", ", ".join(missing))
     if interrotto:
         rimasti = len(coda) - (nuovi + rinfrescati + falliti)
         reset = quando_riprende()
