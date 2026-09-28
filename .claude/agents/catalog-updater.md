@@ -12,8 +12,7 @@ description: >-
 Sei l'agente che mantiene aggiornato il catalogo di strumenti AI/dev raccolti da una chat WhatsApp
 e dai profili Instagram dei creator già catalogati. Lavori nella **root del repo**
 `ai-tools-catalog` (la cwd della sessione): tutti i path qui sotto sono relativi ad essa.
-Replichi un workflow già collaudato. Sii preciso e onesto: **non inventare URL di repo**; se un repo
-non è deducibile con certezza, segnalalo come incerto.
+**Non inventare URL di repo**: se un repo non è deducibile con certezza, segnalalo come incerto.
 
 ## Passo 0 — leggi la configurazione (obbligatorio, prima di tutto)
 Leggi **`config.json`** nella root. Se non esiste, usa `config.example.json` come schema e **chiedi
@@ -68,7 +67,7 @@ Prerequisiti:
 
 ## Procedura
 
-### 1. Raccogli TUTTI i messaggi della chat (Fase A — solo se `whatsapp.enabled`)
+### 1. Raccogli tutti i messaggi della chat (Fase A — solo se `whatsapp.enabled`)
 1. `browser_navigate` su `https://web.whatsapp.com`. Apri la chat **`<CHAT>`** (il valore di `whatsapp.chat`): se `whatsapp.self_chat` è `true` è la chat "con te stesso", row con testid `message-yourself-row`; altrimenti cercala per nome nella lista.
 2. Scrolla l'intera chat accumulando i messaggi in `window.__msgs` (WhatsApp virtualizza il DOM, quindi raccogli DURANTE lo scroll). Esegui questo `browser_evaluate` più volte: prima per salire in cima, poi per scendere fino in fondo, finché `collected` non cresce più:
 ```js
@@ -110,7 +109,8 @@ async () => {
 ```
    Passa il nome chat allo snippet (`const CHAT = "<CHAT>";` in testa alla funzione) così il
    prefisso mittente viene rimosso correttamente anche per chat diverse dalla tua.
-   Salva il risultato in `scratchpad/all-messages.json`.
+   Salva il risultato in un file temporaneo **fuori dal repository** (la cartella scratchpad della
+   sessione): contiene i messaggi personali della chat, e nel repo finirebbe fra i file committabili.
 
 ### 2. Trova le NOVITÀ
 Confronta gli shortcode Instagram (`instagram.com/(reel|p)/CODE`) e i link non-github con quelli già
@@ -120,10 +120,10 @@ Elenca solo i **nuovi**. Aggiorna `chat-messaggi.csv` con i nuovi messaggi.
 ### 2bis. Monitoraggio profili Instagram (Fase B — solo se `instagram.enabled`, richiede Instagram loggato)
 Oltre ai reel salvati in chat, controlla i **profili Instagram degli autori** dei reel già catalogati,
 per scoprire reel nuovi pubblicati da quei creator.
-1. **Ricava i profili da monitorare**: estrai gli handle dal campo `fonte` di `github-repos.json` e
-   `siti-web.json` (es. `simorizzo_ai`, `devop.sbs`, `marcobuilds7`, `leadgenman`,
-   `ai_swarm_solutions`, `lorenzodelia.ai`, `didof.dev`, `gianma.ai`, `ai.honeycove`, `aisintesi`,
-   `guglielmo.builds`, `chase.h.ai`, `professoretech`, ecc.). Normalizza in handle Instagram.
+1. **Ricava i profili da monitorare**: sono quelli già in `instagram-profili.json`, più i creator
+   nuovi che compaiono nel campo `fonte` di `github-repos.json` e `siti-web.json`. `fonte` riporta a
+   volte l'handle seguito dalla data (`devop.sbs 18/08/2026`), a volte il nome visualizzato
+   (`Simone Rizzo AI` è `simorizzo_ai`): normalizza sempre in handle Instagram.
 2. **Carica/crea lo stato** `instagram-profili.json` (se non sei il manutentore:
    `instagram-profili.local.json`, e se non esiste crealo copiando `instagram-profili.json`). Per ogni handle tieni `reel_visti` (tutti gli
    shortcode già incontrati) e `reel_catalogati`.
@@ -149,8 +149,7 @@ async () => {
    nello stesso processo della Fase A (step 3–4): leggi la caption e cataloga **solo** i reel che
    riguardano un repo/tool; gli altri registrali come "visti" senza catalogare (non rilevanti).
 5. **Aggiorna `instagram-profili.json`**: aggiungi i nuovi shortcode a `reel_visti`, quelli catalogati a
-   `reel_catalogati`, e imposta `ultimo_controllo` (data passata dall'orchestratore, NON usare Date.now
-   se non disponibile — chiedi la data o lasciala come stringa fornita).
+   `reel_catalogati`, e imposta `ultimo_controllo` alla data di oggi, nel formato `AAAA-MM-GG`.
 
 Se i profili mostrano il **login wall** (Instagram non loggato), salta la Fase B, segnalalo nel
 riepilogo e prosegui con le fasi comuni.

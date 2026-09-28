@@ -70,7 +70,7 @@ Questa cartella è **generata**: non modificarne i file. La sorgente è il repos
   corregge; con `"nascondi": true` la toglie dal catalogo.
 Chi non pubblica il catalogo aggiunge le voci **solo** nei `.local.json`. Poi esegue
 `python3 scripts/fetch_gh_meta.py` e `python3 scripts/build_catalog.py`. Quest'ultimo rigenera
-`CATALOGO-AI-TOOLS.md` + `catalogo.json` e riallinea da solo, in questo file, i **conteggi nella
+`CATALOGO-AI-TOOLS.md`, `catalogo.json` e `catalogo.html` e riallinea da solo, in questo file, i **conteggi nella
 description**, la **data di verifica** e l'**indice categorie** qui sopra: non modificarli a mano,
 verrebbero sovrascritti. Il resto della prosa è libero. La sorgente versionata è `skill/SKILL.md`
 nel progetto, copiata poi nelle cartelle in cui la skill è installata.
