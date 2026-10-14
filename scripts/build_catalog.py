@@ -99,7 +99,7 @@ def classe_licenza(tipo, lic):
     if tipo == 'sito':
         return 'sito'
     l = (lic or '').lower()
-    if not l or l == 'noassertion':
+    if not l or l == 'noassertion' or 'da verificare' in l:
         return 'ignota'
     if re.search(r'nessuna licenza|diritti riservati|proprietaria', l):
         return 'chiusa'

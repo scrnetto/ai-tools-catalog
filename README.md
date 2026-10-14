@@ -4,7 +4,7 @@
 [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
 [![Python 3, stdlib only](https://img.shields.io/badge/python-3%20%C2%B7%20stdlib%20only-3776AB.svg?logo=python&logoColor=white)](scripts/)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-compatible-8A2BE2.svg)](https://agentskills.io)
-[![Catalog](https://img.shields.io/badge/catalog-315%20repos%20%2B%2029%20sites-success.svg)](CATALOGO-AI-TOOLS.md)
+[![Catalog](https://img.shields.io/badge/catalog-727%20repos%20%2B%2045%20sites-success.svg)](CATALOGO-AI-TOOLS.md)
 [![Activity checked](https://img.shields.io/badge/activity%20checked-2026--09--27-informational.svg)](gh-meta.json)
 
 Reads the reels and links you save in a WhatsApp chat (typically the "message yourself" chat),

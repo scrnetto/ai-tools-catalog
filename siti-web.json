@@ -288,5 +288,165 @@
     "fonte": "ai_swarm_solutions 21/09/2026 (reel DdjvhJrqePD)",
     "macro": "C",
     "uso": "Quando valuti alternative ai modelli di frontiera statunitensi con un'attenzione al costo per compito."
+  },
+  {
+    "id": 36,
+    "sito": "NameThatUI",
+    "url": "https://namethatui.com",
+    "descrizione": "Dizionario visuale dei componenti di interfaccia web e macOS: si descrive un elemento a parole e restituisce il nome corretto, il simbolo API corrispondente e un prompt pronto per il coding agent.",
+    "categoria": "Dev/Design",
+    "fonte": "howtowebdev_ 11/08/2026 (reel Db5ice_CDgI)",
+    "macro": "H",
+    "uso": "Quando non si ricorda il nome di un componente UI e serve descriverlo con precisione a un coding agent."
+  },
+  {
+    "id": 37,
+    "sito": "MeetNotes",
+    "url": "https://getmeetnotes.com",
+    "descrizione": "App per smartphone che registra riunioni in presenza e produce trascrizione con riconoscimento dei parlanti, riassunto, decisioni e azioni con responsabili, esportabili in PDF o Word; oltre 100 lingue, incluse hindi e gujarati.",
+    "categoria": "AI/Audio",
+    "fonte": "techketan.ai 25/08/2026 (reel DcdOT53R_hQ)",
+    "macro": "F",
+    "uso": "Quando ti serve il verbale di una riunione in presenza senza prendere appunti a mano."
+  },
+  {
+    "id": 38,
+    "sito": "Duck.ai",
+    "url": "https://duck.ai",
+    "descrizione": "Chat di DuckDuckGo che dà accesso a vari modelli (GPT, Claude, Llama, Mistral e altri) senza account né carta di credito, con conversazioni anonimizzate.",
+    "categoria": "AI/LLM",
+    "fonte": "getshorttech 25/08/2026 (reel Dceigv6uENY)",
+    "macro": "C",
+    "uso": "Quando vuoi provare o usare più modelli in chat senza registrarti e con maggiore privacy."
+  },
+  {
+    "id": 39,
+    "sito": "Atoms",
+    "url": "https://atoms.dev",
+    "descrizione": "Generatore di siti e app con AI senza codice: si descrive cosa deve fare il sito (prenotazioni, calendario, pagamenti) e produce applicazione e pannello di gestione.",
+    "categoria": "AI/Coding",
+    "fonte": "themattvision 30/09/2026 (reel Dd62tYTRpqc)",
+    "macro": "A",
+    "uso": "Quando un non sviluppatore deve mettere online in fretta un sito con funzioni reali, come prenotazioni dirette."
+  },
+  {
+    "id": 40,
+    "sito": "Glasser",
+    "url": "https://glasser.ai",
+    "descrizione": "API a consumo per agenti AI: una sola chiave e una skill danno a Claude Code, Cursor e Codex accesso a ricerca web, dati aziendali e dati SEO, con prezzo visibile prima di ogni chiamata.",
+    "categoria": "AI/Agents",
+    "fonte": "ai.honeycove 01/10/2026 (reel Dd81-FHOe2y)",
+    "macro": "B",
+    "uso": "Quando un agente ha bisogno di dati premium da più fornitori senza sottoscrivere abbonamenti separati."
+  },
+  {
+    "id": 41,
+    "sito": "Mobbin",
+    "url": "https://mobbin.com",
+    "descrizione": "Archivio di schermate di app e siti reali (registrazioni, dashboard, pagamenti) con MCP ufficiale per Claude e Claude Code, che permette all'agente di studiare esempi prima di disegnare un'interfaccia. MCP solo nei piani a pagamento.",
+    "categoria": "Dev/Design",
+    "fonte": "gabriaprile 08/10/2026 (reel DePVJcijpck)",
+    "macro": "H",
+    "uso": "Quando vuoi che l'agente basi un design su pattern reali invece di inventarlo."
+  },
+  {
+    "id": 42,
+    "sito": "Okara AI",
+    "url": "https://okara.ai",
+    "descrizione": "Piattaforma commerciale di 'AI CMO' che automatizza SEO, ottimizzazione per i motori di ricerca AI (GEO), contenuti e presenza su Reddit, LinkedIn e X.",
+    "categoria": "AI/Agents",
+    "fonte": "ai_swarm_solutions 08/10/2026 (reel DePiMyUqDb6)",
+    "macro": "B",
+    "uso": "Quando valuti agenti di marketing automatizzato per SEO e GEO."
+  },
+  {
+    "id": 43,
+    "sito": "MixRoute",
+    "url": "https://mixroute.ai",
+    "descrizione": "Gateway LLM che espone Claude, GPT, Gemini, DeepSeek e oltre 250 modelli dietro un'unica chiave API compatibile OpenAI, senza ricarico sul prezzo e con failover automatico.",
+    "categoria": "AI/LLM",
+    "fonte": "ai.honeycove 09/10/2026 (reel DeSPJaSSLZy)",
+    "macro": "C",
+    "uso": "Quando si vuole accedere a molti modelli con una sola chiave e un solo base URL."
+  },
+  {
+    "id": 44,
+    "sito": "Bone Suppression Chest X-ray (Qure.ai, HF Space)",
+    "url": "https://huggingface.co/spaces/hugging-apps/bone-suppression-chest-xray",
+    "descrizione": "Demo su Hugging Face di un modello di Qure.ai che scompone una radiografia del torace in ossa, tessuto polmonare e tessuti molli.",
+    "categoria": "AI/Research",
+    "fonte": "koshurai.official 10/10/2026 (reel DeUFMx_tyZu)",
+    "macro": "J",
+    "uso": "Quando si esplorano modelli di imaging medico o si vuole provare la soppressione ossea su radiografie."
+  },
+  {
+    "id": 45,
+    "sito": "Raylight",
+    "url": "https://www.raylight.app/",
+    "descrizione": "Editor nel browser che trasforma screenshot e filmati in video di lancio di prodotto con modelli pronti; un assistente AI (Claude, Codex, Cursor) può muovere gli elementi sulla tela. Piano gratuito con filigrana.",
+    "categoria": "AI/Video",
+    "fonte": "gabriaprile 11/10/2026 (reel DeWS9BVlHmM)",
+    "macro": "F",
+    "uso": "Quando serve un trailer di prodotto animato senza motion designer."
+  },
+  {
+    "id": 46,
+    "sito": "Liquid AI d1",
+    "url": "https://huggingface.co/LiquidAI/d1-3B",
+    "descrizione": "Famiglia di modelli open di Liquid AI per decisioni (output null, choice, score): d1-3B testo e immagini, d1-omni-600M anche audio; pesi su Hugging Face e modello completo via API.",
+    "categoria": "AI/LLM",
+    "fonte": "dariofontanel.ai 12/10/2026 (reel DeWd5Z_iuMn)",
+    "macro": "C",
+    "uso": "Quando servono decisioni o classificazioni veloci su un insieme chiuso di opzioni con un modello piccolo e locale."
+  },
+  {
+    "id": 47,
+    "sito": "OpenAI Decisions API",
+    "url": "https://developers.openai.com/api/docs/guides/decisions",
+    "descrizione": "API di OpenAI per decisioni in tempo reale su un insieme di risposte definito a priori, con output predicate, choice e score e un playground dedicato.",
+    "categoria": "AI/LLM",
+    "fonte": "dariofontanel.ai 11/10/2026 (reel DeWnhFcDn5d)",
+    "macro": "C",
+    "uso": "Quando servono classificazioni o scelte rapide ed economiche dentro un'applicazione o un agente."
+  },
+  {
+    "id": 48,
+    "sito": "NVIDIA Body Pose (build.nvidia.com)",
+    "url": "https://build.nvidia.com/nvidia/body-pose",
+    "descrizione": "Modello di visione NVIDIA per rilevare e tracciare la posa del corpo umano, provabile e richiamabile via API dal catalogo build.nvidia.com.",
+    "categoria": "AI/Immagini",
+    "fonte": "koshurai.official 12/10/2026 (reel DeZiyIENTDs)",
+    "macro": "F",
+    "uso": "Quando serve stima della posa per app di fitness, riconoscimento gesti o analisi del movimento."
+  },
+  {
+    "id": 49,
+    "sito": "Tripo AI",
+    "url": "https://www.tripo3d.ai",
+    "descrizione": "Servizio web di generazione 3D da testo o immagine (foto, illustrazioni, schizzi): produce modelli texturizzati da rifinire ed esportare.",
+    "categoria": "Robotica/3D",
+    "fonte": "koshurai.official 13/10/2026 (reel DeauUjSyzw1)",
+    "macro": "F",
+    "uso": "Quando serve ricavare rapidamente un modello 3D da un'immagine o un concept."
+  },
+  {
+    "id": 50,
+    "sito": "claudevideo.org",
+    "url": "https://claudevideo.org",
+    "descrizione": "Raccolta gratuita di video in codice generati con Claude, ognuno con autore e, spesso, il prompt completo che l'ha creato.",
+    "categoria": "AI/Video",
+    "fonte": "gabriaprile 13/10/2026 (reel DebctOcDO7v)",
+    "macro": "F",
+    "uso": "Quando si cercano esempi e prompt da cui partire per far generare animazioni in HTML a un modello."
+  },
+  {
+    "id": 51,
+    "sito": "NVIDIA Active Speaker Detection (NIM)",
+    "url": "https://build.nvidia.com/nvidia/active-speaker-detection",
+    "descrizione": "Modello NVIDIA che individua e traccia chi sta parlando in un video, fotogramma per fotogramma, abbinando movimento delle labbra e audio anche con più persone in scena. Provabile via API NIM dal browser, senza GPU.",
+    "categoria": "AI/Video",
+    "fonte": "koshurai.official 14/10/2026 (reel DeeYwGItr_h)",
+    "macro": "F",
+    "uso": "Quando costruisci reframing automatico di podcast, doppiaggio, sottotitoli con nome del parlante o resoconti di riunioni."
   }
 ]
