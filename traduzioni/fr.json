@@ -379,11 +379,6 @@
     "quando_usarlo": "Quand l'automatisation doit passer par des sites authentifiés qui n'exposent pas d'API.",
     "sorgente": "f01e7bde7199"
   },
-  "asokurasu/text-humanizer": {
-    "cosa_fa": "Outil open source qui réécrit du texte généré par l'IA pour qu'il sonne plus naturel tout en conservant son sens, via une réécriture LLM multilingue.",
-    "quando_usarlo": "Quand un brouillon écrit avec l'IA a le ton artificiel typique et que vous voulez une première passe de relecture automatique.",
-    "sorgente": "54dd6b92b9a5"
-  },
   "astral-sh/ruff": {
     "cosa_fa": "Linter et formatter Python écrit en Rust, plus rapide de plusieurs ordres de grandeur que Flake8 et Black, qui réunit en un seul outil ce qui nécessitait auparavant plusieurs paquets et configurations.",
     "quando_usarlo": "Quand le lint de votre projet Python est lent ou éclaté sur trop d'outils.",
@@ -3404,11 +3399,6 @@
     "cosa_fa": "Outil de Tencent qui centralise dans un dépôt Git skills, règles, documentation, agents, hooks et configurations MCP, puis les distribue automatiquement aux outils de l'équipe. Compatible avec Claude Code, Codex, Cursor, OpenCode et CodeBuddy.",
     "quando_usarlo": "Quand, dans une équipe, chacun a des prompts et des configurations différents et que vous voulez les versionner en un seul endroit.",
     "sorgente": "b25f687bc6d2"
-  },
-  "tencent/tencentdb-agent-memory": {
-    "cosa_fa": "Mémoire persistante locale pour agents AI, pipeline à 4 niveaux, zéro API externe (Tencent)",
-    "quando_usarlo": "Mémoire persistante locale pour agents AI à 4 niveaux, zéro API externe (Tencent).",
-    "sorgente": "63b9b27104d6"
   },
   "tencentcloud/cubesandbox": {
     "cosa_fa": "Sandbox d'exécution sécurisée pour agents AI : isole commandes, installations de paquets et code généré dans un environnement contrôlé.",

@@ -630,16 +630,6 @@
     "uso": "Modello OCR open-source per parsing documenti aziendali in locale (Baidu)."
   },
   {
-    "id": 65,
-    "progetto": "TencentDB-Agent-Memory",
-    "descrizione": "Memoria persistente locale per agenti AI, pipeline a 4 livelli, zero API esterne (Tencent)",
-    "url": "https://github.com/Tencent/TencentDB-Agent-Memory",
-    "categoria": "AI/Memory",
-    "fonte": "simorizzo_ai 27/05/2026 (reel DY2tC0SCfZ0)",
-    "macro": "D",
-    "uso": "Memoria persistente locale per agenti AI a 4 livelli, zero API esterne (Tencent)."
-  },
-  {
     "id": 66,
     "progetto": "SwarmClaw",
     "descrizione": "Runtime/framework multi-agente self-hosted: delega a Claude Code, Codex, OpenClaw, Hermes ecc.",
@@ -3019,16 +3009,6 @@
     "fonte": "gittrend.io 26/09/2026 (reel DdxEoJlF82H)",
     "macro": "C",
     "uso": "Quando il tuo codice consuma output strutturato di un LLM e non vuoi gestire parsing fragili e retry."
-  },
-  {
-    "id": 303,
-    "progetto": "text-humanizer",
-    "descrizione": "Strumento open source che riscrive testo generato dall'AI perché suoni più naturale mantenendone il significato, tramite riscrittura LLM multilingue.",
-    "url": "https://github.com/asokurasu/text-humanizer",
-    "categoria": "AI/Tooling",
-    "fonte": "gittrend.io 26/09/2026 (reel DdwgdqzCDYm)",
-    "macro": "H",
-    "uso": "Quando una bozza scritta con l'AI ha il tipico tono artificiale e vuoi un primo passaggio di rilettura automatica."
   },
   {
     "id": 304,

@@ -4,8 +4,8 @@
 [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
 [![Python 3, stdlib only](https://img.shields.io/badge/python-3%20%C2%B7%20stdlib%20only-3776AB.svg?logo=python&logoColor=white)](scripts/)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-compatible-8A2BE2.svg)](https://agentskills.io)
-[![Catalog](https://img.shields.io/badge/catalog-727%20repos%20%2B%2045%20sites-success.svg)](CATALOGO-AI-TOOLS.md)
-[![Activity checked](https://img.shields.io/badge/activity%20checked-2026--09--27-informational.svg)](gh-meta.json)
+[![Catalog](https://img.shields.io/badge/catalog-725%20repos%20%2B%2045%20sites-success.svg)](CATALOGO-AI-TOOLS.md)
+[![Activity checked](https://img.shields.io/badge/activity%20checked-2026--10--15-informational.svg)](gh-meta.json)
 
 Reads the reels and links you save in a WhatsApp chat (typically the "message yourself" chat),
 extracts **GitHub repositories** and **websites/services** for AI and dev tooling, checks how alive
@@ -27,7 +27,7 @@ otherwise); pick one directly: [Italiano](https://scrnetto.github.io/ai-tools-ca
 > [Configuration](#configuration) and [Translations](#translations).
 
 ## What the catalog holds
-- **315 GitHub repositories** + **29 websites**, in 10 practical categories (coding agents/Claude
+- **725 GitHub repositories** + **45 websites**, in 10 practical categories (coding agents/Claude
   Code, local LLMs, RAG/memory, OCR, media generation, security, dev tools, finance/trading, AI
   research). Counts are regenerated on every build.
 - Per entry: what it does, *when to use it*, and activity status (⭐ stars, last push, license).
@@ -231,7 +231,7 @@ Two things make it safe to run on a large catalog:
 
 - **It never loses data.** If a repo 404s (deleted or renamed) the existing entry is kept and
   flagged with `last_error` instead of being overwritten with an error.
-- **It resumes.** Unauthenticated GitHub allows 60 requests/hour, so a catalog of 315 repos cannot
+- **It resumes.** Unauthenticated GitHub allows 60 requests/hour, so a catalog of 700+ repos cannot
   refresh in one pass. The queue is ordered — missing entries first, then the stalest — and the run
   stops cleanly when the quota runs out, telling you when it resets. Re-run later and it picks up
   where it left off. A token raises the quota to 5000/hour and finishes it in one go.
