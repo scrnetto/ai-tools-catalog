@@ -199,20 +199,35 @@ def sync_skill_md(unified, n_repo, n_sito, L, verificato, scrivi=True):
         open(SKILL_SRC, 'w', encoding='utf-8').write(txt)
     return txt, warn
 
-def sync_readme_badges(n_repo, n_sito, verificato):
-    """Riallinea nel README i badge del numero di voci e della data di verifica: sono gli unici
-    badge che invecchiano. Come per SKILL.md, un pattern che non trova esattamente un match
-    viene segnalato invece di passare in silenzio."""
+def riepilogo_readme(unified, n_repo, n_sito):
+    """Il paragrafo «What the catalog holds» del README: totali e categorie con il loro conteggio.
+    Sempre in inglese, la lingua del README, qualunque sia catalogo.lingua."""
+    MACRO = LOCALI['en']['macro']
+    cat = [(MACRO[c], sum(1 for u in unified if u['macro'] == c)) for c in ORDER if c != PRIVATA]
+    cat = [(nome, n) for nome, n in cat if n]
+    righe = [f"- **{n_repo} GitHub repositories** + **{n_sito} websites**, in {len(cat)} practical "
+             "categories:"]
+    righe += [f"  - {nome} ({n})" for nome, n in cat]
+    return '\n'.join(righe)
+
+def sync_readme_badges(unified, n_repo, n_sito, verificato):
+    """Riallinea nel README cio' che invecchia a ogni aggiornamento: i badge del numero di voci e
+    della data di verifica, e il riepilogo fra i marcatori `catalogo:riepilogo` (accaduto il
+    2026-10-15: il badge diceva 727 voci e il testo ancora 315 + 29). Come per SKILL.md, un
+    pattern che non trova esattamente un match viene segnalato invece di passare in silenzio."""
     path = os.path.join(ROOT, 'README.md')
     if not os.path.isfile(path):
         return []
     txt, warn = open(path, encoding='utf-8').read(), []
+    riepilogo = riepilogo_readme(unified, n_repo, n_sito)
     for pattern, repl, cosa in (
         (r'badge/catalog-\d+%20repos%20%2B%20\d+%20sites-',
          f'badge/catalog-{n_repo}%20repos%20%2B%20{n_sito}%20sites-', 'badge conteggi'),
         (r'badge/activity%20checked-\d{4}--\d{2}--\d{2}-',
-         f"badge/activity%20checked-{verificato.replace('-', '--')}-", 'badge data di verifica')):
-        txt, n = re.subn(pattern, repl, txt)
+         f"badge/activity%20checked-{verificato.replace('-', '--')}-", 'badge data di verifica'),
+        (r'(<!-- catalogo:riepilogo -->\n)(?:.*?\n)?(<!-- /catalogo:riepilogo -->)',
+         lambda m: m.group(1) + riepilogo + '\n' + m.group(2), 'riepilogo del catalogo')):
+        txt, n = re.subn(pattern, repl, txt, flags=re.S)
         if n != 1:
             warn.append(f"⚠️ README.md: {cosa} non aggiornato ({n} match, atteso 1)")
     open(path, 'w', encoding='utf-8').write(txt)
@@ -425,7 +440,7 @@ def main():
         os.makedirs(os.path.join(ROOT, os.path.dirname(RIMANDO_EN)), exist_ok=True)
         open(os.path.join(ROOT, RIMANDO_EN), 'w', encoding='utf-8').write(rimando_en(cfg['url_pagine']))
         _, w = sync_skill_md(u_pub, nr, ns, L, ver)
-        warn += w + sync_readme_badges(nr, ns, ver)
+        warn += w + sync_readme_badges(u_pub, nr, ns, ver)
         versione.update({'repo': nr, 'siti': ns, 'verificato': ver})
         cd.salva(ROOT, VERSIONE, versione)
 

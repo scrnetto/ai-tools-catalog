@@ -8,7 +8,8 @@ description: >-
   push) e suggerimento d'uso. Usa questa skill quando l'utente cerca uno strumento, libreria,
   modello o repo per un progetto ("che tool esiste per X", "c'è un'alternativa open-source a Y",
   "come faccio OCR/RAG/TTS/fine-tuning", "un agente per Z"), vuole valutare alternative, o chiede
-  se un progetto è ancora attivo/manutenuto. Fonte: reel e link salvati in chat.
+  se un progetto è ancora attivo/manutenuto. Fonte: reel Instagram salvati in chat o pubblicati
+  dai creator seguiti.
 ---
 
 # Catalogo strumenti AI & Dev

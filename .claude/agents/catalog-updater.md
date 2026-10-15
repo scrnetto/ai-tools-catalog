@@ -198,6 +198,10 @@ output, ma è una rete di sicurezza, non una scusa per scriverle nei file tracci
    **non è un errore** se riporta "Stopped early": riportalo e basta. Non cancella mai dati validi.
    Se l'utente ha un `GITHUB_TOKEN` nell'ambiente la quota passa da 60 a 5000 richieste/ora.
    Segnala eventuali `last_error: 404`: sono repo spariti o rinominati, da verificare a mano.
+   **Se sei il manutentore**, prima di pubblicare usa sempre `--refresh` (con `GITHUB_TOKEN`, per
+   esempio `GH_TOKEN="$(gh auth token)"`): il badge «activity checked» del README dichiara la data del
+   recupero *più vecchio*, quindi senza un refresh completo resta ferma al giro precedente anche se
+   le voci nuove sono state controllate oggi (accaduto il 2026-10-15).
 2. Se colpisci il **rate limit GitHub** (60/ora), completa i mancanti con scraping HTML *same-origin*:
    apri una tab su `https://github.com` ed esegui un `browser_evaluate` che fa `fetch(\`https://github.com/${slug}\`)`
    e ricava stelle da `id="repo-stars-counter-star" title="..."`, l'ultimo push dal `datetime=` più recente,
@@ -214,6 +218,15 @@ output, ma è una rete di sicurezza, non una scusa per scriverle nei file tracci
 4. `python3 scripts/build_catalog.py` — rigenera `CATALOGO-AI-TOOLS.md`, `catalogo-unificato.json`,
    le pagine web in `docs/` (una per lingua) e **aggiorna la skill globale**. Se riporta
    `⚠️ traduzioni …`, il passo 3 non e' completo: riportalo.
+
+5. **Solo se sei il manutentore — tutte le quantità allineate.** `build_catalog.py` riscrive da
+   solo i badge e il riepilogo fra i marcatori `catalogo:riepilogo` del README, la `description`
+   di `skill/SKILL.md` e l'intestazione di `CATALOGO-AI-TOOLS.md`; se segnala `⚠️ README.md` o
+   `⚠️ SKILL.md`, un marcatore è andato perso: ripristinalo. Il resto del testo non lo genera
+   nessuno: prima del commit cerca i totali precedenti (`git grep -n -E "<repo vecchi>|<siti
+   vecchi>"` fuori dai file di dati) e correggi README, PIPELINE e SKILL.md. Dopo il push allinea
+   anche la descrizione del repository su GitHub, che riporta il totale arrotondato per difetto
+   alla decina («770+»): `gh repo view --json description`, poi `gh repo edit --description`.
 
 ### 6. Chiudi e riferisci
 Chiudi le tab Instagram/GitHub che hai aperto. Assicurati di aver salvato `instagram-profili.json`.

@@ -7,9 +7,9 @@
 [![Catalog](https://img.shields.io/badge/catalog-725%20repos%20%2B%2045%20sites-success.svg)](CATALOGO-AI-TOOLS.md)
 [![Activity checked](https://img.shields.io/badge/activity%20checked-2026--10--15-informational.svg)](gh-meta.json)
 
-Reads the reels and links you save in a WhatsApp chat (typically the "message yourself" chat),
-extracts **GitHub repositories** and **websites/services** for AI and dev tooling, checks how alive
-each project is on GitHub, and keeps a **catalog that your coding agent can query from any
+Reads the reels and links you save in a WhatsApp chat (typically the "message yourself" chat) and
+the new reels of the Instagram creators already in the catalog, extracts **GitHub repositories**
+and **websites/services** for AI and dev tooling, checks how alive each project is on GitHub, and keeps a **catalog that your coding agent can query from any
 project** through a global skill — Claude Code, OpenCode, Codex, Gemini CLI, Antigravity, Cursor,
 GitHub Copilot and any other agent that supports the open [Agent Skills](https://agentskills.io)
 format.
@@ -27,9 +27,22 @@ otherwise); pick one directly: [Italiano](https://scrnetto.github.io/ai-tools-ca
 > [Configuration](#configuration) and [Translations](#translations).
 
 ## What the catalog holds
-- **725 GitHub repositories** + **45 websites**, in 10 practical categories (coding agents/Claude
-  Code, local LLMs, RAG/memory, OCR, media generation, security, dev tools, finance/trading, AI
-  research). Counts are regenerated on every build.
+<!-- catalogo:riepilogo -->
+- **725 GitHub repositories** + **45 websites**, in 10 practical categories:
+  - Coding agents, Claude Code & AI-assisted development (123)
+  - AI agent frameworks & personal assistants (84)
+  - LLMs, models & local inference (57)
+  - RAG, agent memory & knowledge bases (37)
+  - OCR & document parsing (21)
+  - Media generation (video, images, 3D, voice) (121)
+  - Security & supply chain (49)
+  - Dev tools, productivity & libraries (230)
+  - AI finance & trading (12)
+  - AI research, world models & vector data (36)
+<!-- /catalogo:riepilogo -->
+- Almost every entry comes from an Instagram reel — saved in the chat, or found by monitoring the
+  profiles of creators already in the catalog — and each entry records its source. Counts and
+  categories above are regenerated on every build.
 - Per entry: what it does, *when to use it*, and activity status (⭐ stars, last push, license).
 - Human-readable output: [`CATALOGO-AI-TOOLS.md`](CATALOGO-AI-TOOLS.md). Structured data:
   `catalogo-unificato.json`. Searchable web page with filters: `docs/index.html`, published on
@@ -231,7 +244,7 @@ Two things make it safe to run on a large catalog:
 
 - **It never loses data.** If a repo 404s (deleted or renamed) the existing entry is kept and
   flagged with `last_error` instead of being overwritten with an error.
-- **It resumes.** Unauthenticated GitHub allows 60 requests/hour, so a catalog of 700+ repos cannot
+- **It resumes.** Unauthenticated GitHub allows 60 requests/hour, so a catalog of several hundred repos cannot
   refresh in one pass. The queue is ordered — missing entries first, then the stalest — and the run
   stops cleanly when the quota runs out, telling you when it resets. Re-run later and it picks up
   where it left off. A token raises the quota to 5000/hour and finishes it in one go.
