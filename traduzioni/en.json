@@ -5872,6 +5872,12 @@
     "quando_usarlo": "When you want to replace several small Mac utilities with a single open source app.",
     "sorgente": "a55ce5721fc2"
   },
+  "vostride/agent-qa": {
+    "cosa_fa": "QA agent that runs tests described in natural language on web, Android and iOS and keeps the evidence (steps, screenshots), with a memory of facts and procedures stored as reviewable files in the repository and a mechanism that validates or discards what it learned between runs. Used from a CLI, a dashboard or a coding agent via MCP and skills; requires Node.js 24+ and a configured model, paid for separately. FSL license (source-available, not open source: use in competing products is forbidden; each version becomes Apache-2.0 after two years). Telemetry (PostHog) is on by default: DO_NOT_TRACK does not turn it off, you need analytics.privacy: true in the configuration. Young project; the author warns to expect bugs.",
+    "quando_usarlo": "When you want an agent that remembers what it learned to check user journeys and regressions in a web or mobile app, after turning telemetry off.",
+    "licenza": "FSL-1.1-ALv2 (not OSI: no competing use; Apache-2.0 after 2 years)",
+    "sorgente": "7086400dbedf"
+  },
   "vrgamegirl19/vrgdg-seedvr2-tensorrt-studio": {
     "cosa_fa": "Local studio (JavaScript + FastAPI) for video restoration and upscaling with TensorRT-accelerated SeedVR2, with before/after preview and resumption of interrupted renders.",
     "quando_usarlo": "When you need to restore or upscale old videos on your NVIDIA GPU.",

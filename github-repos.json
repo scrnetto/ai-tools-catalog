@@ -11543,5 +11543,16 @@
     "fonte": "githubsignals 03/11/2026 (reel DfRkg7VAawI)",
     "macro": "H",
     "uso": "Quando vuoi studiare come si costruisce un client Android attorno a un web player, valutando prima i rischi sull'account."
+  },
+  {
+    "id": 1151,
+    "progetto": "agent-qa",
+    "descrizione": "Agente di QA che esegue su web, Android e iOS test descritti in linguaggio naturale e conserva le prove (passi, screenshot), con una memoria di fatti e procedure salvata come file rivedibili nel repository e un meccanismo che convalida o scarta ciò che ha imparato tra un'esecuzione e l'altra. Si usa da CLI, dashboard o dal coding agent via MCP e skill; richiede Node.js 24+ e un modello configurato, a pagamento a parte. Licenza FSL (source-available, non open source: vietato l'uso in prodotti concorrenti; ogni versione diventa Apache-2.0 dopo due anni). Telemetria (PostHog) attiva di default: DO_NOT_TRACK non la spegne, serve analytics.privacy: true nella configurazione. Progetto giovane, l'autore stesso avverte di aspettarsi bug.",
+    "url": "https://github.com/vostride/agent-qa",
+    "categoria": "DevOps/CI",
+    "fonte": "proposto dall'autore con la PR #2 del 01/11/2026, verificato il 14/11/2026",
+    "macro": "H",
+    "uso": "Quando vuoi far verificare percorsi utente e regressioni di un'app web o mobile a un agente che ricorda ciò che ha imparato, dopo aver spento la telemetria.",
+    "licenza": "FSL-1.1-ALv2 (non OSI: niente uso concorrente; Apache-2.0 dopo 2 anni)"
   }
 ]

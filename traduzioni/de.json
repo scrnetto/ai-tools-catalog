@@ -5872,6 +5872,12 @@
     "quando_usarlo": "Wenn du mehrere kleine Mac-Utilitys durch eine einzige Open-Source-App ersetzen willst.",
     "sorgente": "a55ce5721fc2"
   },
+  "vostride/agent-qa": {
+    "cosa_fa": "QA-Agent, der in natürlicher Sprache beschriebene Tests auf Web, Android und iOS ausführt und die Belege (Schritte, Screenshots) aufbewahrt, mit einem Gedächtnis aus Fakten und Abläufen, das als überprüfbare Dateien im Repository liegt, und einem Mechanismus, der Gelerntes zwischen den Läufen bestätigt oder verwirft. Bedienung per CLI, Dashboard oder über den Coding-Agent via MCP und Skills; benötigt Node.js 24+ und ein konfiguriertes Modell, separat kostenpflichtig. FSL-Lizenz (source-available, nicht Open Source: Einsatz in Konkurrenzprodukten verboten; jede Version wird nach zwei Jahren Apache-2.0). Telemetrie (PostHog) standardmäßig aktiv: DO_NOT_TRACK schaltet sie nicht ab, nötig ist analytics.privacy: true in der Konfiguration. Junges Projekt; der Autor selbst warnt vor Fehlern.",
+    "quando_usarlo": "Wenn ein Agent, der sich Gelerntes merkt, Nutzerabläufe und Regressionen einer Web- oder Mobile-App prüfen soll – nachdem du die Telemetrie abgeschaltet hast.",
+    "licenza": "FSL-1.1-ALv2 (nicht OSI: keine Konkurrenznutzung; Apache-2.0 nach 2 Jahren)",
+    "sorgente": "7086400dbedf"
+  },
   "vrgamegirl19/vrgdg-seedvr2-tensorrt-studio": {
     "cosa_fa": "Lokales Studio (JavaScript + FastAPI) für Videorestaurierung und Upscaling mit TensorRT-beschleunigtem SeedVR2, mit Vorher/Nachher-Vorschau und Fortsetzung abgebrochener Renderings.",
     "quando_usarlo": "Wenn du alte Videos auf deiner NVIDIA-GPU restaurieren oder hochskalieren musst.",

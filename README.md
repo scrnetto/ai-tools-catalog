@@ -4,7 +4,7 @@
 [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
 [![Python 3, stdlib only](https://img.shields.io/badge/python-3%20%C2%B7%20stdlib%20only-3776AB.svg?logo=python&logoColor=white)](scripts/)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-compatible-8A2BE2.svg)](https://agentskills.io)
-[![Catalog](https://img.shields.io/badge/catalog-1145%20repos%20%2B%2088%20sites-success.svg)](CATALOGO-AI-TOOLS.md)
+[![Catalog](https://img.shields.io/badge/catalog-1146%20repos%20%2B%2088%20sites-success.svg)](CATALOGO-AI-TOOLS.md)
 [![Activity checked](https://img.shields.io/badge/activity%20checked-2026--11--07-informational.svg)](gh-meta.json)
 
 Reads the reels and links you save in a WhatsApp chat (typically the "message yourself" chat) and
@@ -28,7 +28,7 @@ otherwise); pick one directly: [Italiano](https://scrnetto.github.io/ai-tools-ca
 
 ## What the catalog holds
 <!-- catalogo:riepilogo -->
-- **1145 GitHub repositories** + **88 websites**, in 10 practical categories:
+- **1146 GitHub repositories** + **88 websites**, in 10 practical categories:
   - Coding agents, Claude Code & AI-assisted development (183)
   - AI agent frameworks & personal assistants (128)
   - LLMs, models & local inference (99)
@@ -36,7 +36,7 @@ otherwise); pick one directly: [Italiano](https://scrnetto.github.io/ai-tools-ca
   - OCR & document parsing (28)
   - Media generation (video, images, 3D, voice) (202)
   - Security & supply chain (67)
-  - Dev tools, productivity & libraries (403)
+  - Dev tools, productivity & libraries (404)
   - AI finance & trading (16)
   - AI research, world models & vector data (59)
 <!-- /catalogo:riepilogo -->
